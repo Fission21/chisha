@@ -1,4 +1,5 @@
-﻿// 饮食记录与每日目标：localStorage 持久化 + 汇总计算
+﻿// 饮食记录与每日目标：localStorage 持久化 + 汇总计算；登录后与账号云端同步
+import { isLoggedIn, apiFetch } from "@/lib/auth";
 
 export type DiaryItem = {
   id: string;
@@ -89,4 +90,27 @@ export function computeTotals(items: DiaryItem[]): Totals {
     t.sodium += (it.nutrition.sodium || 0) * factor;
   }
   return t;
+}
+
+// ---- 云端同步 ----
+export async function syncDiaryFromServer(): Promise<Record<string, DiaryItem[]>> {
+  if (!isLoggedIn()) return loadDiary();
+  try {
+    const res = await apiFetch("/api/me/diary");
+    if (res.ok) {
+      const data = await res.json();
+      const map: Record<string, DiaryItem[]> = {};
+      for (const [k, v] of Object.entries(data)) map[k] = v as DiaryItem[];
+      saveDiary(map);
+      return map;
+    }
+  } catch { /* ignore */ }
+  return loadDiary();
+}
+
+export async function pushDiaryDateToServer(date: string, items: DiaryItem[]): Promise<void> {
+  if (!isLoggedIn()) return;
+  try {
+    await apiFetch("/api/me/diary", { method: "PUT", body: JSON.stringify({ date, items }) });
+  } catch { /* ignore */ }
 }

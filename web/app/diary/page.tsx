@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { API_URL } from "@/lib/api";
 import {
   addToDiary, removeFromDiary, loadDiary, loadTarget, computeTotals, dateKey,
+  syncDiaryFromServer, pushDiaryDateToServer,
   type DiaryItem, type DayEntry, type StoredTarget, type Totals,
 } from "@/lib/diary";
 import { IconBowl, IconFlame, IconProtein, IconCarbs, IconFat, IconLeaf, IconArrow, IconCheck, IconAlert } from "@/components/icons";
@@ -44,6 +45,7 @@ export default function DiaryPage() {
     setDate(t);
     setDiary(loadDiary());
     setTarget(loadTarget());
+    syncDiaryFromServer().then(setDiary);
   }, []);
   useEffect(() => {
     if (!picked) setAmount("");
@@ -98,11 +100,17 @@ export default function DiaryPage() {
       unit: mode === "food" ? "g" : "份",
       nutrition: n,
     };
-    setDiary(addToDiary(date, item));
+    const map = addToDiary(date, item);
+    setDiary(map);
+    pushDiaryDateToServer(date, map[date] || []);
     setPicked(null); setResults([]); setQ("");
   };
 
-  const remove = (id: string) => setDiary(removeFromDiary(date, id));
+  const remove = (id: string) => {
+    const map = removeFromDiary(date, id);
+    setDiary(map);
+    pushDiaryDateToServer(date, map[date] || []);
+  };
 
   const shiftDay = (delta: number) => {
     const base = date || today;
