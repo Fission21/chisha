@@ -1493,5 +1493,288 @@
    "植物蛋白"
   ],
   "allergens": []
+ },
+ {
+  "id": "tomato-beef-soup",
+  "title": "番茄牛腩汤",
+  "titleEn": "Tomato Beef Soup",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 90,
+  "servings": 2,
+  "summary": "酸甜开胃的暖汤，牛肉软烂补铁。",
+  "coverEmoji": "🍲",
+  "ingredients": [
+   {
+    "name": "牛肉",
+    "ref": "牛肉（后腿）",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "name": "番茄",
+    "ref": "番茄 [西红柿]",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "name": "洋葱",
+    "ref": "洋葱（鲜）[葱头]",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛肉切块焯水去浮沫。",
+    "durationMin": 8
+   },
+   {
+    "text": "下姜片和牛肉，加足量水炖 60 分钟。",
+    "durationMin": 60,
+    "heat": "小火"
+   },
+   {
+    "text": "加入番茄和洋葱再炖 20 分钟，加盐调味。",
+    "durationMin": 20,
+    "heat": "小火"
+   }
+  ],
+  "tips": [
+   "番茄炒出沙再入汤更浓郁",
+   "撇去浮油热量更低"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "滋补"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "chicken-congee",
+  "title": "鸡肉蔬菜粥",
+  "titleEn": "Chicken Vegetable Congee",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 40,
+  "servings": 1,
+  "summary": "暖胃高蛋白早餐，软烂好消化。",
+  "coverEmoji": "🥣",
+  "ingredients": [
+   {
+    "name": "大米",
+    "ref": "稻米（代表值）",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "name": "鸡胸肉",
+    "ref": "鸡胸脯肉",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "胡萝卜",
+    "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "name": "香菇",
+    "ref": "香菇（鲜）[香蕈，冬菇]",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "水",
+    "amount": 600,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "大米洗净，加水大火烧开转小火。",
+    "durationMin": 5,
+    "heat": "小火"
+   },
+   {
+    "text": "鸡胸切丁、胡萝卜香菇切碎，与姜丝一起下锅。",
+    "durationMin": 5
+   },
+   {
+    "text": "小火熬 25 分钟至米烂，加盐调味。",
+    "durationMin": 25,
+    "heat": "小火"
+   }
+  ],
+  "tips": [
+   "粥快好时不停搅拌防粘底",
+   "鸡丁最后 10 分钟放更嫩"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "早餐"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "smashed-cucumber",
+  "title": "拍黄瓜",
+  "titleEn": "Smashed Cucumber Salad",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "dinner",
+   "snack"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 8,
+  "servings": 1,
+  "summary": "三分钟搞定的爽口凉菜，配什么都好吃。",
+  "coverEmoji": "🥒",
+  "ingredients": [
+   {
+    "name": "黄瓜",
+    "ref": "黄瓜（鲜）[胡瓜]",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 6,
+    "unit": "g"
+   },
+   {
+    "name": "米醋",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "香油",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "黄瓜拍裂切段。",
+    "durationMin": 2
+   },
+   {
+    "text": "蒜切末，与醋、酱油、香油调成汁。",
+    "durationMin": 2
+   },
+   {
+    "text": "淋在黄瓜上拌匀，腌 2 分钟入味。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "拍裂比切块更入味",
+   "冰镇后更爽口"
+  ],
+  "tags": [
+   "低卡",
+   "减脂",
+   "快手"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "garlic-eggplant",
+  "title": "蒜蓉蒸茄子",
+  "titleEn": "Steamed Eggplant with Garlic",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "不用油炸的健康茄子做法，软糯入味。",
+  "coverEmoji": "🍆",
+  "ingredients": [
+   {
+    "name": "茄子",
+    "ref": "茄子（代表值）",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "米醋",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "茄子切条，上锅大火蒸 10 分钟至软。",
+    "durationMin": 10,
+    "heat": "大火"
+   },
+   {
+    "text": "蒜末与酱油、醋调成酱汁。",
+    "durationMin": 2
+   },
+   {
+    "text": "蒸好的茄子淋酱汁，撒葱花。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "蒸比炸少油 90%",
+   "茄子皮富含花青素，别去皮"
+  ],
+  "tags": [
+   "低卡",
+   "高纤",
+   "减脂",
+   "快手"
+  ],
+  "allergens": []
  }
 ]

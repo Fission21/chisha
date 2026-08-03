@@ -41,8 +41,8 @@ Next.js (App Router) + FastAPI + PostgreSQL，Docker Compose 部署。现有代�
 
 ## Evidence on Hand
 
-- `data/processed/foods.json`：1732 条食材营养（中国食物成分表第 6 版 + 全球补充，标注来源）
-- `data/processed/recipes.json`：48 道菜谱，含食材克数、步骤、营养推导
+- `data/processed/foods.json`：1741 条食材营养（中国食物成分表第 6 版 + 全球补充，标注来源）
+- `data/processed/recipes.json`：77 道菜谱，含食材克数、步骤、营养推导
 - 文档：`docs/01-调研报告.md` 等
 
 ## Product Principles

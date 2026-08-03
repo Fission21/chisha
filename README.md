@@ -12,7 +12,7 @@ docker compose up -d --build
 # API    http://localhost:8000/docs
 ```
 
-首次启动会自动导入数据（1732 条食材营养 + 52 道菜谱）。
+首次启动会自动导入数据（1741 条食材营养 + 77 道菜谱）。
 
 ## 核心功能
 
@@ -44,4 +44,4 @@ docker compose up -d --build
 
 - 《中国食物成分表（第 6 版）》1677 条（[Sanotsu/china-food-composition-data](https://github.com/Sanotsu/china-food-composition-data)，OCR 识别，版权归出版社，商用需授权）
 - 全球食材补充 75 条（USDA 近似值，`data/global_foods.json` 标注 source）
-- 菜谱 52 道（中餐 / 西式 / 亚洲 / 加餐，自建，营养由食材推导）
+- 菜谱 77 道（中餐 25 / 西式 23 / 日式 8 / 泰式 4 / 韩式 3 / 印度 3 / 越南 2 / 墨西哥 2 / 地中海 2 / 中东 2 / 意式 / 美式 / 东南亚，自建，营养由食材推导）

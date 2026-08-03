@@ -6,6 +6,7 @@ COPY api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY api/app ./app
+COPY api/tests ./tests
 COPY data/processed ./data/processed
 
 EXPOSE 8000
