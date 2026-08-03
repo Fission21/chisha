@@ -1,4 +1,4 @@
-// 手绘风线性图标集：统一 1.8 描边、currentColor，不用 emoji 当图标
+﻿// 手绘风线性图标集：统一 1.8 描边、currentColor，不用 emoji 当图标
 import type { CSSProperties } from "react";
 
 type P = { size?: number; className?: string; style?: CSSProperties };
@@ -49,4 +49,12 @@ export const IconCheck = (p: P) => (
 );
 export const IconAlert = (p: P) => (
   <S {...p}><path d="M12 3.5 21 20H3L12 3.5Z" /><path d="M12 10v4.5M12 17.5v.5" /></S>
+);
+export const IconStar = ({ size = 20, className, style, filled = false }: P & { filled?: boolean }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24"
+    fill={filled ? "currentColor" : "none"}
+    stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"
+    className={className} style={style} aria-hidden="true">
+    <path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.6 1-5.8-4.3-4.1 5.9-.9L12 3.5Z" />
+  </svg>
 );

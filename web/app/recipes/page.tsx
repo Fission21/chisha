@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { API_URL } from "@/lib/api";
-import { IconClock, IconArrow, IconFlame, IconProtein, IconCarbs, IconFat } from "@/components/icons";
+import { IconClock, IconArrow, IconFlame, IconProtein, IconCarbs, IconFat, IconStar } from "@/components/icons";
 import DishMark from "@/components/dish-mark";
+import { loadFavorites, toggleFavorite } from "@/lib/favorites";
 
 type RecipeSummary = {
   id: string; title: string; titleEn: string; cuisine: string; difficulty: string;
@@ -24,6 +25,10 @@ export default function RecipesPage() {
   const [cuisine, setCuisine] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [favs, setFavs] = useState<string[]>([]);
+  const [onlyFav, setOnlyFav] = useState(false);
+
+  useEffect(() => { setFavs(loadFavorites()); }, []);
 
   useEffect(() => {
     (async () => {
@@ -69,6 +74,9 @@ export default function RecipesPage() {
           {cuisines.map((c) => (
             <span key={c} className={`option ${cuisine === c ? "on" : ""}`} onClick={() => setCuisine(c)}>{c}</span>
           ))}
+          <span className={`option ${onlyFav ? "on" : ""}`} onClick={() => setOnlyFav(!onlyFav)}>
+            <IconStar size={15} filled={onlyFav} /> 只看收藏 {favs.length > 0 ? `(${favs.length})` : ""}
+          </span>
         </div>
       </div>
 
@@ -84,7 +92,9 @@ export default function RecipesPage() {
       )}
       {!loading && !error && (
         <div className="panel section">
-          {list.map((r) => (
+          {list.filter((r) => !onlyFav || favs.includes(r.id)).map((r) => {
+            const fav = favs.includes(r.id);
+            return (
             <div className="menu-row" key={r.id}>
               <DishMark title={r.title} size={44} />
               <div className="menu-body">
@@ -101,8 +111,16 @@ export default function RecipesPage() {
                 </div>
                 <div className="stamp-row">{r.tags.slice(0, 4).map((t) => <span className="stamp green" key={t}>{t}</span>)}</div>
               </div>
+              <button
+                className="btn ghost"
+                style={{ padding: "8px 10px", fontSize: 13, flexShrink: 0 }}
+                onClick={() => setFavs(toggleFavorite(r.id))}
+                aria-pressed={fav}
+              >
+                <IconStar size={15} filled={fav} />
+              </button>
             </div>
-          ))}
+          );})}
         </div>
       )}
     </div>

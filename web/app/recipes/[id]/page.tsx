@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { IconBowl, IconClock, IconChef, IconScale, IconFlame, IconProtein,
   IconCarbs, IconFat, IconLeaf, IconAlert, IconArrow } from "@/components/icons";
 import DishMark from "@/components/dish-mark";
+import FavButton from "@/components/fav-button";
 
 type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number; dietaryFiber: number; sodium: number };
 type Ingredient = { name: string; unit: string; amount: number; note: string; food: { name: string; source: string } };
@@ -62,6 +63,7 @@ export default async function RecipePage({ params }: { params: Promise<{ id: str
           <h1>{r.title}</h1>
           {r.titleEn && <div className="en">{r.titleEn}</div>}
           <div className="meta-pills">
+            <FavButton recipeId={r.id} />
             <span className="pill">{r.cuisine}</span>
             <span className="pill">{r.difficulty}</span>
             <span className="pill"><IconClock size={14} /> {r.cookTimeMin} 分钟</span>

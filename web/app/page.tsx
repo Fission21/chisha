@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { API_URL } from "@/lib/api";
 import {
   IconBowl, IconFlame, IconProtein, IconCarbs, IconFat, IconClock,
@@ -8,6 +8,7 @@ import {
 } from "@/components/icons";
 import DishMark from "@/components/dish-mark";
 import { saveTarget } from "@/lib/diary";
+import { loadProfile, saveProfile } from "@/lib/profile";
 
 type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number; dietaryFiber: number; sodium: number };
 type RecipeSummary = {
@@ -63,6 +64,15 @@ export default function HomePage() {
   const [weekly, setWeekly] = useState<WeeklyPlan | null>(null);
   const [weeklyLoading, setWeeklyLoading] = useState(false);
 
+  useEffect(() => {
+    const p = loadProfile();
+    if (p) {
+      setSex(p.sex); setAge(p.age); setHeight(p.height); setWeight(p.weight);
+      setBodyFat(p.bodyFat); setActivity(p.activity); setGoal(p.goal);
+      setAllergies(p.allergies); setCuisines(p.cuisines);
+    }
+  }, []);
+
   const toggle = (list: string[], set: (v: string[]) => void, v: string) =>
     set(list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
 
@@ -84,6 +94,7 @@ export default function HomePage() {
       if (!res.ok) throw new Error(`请求失败 (${res.status})`);
       const data = await res.json();
       setPlan(data);
+      saveProfile({ sex, age, height, weight, bodyFat, activity, goal, allergies, cuisines });
       saveTarget({
         kcal: data.daily.kcal, protein: data.daily.protein, fat: data.daily.fat,
         carb: data.daily.carb, fiber: data.daily.fiber,
