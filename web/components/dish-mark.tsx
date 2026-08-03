@@ -1,4 +1,4 @@
-﻿// 菜谱印章：取菜名首字 + 按名字哈希取色，替代千篇一律的图标
+// 菜谱印章：取菜名首字 + 按名字哈希取色，替代千篇一律的图标
 type P = { title: string; size?: number; className?: string };
 
 const TINTS = [

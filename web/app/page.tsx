@@ -16,6 +16,10 @@ type RecipeSummary = {
 };
 type MealRec = { meal: string; mealLabel: string; targetKcal: number; targetProtein: number; recommendations: RecipeSummary[] };
 type Plan = { bmr: number; tdee: number; daily: { kcal: number; protein: number; fat: number; carb: number; fiber: number }; meals: MealRec[] };
+type WeeklyPlan = {
+  days: { dayIndex: number; date: string; meals: MealRec[] }[];
+  shoppingList: { name: string; amount: number; unit: string; note: string }[];
+};
 
 const ACTIVITY_OPTIONS = [
   ["sedentary", "久坐"],
@@ -55,6 +59,8 @@ export default function HomePage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [plan, setPlan] = useState<Plan | null>(null);
+  const [weekly, setWeekly] = useState<WeeklyPlan | null>(null);
+  const [weeklyLoading, setWeeklyLoading] = useState(false);
 
   const toggle = (list: string[], set: (v: string[]) => void, v: string) =>
     set(list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
@@ -80,6 +86,30 @@ export default function HomePage() {
       setError("连不上后厨了，请稍后再试。");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const planBody = () => ({
+    sex, age: Number(age), height_cm: Number(height), weight_kg: Number(weight),
+    body_fat: bodyFat ? Number(bodyFat) : null,
+    activity_level: activity, goal,
+    allergies, preferences: [], preferred_cuisines: cuisines,
+  });
+
+  const loadWeekly = async () => {
+    setWeeklyLoading(true);
+    try {
+      const res = await fetch(`${API_URL}/api/weekly-plan`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(planBody()),
+      });
+      if (!res.ok) throw new Error();
+      setWeekly(await res.json());
+    } catch {
+      setWeekly(null);
+    } finally {
+      setWeeklyLoading(false);
     }
   };
 
@@ -159,9 +189,58 @@ export default function HomePage() {
           ))}
 
           <div className="btn-row">
+            <button className="btn" onClick={loadWeekly} disabled={weeklyLoading}>
+              {weeklyLoading ? "正在排一周…" : "生成一周餐单"}
+            </button>
             <a className="btn ghost" href="/recipes">浏览全部菜谱</a>
-            <button className="btn ghost" onClick={() => setPlan(null)}>重新填写</button>
+            <button className="btn ghost" onClick={() => { setPlan(null); setWeekly(null); }}>重新填写</button>
           </div>
+        </section>
+      )}
+
+      {weekly && !loading && (
+        <section className="section rise">
+          <div className="stall-head">
+            <h2>一周餐单</h2>
+            <span className="rule" />
+            <span className="hint">每天早 / 午 / 晚 / 加餐各一道，整周不重样</span>
+          </div>
+          {weekly.days.map((day) => (
+            <div className="week-day" key={day.dayIndex}>
+              <div className="week-day-title">第 {day.dayIndex} 天 · {day.date}</div>
+              <div className="week-grid">
+                {day.meals.map((m) => {
+                  const r = m.recommendations[0];
+                  if (!r) return null;
+                  return (
+                    <div className="week-cell" key={m.meal}>
+                      <div className="meal-lbl">{m.mealLabel}</div>
+                      <a href={`/recipes/${r.id}`}>{r.title}</a>
+                      <div className="kcal">{Math.round(r.nutrition.energyKCal)} kcal · 蛋白 {Math.round(r.nutrition.protein)} g</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+
+          <div className="stall-head" style={{ marginTop: 28 }}>
+            <h2>一周购物清单</h2>
+            <span className="rule" />
+            <span className="hint">共 {weekly.shoppingList.length} 项，按量采买</span>
+          </div>
+          <ul className="shop-list">
+            {weekly.shoppingList.map((item, i) => (
+              <li key={i}>
+                <span className="shop-box" />
+                <span>
+                  {item.name}
+                  {item.note ? <span className="muted">（{item.note}）</span> : null}
+                </span>
+                <span className="amt">{item.amount}{item.unit}</span>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

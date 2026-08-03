@@ -1,4 +1,7 @@
-# 推荐引擎：规则打分
+# 推荐引擎：规则打分 + 单日推荐 + 一周餐单
+MEAL_SPLIT = [("breakfast", "早餐", 0.30), ("lunch", "午餐", 0.35),
+              ("dinner", "晚餐", 0.25), ("snack", "加餐", 0.10)]
+
 GOAL_TAGS = {
     "cut": ["减脂", "低碳水", "低脂", "低卡", "高蛋白"],
     "bulk": ["增肌", "高蛋白", "优质脂肪"],
@@ -29,8 +32,7 @@ def recommend(recipes, daily_kcal: float, daily_protein: float, goal: str,
     meals_out = []
     chosen_ids = set()
     chosen_cuisines = []
-    for meal, label, split in [("breakfast", "早餐", 0.30), ("lunch", "午餐", 0.35),
-                               ("dinner", "晚餐", 0.25), ("snack", "加餐", 0.10)]:
+    for meal, label, split in MEAL_SPLIT:
         meal_kcal = daily_kcal * split
         meal_protein = daily_protein * split
         candidates = [r for r in recipes if meal in r.get("mealTypes", [])]
@@ -57,3 +59,60 @@ def recommend(recipes, daily_kcal: float, daily_protein: float, goal: str,
             "recommendations": meal_recs,
         })
     return meals_out
+
+def _pick_one(candidates, meal_kcal, meal_protein, goal, preferred_cuisines, chosen_cuisines, used):
+    scored = []
+    for r in candidates:
+        if r["id"] in used:
+            continue
+        s = score_recipe(r, meal_kcal, meal_protein, goal, preferred_cuisines, chosen_cuisines, used)
+        if s >= 0:
+            scored.append((s, r))
+    scored.sort(key=lambda x: -x[0])
+    return scored[0][1] if scored else None
+
+def recommend_week(recipes, daily_kcal: float, daily_protein: float, goal: str,
+                   allergies, preferred_cuisines, n_days: int = 7) -> dict:
+    """生成一周餐单：每天每餐 1 道，整周尽量不重复；并汇总购物清单。"""
+    used = set()
+    week = []
+    week_picks = []
+    for d in range(n_days):
+        chosen_cuisines = []
+        meals = []
+        day_picks = []
+        for meal, label, split in MEAL_SPLIT:
+            meal_kcal = daily_kcal * split
+            meal_protein = daily_protein * split
+            candidates = [r for r in recipes if meal in r.get("mealTypes", [])
+                          and not (set(r.get("allergens", [])) & set(allergies))]
+            pick = _pick_one(candidates, meal_kcal, meal_protein, goal, preferred_cuisines,
+                             chosen_cuisines, used)
+            if pick is None and candidates:
+                # 允许重复：热量最接近的兜底
+                pick = sorted(candidates, key=lambda r: abs(r["nutrition"].get("energyKCal", 0) - meal_kcal))[0]
+            meals.append({
+                "meal": meal, "mealLabel": label,
+                "targetKcal": round(meal_kcal), "targetProtein": round(meal_protein, 1),
+                "recommendations": [pick] if pick else [],
+            })
+            if pick:
+                used.add(pick["id"])
+                chosen_cuisines.append(pick.get("cuisine", ""))
+                day_picks.append(pick)
+        week.append(meals)
+        week_picks.extend(day_picks)
+
+    agg = {}
+    for r in week_picks:
+        servings = max(1, r.get("servings", 1))
+        for ing in r.get("ingredients", []):
+            key = (ing.get("name", ""), ing.get("unit", "g"), ing.get("note", ""))
+            amt = ing.get("amount", 0) / servings
+            if key not in agg:
+                agg[key] = {"name": key[0], "unit": key[1], "note": key[2], "amount": 0.0}
+            agg[key]["amount"] += amt
+    shopping = [{"name": v["name"], "unit": v["unit"], "note": v["note"],
+                 "amount": round(v["amount"], 1)} for v in agg.values()]
+    shopping.sort(key=lambda x: -x["amount"])
+    return {"days": week, "shoppingList": shopping}

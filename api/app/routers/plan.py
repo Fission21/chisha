@@ -1,10 +1,14 @@
+from datetime import date, timedelta
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.db import get_db
 from app import models
 from app.nutrition import daily_targets
-from app.recommend import recommend
-from app.schemas import PlanResponse, UserInput, RecipeSummary, NutritionOut, DailyTarget, MealRecommendation
+from app.recommend import recommend, recommend_week
+from app.schemas import (
+    PlanResponse, UserInput, RecipeSummary, NutritionOut, DailyTarget,
+    MealRecommendation, WeekDay, WeeklyPlanResponse, ShoppingItem,
+)
 
 router = APIRouter()
 
@@ -15,6 +19,11 @@ def recipe_dict(r: models.Recipe) -> dict:
         "summary": r.summary, "coverEmoji": r.cover_emoji,
         "mealTypes": list(r.meal_types or []), "tags": list(r.tags or []),
         "allergens": list(r.allergens or []),
+        "ingredients": [
+            {"name": i.name, "unit": i.unit, "amount": i.amount, "note": i.note,
+             "food": {"name": i.food_name, "source": i.food_source, "code": i.food_code}}
+            for i in r.ingredients
+        ],
         "nutrition": {
             "energyKCal": r.energy_kcal, "protein": r.protein, "fat": r.fat,
             "CHO": r.carbohydrate, "dietaryFiber": r.dietary_fiber, "sodium": r.sodium,
@@ -40,3 +49,24 @@ def create_plan(body: UserInput, db: Session = Depends(get_db)):
         ))
     return PlanResponse(bmr=targets["bmr"], tdee=targets["tdee"],
                         daily=DailyTarget(**targets["daily"]), meals=meal_out)
+
+@router.post("/api/weekly-plan", response_model=WeeklyPlanResponse)
+def create_weekly_plan(body: UserInput, db: Session = Depends(get_db)):
+    targets = daily_targets(body.sex, body.weight_kg, body.height_cm, body.age,
+                            body.activity_level, body.goal)
+    recipes = [recipe_dict(r) for r in db.query(models.Recipe).all()]
+    result = recommend_week(recipes, targets["daily"]["kcal"], targets["daily"]["protein"],
+                            body.goal, body.allergies, body.preferred_cuisines)
+    today = date.today()
+    days = []
+    for idx, meals in enumerate(result["days"]):
+        d = today + timedelta(days=idx)
+        days.append(WeekDay(
+            dayIndex=idx + 1,
+            date=d.isoformat(),
+            meals=[MealRecommendation(**m) for m in meals],
+        ))
+    return WeeklyPlanResponse(
+        days=days,
+        shoppingList=[ShoppingItem(**x) for x in result["shoppingList"]],
+    )

@@ -1,4 +1,4 @@
-﻿from app.nutrition import bmr_mifflin, daily_targets
+from app.nutrition import bmr_mifflin, daily_targets
 
 def test_bmr_mifflin_male():
     # 男 175cm / 70kg / 28岁: 10*70 + 6.25*175 - 5*28 + 5

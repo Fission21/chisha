@@ -1,4 +1,4 @@
-﻿# Design
+# Design
 
 <!-- impeccable:design-schema 1 -->
 

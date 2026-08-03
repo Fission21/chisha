@@ -1,4 +1,4 @@
-﻿from app.recommend import recommend, score_recipe
+from app.recommend import recommend, score_recipe
 
 def make_recipe(rid, meal, kcal, protein, cuisine="中餐", tags=None, allergens=None):
     return {

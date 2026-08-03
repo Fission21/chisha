@@ -56,6 +56,21 @@ class PlanResponse(BaseModel):
     daily: DailyTarget
     meals: List[MealRecommendation]
 
+class WeekDay(BaseModel):
+    dayIndex: int
+    date: str
+    meals: List[MealRecommendation]
+
+class ShoppingItem(BaseModel):
+    name: str
+    amount: float
+    unit: str
+    note: str = ""
+
+class WeeklyPlanResponse(BaseModel):
+    days: List[WeekDay]
+    shoppingList: List[ShoppingItem]
+
 class IngredientOut(BaseModel):
     name: str
     unit: str
