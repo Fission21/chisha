@@ -1,0 +1,40 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: chisha
+      POSTGRES_PASSWORD: chisha
+      POSTGRES_DB: chisha
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chisha -d chisha"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg2://chisha:chisha@db:5432/chisha
+      DATA_DIR: /app/data/processed
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+
+  web:
+    build: ./web
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+      API_URL_INTERNAL: http://api:8000
+    depends_on:
+      - api
+    ports:
+      - "3200:3000"
+
+volumes:
+  pgdata:

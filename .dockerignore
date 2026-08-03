@@ -1,0 +1,6 @@
+.git
+data/raw
+web/node_modules
+web/.next
+**/__pycache__
+.env

@@ -1,0 +1,7023 @@
+[
+ {
+  "id": "teriyaki-chicken-rice",
+  "title": "日式照烧鸡腿饭",
+  "titleEn": "Teriyaki Chicken Rice Bowl",
+  "cuisine": "日式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "甜咸适口的日式经典，减糖版照烧汁。",
+  "coverEmoji": "🍱",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "去骨",
+    "food": {
+     "name": "鸡腿",
+     "source": "中国食物成分表(第6版)",
+     "code": "091113"
+    },
+    "match": "food"
+   },
+   {
+    "name": "米饭",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "熟饭",
+    "food": {
+     "name": "稻米（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "012001x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "西兰花",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "西兰花 [绿菜花]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045217"
+    },
+    "match": "food"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "料酒",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "料酒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蜂蜜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蜂蜜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡腿去骨，皮朝下煎至金黄出油。",
+    "durationMin": 8,
+    "heat": "中小火"
+   },
+   {
+    "text": "酱油、料酒、蜂蜜、姜调成照烧汁，倒入小火收汁。",
+    "durationMin": 8,
+    "heat": "小火"
+   },
+   {
+    "text": "鸡腿切条铺在米饭上，淋汁，配焯水西兰花。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "蜂蜜比白糖热量更低且上色亮",
+   "鸡皮可去掉进一步减脂"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "日式"
+  ],
+  "allergens": [
+   "小麦"
+  ],
+  "nutrition": {
+   "energyKCal": 787.4,
+   "protein": 45.9,
+   "fat": 12.7,
+   "CHO": 124.1,
+   "dietaryFiber": 1.0,
+   "cholesterol": 148.5,
+   "vitaminA": 44.1,
+   "vitaminC": 45.0,
+   "vitaminE": 1.3,
+   "Ca": 53.4,
+   "P": 624.5,
+   "K": 657.5,
+   "Na": 151.2,
+   "Mg": 97.8,
+   "Fe": 5.1,
+   "Zn": 4.4,
+   "Se": 19.2,
+   "sodium": 710.7
+  }
+ },
+ {
+  "id": "bibimbap",
+  "title": "韩式拌饭",
+  "titleEn": "Bibimbap",
+  "cuisine": "韩式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 30,
+  "servings": 1,
+  "summary": "蔬菜丰富、营养均衡的韩国家常饭。",
+  "coverEmoji": "🍚",
+  "ingredients": [
+   {
+    "name": "米饭",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "熟饭",
+    "food": {
+     "name": "稻米（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "012001x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "牛肉末",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "牛肉（代表值，fat 9g）",
+     "source": "中国食物成分表(第6版)",
+     "code": "082101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "菠菜",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "",
+    "food": {
+     "name": "菠菜（鲜）[赤根菜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "胡萝卜",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "胡萝卜（红）[金笋,丁香萝卜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "041201"
+    },
+    "match": "food"
+   },
+   {
+    "name": "豆芽",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "绿豆芽",
+     "source": "中国食物成分表(第6版)",
+     "code": "042206"
+    },
+    "match": "food"
+   },
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "1个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "辣椒酱",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "韩式辣椒酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global-fuzzy"
+   },
+   {
+    "name": "香油",
+    "unit": "g",
+    "amount": 3.0,
+    "note": "",
+    "food": {
+     "name": "香油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛肉末炒熟；菠菜、豆芽分别焯水；胡萝卜切丝炒软。",
+    "durationMin": 12
+   },
+   {
+    "text": "煎一个太阳蛋。",
+    "durationMin": 3,
+    "heat": "中小火"
+   },
+   {
+    "text": "米饭装碗，四周码放配菜，中间放鸡蛋，加辣椒酱和香油拌匀。",
+    "durationMin": 4
+   }
+  ],
+  "tips": [
+   "配菜分开码放更有食欲",
+   "减脂期辣椒酱减半"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "韩式"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 799.1,
+   "protein": 37.7,
+   "fat": 16.1,
+   "CHO": 128.0,
+   "dietaryFiber": 3.5,
+   "cholesterol": 370.4,
+   "vitaminA": 448.2,
+   "vitaminC": 27.7,
+   "vitaminE": 3.0,
+   "Ca": 106.6,
+   "P": 429.8,
+   "K": 712.2,
+   "Na": 219.5,
+   "Mg": 119.9,
+   "Fe": 6.3,
+   "Zn": 7.2,
+   "Se": 14.8,
+   "sodium": 564.5
+  }
+ },
+ {
+  "id": "fresh-spring-rolls",
+  "title": "越南鲜虾春卷",
+  "titleEn": "Vietnamese Fresh Spring Rolls",
+  "cuisine": "越南",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "清爽低卡的东南亚经典，蘸酱吃更美味。",
+  "coverEmoji": "🥗",
+  "ingredients": [
+   {
+    "name": "越南春卷皮",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "2张",
+    "food": {
+     "name": "越南春卷皮",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "虾仁",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "虾仁(红)",
+     "source": "中国食物成分表(第6版)",
+     "code": "122204"
+    },
+    "match": "food"
+   },
+   {
+    "name": "生菜",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黄瓜",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "黄瓜（鲜）[胡瓜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043208"
+    },
+    "match": "food"
+   },
+   {
+    "name": "胡萝卜",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "胡萝卜（红）[金笋,丁香萝卜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "041201"
+    },
+    "match": "food"
+   },
+   {
+    "name": "薄荷",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "薄荷",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "米醋",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "米醋",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鱼露",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "鱼露",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "虾仁煮熟；蔬菜切丝。",
+    "durationMin": 6
+   },
+   {
+    "text": "春卷皮温水泡软，铺上生菜、蔬菜丝、虾仁和薄荷，卷紧。",
+    "durationMin": 8
+   },
+   {
+    "text": "米醋加鱼露和少许水调成蘸汁。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "春卷皮泡软即可，别泡太久",
+   "卷紧才不会散"
+  ],
+  "tags": [
+   "低卡",
+   "高蛋白",
+   "减脂",
+   "越南"
+  ],
+  "allergens": [
+   "虾"
+  ],
+  "nutrition": {
+   "energyKCal": 185.0,
+   "protein": 14.4,
+   "fat": 1.1,
+   "CHO": 30.1,
+   "dietaryFiber": 1.5,
+   "cholesterol": 0.0,
+   "vitaminA": 142.4,
+   "vitaminC": 9.7,
+   "vitaminE": 1.1,
+   "Ca": 52.6,
+   "P": 216.2,
+   "K": 231.4,
+   "Na": 305.9,
+   "Mg": 22.2,
+   "Fe": 1.3,
+   "Zn": 0.8,
+   "Se": 11.3,
+   "sodium": 625.5
+  }
+ },
+ {
+  "id": "thai-lime-shrimp-salad",
+  "title": "泰式青柠虾沙拉",
+  "titleEn": "Thai Lime Shrimp Salad",
+  "cuisine": "泰式",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "酸辣开胃的泰式沙拉，零油高蛋白。",
+  "coverEmoji": "🦐",
+  "ingredients": [
+   {
+    "name": "虾仁",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "虾仁(红)",
+     "source": "中国食物成分表(第6版)",
+     "code": "122204"
+    },
+    "match": "food"
+   },
+   {
+    "name": "青柠",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "青柠",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "黄瓜",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "黄瓜（鲜）[胡瓜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043208"
+    },
+    "match": "food"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "香菜",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "香菜（鲜）[芫荽]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045317"
+    },
+    "match": "food"
+   },
+   {
+    "name": "小米椒",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "小米椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鱼露",
+    "unit": "g",
+    "amount": 6.0,
+    "note": "",
+    "food": {
+     "name": "鱼露",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "白糖",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "白糖",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "虾仁焯熟过冰水，口感更弹。",
+    "durationMin": 4
+   },
+   {
+    "text": "黄瓜切片，洋葱切丝，香菜小米椒切碎。",
+    "durationMin": 4
+   },
+   {
+    "text": "青柠汁、鱼露、糖调成酱汁，与所有食材拌匀。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "虾仁过冰水是弹牙关键",
+   "小米椒按耐辣程度调整"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "泰式"
+  ],
+  "allergens": [
+   "虾"
+  ],
+  "nutrition": {
+   "energyKCal": 116.7,
+   "protein": 17.5,
+   "fat": 1.4,
+   "CHO": 10.2,
+   "dietaryFiber": 1.4,
+   "cholesterol": 0.0,
+   "vitaminA": 16.7,
+   "vitaminC": 14.4,
+   "vitaminE": 1.6,
+   "Ca": 71.0,
+   "P": 271.3,
+   "K": 299.9,
+   "Na": 418.2,
+   "Mg": 33.3,
+   "Fe": 1.8,
+   "Zn": 1.2,
+   "Se": 16.9,
+   "sodium": 778.8
+  }
+ },
+ {
+  "id": "miso-tofu-soup",
+  "title": "日式味噌豆腐汤",
+  "titleEn": "Miso Tofu Soup",
+  "cuisine": "日式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "暖胃低卡的日式汤，几分钟就好。",
+  "coverEmoji": "🍜",
+  "ingredients": [
+   {
+    "name": "豆腐",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "豆腐（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "031301x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "海带",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "海带（鲜）[江白菜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "052002"
+    },
+    "match": "food"
+   },
+   {
+    "name": "味噌",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "味噌",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   },
+   {
+    "name": "裙带菜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "裙带菜（干）[海芥菜,海木耳]",
+     "source": "中国食物成分表(第6版)",
+     "code": "052010"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "海带洗净切段，加水煮 5 分钟。",
+    "durationMin": 6,
+    "heat": "中火"
+   },
+   {
+    "text": "豆腐切块下锅煮 2 分钟。",
+    "durationMin": 2
+   },
+   {
+    "text": "关火，味噌用汤化开调入，撒葱花。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "味噌关火后再放，避免香气挥发",
+   "减盐味噌更适合减脂期"
+  ],
+  "tags": [
+   "低卡",
+   "植物蛋白",
+   "减脂",
+   "日式",
+   "快手"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "nutrition": {
+   "energyKCal": 128.7,
+   "protein": 10.0,
+   "fat": 6.3,
+   "CHO": 10.0,
+   "dietaryFiber": 2.5,
+   "cholesterol": 0.0,
+   "vitaminA": 12.8,
+   "vitaminC": 1.1,
+   "vitaminE": 6.2,
+   "Ca": 138.2,
+   "P": 103.0,
+   "K": 191.1,
+   "Na": 228.4,
+   "Mg": 98.0,
+   "Fe": 2.3,
+   "Zn": 0.8,
+   "Se": 4.3,
+   "sodium": 787.6
+  }
+ },
+ {
+  "id": "chicken-burrito",
+  "title": "墨西哥鸡肉卷",
+  "titleEn": "Chicken Burrito",
+  "cuisine": "墨西哥",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "墨西哥风味的高蛋白卷饼，饱腹又满足。",
+  "coverEmoji": "🌯",
+  "ingredients": [
+   {
+    "name": "全麦卷饼",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "1张",
+    "food": {
+     "name": "全麦卷饼",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 120.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黑豆（熟）",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "黑豆（干）[黑大豆]",
+     "source": "中国食物成分表(第6版)",
+     "code": "031102"
+    },
+    "match": "food"
+   },
+   {
+    "name": "彩椒",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "彩椒",
+     "source": "中国食物成分表(第6版)",
+     "code": "043125"
+    },
+    "match": "food"
+   },
+   {
+    "name": "玉米粒",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "玉米（鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "013101"
+    },
+    "match": "food"
+   },
+   {
+    "name": "希腊酸奶（脱脂）",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "希腊酸奶（脱脂）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "辣椒粉",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "辣椒粉",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "青柠",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "青柠",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸切条，用辣椒粉、盐腌 5 分钟，炒熟。",
+    "durationMin": 10,
+    "heat": "中大火"
+   },
+   {
+    "text": "彩椒炒软，与黑豆、玉米粒混合。",
+    "durationMin": 4,
+    "heat": "中火"
+   },
+   {
+    "text": "卷饼烘软，铺上所有馅料，淋酸奶挤青柠汁卷起。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "黑豆和玉米提供优质碳水",
+   "酸奶代替酸奶油更低脂"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "减脂",
+   "墨西哥"
+  ],
+  "allergens": [
+   "小麦",
+   "乳制品"
+  ],
+  "nutrition": {
+   "energyKCal": 603.5,
+   "protein": 57.4,
+   "fat": 15.6,
+   "CHO": 61.5,
+   "dietaryFiber": 10.5,
+   "cholesterol": 78.0,
+   "vitaminA": 38.1,
+   "vitaminC": 58.4,
+   "vitaminE": 10.2,
+   "Ca": 117.7,
+   "P": 513.8,
+   "K": 1322.3,
+   "Na": 59.1,
+   "Mg": 176.9,
+   "Fe": 5.4,
+   "Zn": 2.9,
+   "Se": 18.2,
+   "sodium": 430.9
+  }
+ },
+ {
+  "id": "salmon-poke-bowl",
+  "title": "三文鱼能量碗",
+  "titleEn": "Salmon Poke Bowl",
+  "cuisine": "日式",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "夏威夷风日式盖饭，优质脂肪 + 蛋白。",
+  "coverEmoji": "🍣",
+  "ingredients": [
+   {
+    "name": "米饭",
+    "unit": "g",
+    "amount": 130.0,
+    "note": "熟饭",
+    "food": {
+     "name": "稻米（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "012001x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "三文鱼",
+    "unit": "g",
+    "amount": 120.0,
+    "note": "",
+    "food": {
+     "name": "鲑鱼 [大马哈鱼、三文鱼]",
+     "source": "中国食物成分表(第6版)",
+     "code": "121228"
+    },
+    "match": "food"
+   },
+   {
+    "name": "牛油果",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "牛油果",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "黄瓜",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "黄瓜（鲜）[胡瓜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043208"
+    },
+    "match": "food"
+   },
+   {
+    "name": "海苔碎",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "海苔",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "香油",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "香油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "白芝麻",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "芝麻子（白）",
+     "source": "中国食物成分表(第6版)",
+     "code": "072016"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "三文鱼切丁，用酱油、香油腌 5 分钟。",
+    "durationMin": 6
+   },
+   {
+    "text": "黄瓜切片，牛油果切块。",
+    "durationMin": 3
+   },
+   {
+    "text": "米饭装碗，码上三文鱼、牛油果、黄瓜，撒海苔碎和白芝麻。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "三文鱼选刺身级更安全",
+   "减脂期米饭减到 100g"
+  ],
+  "tags": [
+   "高蛋白",
+   "优质脂肪",
+   "增肌",
+   "日式"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "nutrition": {
+   "energyKCal": 742.2,
+   "protein": 33.9,
+   "fat": 20.9,
+   "CHO": 108.0,
+   "dietaryFiber": 5.3,
+   "cholesterol": 81.6,
+   "vitaminA": 58.0,
+   "vitaminC": 4.5,
+   "vitaminE": 2.5,
+   "Ca": 50.4,
+   "P": 352.7,
+   "K": 635.1,
+   "Na": 81.4,
+   "Mg": 95.0,
+   "Fe": 2.3,
+   "Zn": 3.5,
+   "Se": 39.3,
+   "sodium": 536.3
+  }
+ },
+ {
+  "id": "coconut-curry-chicken",
+  "title": "椰香咖喱鸡",
+  "titleEn": "Coconut Curry Chicken",
+  "cuisine": "东南亚",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 30,
+  "servings": 2,
+  "summary": "香浓东南亚风味，用低脂椰奶控制热量。",
+  "coverEmoji": "🍛",
+  "ingredients": [
+   {
+    "name": "鸡腿肉",
+    "unit": "g",
+    "amount": 300.0,
+    "note": "去骨",
+    "food": {
+     "name": "鸡腿",
+     "source": "中国食物成分表(第6版)",
+     "code": "091113"
+    },
+    "match": "food"
+   },
+   {
+    "name": "椰奶（无糖）",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "椰奶（无糖）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "咖喱粉",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "咖喱粉",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "彩椒",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "彩椒",
+     "source": "中国食物成分表(第6版)",
+     "code": "043125"
+    },
+    "match": "food"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡腿肉切块，用咖喱粉腌 10 分钟。",
+    "durationMin": 10
+   },
+   {
+    "text": "热锅下油炒香洋葱姜末，下鸡肉煎至变色。",
+    "durationMin": 6,
+    "heat": "中火"
+   },
+   {
+    "text": "加椰奶和少许水炖 10 分钟，最后放彩椒收汁。",
+    "durationMin": 12,
+    "heat": "中小火"
+   }
+  ],
+  "tips": [
+   "椰奶选无糖淡椰奶热量低",
+   "可加西兰花增加蔬菜量"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "东南亚"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 375.2,
+   "protein": 33.0,
+   "fat": 26.0,
+   "CHO": 11.6,
+   "dietaryFiber": 3.7,
+   "cholesterol": 148.5,
+   "vitaminA": 60.8,
+   "vitaminC": 45.0,
+   "vitaminE": 0.7,
+   "Ca": 14.3,
+   "P": 433.5,
+   "K": 513.3,
+   "Na": 115.5,
+   "Mg": 46.5,
+   "Fe": 3.2,
+   "Zn": 1.8,
+   "Se": 15.0,
+   "sodium": 125.1
+  }
+ },
+ {
+  "id": "kimchi-tofu-stew",
+  "title": "韩式泡菜豆腐锅",
+  "titleEn": "Kimchi Tofu Stew",
+  "cuisine": "韩式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "暖身开胃的韩式小锅，植物蛋白为主。",
+  "coverEmoji": "🍲",
+  "ingredients": [
+   {
+    "name": "豆腐",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "豆腐（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "031301x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "泡菜",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "泡菜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "金针菇",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "金针菇（鲜）[智力菇]",
+     "source": "中国食物成分表(第6版)",
+     "code": "051008"
+    },
+    "match": "food"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "1个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "辣椒酱",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "韩式辣椒酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global-fuzzy"
+   },
+   {
+    "name": "香油",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "香油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "洋葱切丝炒软，下泡菜炒香。",
+    "durationMin": 5,
+    "heat": "中火"
+   },
+   {
+    "text": "加水、辣椒酱煮开，下豆腐和金针菇煮 5 分钟。",
+    "durationMin": 8,
+    "heat": "中火"
+   },
+   {
+    "text": "打入鸡蛋煮 2 分钟，淋香油出锅。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "泡菜自带咸味，少放盐",
+   "鸡蛋最后放是溏心的"
+  ],
+  "tags": [
+   "植物蛋白",
+   "低脂",
+   "减脂",
+   "韩式"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 329.4,
+   "protein": 24.0,
+   "fat": 17.9,
+   "CHO": 22.3,
+   "dietaryFiber": 4.4,
+   "cholesterol": 324.0,
+   "vitaminA": 130.9,
+   "vitaminC": 5.6,
+   "vitaminE": 13.1,
+   "Ca": 196.0,
+   "P": 326.1,
+   "K": 542.5,
+   "Na": 82.6,
+   "Mg": 108.1,
+   "Fe": 4.6,
+   "Zn": 2.0,
+   "Se": 10.7,
+   "sodium": 1318.6
+  }
+ },
+ {
+  "id": "chana-masala",
+  "title": "印度咖喱鹰嘴豆",
+  "titleEn": "Chana Masala",
+  "cuisine": "印度",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 2,
+  "summary": "高纤高蛋白的素食咖喱，饱腹又满足。",
+  "coverEmoji": "🍛",
+  "ingredients": [
+   {
+    "name": "鹰嘴豆（熟）",
+    "unit": "g",
+    "amount": 240.0,
+    "note": "",
+    "food": {
+     "name": "鹰嘴豆[桃豆]",
+     "source": "中国食物成分表(第6版)",
+     "code": "039401"
+    },
+    "match": "food"
+   },
+   {
+    "name": "番茄",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "番茄（整个，罐头）",
+     "source": "中国食物成分表(第6版)",
+     "code": "043106"
+    },
+    "match": "food"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "咖喱粉",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "咖喱粉",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 6.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "香菜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "香菜（鲜）[芫荽]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045317"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "洋葱、姜蒜炒香，加入咖喱粉炒出香味。",
+    "durationMin": 6,
+    "heat": "中火"
+   },
+   {
+    "text": "加入番茄丁炒软出汁。",
+    "durationMin": 5,
+    "heat": "中火"
+   },
+   {
+    "text": "下鹰嘴豆和少量水炖 10 分钟，撒香菜。",
+    "durationMin": 10,
+    "heat": "中小火"
+   }
+  ],
+  "tips": [
+   "咖喱粉炒过更香",
+   "可配杂粮饭或全麦饼"
+  ],
+  "tags": [
+   "植物蛋白",
+   "高纤",
+   "减脂",
+   "印度"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 471.6,
+   "protein": 28.9,
+   "fat": 9.4,
+   "CHO": 83.3,
+   "dietaryFiber": 17.5,
+   "cholesterol": 0.0,
+   "vitaminA": 108.4,
+   "vitaminC": 14.6,
+   "vitaminE": 15.7,
+   "Ca": 46.6,
+   "P": 223.7,
+   "K": 829.1,
+   "Na": 1246.9,
+   "Mg": 29.3,
+   "Fe": 252.8,
+   "Zn": 4.5,
+   "Se": 2.8,
+   "sodium": 1249.7
+  }
+ },
+ {
+  "id": "chawanmushi",
+  "title": "日式茶碗蒸",
+  "titleEn": "Chawanmushi",
+  "cuisine": "日式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "嫩滑如布丁的日式蒸蛋，高蛋白低脂。",
+  "coverEmoji": "🥚",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "2个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "高汤",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "海带水",
+    "food": {
+     "name": "海带（鲜）[江白菜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "052002"
+    },
+    "match": "food"
+   },
+   {
+    "name": "虾仁",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "虾仁(红)",
+     "source": "中国食物成分表(第6版)",
+     "code": "122204"
+    },
+    "match": "food"
+   },
+   {
+    "name": "香菇",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "香菇（鲜）[香蕈，冬菇]",
+     "source": "中国食物成分表(第6版)",
+     "code": "051019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡蛋打散，加入温热高汤和盐，过筛。",
+    "durationMin": 5
+   },
+   {
+    "text": "碗底放虾仁和香菇片，倒入蛋液。",
+    "durationMin": 3
+   },
+   {
+    "text": "盖保鲜膜，中火蒸 12 分钟至凝固。",
+    "durationMin": 12,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "蛋液过筛去泡更嫩滑",
+   "火不能太大，否则成蜂窝"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "日式"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "虾"
+  ],
+  "nutrition": {
+   "energyKCal": 178.1,
+   "protein": 18.5,
+   "fat": 9.0,
+   "CHO": 6.6,
+   "dietaryFiber": 1.4,
+   "cholesterol": 648.0,
+   "vitaminA": 255.0,
+   "vitaminC": 0.2,
+   "vitaminE": 4.1,
+   "Ca": 132.3,
+   "P": 220.7,
+   "K": 556.4,
+   "Na": 226.3,
+   "Mg": 52.4,
+   "Fe": 3.2,
+   "Zn": 1.4,
+   "Se": 32.0,
+   "sodium": 420.1
+  }
+ },
+ {
+  "id": "yakitori-skewers",
+  "title": "照烧鸡肉串",
+  "titleEn": "Chicken Yakitori Skewers",
+  "cuisine": "日式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "居酒屋风味在家做，高蛋白配菜小食。",
+  "coverEmoji": "🍢",
+  "ingredients": [
+   {
+    "name": "鸡腿肉",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "去骨",
+    "food": {
+     "name": "鸡腿",
+     "source": "中国食物成分表(第6版)",
+     "code": "091113"
+    },
+    "match": "food"
+   },
+   {
+    "name": "彩椒",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "",
+    "food": {
+     "name": "彩椒",
+     "source": "中国食物成分表(第6版)",
+     "code": "043125"
+    },
+    "match": "food"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "料酒",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "料酒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蜂蜜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蜂蜜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡腿切块，与彩椒洋葱间隔串成串。",
+    "durationMin": 8
+   },
+   {
+    "text": "酱油、料酒、蜂蜜、姜调照烧汁。",
+    "durationMin": 3
+   },
+   {
+    "text": "平底锅小火煎串，中途刷汁 2 次，至表面焦亮。",
+    "durationMin": 12,
+    "heat": "中小火"
+   }
+  ],
+  "tips": [
+   "竹签提前泡水防烤焦",
+   "刷汁勤一点更入味"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "日式"
+  ],
+  "allergens": [
+   "小麦"
+  ],
+  "nutrition": {
+   "energyKCal": 278.4,
+   "protein": 32.4,
+   "fat": 11.1,
+   "CHO": 12.7,
+   "dietaryFiber": 0.5,
+   "cholesterol": 148.5,
+   "vitaminA": 74.1,
+   "vitaminC": 65.8,
+   "vitaminE": 1.0,
+   "Ca": 16.4,
+   "P": 439.0,
+   "K": 571.8,
+   "Na": 117.0,
+   "Mg": 50.5,
+   "Fe": 3.3,
+   "Zn": 1.9,
+   "Se": 15.0,
+   "sodium": 676.5
+  }
+ },
+ {
+  "id": "pan-seared-chicken",
+  "title": "香煎鸡胸肉",
+  "titleEn": "Pan-Seared Chicken Breast",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "高蛋白低脂的入门健身餐，外焦里嫩，百搭主食和蔬菜。",
+  "coverEmoji": "🍗",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 4.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸肉横向片成两片，用盐、黑胡椒、蒜末腌 10 分钟。",
+    "durationMin": 10
+   },
+   {
+    "text": "平底锅中小火下橄榄油，放入鸡胸肉，每面煎 3-4 分钟至金黄。",
+    "durationMin": 8,
+    "heat": "中小火"
+   },
+   {
+    "text": "关火加盖焖 2 分钟，让肉汁锁住，再切块装盘。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "腌制时加 1 勺料酒更去腥",
+   "煎完静置几分钟再切，肉更嫩",
+   "搭配杂粮饭和西兰花就是完整一餐"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 185.7,
+   "protein": 37.3,
+   "fat": 6.9,
+   "CHO": 2.9,
+   "dietaryFiber": 0.2,
+   "cholesterol": 97.5,
+   "vitaminA": 4.5,
+   "vitaminC": 0.0,
+   "vitaminE": 0.6,
+   "Ca": 1.5,
+   "P": 255.0,
+   "K": 499.5,
+   "Na": 67.2,
+   "Mg": 42.0,
+   "Fe": 1.5,
+   "Zn": 0.4,
+   "Se": 17.6,
+   "sodium": 455.7
+  }
+ },
+ {
+  "id": "tomato-scrambled-eggs",
+  "title": "低油番茄炒蛋",
+  "titleEn": "Light Tomato Scrambled Eggs",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "国民下饭菜的低脂改良版，蛋白与番茄的经典搭配。",
+  "coverEmoji": "🍅",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "约3个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "番茄",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "番茄（整个，罐头）",
+     "source": "中国食物成分表(第6版)",
+     "code": "043106"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡蛋加少许盐打散；番茄切块。",
+    "durationMin": 3
+   },
+   {
+    "text": "热锅下油，倒入蛋液炒至半凝固盛出。",
+    "durationMin": 2,
+    "heat": "中火"
+   },
+   {
+    "text": "补少许油下番茄，炒出汁后回锅鸡蛋，加盐调味翻匀。",
+    "durationMin": 5,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "用不粘锅可以把油减到 3g",
+   "番茄炒出沙才好吃"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 253.8,
+   "protein": 23.7,
+   "fat": 19.1,
+   "CHO": 9.0,
+   "dietaryFiber": 1.7,
+   "cholesterol": 972.0,
+   "vitaminA": 578.0,
+   "vitaminC": 11.1,
+   "vitaminE": 5.1,
+   "Ca": 149.6,
+   "P": 240.3,
+   "K": 632.1,
+   "Na": 691.6,
+   "Mg": 39.9,
+   "Fe": 3.3,
+   "Zn": 1.8,
+   "Se": 22.0,
+   "sodium": 1079.1
+  }
+ },
+ {
+  "id": "broccoli-chicken",
+  "title": "西蓝花炒鸡胸",
+  "titleEn": "Stir-Fried Chicken with Broccoli",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "健身餐的黄金组合：优质蛋白 + 膳食纤维，口感清爽。",
+  "coverEmoji": "🥦",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 120.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "西兰花",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "西兰花 [绿菜花]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045217"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蚝油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蚝油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸切丁，加盐和少许料酒腌 5 分钟；西兰花掰小朵焯水 1 分钟。",
+    "durationMin": 6
+   },
+   {
+    "text": "热锅下油，爆香蒜片，下鸡丁炒至变色。",
+    "durationMin": 3,
+    "heat": "中大火"
+   },
+   {
+    "text": "加入西兰花和蚝油翻炒 2 分钟，调味出锅。",
+    "durationMin": 3,
+    "heat": "中大火"
+   }
+  ],
+  "tips": [
+   "西兰花先焯水能保持翠绿和脆度",
+   "鸡丁不要炒太久，避免发柴"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 205.6,
+   "protein": 36.9,
+   "fat": 8.5,
+   "CHO": 10.3,
+   "dietaryFiber": 0.1,
+   "cholesterol": 78.0,
+   "vitaminA": 29.6,
+   "vitaminC": 112.0,
+   "vitaminE": 2.0,
+   "Ca": 101.2,
+   "P": 326.0,
+   "K": 757.6,
+   "Na": 147.2,
+   "Mg": 77.6,
+   "Fe": 3.0,
+   "Zn": 1.2,
+   "Se": 15.0,
+   "sodium": 441.8
+  }
+ },
+ {
+  "id": "steamed-sea-bass",
+  "title": "清蒸鲈鱼",
+  "titleEn": "Steamed Sea Bass",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 2,
+  "summary": "少油高蛋白的优质鱼类做法，鲜嫩无腥味。",
+  "coverEmoji": "🐟",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "unit": "g",
+    "amount": 500.0,
+    "note": "",
+    "food": {
+     "name": "鲈鱼 [鲈花]",
+     "source": "中国食物成分表(第6版)",
+     "code": "121226"
+    },
+    "match": "food"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 3.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鲈鱼两面划刀，铺姜片葱段，水开后大火蒸 8 分钟。",
+    "durationMin": 10,
+    "heat": "大火"
+   },
+   {
+    "text": "倒掉蒸出的汤汁，去掉姜葱，重新铺葱丝。",
+    "durationMin": 2
+   },
+   {
+    "text": "淋上酱油，烧热橄榄油浇在葱丝上激香。",
+    "durationMin": 2,
+    "heat": "大火"
+   }
+  ],
+  "tips": [
+   "蒸鱼时间按鱼大小调整，500g 约 8 分钟",
+   "热油激香是灵魂"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "减脂"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "nutrition": {
+   "energyKCal": 269.5,
+   "protein": 47.1,
+   "fat": 10.1,
+   "CHO": 1.1,
+   "dietaryFiber": 0.2,
+   "cholesterol": 215.0,
+   "vitaminA": 53.5,
+   "vitaminC": 1.8,
+   "vitaminE": 1.9,
+   "Ca": 351.8,
+   "P": 608.2,
+   "K": 538.0,
+   "Na": 361.8,
+   "Mg": 96.0,
+   "Fe": 5.2,
+   "Zn": 7.1,
+   "Se": 82.8,
+   "sodium": 636.4
+  }
+ },
+ {
+  "id": "poached-shrimp",
+  "title": "白灼虾",
+  "titleEn": "Poached Shrimp",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 12,
+  "servings": 1,
+  "summary": "零油高蛋白的做法，最大程度保留虾的鲜甜。",
+  "coverEmoji": "🦐",
+  "ingredients": [
+   {
+    "name": "虾",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "海虾",
+     "source": "中国食物成分表(第6版)",
+     "code": "122107"
+    },
+    "match": "food"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   },
+   {
+    "name": "料酒",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "料酒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "水烧开，加入姜片、葱段和料酒。",
+    "durationMin": 3
+   },
+   {
+    "text": "下虾煮 2-3 分钟至变红卷曲，捞出。",
+    "durationMin": 3,
+    "heat": "大火"
+   },
+   {
+    "text": "搭配少许可选蘸汁（酱油+醋）食用。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "煮虾时间别超过 3 分钟，否则口感变老",
+   "蘸汁热量极低，放心用"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "增肌"
+  ],
+  "allergens": [
+   "虾"
+  ],
+  "nutrition": {
+   "energyKCal": 166.9,
+   "protein": 33.9,
+   "fat": 1.3,
+   "CHO": 4.4,
+   "dietaryFiber": 0.4,
+   "cholesterol": 234.0,
+   "vitaminA": 8.1,
+   "vitaminC": 2.4,
+   "vitaminE": 5.6,
+   "Ca": 301.4,
+   "P": 396.6,
+   "K": 493.9,
+   "Na": 606.6,
+   "Mg": 97.3,
+   "Fe": 6.2,
+   "Zn": 2.9,
+   "Se": 113.0,
+   "sodium": 611.6
+  }
+ },
+ {
+  "id": "kung-pao-chicken",
+  "title": "宫保鸡丁（低油版）",
+  "titleEn": "Kung Pao Chicken (Light)",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 2,
+  "summary": "经典川菜的低油改良，甜辣下饭但热量可控。",
+  "coverEmoji": "🌶️",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 250.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黄瓜",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "黄瓜（鲜）[胡瓜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043208"
+    },
+    "match": "food"
+   },
+   {
+    "name": "彩椒",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "彩椒",
+     "source": "中国食物成分表(第6版)",
+     "code": "043125"
+    },
+    "match": "food"
+   },
+   {
+    "name": "花生仁",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "花生仁（生）",
+     "source": "中国食物成分表(第6版)",
+     "code": "072004"
+    },
+    "match": "food"
+   },
+   {
+    "name": "干辣椒",
+    "unit": "g",
+    "amount": 3.0,
+    "note": "",
+    "food": {
+     "name": "干辣椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 6.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "米醋",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "米醋",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸切丁腌 10 分钟；黄瓜、彩椒切丁。",
+    "durationMin": 10
+   },
+   {
+    "text": "热锅下油，小火煸香干辣椒，下鸡丁炒至变色。",
+    "durationMin": 4,
+    "heat": "中小火"
+   },
+   {
+    "text": "加入彩椒黄瓜丁，倒入酱油和醋调成的汁，大火翻炒 2 分钟，撒花生仁出锅。",
+    "durationMin": 4,
+    "heat": "大火"
+   }
+  ],
+  "tips": [
+   "干辣椒提前用温水泡一下更出香不糊",
+   "花生仁最后放保持酥脆"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂"
+  ],
+  "allergens": [
+   "花生"
+  ],
+  "nutrition": {
+   "energyKCal": 233.3,
+   "protein": 34.8,
+   "fat": 10.2,
+   "CHO": 8.7,
+   "dietaryFiber": 1.2,
+   "cholesterol": 81.2,
+   "vitaminA": 41.0,
+   "vitaminC": 56.7,
+   "vitaminE": 3.4,
+   "Ca": 21.6,
+   "P": 269.9,
+   "K": 665.0,
+   "Na": 62.2,
+   "Mg": 69.3,
+   "Fe": 2.0,
+   "Zn": 0.8,
+   "Se": 15.3,
+   "sodium": 282.6
+  }
+ },
+ {
+  "id": "beef-pepper",
+  "title": "青椒牛柳",
+  "titleEn": "Stir-Fried Beef with Peppers",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "补铁补蛋白的牛肉小炒，青椒脆爽。",
+  "coverEmoji": "🥩",
+  "ingredients": [
+   {
+    "name": "牛肉",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "牛肉（代表值，fat 9g）",
+     "source": "中国食物成分表(第6版)",
+     "code": "082101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "青椒",
+    "unit": "g",
+    "amount": 120.0,
+    "note": "",
+    "food": {
+     "name": "辣椒（红，尖，干）",
+     "source": "中国食物成分表(第6版)",
+     "code": "043108"
+    },
+    "match": "food"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 6.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛肉逆纹切条，加酱油腌 10 分钟；青椒、洋葱切条。",
+    "durationMin": 10
+   },
+   {
+    "text": "热锅热油，大火快炒牛肉至变色盛出。",
+    "durationMin": 2,
+    "heat": "大火"
+   },
+   {
+    "text": "补少许油炒香洋葱青椒，回锅牛肉，加盐调味翻匀。",
+    "durationMin": 3,
+    "heat": "中大火"
+   }
+  ],
+  "tips": [
+   "牛肉逆纹切更嫩",
+   "大火快炒是牛肉不老的秘诀"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "补铁"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 625.7,
+   "protein": 49.5,
+   "fat": 33.6,
+   "CHO": 70.5,
+   "dietaryFiber": 50.6,
+   "cholesterol": 87.0,
+   "vitaminA": 5.5,
+   "vitaminC": 4.0,
+   "vitaminE": 11.6,
+   "Ca": 33.9,
+   "P": 650.1,
+   "K": 1693.5,
+   "Na": 103.1,
+   "Mg": 197.7,
+   "Fe": 10.2,
+   "Zn": 17.0,
+   "Se": 5.2,
+   "sodium": 543.4
+  }
+ },
+ {
+  "id": "steamed-egg-custard",
+  "title": "鸡蛋羹",
+  "titleEn": "Steamed Egg Custard",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "入口即化的高蛋白早餐，低油易消化。",
+  "coverEmoji": "🥚",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "约2个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "水",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "水",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 3.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡蛋加盐打散，加入 1.5 倍温水搅匀，过筛去泡。",
+    "durationMin": 5
+   },
+   {
+    "text": "盖保鲜膜扎孔，水开后中火蒸 10 分钟。",
+    "durationMin": 10,
+    "heat": "中火"
+   },
+   {
+    "text": "出锅撒葱花，淋少许生抽。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "蛋液与水的比例 1:1.5 最嫩",
+   "过筛和盖膜能避免蜂窝"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "增肌"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 139.8,
+   "protein": 13.1,
+   "fat": 8.6,
+   "CHO": 2.5,
+   "dietaryFiber": 0.0,
+   "cholesterol": 648.0,
+   "vitaminA": 257.1,
+   "vitaminC": 0.6,
+   "vitaminE": 1.2,
+   "Ca": 58.2,
+   "P": 130.8,
+   "K": 158.3,
+   "Na": 131.8,
+   "Mg": 10.5,
+   "Fe": 1.6,
+   "Zn": 0.9,
+   "Se": 14.0,
+   "sodium": 325.6
+  }
+ },
+ {
+  "id": "mixed-grain-rice",
+  "title": "杂粮饭",
+  "titleEn": "Mixed Grain Rice",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 30,
+  "servings": 2,
+  "summary": "低 GI 主食，饱腹感强，适合减脂期代替白米饭。",
+  "coverEmoji": "🍚",
+  "ingredients": [
+   {
+    "name": "糙米",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "糙米",
+     "source": "中国食物成分表(第6版)",
+     "code": "012216"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黑米",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "黑米",
+     "source": "中国食物成分表(第6版)",
+     "code": "012212"
+    },
+    "match": "food"
+   },
+   {
+    "name": "燕麦",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "燕麦片",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "水",
+    "unit": "g",
+    "amount": 320.0,
+    "note": "",
+    "food": {
+     "name": "水",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "糙米、黑米提前浸泡 30 分钟。",
+    "durationMin": 30
+   },
+   {
+    "text": "加入燕麦片和适量水，按煮饭键煮熟。",
+    "durationMin": 25
+   }
+  ],
+  "tips": [
+   "杂粮提前浸泡口感更软",
+   "可一次多煮分装冷冻，吃前复热"
+  ],
+  "tags": [
+   "低碳水",
+   "低GI",
+   "减脂",
+   "增肌",
+   "快手"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 246.3,
+   "protein": 6.7,
+   "fat": 2.3,
+   "CHO": 51.1,
+   "dietaryFiber": 3.2,
+   "cholesterol": 0.0,
+   "vitaminA": 0.0,
+   "vitaminC": 0.0,
+   "vitaminE": 0.6,
+   "Ca": 6.4,
+   "P": 192.8,
+   "K": 143.2,
+   "Na": 3.6,
+   "Mg": 78.6,
+   "Fe": 1.0,
+   "Zn": 1.5,
+   "Se": 0.6,
+   "sodium": 3.8
+  }
+ },
+ {
+  "id": "seaweed-egg-soup",
+  "title": "紫菜蛋花汤",
+  "titleEn": "Seaweed Egg Drop Soup",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "五分钟搞定的低卡汤品，补碘补蛋白。",
+  "coverEmoji": "🍲",
+  "ingredients": [
+   {
+    "name": "紫菜",
+    "unit": "g",
+    "amount": 3.0,
+    "note": "",
+    "food": {
+     "name": "紫菜（干）",
+     "source": "中国食物成分表(第6版)",
+     "code": "052008"
+    },
+    "match": "food"
+   },
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "1个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "虾皮",
+    "unit": "g",
+    "amount": 3.0,
+    "note": "",
+    "food": {
+     "name": "虾皮",
+     "source": "中国食物成分表(第6版)",
+     "code": "122205"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "香油",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "香油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "水烧开，放入紫菜和虾皮。",
+    "durationMin": 3
+   },
+   {
+    "text": "淋入打散的蛋液，用筷子轻轻搅动成蛋花。",
+    "durationMin": 1,
+    "heat": "中火"
+   },
+   {
+    "text": "加盐调味，滴几滴香油出锅。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "蛋液沿锅边淋入蛋花更漂亮",
+   "虾皮自带咸味，盐要少放"
+  ],
+  "tags": [
+   "低卡",
+   "高蛋白",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "虾"
+  ],
+  "nutrition": {
+   "energyKCal": 90.4,
+   "protein": 8.3,
+   "fat": 5.4,
+   "CHO": 2.6,
+   "dietaryFiber": 0.6,
+   "cholesterol": 336.8,
+   "vitaminA": 131.5,
+   "vitaminC": 0.1,
+   "vitaminE": 0.7,
+   "Ca": 65.7,
+   "P": 93.0,
+   "K": 149.4,
+   "Na": 238.8,
+   "Mg": 16.1,
+   "Fe": 2.6,
+   "Zn": 0.6,
+   "Se": 9.4,
+   "sodium": 432.6
+  }
+ },
+ {
+  "id": "cold-chicken-salad",
+  "title": "凉拌鸡丝",
+  "titleEn": "Cold Shredded Chicken",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "清爽开胃的高蛋白凉菜，夏天减脂首选。",
+  "coverEmoji": "🥗",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黄瓜",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "黄瓜（鲜）[胡瓜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043208"
+    },
+    "match": "food"
+   },
+   {
+    "name": "胡萝卜",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "胡萝卜（红）[金笋,丁香萝卜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "041201"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "米醋",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "米醋",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 6.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "香油",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "香油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸煮熟放凉，撕成细丝。",
+    "durationMin": 12
+   },
+   {
+    "text": "黄瓜、胡萝卜切丝，蒜切末。",
+    "durationMin": 4
+   },
+   {
+    "text": "所有材料加醋、酱油、香油拌匀。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "鸡胸冷水下锅煮更嫩",
+   "可加少许辣椒油增香"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 242.2,
+   "protein": 39.0,
+   "fat": 5.2,
+   "CHO": 10.2,
+   "dietaryFiber": 1.2,
+   "cholesterol": 97.5,
+   "vitaminA": 184.5,
+   "vitaminC": 15.5,
+   "vitaminE": 1.3,
+   "Ca": 41.5,
+   "P": 292.5,
+   "K": 696.5,
+   "Na": 107.8,
+   "Mg": 64.0,
+   "Fe": 2.5,
+   "Zn": 0.7,
+   "Se": 18.3,
+   "sodium": 438.3
+  }
+ },
+ {
+  "id": "braised-beef",
+  "title": "卤牛肉",
+  "titleEn": "Braised Beef",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 120,
+  "servings": 4,
+  "summary": "备餐神器，切片即食，高蛋白低脂。",
+  "coverEmoji": "🥩",
+  "ingredients": [
+   {
+    "name": "牛腱子",
+    "unit": "g",
+    "amount": 500.0,
+    "note": "",
+    "food": {
+     "name": "牛肉（代表值，fat 9g）",
+     "source": "中国食物成分表(第6版)",
+     "code": "082101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "料酒",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "料酒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "八角",
+    "unit": "g",
+    "amount": 3.0,
+    "note": "",
+    "food": {
+     "name": "八角",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "桂皮",
+    "unit": "g",
+    "amount": 3.0,
+    "note": "",
+    "food": {
+     "name": "桂皮",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛腱冷水下锅焯水去浮沫。",
+    "durationMin": 8
+   },
+   {
+    "text": "放入所有调料，加水没过牛肉，大火烧开转小火卤 90 分钟。",
+    "durationMin": 90,
+    "heat": "小火"
+   },
+   {
+    "text": "关火浸泡 30 分钟入味，凉后切片。",
+    "durationMin": 30
+   }
+  ],
+  "tips": [
+   "卤好后在汤汁里浸泡更入味",
+   "分装冷冻，随吃随取"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "备餐"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 213.3,
+   "protein": 25.9,
+   "fat": 11.1,
+   "CHO": 2.7,
+   "dietaryFiber": 0.7,
+   "cholesterol": 72.5,
+   "vitaminA": 7.8,
+   "vitaminC": 1.2,
+   "vitaminE": 0.9,
+   "Ca": 10.9,
+   "P": 229.7,
+   "K": 283.2,
+   "Na": 81.2,
+   "Mg": 30.0,
+   "Fe": 2.4,
+   "Zn": 5.9,
+   "Se": 4.0,
+   "sodium": 497.1
+  }
+ },
+ {
+  "id": "garlic-lettuce",
+  "title": "蒜蓉生菜",
+  "titleEn": "Garlic Lettuce",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 8,
+  "servings": 1,
+  "summary": "低卡蔬菜，蒜香浓郁，搭配任何主菜。",
+  "coverEmoji": "🥬",
+  "ingredients": [
+   {
+    "name": "生菜",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 4.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蚝油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蚝油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "生菜洗净，蒜切末。",
+    "durationMin": 2
+   },
+   {
+    "text": "热锅下油爆香蒜末，下生菜大火快炒 1 分钟。",
+    "durationMin": 2,
+    "heat": "大火"
+   },
+   {
+    "text": "加蚝油翻炒均匀立即出锅。",
+    "durationMin": 1,
+    "heat": "大火"
+   }
+  ],
+  "tips": [
+   "生菜大火快炒才脆",
+   "蚝油自带咸味，无需再加盐"
+  ],
+  "tags": [
+   "低卡",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 38.5,
+   "protein": 3.8,
+   "fat": 4.8,
+   "CHO": 5.3,
+   "dietaryFiber": 0.2,
+   "cholesterol": 0.0,
+   "vitaminA": 4.0,
+   "vitaminC": 0.0,
+   "vitaminE": 0.0,
+   "Ca": 24.0,
+   "P": 182.0,
+   "K": 32.2,
+   "Na": 14.0,
+   "Mg": 0.4,
+   "Fe": 0.3,
+   "Zn": 0.1,
+   "Se": 0.0,
+   "sodium": 115.4
+  }
+ },
+ {
+  "id": "mushroom-bokchoy",
+  "title": "香菇油菜",
+  "titleEn": "Mushroom Bok Choy",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "低卡高纤的经典素菜，香菇增鲜。",
+  "coverEmoji": "🍄",
+  "ingredients": [
+   {
+    "name": "油菜",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "油菜（黑）",
+     "source": "中国食物成分表(第6版)",
+     "code": "045113"
+    },
+    "match": "food"
+   },
+   {
+    "name": "香菇",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "香菇（鲜）[香蕈，冬菇]",
+     "source": "中国食物成分表(第6版)",
+     "code": "051019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 4.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蚝油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蚝油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "油菜洗净，香菇切片。",
+    "durationMin": 3
+   },
+   {
+    "text": "热锅下油爆香蒜片，下香菇炒软。",
+    "durationMin": 3,
+    "heat": "中火"
+   },
+   {
+    "text": "下油菜大火翻炒 2 分钟，加蚝油调味。",
+    "durationMin": 2,
+    "heat": "大火"
+   }
+  ],
+  "tips": [
+   "油菜梗和叶分开下锅，熟度均匀",
+   "香菇先煸出香味更鲜"
+  ],
+  "tags": [
+   "低卡",
+   "高纤",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 68.8,
+   "protein": 5.7,
+   "fat": 4.7,
+   "CHO": 12.1,
+   "dietaryFiber": 4.5,
+   "cholesterol": 0.0,
+   "vitaminA": 244.0,
+   "vitaminC": 48.8,
+   "vitaminE": 1.9,
+   "Ca": 383.6,
+   "P": 110.4,
+   "K": 302.0,
+   "Na": 198.7,
+   "Mg": 76.8,
+   "Fe": 12.1,
+   "Zn": 3.1,
+   "Se": 2.1,
+   "sodium": 299.6
+  }
+ },
+ {
+  "id": "chicken-soba",
+  "title": "鸡丝荞麦面",
+  "titleEn": "Chicken Soba Noodles",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "低 GI 主食 + 高蛋白的组合，清爽不油腻。",
+  "coverEmoji": "🍜",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "荞麦面",
+     "source": "中国食物成分表(第6版)",
+     "code": "019010"
+    },
+    "match": "food"
+   },
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黄瓜",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "",
+    "food": {
+     "name": "黄瓜（鲜）[胡瓜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043208"
+    },
+    "match": "food"
+   },
+   {
+    "name": "胡萝卜",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "胡萝卜（红）[金笋,丁香萝卜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "041201"
+    },
+    "match": "food"
+   },
+   {
+    "name": "酱油",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "酱油",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "米醋",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "米醋",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "荞麦面煮熟过凉水；鸡胸煮熟撕丝。",
+    "durationMin": 8
+   },
+   {
+    "text": "黄瓜胡萝卜切丝，蒜切末。",
+    "durationMin": 4
+   },
+   {
+    "text": "面条装碗，码上鸡丝和蔬菜，淋上酱油醋蒜汁拌匀。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "过凉水面条更劲道",
+   "减脂期可把面量减到 60g 增加蔬菜"
+  ],
+  "tags": [
+   "高蛋白",
+   "低GI",
+   "减脂",
+   "增肌"
+  ],
+  "allergens": [
+   "小麦"
+  ],
+  "nutrition": {
+   "energyKCal": 429.4,
+   "protein": 35.6,
+   "fat": 4.4,
+   "CHO": 64.2,
+   "dietaryFiber": 0.8,
+   "cholesterol": 65.0,
+   "vitaminA": 147.0,
+   "vitaminC": 10.6,
+   "vitaminE": 5.1,
+   "Ca": 85.0,
+   "P": 389.6,
+   "K": 713.4,
+   "Na": 77.0,
+   "Mg": 163.4,
+   "Fe": 7.3,
+   "Zn": 2.0,
+   "Se": 14.0,
+   "sodium": 627.3
+  }
+ },
+ {
+  "id": "melon-shrimp-soup",
+  "title": "冬瓜虾仁汤",
+  "titleEn": "Winter Melon Shrimp Soup",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "低卡高蛋白的清爽汤，冬瓜利尿消水肿。",
+  "coverEmoji": "🍵",
+  "ingredients": [
+   {
+    "name": "冬瓜",
+    "unit": "g",
+    "amount": 300.0,
+    "note": "",
+    "food": {
+     "name": "冬瓜",
+     "source": "中国食物成分表(第6版)",
+     "code": "043221"
+    },
+    "match": "food"
+   },
+   {
+    "name": "虾仁",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "虾仁(红)",
+     "source": "中国食物成分表(第6版)",
+     "code": "122204"
+    },
+    "match": "food"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "冬瓜去皮切块，虾仁去虾线。",
+    "durationMin": 5
+   },
+   {
+    "text": "水开下姜片和冬瓜煮 5 分钟。",
+    "durationMin": 6,
+    "heat": "中火"
+   },
+   {
+    "text": "下虾仁煮 2 分钟至变色，加盐撒葱花。",
+    "durationMin": 3,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "虾仁最后放，口感更嫩",
+   "冬瓜煮到半透明即可"
+  ],
+  "tags": [
+   "低卡",
+   "高蛋白",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "虾"
+  ],
+  "nutrition": {
+   "energyKCal": 72.0,
+   "protein": 9.4,
+   "fat": 1.2,
+   "CHO": 8.0,
+   "dietaryFiber": 0.2,
+   "cholesterol": 0.0,
+   "vitaminA": 4.2,
+   "vitaminC": 49.2,
+   "vitaminE": 0.7,
+   "Ca": 59.4,
+   "P": 161.2,
+   "K": 271.3,
+   "Na": 227.3,
+   "Mg": 40.3,
+   "Fe": 0.9,
+   "Zn": 0.8,
+   "Se": 8.8,
+   "sodium": 614.9
+  }
+ },
+ {
+  "id": "mapo-tofu",
+  "title": "轻辣麻婆豆腐",
+  "titleEn": "Mapo Tofu (Light)",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 2,
+  "summary": "植物蛋白为主的减脂下饭菜，低油版。",
+  "coverEmoji": "🌶️",
+  "ingredients": [
+   {
+    "name": "豆腐",
+    "unit": "g",
+    "amount": 300.0,
+    "note": "",
+    "food": {
+     "name": "豆腐（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "031301x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "牛肉末",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "牛肉（代表值，fat 9g）",
+     "source": "中国食物成分表(第6版)",
+     "code": "082101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "豆瓣酱",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "豆瓣酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 6.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "花椒粉",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "花椒粉",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "豆腐切块焯水去豆腥。",
+    "durationMin": 4
+   },
+   {
+    "text": "热锅下油，炒香豆瓣酱和蒜末，下牛肉末炒散。",
+    "durationMin": 4,
+    "heat": "中小火"
+   },
+   {
+    "text": "加半碗水烧开，下豆腐煮 5 分钟，勾薄芡撒葱花花椒粉。",
+    "durationMin": 8,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "豆瓣酱少放控制钠",
+   "豆腐用北豆腐不易碎"
+  ],
+  "tags": [
+   "植物蛋白",
+   "低脂",
+   "减脂"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "nutrition": {
+   "energyKCal": 183.9,
+   "protein": 15.9,
+   "fat": 13.6,
+   "CHO": 8.0,
+   "dietaryFiber": 0.4,
+   "cholesterol": 14.5,
+   "vitaminA": 4.2,
+   "vitaminC": 1.1,
+   "vitaminE": 8.9,
+   "Ca": 121.8,
+   "P": 169.8,
+   "K": 237.2,
+   "Na": 24.9,
+   "Mg": 67.9,
+   "Fe": 2.3,
+   "Zn": 2.0,
+   "Se": 3.1,
+   "sodium": 186.1
+  }
+ },
+ {
+  "id": "steamed-pumpkin",
+  "title": "蒸南瓜",
+  "titleEn": "Steamed Pumpkin",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "天然甜味的粗粮主食替代，低卡饱腹。",
+  "coverEmoji": "🎃",
+  "ingredients": [
+   {
+    "name": "南瓜",
+    "unit": "g",
+    "amount": 300.0,
+    "note": "",
+    "food": {
+     "name": "南瓜（鲜）[倭瓜，番瓜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043213"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "南瓜去皮切块。",
+    "durationMin": 3
+   },
+   {
+    "text": "水开后上锅蒸 12 分钟至软糯。",
+    "durationMin": 12,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "南瓜本身够甜，无需加糖",
+   "连皮蒸更保留营养"
+  ],
+  "tags": [
+   "低碳水",
+   "低卡",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 69.0,
+   "protein": 2.1,
+   "fat": 0.3,
+   "CHO": 15.9,
+   "dietaryFiber": 2.4,
+   "cholesterol": 0.0,
+   "vitaminA": 222.0,
+   "vitaminC": 24.0,
+   "vitaminE": 1.1,
+   "Ca": 48.0,
+   "P": 72.0,
+   "K": 435.0,
+   "Na": 2.4,
+   "Mg": 24.0,
+   "Fe": 1.2,
+   "Zn": 0.4,
+   "Se": 1.4,
+   "sodium": 2.4
+  }
+ },
+ {
+  "id": "woodear-eggs",
+  "title": "木耳炒蛋",
+  "titleEn": "Scrambled Eggs with Wood Ear",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "高蛋白 + 膳食纤维的快手小炒。",
+  "coverEmoji": "🍳",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "2个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "木耳",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "木耳（干）[黑木耳，云耳]",
+     "source": "中国食物成分表(第6版)",
+     "code": "051013"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黄瓜",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "黄瓜（鲜）[胡瓜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043208"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "木耳撕小朵，黄瓜切片，鸡蛋打散。",
+    "durationMin": 4
+   },
+   {
+    "text": "热锅下油，蛋液炒至凝固盛出。",
+    "durationMin": 2,
+    "heat": "中火"
+   },
+   {
+    "text": "下木耳黄瓜翻炒 2 分钟，回锅鸡蛋加盐调味。",
+    "durationMin": 3,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "干木耳需提前泡发，泡发后称重",
+   "木耳遇热会爆，注意防溅"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 416.8,
+   "protein": 25.8,
+   "fat": 15.3,
+   "CHO": 70.3,
+   "dietaryFiber": 30.3,
+   "cholesterol": 648.0,
+   "vitaminA": 269.4,
+   "vitaminC": 7.2,
+   "vitaminE": 12.9,
+   "Ca": 322.2,
+   "P": 441.2,
+   "K": 992.6,
+   "Na": 183.9,
+   "Mg": 174.0,
+   "Fe": 99.4,
+   "Zn": 4.2,
+   "Se": 18.0,
+   "sodium": 571.5
+  }
+ },
+ {
+  "id": "yam-rib-soup",
+  "title": "山药排骨汤",
+  "titleEn": "Yam and Pork Rib Soup",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 90,
+  "servings": 2,
+  "summary": "滋补汤品，去油后热量适中，营养全面。",
+  "coverEmoji": "🍲",
+  "ingredients": [
+   {
+    "name": "猪小排",
+    "unit": "g",
+    "amount": 300.0,
+    "note": "",
+    "food": {
+     "name": "猪小排（杜长大猪）",
+     "source": "中国食物成分表(第6版)",
+     "code": "081131"
+    },
+    "match": "food"
+   },
+   {
+    "name": "山药",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "山药（鲜）[薯蓣，大薯]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047104"
+    },
+    "match": "food"
+   },
+   {
+    "name": "姜",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "姜（鲜）[黄姜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "047301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "葱",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "葱（小葱，鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "044205"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "排骨冷水下锅焯水，捞出洗净。",
+    "durationMin": 8
+   },
+   {
+    "text": "排骨加姜片和足量水，小火炖 60 分钟。",
+    "durationMin": 60,
+    "heat": "小火"
+   },
+   {
+    "text": "加入山药再炖 20 分钟，加盐撒葱花。",
+    "durationMin": 20,
+    "heat": "小火"
+   }
+  ],
+  "tips": [
+   "撇去浮油热量更低",
+   "山药去皮戴手套防痒"
+  ],
+  "tags": [
+   "高蛋白",
+   "滋补",
+   "增肌"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 503.2,
+   "protein": 27.2,
+   "fat": 38.2,
+   "CHO": 13.2,
+   "dietaryFiber": 1.0,
+   "cholesterol": 180.0,
+   "vitaminA": 17.7,
+   "vitaminC": 6.2,
+   "vitaminE": 1.0,
+   "Ca": 42.0,
+   "P": 188.1,
+   "K": 567.9,
+   "Na": 113.8,
+   "Mg": 48.6,
+   "Fe": 2.1,
+   "Zn": 3.9,
+   "Se": 13.3,
+   "sodium": 501.3
+  }
+ },
+ {
+  "id": "redbean-porridge",
+  "title": "红豆薏米粥",
+  "titleEn": "Red Bean and Coix Porridge",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 60,
+  "servings": 2,
+  "summary": "经典祛湿杂粮粥，低 GI 早餐。",
+  "coverEmoji": "🥣",
+  "ingredients": [
+   {
+    "name": "红豆",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "赤小豆（干）[小豆,红小豆]",
+     "source": "中国食物成分表(第6版)",
+     "code": "033101"
+    },
+    "match": "food"
+   },
+   {
+    "name": "薏米",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "薏米 [薏仁米，苡米]",
+     "source": "中国食物成分表(第6版)",
+     "code": "019008"
+    },
+    "match": "food"
+   },
+   {
+    "name": "水",
+    "unit": "g",
+    "amount": 800.0,
+    "note": "",
+    "food": {
+     "name": "水",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "红豆、薏米提前浸泡 2 小时。",
+    "durationMin": 120
+   },
+   {
+    "text": "加足量水，大火烧开转小火煮 50 分钟至软烂。",
+    "durationMin": 50,
+    "heat": "小火"
+   }
+  ],
+  "tips": [
+   "提前浸泡缩短煮制时间",
+   "喜欢甜味可加少许代糖"
+  ],
+  "tags": [
+   "低GI",
+   "减脂",
+   "植物蛋白"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 171.2,
+   "protein": 8.2,
+   "fat": 1.0,
+   "CHO": 33.6,
+   "dietaryFiber": 2.4,
+   "cholesterol": 0.0,
+   "vitaminA": 1.8,
+   "vitaminC": 0.0,
+   "vitaminE": 4.1,
+   "Ca": 29.0,
+   "P": 130.5,
+   "K": 274.5,
+   "Na": 1.5,
+   "Mg": 56.5,
+   "Fe": 2.8,
+   "Zn": 1.0,
+   "Se": 1.7,
+   "sodium": 1.5
+  }
+ },
+ {
+  "id": "protein-shake",
+  "title": "乳清蛋白香蕉奶昔",
+  "titleEn": "Whey Banana Shake",
+  "cuisine": "西式",
+  "mealTypes": [
+   "snack"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 5,
+  "servings": 1,
+  "summary": "训练后 5 分钟搞定的高蛋白加餐，方便快捷。",
+  "coverEmoji": "🥤",
+  "ingredients": [
+   {
+    "name": "乳清蛋白粉",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "乳清蛋白粉",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "香蕉",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "香蕉（红皮）",
+     "source": "中国食物成分表(第6版)",
+     "code": "065031"
+    },
+    "match": "food"
+   },
+   {
+    "name": "无糖杏仁奶",
+    "unit": "g",
+    "amount": 250.0,
+    "note": "",
+    "food": {
+     "name": "无糖杏仁奶",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "奇亚籽",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "奇亚籽",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "所有材料放入搅拌机。",
+    "durationMin": 1
+   },
+   {
+    "text": "搅打 30 秒至顺滑。",
+    "durationMin": 1
+   },
+   {
+    "text": "倒入杯中，撒奇亚籽饮用。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "香蕉冷冻后口感更像奶昔",
+   "乳清蛋白选原味更百搭"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "nutrition": {
+   "energyKCal": 267.8,
+   "protein": 27.4,
+   "fat": 6.3,
+   "CHO": 26.1,
+   "dietaryFiber": 2.2,
+   "cholesterol": 0.0,
+   "vitaminA": 3.0,
+   "vitaminC": 4.9,
+   "vitaminE": 0.2,
+   "Ca": 9.0,
+   "P": 17.0,
+   "K": 208.0,
+   "Na": 3.2,
+   "Mg": 33.0,
+   "Fe": 0.2,
+   "Zn": 0.0,
+   "Se": 0.1,
+   "sodium": 274.0
+  }
+ },
+ {
+  "id": "greek-yogurt-nuts",
+  "title": "希腊酸奶坚果杯",
+  "titleEn": "Greek Yogurt with Nuts",
+  "cuisine": "西式",
+  "mealTypes": [
+   "snack"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 3,
+  "servings": 1,
+  "summary": "高蛋白高纤的小加餐，饱腹不罪恶。",
+  "coverEmoji": "🥣",
+  "ingredients": [
+   {
+    "name": "希腊酸奶（脱脂）",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "希腊酸奶（脱脂）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "核桃",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "核桃（鲜）",
+     "source": "中国食物成分表(第6版)",
+     "code": "071003"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蓝莓",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "蓝莓",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蜂蜜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蜂蜜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "酸奶倒入碗中。",
+    "durationMin": 1
+   },
+   {
+    "text": "撒上核桃碎和蓝莓。",
+    "durationMin": 1
+   },
+   {
+    "text": "淋少许蜂蜜。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "坚果先称重，别一把抓",
+   "蜂蜜可换代糖控热量"
+  ],
+  "tags": [
+   "高蛋白",
+   "优质脂肪",
+   "增肌",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "乳制品"
+  ],
+  "nutrition": {
+   "energyKCal": 176.9,
+   "protein": 17.5,
+   "fat": 5.2,
+   "CHO": 16.2,
+   "dietaryFiber": 1.6,
+   "cholesterol": 0.0,
+   "vitaminA": 0.0,
+   "vitaminC": 1.5,
+   "vitaminE": 6.2,
+   "Ca": 0.0,
+   "P": 0.0,
+   "K": 0.0,
+   "Na": 0.0,
+   "Mg": 0.0,
+   "Fe": 0.0,
+   "Zn": 0.0,
+   "Se": 0.0,
+   "sodium": 54.6
+  }
+ },
+ {
+  "id": "banana-peanut-toast",
+  "title": "香蕉花生酱全麦吐司",
+  "titleEn": "Banana Peanut Butter Toast",
+  "cuisine": "西式",
+  "mealTypes": [
+   "snack",
+   "breakfast"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 5,
+  "servings": 1,
+  "summary": "训练前能量小食，碳水 + 优质脂肪。",
+  "coverEmoji": "🍌",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "unit": "g",
+    "amount": 35.0,
+    "note": "1片",
+    "food": {
+     "name": "全麦面包",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "花生酱",
+    "unit": "g",
+    "amount": 12.0,
+    "note": "",
+    "food": {
+     "name": "花生酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "香蕉",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "",
+    "food": {
+     "name": "香蕉（红皮）",
+     "source": "中国食物成分表(第6版)",
+     "code": "065031"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "全麦面包烤至微脆。",
+    "durationMin": 2
+   },
+   {
+    "text": "抹上花生酱。",
+    "durationMin": 1
+   },
+   {
+    "text": "铺上香蕉片即可。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "花生酱选无糖款",
+   "训练前 1 小时吃刚好"
+  ],
+  "tags": [
+   "优质脂肪",
+   "增肌",
+   "快手"
+  ],
+  "allergens": [
+   "小麦",
+   "花生"
+  ],
+  "nutrition": {
+   "energyKCal": 208.6,
+   "protein": 8.2,
+   "fat": 7.3,
+   "CHO": 29.2,
+   "dietaryFiber": 2.8,
+   "cholesterol": 0.0,
+   "vitaminA": 1.8,
+   "vitaminC": 2.9,
+   "vitaminE": 0.1,
+   "Ca": 5.4,
+   "P": 10.2,
+   "K": 124.8,
+   "Na": 1.9,
+   "Mg": 19.8,
+   "Fe": 0.1,
+   "Zn": 0.0,
+   "Se": 0.0,
+   "sodium": 224.5
+  }
+ },
+ {
+  "id": "fruit-yogurt-bowl",
+  "title": "水果酸奶碗",
+  "titleEn": "Fruit Yogurt Bowl",
+  "cuisine": "西式",
+  "mealTypes": [
+   "snack"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 5,
+  "servings": 1,
+  "summary": "清爽低卡的下午加餐，换着水果吃不腻。",
+  "coverEmoji": "🍓",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "酸奶",
+     "source": "中国食物成分表(第6版)",
+     "code": "103001"
+    },
+    "match": "food"
+   },
+   {
+    "name": "草莓",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "草莓 [洋莓, 凤阳草莓]",
+     "source": "中国食物成分表(第6版)",
+     "code": "063910"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蓝莓",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "蓝莓",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "燕麦片",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "燕麦片",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "水果洗净切块。",
+    "durationMin": 3
+   },
+   {
+    "text": "酸奶装碗，放上水果。",
+    "durationMin": 1
+   },
+   {
+    "text": "撒燕麦片。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "水果按季节替换",
+   "酸奶选无糖或低糖"
+  ],
+  "tags": [
+   "低脂",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "乳制品"
+  ],
+  "nutrition": {
+   "energyKCal": 211.8,
+   "protein": 8.4,
+   "fat": 4.2,
+   "CHO": 36.4,
+   "dietaryFiber": 3.4,
+   "cholesterol": 22.5,
+   "vitaminA": 30.9,
+   "vitaminC": 39.1,
+   "vitaminE": 0.8,
+   "Ca": 224.4,
+   "P": 156.6,
+   "K": 307.3,
+   "Na": 52.1,
+   "Mg": 26.1,
+   "Fe": 1.7,
+   "Zn": 0.9,
+   "Se": 2.3,
+   "sodium": 52.8
+  }
+ },
+ {
+  "id": "chicken-sandwich",
+  "title": "鸡胸肉全麦三明治",
+  "titleEn": "Chicken Whole Wheat Sandwich",
+  "cuisine": "西式",
+  "mealTypes": [
+   "breakfast",
+   "lunch"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "高蛋白快手三明治，通勤减脂人群的午餐救星。",
+  "coverEmoji": "🥪",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "unit": "g",
+    "amount": 70.0,
+    "note": "2片",
+    "food": {
+     "name": "全麦面包",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "生菜",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   },
+   {
+    "name": "番茄",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "番茄（整个，罐头）",
+     "source": "中国食物成分表(第6版)",
+     "code": "043106"
+    },
+    "match": "food"
+   },
+   {
+    "name": "低脂蛋黄酱",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "低脂蛋黄酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "芥末酱",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "黄芥末酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸肉加盐和黑胡椒，平底锅少油煎熟后切片。",
+    "durationMin": 10
+   },
+   {
+    "text": "全麦面包烤 1 分钟至微脆。",
+    "durationMin": 2
+   },
+   {
+    "text": "面包抹上蛋黄酱和芥末，依次夹入生菜、番茄和鸡胸肉。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "蛋黄酱选低脂款热量减半",
+   "用希腊酸奶代替蛋黄酱更清爽"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "减脂",
+   "快手",
+   "西式"
+  ],
+  "allergens": [
+   "小麦",
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 338.4,
+   "protein": 35.5,
+   "fat": 7.5,
+   "CHO": 32.7,
+   "dietaryFiber": 4.8,
+   "cholesterol": 65.0,
+   "vitaminA": 51.6,
+   "vitaminC": 2.5,
+   "vitaminE": 1.2,
+   "Ca": 20.1,
+   "P": 208.3,
+   "K": 436.3,
+   "Na": 170.3,
+   "Mg": 34.1,
+   "Fe": 1.2,
+   "Zn": 0.4,
+   "Se": 12.0,
+   "sodium": 646.1
+  }
+ },
+ {
+  "id": "tuna-sandwich",
+  "title": "金枪鱼三明治",
+  "titleEn": "Tuna Sandwich",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "Omega-3 与蛋白质兼得，五分钟完成。",
+  "coverEmoji": "🥪",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "unit": "g",
+    "amount": 70.0,
+    "note": "2片",
+    "food": {
+     "name": "全麦面包",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "金枪鱼",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "金枪鱼（盐水浸）",
+     "source": "中国食物成分表(第6版)",
+     "code": "121405"
+    },
+    "match": "food"
+   },
+   {
+    "name": "低脂蛋黄酱",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "低脂蛋黄酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "生菜",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "金枪鱼沥水压碎，与蛋黄酱、洋葱碎拌匀。",
+    "durationMin": 4
+   },
+   {
+    "text": "面包烤至微脆，铺生菜，放上金枪鱼沙拉。",
+    "durationMin": 2
+   },
+   {
+    "text": "合上另一片面包，对角切开。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "选水浸金枪鱼，油浸热量高很多",
+   "可加黑胡椒提味"
+  ],
+  "tags": [
+   "高蛋白",
+   "减脂",
+   "快手",
+   "西式"
+  ],
+  "allergens": [
+   "小麦",
+   "鱼",
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 293.3,
+   "protein": 28.7,
+   "fat": 5.6,
+   "CHO": 32.3,
+   "dietaryFiber": 4.4,
+   "cholesterol": 40.8,
+   "vitaminA": 1.0,
+   "vitaminC": 1.6,
+   "vitaminE": 0.0,
+   "Ca": 14.8,
+   "P": 171.1,
+   "K": 218.2,
+   "Na": 259.0,
+   "Mg": 24.7,
+   "Fe": 1.0,
+   "Zn": 0.6,
+   "Se": 62.6,
+   "sodium": 678.0
+  }
+ },
+ {
+  "id": "egg-sandwich",
+  "title": "鸡蛋三明治",
+  "titleEn": "Egg Sandwich",
+  "cuisine": "西式",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "经典高蛋白早餐，鸡蛋加全麦面包的组合。",
+  "coverEmoji": "🥚",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "unit": "g",
+    "amount": 70.0,
+    "note": "2片",
+    "food": {
+     "name": "全麦面包",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "2个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "低脂蛋黄酱",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "低脂蛋黄酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "生菜",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡蛋煮熟，剥壳压碎，加蛋黄酱和黑胡椒拌匀。",
+    "durationMin": 10
+   },
+   {
+    "text": "面包烤脆，铺生菜，放上鸡蛋沙拉。",
+    "durationMin": 2
+   },
+   {
+    "text": "合上切片即可。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "鸡蛋煮 8 分钟刚好全熟",
+   "蛋白压成泥更易涂抹"
+  ],
+  "tags": [
+   "高蛋白",
+   "减脂",
+   "增肌",
+   "快手",
+   "西式"
+  ],
+  "allergens": [
+   "小麦",
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 339.2,
+   "protein": 22.6,
+   "fat": 13.2,
+   "CHO": 32.8,
+   "dietaryFiber": 4.3,
+   "cholesterol": 648.0,
+   "vitaminA": 255.4,
+   "vitaminC": 0.0,
+   "vitaminE": 1.1,
+   "Ca": 58.4,
+   "P": 148.2,
+   "K": 157.2,
+   "Na": 132.9,
+   "Mg": 10.0,
+   "Fe": 1.6,
+   "Zn": 0.9,
+   "Se": 14.0,
+   "sodium": 536.8
+  }
+ },
+ {
+  "id": "quinoa-chicken-salad",
+  "title": "藜麦鸡胸沙拉",
+  "titleEn": "Quinoa Chicken Salad",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 30,
+  "servings": 1,
+  "summary": "高蛋白高纤的能量沙拉，饱腹感极强。",
+  "coverEmoji": "🥗",
+  "ingredients": [
+   {
+    "name": "藜麦（熟）",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "藜麦（熟）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "牛油果",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "牛油果",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "小番茄",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "樱桃番茄 [小西红柿]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043120"
+    },
+    "match": "food"
+   },
+   {
+    "name": "生菜",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "柠檬",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "柠檬",
+     "source": "中国食物成分表(第6版)",
+     "code": "064302"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "藜麦冲洗后加 1.5 倍水煮 15 分钟，放凉。",
+    "durationMin": 20
+   },
+   {
+    "text": "鸡胸煎熟切片；牛油果、小番茄切块。",
+    "durationMin": 10
+   },
+   {
+    "text": "所有食材装碗，淋橄榄油和柠檬汁，撒黑胡椒拌匀。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "藜麦煮前冲洗去苦涩",
+   "牛油果现切现吃防氧化"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "减脂",
+   "西式"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 326.2,
+   "protein": 31.0,
+   "fat": 16.3,
+   "CHO": 28.1,
+   "dietaryFiber": 5.8,
+   "cholesterol": 65.0,
+   "vitaminA": 26.6,
+   "vitaminC": 28.6,
+   "vitaminE": 1.3,
+   "Ca": 23.1,
+   "P": 247.6,
+   "K": 573.2,
+   "Na": 57.1,
+   "Mg": 41.4,
+   "Fe": 1.4,
+   "Zn": 0.5,
+   "Se": 12.0,
+   "sodium": 66.3
+  }
+ },
+ {
+  "id": "caesar-salad-light",
+  "title": "轻版凯撒沙拉",
+  "titleEn": "Light Caesar Salad",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "用低脂酸奶酱代替传统蛋黄酱，热量大减。",
+  "coverEmoji": "🥬",
+  "ingredients": [
+   {
+    "name": "罗马生菜",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   },
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "全麦面包",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "面包丁",
+    "food": {
+     "name": "全麦面包",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "希腊酸奶（脱脂）",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "希腊酸奶（脱脂）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "帕玛森芝士",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "帕玛森芝士",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "柠檬",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "柠檬",
+     "source": "中国食物成分表(第6版)",
+     "code": "064302"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸煎熟切片；面包切丁烤脆。",
+    "durationMin": 10
+   },
+   {
+    "text": "希腊酸奶加柠檬汁、黑胡椒调成酱汁。",
+    "durationMin": 3
+   },
+   {
+    "text": "生菜撕块装碗，放鸡胸和面包丁，淋酱撒芝士碎。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "酱汁用酸奶替代蛋黄酱，热量降一半",
+   "面包丁少放，控制碳水"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "西式"
+  ],
+  "allergens": [
+   "小麦",
+   "乳制品"
+  ],
+  "nutrition": {
+   "energyKCal": 229.6,
+   "protein": 34.7,
+   "fat": 4.9,
+   "CHO": 12.7,
+   "dietaryFiber": 1.5,
+   "cholesterol": 65.0,
+   "vitaminA": 6.0,
+   "vitaminC": 2.2,
+   "vitaminE": 0.5,
+   "Ca": 29.1,
+   "P": 308.7,
+   "K": 378.0,
+   "Na": 55.4,
+   "Mg": 32.0,
+   "Fe": 1.3,
+   "Zn": 0.4,
+   "Se": 11.8,
+   "sodium": 240.8
+  }
+ },
+ {
+  "id": "greek-yogurt-oats",
+  "title": "希腊酸奶燕麦杯",
+  "titleEn": "Greek Yogurt Oat Bowl",
+  "cuisine": "西式",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 5,
+  "servings": 1,
+  "summary": "免开火的 5 分钟早餐，蛋白质拉满。",
+  "coverEmoji": "🥣",
+  "ingredients": [
+   {
+    "name": "希腊酸奶（脱脂）",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "希腊酸奶（脱脂）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "燕麦片",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "燕麦片",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蓝莓",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "蓝莓",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "香蕉",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "香蕉（红皮）",
+     "source": "中国食物成分表(第6版)",
+     "code": "065031"
+    },
+    "match": "food"
+   },
+   {
+    "name": "奇亚籽",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "奇亚籽",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "燕麦片用少许温水泡软或即食。",
+    "durationMin": 3
+   },
+   {
+    "text": "碗中依次放入酸奶、燕麦、香蕉片和蓝莓。",
+    "durationMin": 2
+   },
+   {
+    "text": "撒上奇亚籽即可食用。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "提前一晚做成隔夜燕麦更省事",
+   "水果按季节替换，草莓覆盆子都行"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "减脂",
+   "快手",
+   "西式"
+  ],
+  "allergens": [
+   "乳制品"
+  ],
+  "nutrition": {
+   "energyKCal": 339.9,
+   "protein": 23.8,
+   "fat": 5.1,
+   "CHO": 51.7,
+   "dietaryFiber": 7.2,
+   "cholesterol": 0.0,
+   "vitaminA": 1.5,
+   "vitaminC": 2.5,
+   "vitaminE": 0.1,
+   "Ca": 4.5,
+   "P": 8.5,
+   "K": 104.0,
+   "Na": 1.6,
+   "Mg": 16.5,
+   "Fe": 0.1,
+   "Zn": 0.0,
+   "Se": 0.0,
+   "sodium": 57.7
+  }
+ },
+ {
+  "id": "baked-salmon-asparagus",
+  "title": "烤三文鱼配芦笋",
+  "titleEn": "Baked Salmon with Asparagus",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 30,
+  "servings": 1,
+  "summary": "优质脂肪与蛋白质的完美组合，烤箱一锅出。",
+  "coverEmoji": "🐟",
+  "ingredients": [
+   {
+    "name": "三文鱼",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "鲑鱼 [大马哈鱼、三文鱼]",
+     "source": "中国食物成分表(第6版)",
+     "code": "121228"
+    },
+    "match": "food"
+   },
+   {
+    "name": "芦笋",
+    "unit": "g",
+    "amount": 120.0,
+    "note": "",
+    "food": {
+     "name": "芦笋 (绿) [石刁柏、龙须菜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045415"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 6.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "柠檬",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "柠檬",
+     "source": "中国食物成分表(第6版)",
+     "code": "064302"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "三文鱼用盐、黑胡椒、蒜末腌 10 分钟；芦笋去老根。",
+    "durationMin": 10
+   },
+   {
+    "text": "烤盘垫锡纸，放芦笋和三文鱼，淋橄榄油，200 度烤 15 分钟。",
+    "durationMin": 15,
+    "heat": "200°C"
+   },
+   {
+    "text": "出炉挤上柠檬汁。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "三文鱼烤到 145°F 内部刚好",
+   "柠檬汁解腻提鲜"
+  ],
+  "tags": [
+   "高蛋白",
+   "优质脂肪",
+   "增肌",
+   "减脂",
+   "西式"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "nutrition": {
+   "energyKCal": 245.6,
+   "protein": 29.5,
+   "fat": 18.0,
+   "CHO": 6.9,
+   "dietaryFiber": 0.4,
+   "cholesterol": 102.0,
+   "vitaminA": 69.9,
+   "vitaminC": 11.7,
+   "vitaminE": 1.6,
+   "Ca": 45.4,
+   "P": 295.5,
+   "K": 937.6,
+   "Na": 110.0,
+   "Mg": 81.1,
+   "Fe": 2.3,
+   "Zn": 2.4,
+   "Se": 45.0,
+   "sodium": 498.5
+  }
+ },
+ {
+  "id": "chicken-tomato-pasta",
+  "title": "鸡胸番茄意面",
+  "titleEn": "Chicken Tomato Pasta",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "经典意面的高蛋白版本，减脂期也能吃的碳水快乐。",
+  "coverEmoji": "🍝",
+  "ingredients": [
+   {
+    "name": "意面（熟）",
+    "unit": "g",
+    "amount": 180.0,
+    "note": "约60g干面",
+    "food": {
+     "name": "意面（熟）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "番茄",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "",
+    "food": {
+     "name": "番茄（整个，罐头）",
+     "source": "中国食物成分表(第6版)",
+     "code": "043106"
+    },
+    "match": "food"
+   },
+   {
+    "name": "番茄膏",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "番茄膏",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 6.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "帕玛森芝士",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "帕玛森芝士",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "意面按包装煮至 al dente 捞出。",
+    "durationMin": 10
+   },
+   {
+    "text": "鸡胸切丁煎熟盛出；蒜末炒香，下番茄丁和番茄膏熬成酱。",
+    "durationMin": 8,
+    "heat": "中火"
+   },
+   {
+    "text": "意面回锅与酱汁翻匀，加鸡胸，撒芝士碎。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "煮面水里加盐更入味",
+   "保留一点煮面水调节酱汁浓稠度"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "西式"
+  ],
+  "allergens": [
+   "小麦",
+   "乳制品"
+  ],
+  "nutrition": {
+   "energyKCal": 476.7,
+   "protein": 40.9,
+   "fat": 12.0,
+   "CHO": 65.0,
+   "dietaryFiber": 5.2,
+   "cholesterol": 65.0,
+   "vitaminA": 147.0,
+   "vitaminC": 7.5,
+   "vitaminE": 2.9,
+   "Ca": 47.5,
+   "P": 203.0,
+   "K": 628.5,
+   "Na": 415.2,
+   "Mg": 46.0,
+   "Fe": 1.6,
+   "Zn": 0.6,
+   "Se": 12.5,
+   "sodium": 503.1
+  }
+ },
+ {
+  "id": "beef-wrap",
+  "title": "全麦牛肉卷饼",
+  "titleEn": "Whole Wheat Beef Wrap",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "墨西哥风味的便携高蛋白卷饼。",
+  "coverEmoji": "🌯",
+  "ingredients": [
+   {
+    "name": "全麦卷饼",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "1张",
+    "food": {
+     "name": "全麦卷饼",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "牛肉",
+    "unit": "g",
+    "amount": 120.0,
+    "note": "",
+    "food": {
+     "name": "牛肉（代表值，fat 9g）",
+     "source": "中国食物成分表(第6版)",
+     "code": "082101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "生菜",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   },
+   {
+    "name": "番茄",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "番茄（整个，罐头）",
+     "source": "中国食物成分表(第6版)",
+     "code": "043106"
+    },
+    "match": "food"
+   },
+   {
+    "name": "希腊酸奶（脱脂）",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "希腊酸奶（脱脂）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "辣椒粉",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "辣椒粉",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛肉切条，用辣椒粉、盐腌 5 分钟，大火快炒。",
+    "durationMin": 8,
+    "heat": "大火"
+   },
+   {
+    "text": "卷饼在平底锅烘 30 秒变软。",
+    "durationMin": 1
+   },
+   {
+    "text": "铺上生菜、番茄、牛肉，淋酸奶卷起。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "卷饼烘软才好卷不裂",
+   "酸奶代替酸奶油热量更低"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "减脂",
+   "西式"
+  ],
+  "allergens": [
+   "小麦",
+   "乳制品"
+  ],
+  "nutrition": {
+   "energyKCal": 408.4,
+   "protein": 33.2,
+   "fat": 15.6,
+   "CHO": 33.0,
+   "dietaryFiber": 4.3,
+   "cholesterol": 69.6,
+   "vitaminA": 52.4,
+   "vitaminC": 2.5,
+   "vitaminE": 1.6,
+   "Ca": 26.3,
+   "P": 265.8,
+   "K": 359.3,
+   "Na": 203.2,
+   "Mg": 32.5,
+   "Fe": 2.4,
+   "Zn": 5.8,
+   "Se": 4.0,
+   "sodium": 574.8
+  }
+ },
+ {
+  "id": "avocado-toast",
+  "title": "牛油果吐司",
+  "titleEn": "Avocado Toast",
+  "cuisine": "西式",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "优质脂肪早餐，饱腹感强，可搭配任意蛋白质。",
+  "coverEmoji": "🥑",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "unit": "g",
+    "amount": 70.0,
+    "note": "2片",
+    "food": {
+     "name": "全麦面包",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "牛油果",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "",
+    "food": {
+     "name": "牛油果",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "1个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "柠檬",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "柠檬",
+     "source": "中国食物成分表(第6版)",
+     "code": "064302"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛油果压泥，加柠檬汁、盐、黑胡椒拌匀。",
+    "durationMin": 4
+   },
+   {
+    "text": "全麦面包烤脆，抹上牛油果泥。",
+    "durationMin": 2
+   },
+   {
+    "text": "煎一个鸡蛋（少油）放在上面。",
+    "durationMin": 4,
+    "heat": "中小火"
+   }
+  ],
+  "tips": [
+   "牛油果选稍软的成熟度",
+   "减脂期鸡蛋可换成水波蛋"
+  ],
+  "tags": [
+   "优质脂肪",
+   "增肌",
+   "西式",
+   "快手"
+  ],
+  "allergens": [
+   "小麦",
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 342.6,
+   "protein": 17.0,
+   "fat": 15.6,
+   "CHO": 35.8,
+   "dietaryFiber": 8.4,
+   "cholesterol": 324.0,
+   "vitaminA": 127.5,
+   "vitaminC": 1.8,
+   "vitaminE": 0.7,
+   "Ca": 36.1,
+   "P": 66.8,
+   "K": 93.7,
+   "Na": 65.8,
+   "Mg": 8.0,
+   "Fe": 0.9,
+   "Zn": 0.5,
+   "Se": 7.0,
+   "sodium": 606.9
+  }
+ },
+ {
+  "id": "buddha-bowl",
+  "title": "能量碗",
+  "titleEn": "Buddha Bowl",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 30,
+  "servings": 1,
+  "summary": "一碗装下所有营养素，色彩丰富颜值高。",
+  "coverEmoji": "🍛",
+  "ingredients": [
+   {
+    "name": "藜麦（熟）",
+    "unit": "g",
+    "amount": 80.0,
+    "note": "",
+    "food": {
+     "name": "藜麦（熟）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "鸡胸肉",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "鸡胸脯肉",
+     "source": "中国食物成分表(第6版)",
+     "code": "091112"
+    },
+    "match": "food"
+   },
+   {
+    "name": "鹰嘴豆（熟）",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "鹰嘴豆[桃豆]",
+     "source": "中国食物成分表(第6版)",
+     "code": "039401"
+    },
+    "match": "food"
+   },
+   {
+    "name": "牛油果",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "牛油果",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "小番茄",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "",
+    "food": {
+     "name": "樱桃番茄 [小西红柿]",
+     "source": "中国食物成分表(第6版)",
+     "code": "043120"
+    },
+    "match": "food"
+   },
+   {
+    "name": "菠菜",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "菠菜（鲜）[赤根菜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "柠檬",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "柠檬",
+     "source": "中国食物成分表(第6版)",
+     "code": "064302"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "藜麦煮熟；鸡胸煎熟切片；鹰嘴豆沥水。",
+    "durationMin": 20
+   },
+   {
+    "text": "菠菜焯水，牛油果小番茄切块。",
+    "durationMin": 5
+   },
+   {
+    "text": "碗中分区码放所有食材，淋橄榄油和柠檬汁。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "分区码放颜值更高",
+   "蛋白质可换成豆腐或三文鱼"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "减脂",
+   "西式"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 480.7,
+   "protein": 41.5,
+   "fat": 16.8,
+   "CHO": 57.4,
+   "dietaryFiber": 11.7,
+   "cholesterol": 65.0,
+   "vitaminA": 144.8,
+   "vitaminC": 39.8,
+   "vitaminE": 7.8,
+   "Ca": 47.7,
+   "P": 286.3,
+   "K": 891.6,
+   "Na": 508.5,
+   "Mg": 70.9,
+   "Fe": 107.7,
+   "Zn": 2.6,
+   "Se": 13.2,
+   "sodium": 516.9
+  }
+ },
+ {
+  "id": "roast-chicken-thigh",
+  "title": "烤鸡腿配烤蔬菜",
+  "titleEn": "Roast Chicken Thigh with Vegetables",
+  "cuisine": "西式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 45,
+  "servings": 2,
+  "summary": "烤箱一锅出的省心晚餐，鸡腿肉嫩多汁。",
+  "coverEmoji": "🍗",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "unit": "g",
+    "amount": 300.0,
+    "note": "去骨2只",
+    "food": {
+     "name": "鸡腿",
+     "source": "中国食物成分表(第6版)",
+     "code": "091113"
+    },
+    "match": "food"
+   },
+   {
+    "name": "土豆",
+    "unit": "g",
+    "amount": 200.0,
+    "note": "",
+    "food": {
+     "name": "马铃薯[土豆、洋芋]",
+     "source": "中国食物成分表(第6版)",
+     "code": "021101"
+    },
+    "match": "food"
+   },
+   {
+    "name": "胡萝卜",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "胡萝卜（红）[金笋,丁香萝卜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "041201"
+    },
+    "match": "food"
+   },
+   {
+    "name": "彩椒",
+    "unit": "g",
+    "amount": 100.0,
+    "note": "",
+    "food": {
+     "name": "彩椒",
+     "source": "中国食物成分表(第6版)",
+     "code": "043125"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "迷迭香",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "迷迭香",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡腿去骨用盐黑胡椒腌 15 分钟；蔬菜切块。",
+    "durationMin": 15
+   },
+   {
+    "text": "蔬菜拌油铺烤盘，放鸡腿，220 度烤 25 分钟。",
+    "durationMin": 25,
+    "heat": "220°C"
+   },
+   {
+    "text": "翻面再烤 5 分钟上色，撒迷迭香。",
+    "durationMin": 5,
+    "heat": "220°C"
+   }
+  ],
+  "tips": [
+   "鸡皮可去掉减脂",
+   "土豆切小块熟得更快"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "西式"
+  ],
+  "allergens": [],
+  "nutrition": {
+   "energyKCal": 335.4,
+   "protein": 34.1,
+   "fat": 15.3,
+   "CHO": 26.0,
+   "dietaryFiber": 2.0,
+   "cholesterol": 148.5,
+   "vitaminA": 239.0,
+   "vitaminC": 72.5,
+   "vitaminE": 1.3,
+   "Ca": 27.5,
+   "P": 479.0,
+   "K": 912.5,
+   "Na": 155.4,
+   "Mg": 71.5,
+   "Fe": 3.9,
+   "Zn": 2.2,
+   "Se": 15.4,
+   "sodium": 543.3
+  }
+ },
+ {
+  "id": "beef-burger",
+  "title": "全麦牛肉汉堡",
+  "titleEn": "Whole Wheat Beef Burger",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "健身也能吃的汉堡，用全麦胚和高蛋白牛肉饼。",
+  "coverEmoji": "🍔",
+  "ingredients": [
+   {
+    "name": "全麦汉堡胚",
+    "unit": "g",
+    "amount": 60.0,
+    "note": "1个",
+    "food": {
+     "name": "全麦汉堡胚",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "牛肉",
+    "unit": "g",
+    "amount": 120.0,
+    "note": "",
+    "food": {
+     "name": "牛肉（代表值，fat 9g）",
+     "source": "中国食物成分表(第6版)",
+     "code": "082101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "生菜",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "生菜 [叶用莴苣]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045333"
+    },
+    "match": "food"
+   },
+   {
+    "name": "番茄",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "番茄（整个，罐头）",
+     "source": "中国食物成分表(第6版)",
+     "code": "043106"
+    },
+    "match": "food"
+   },
+   {
+    "name": "低脂芝士",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "奶酪 [干酪]",
+     "source": "中国食物成分表(第6版)",
+     "code": "104001"
+    },
+    "match": "food"
+   },
+   {
+    "name": "番茄酱",
+    "unit": "g",
+    "amount": 10.0,
+    "note": "",
+    "food": {
+     "name": "番茄酱",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 20.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛肉馅加盐黑胡椒，压成肉饼。",
+    "durationMin": 5
+   },
+   {
+    "text": "平底锅煎肉饼，每面 3 分钟，最后 1 分钟放芝士融化。",
+    "durationMin": 7,
+    "heat": "中火"
+   },
+   {
+    "text": "汉堡胚烤热，依次夹生菜、番茄、肉饼，挤番茄酱。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "牛肉馅选 90% 瘦的更健康",
+   "肉饼中间压个凹槽防鼓起"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "西式"
+  ],
+  "allergens": [
+   "小麦",
+   "乳制品"
+  ],
+  "nutrition": {
+   "energyKCal": 434.6,
+   "protein": 35.4,
+   "fat": 16.8,
+   "CHO": 34.7,
+   "dietaryFiber": 3.3,
+   "cholesterol": 71.2,
+   "vitaminA": 75.4,
+   "vitaminC": 4.1,
+   "vitaminE": 1.8,
+   "Ca": 149.8,
+   "P": 313.4,
+   "K": 398.4,
+   "Na": 291.0,
+   "Mg": 44.0,
+   "Fe": 2.9,
+   "Zn": 6.9,
+   "Se": 4.4,
+   "sodium": 657.7
+  }
+ },
+ {
+  "id": "shrimp-pasta",
+  "title": "蒜香虾仁意面",
+  "titleEn": "Garlic Shrimp Pasta",
+  "cuisine": "西式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "意式经典，虾仁高蛋白低脂肪。",
+  "coverEmoji": "🍤",
+  "ingredients": [
+   {
+    "name": "意面（熟）",
+    "unit": "g",
+    "amount": 180.0,
+    "note": "约60g干面",
+    "food": {
+     "name": "意面（熟）",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "虾仁",
+    "unit": "g",
+    "amount": 120.0,
+    "note": "",
+    "food": {
+     "name": "虾仁(红)",
+     "source": "中国食物成分表(第6版)",
+     "code": "122204"
+    },
+    "match": "food"
+   },
+   {
+    "name": "蒜",
+    "unit": "g",
+    "amount": 8.0,
+    "note": "",
+    "food": {
+     "name": "蒜",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 7.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "柠檬",
+    "unit": "g",
+    "amount": 15.0,
+    "note": "",
+    "food": {
+     "name": "柠檬",
+     "source": "中国食物成分表(第6版)",
+     "code": "064302"
+    },
+    "match": "food"
+   },
+   {
+    "name": "罗勒",
+    "unit": "g",
+    "amount": 2.0,
+    "note": "",
+    "food": {
+     "name": "罗勒[兰香]",
+     "source": "中国食物成分表(第6版)",
+     "code": "048030"
+    },
+    "match": "food"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "意面煮至 al dente，留一杯煮面水。",
+    "durationMin": 10
+   },
+   {
+    "text": "橄榄油爆香蒜片，下虾仁煎至变色。",
+    "durationMin": 4,
+    "heat": "中火"
+   },
+   {
+    "text": "意面回锅，加煮面水翻匀，挤柠檬汁撒罗勒。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "蒜片小火慢煎避免焦苦",
+   "柠檬汁最后放保持清香"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "减脂",
+   "西式"
+  ],
+  "allergens": [
+   "小麦",
+   "虾"
+  ],
+  "nutrition": {
+   "energyKCal": 362.9,
+   "protein": 23.7,
+   "fat": 9.8,
+   "CHO": 59.8,
+   "dietaryFiber": 3.7,
+   "cholesterol": 0.0,
+   "vitaminA": 49.2,
+   "vitaminC": 3.4,
+   "vitaminE": 1.0,
+   "Ca": 48.5,
+   "P": 193.0,
+   "K": 160.5,
+   "Na": 326.8,
+   "Mg": 18.5,
+   "Fe": 1.0,
+   "Zn": 0.9,
+   "Se": 13.1,
+   "sodium": 330.1
+  }
+ },
+ {
+  "id": "veggie-omelette",
+  "title": "蔬菜煎蛋卷",
+  "titleEn": "Veggie Omelette",
+  "cuisine": "西式",
+  "mealTypes": [
+   "breakfast",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 12,
+  "servings": 1,
+  "summary": "欧美经典早餐，蔬菜鸡蛋一锅出。",
+  "coverEmoji": "🍳",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "unit": "g",
+    "amount": 150.0,
+    "note": "3个",
+    "food": {
+     "name": "鸡蛋（代表值）",
+     "source": "中国食物成分表(第6版)",
+     "code": "111101x"
+    },
+    "match": "food"
+   },
+   {
+    "name": "彩椒",
+    "unit": "g",
+    "amount": 50.0,
+    "note": "",
+    "food": {
+     "name": "彩椒",
+     "source": "中国食物成分表(第6版)",
+     "code": "043125"
+    },
+    "match": "food"
+   },
+   {
+    "name": "洋葱",
+    "unit": "g",
+    "amount": 30.0,
+    "note": "",
+    "food": {
+     "name": "洋葱（鲜）[葱头]",
+     "source": "中国食物成分表(第6版)",
+     "code": "044301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "菠菜",
+    "unit": "g",
+    "amount": 40.0,
+    "note": "",
+    "food": {
+     "name": "菠菜（鲜）[赤根菜]",
+     "source": "中国食物成分表(第6版)",
+     "code": "045301"
+    },
+    "match": "food"
+   },
+   {
+    "name": "橄榄油",
+    "unit": "g",
+    "amount": 5.0,
+    "note": "",
+    "food": {
+     "name": "橄榄油",
+     "source": "中国食物成分表(第6版)",
+     "code": "192019"
+    },
+    "match": "food"
+   },
+   {
+    "name": "盐",
+    "unit": "g",
+    "amount": 1.0,
+    "note": "",
+    "food": {
+     "name": "盐",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   },
+   {
+    "name": "黑胡椒",
+    "unit": "g",
+    "amount": 0.5,
+    "note": "",
+    "food": {
+     "name": "黑胡椒",
+     "source": "usda-approx",
+     "code": ""
+    },
+    "match": "global"
+   }
+  ],
+  "steps": [
+   {
+    "text": "蔬菜切丁，鸡蛋加盐打散。",
+    "durationMin": 4
+   },
+   {
+    "text": "热锅下油，炒软蔬菜。",
+    "durationMin": 3,
+    "heat": "中火"
+   },
+   {
+    "text": "倒入蛋液，小火煎至底部凝固，卷起再煎 1 分钟。",
+    "durationMin": 5,
+    "heat": "小火"
+   }
+  ],
+  "tips": [
+   "小火慢煎蛋卷才嫩",
+   "可加少许芝士增香"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "增肌",
+   "快手",
+   "西式"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "nutrition": {
+   "energyKCal": 246.0,
+   "protein": 21.7,
+   "fat": 18.2,
+   "CHO": 11.6,
+   "dietaryFiber": 1.1,
+   "cholesterol": 972.0,
+   "vitaminA": 513.3,
+   "vitaminC": 67.2,
+   "vitaminE": 3.2,
+   "Ca": 122.1,
+   "P": 238.5,
+   "K": 538.5,
+   "Na": 236.1,
+   "Mg": 51.7,
+   "Fe": 4.0,
+   "Zn": 1.8,
+   "Se": 21.7,
+   "sodium": 623.7
+  }
+ }
+]

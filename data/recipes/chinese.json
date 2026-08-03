@@ -1,0 +1,1497 @@
+[
+ {
+  "id": "pan-seared-chicken",
+  "title": "香煎鸡胸肉",
+  "titleEn": "Pan-Seared Chicken Breast",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "高蛋白低脂的入门健身餐，外焦里嫩，百搭主食和蔬菜。",
+  "coverEmoji": "🍗",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "ref": "鸡胸脯肉",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 4,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "name": "黑胡椒",
+    "amount": 0.5,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸肉横向片成两片，用盐、黑胡椒、蒜末腌 10 分钟。",
+    "durationMin": 10
+   },
+   {
+    "text": "平底锅中小火下橄榄油，放入鸡胸肉，每面煎 3-4 分钟至金黄。",
+    "durationMin": 8,
+    "heat": "中小火"
+   },
+   {
+    "text": "关火加盖焖 2 分钟，让肉汁锁住，再切块装盘。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "腌制时加 1 勺料酒更去腥",
+   "煎完静置几分钟再切，肉更嫩",
+   "搭配杂粮饭和西兰花就是完整一餐"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "减脂",
+   "快手"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "tomato-scrambled-eggs",
+  "title": "低油番茄炒蛋",
+  "titleEn": "Light Tomato Scrambled Eggs",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "国民下饭菜的低脂改良版，蛋白与番茄的经典搭配。",
+  "coverEmoji": "🍅",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "ref": "鸡蛋（代表值）",
+    "amount": 150,
+    "unit": "g",
+    "note": "约3个"
+   },
+   {
+    "name": "番茄",
+    "ref": "番茄 [西红柿]",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡蛋加少许盐打散；番茄切块。",
+    "durationMin": 3
+   },
+   {
+    "text": "热锅下油，倒入蛋液炒至半凝固盛出。",
+    "durationMin": 2,
+    "heat": "中火"
+   },
+   {
+    "text": "补少许油下番茄，炒出汁后回锅鸡蛋，加盐调味翻匀。",
+    "durationMin": 5,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "用不粘锅可以把油减到 3g",
+   "番茄炒出沙才好吃"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ]
+ },
+ {
+  "id": "broccoli-chicken",
+  "title": "西蓝花炒鸡胸",
+  "titleEn": "Stir-Fried Chicken with Broccoli",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "健身餐的黄金组合：优质蛋白 + 膳食纤维，口感清爽。",
+  "coverEmoji": "🥦",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "ref": "鸡胸脯肉",
+    "amount": 120,
+    "unit": "g"
+   },
+   {
+    "name": "西兰花",
+    "ref": "西兰花 [绿菜花]",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "蚝油",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 0.5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸切丁，加盐和少许料酒腌 5 分钟；西兰花掰小朵焯水 1 分钟。",
+    "durationMin": 6
+   },
+   {
+    "text": "热锅下油，爆香蒜片，下鸡丁炒至变色。",
+    "durationMin": 3,
+    "heat": "中大火"
+   },
+   {
+    "text": "加入西兰花和蚝油翻炒 2 分钟，调味出锅。",
+    "durationMin": 3,
+    "heat": "中大火"
+   }
+  ],
+  "tips": [
+   "西兰花先焯水能保持翠绿和脆度",
+   "鸡丁不要炒太久，避免发柴"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "减脂",
+   "快手"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "steamed-sea-bass",
+  "title": "清蒸鲈鱼",
+  "titleEn": "Steamed Sea Bass",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 2,
+  "summary": "少油高蛋白的优质鱼类做法，鲜嫩无腥味。",
+  "coverEmoji": "🐟",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "ref": "鲈鱼 [鲈花]",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鲈鱼两面划刀，铺姜片葱段，水开后大火蒸 8 分钟。",
+    "durationMin": 10,
+    "heat": "大火"
+   },
+   {
+    "text": "倒掉蒸出的汤汁，去掉姜葱，重新铺葱丝。",
+    "durationMin": 2
+   },
+   {
+    "text": "淋上酱油，烧热橄榄油浇在葱丝上激香。",
+    "durationMin": 2,
+    "heat": "大火"
+   }
+  ],
+  "tips": [
+   "蒸鱼时间按鱼大小调整，500g 约 8 分钟",
+   "热油激香是灵魂"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "减脂"
+  ],
+  "allergens": [
+   "鱼"
+  ]
+ },
+ {
+  "id": "poached-shrimp",
+  "title": "白灼虾",
+  "titleEn": "Poached Shrimp",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 12,
+  "servings": 1,
+  "summary": "零油高蛋白的做法，最大程度保留虾的鲜甜。",
+  "coverEmoji": "🦐",
+  "ingredients": [
+   {
+    "name": "虾",
+    "ref": "海虾",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "料酒",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "水烧开，加入姜片、葱段和料酒。",
+    "durationMin": 3
+   },
+   {
+    "text": "下虾煮 2-3 分钟至变红卷曲，捞出。",
+    "durationMin": 3,
+    "heat": "大火"
+   },
+   {
+    "text": "搭配少许可选蘸汁（酱油+醋）食用。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "煮虾时间别超过 3 分钟，否则口感变老",
+   "蘸汁热量极低，放心用"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "增肌"
+  ],
+  "allergens": [
+   "虾"
+  ]
+ },
+ {
+  "id": "kung-pao-chicken",
+  "title": "宫保鸡丁（低油版）",
+  "titleEn": "Kung Pao Chicken (Light)",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 2,
+  "summary": "经典川菜的低油改良，甜辣下饭但热量可控。",
+  "coverEmoji": "🌶️",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "ref": "鸡胸脯肉",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "name": "黄瓜",
+    "ref": "黄瓜（鲜）[胡瓜]",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "彩椒",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "花生仁",
+    "ref": "花生仁（生）",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "干辣椒",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 6,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "米醋",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸切丁腌 10 分钟；黄瓜、彩椒切丁。",
+    "durationMin": 10
+   },
+   {
+    "text": "热锅下油，小火煸香干辣椒，下鸡丁炒至变色。",
+    "durationMin": 4,
+    "heat": "中小火"
+   },
+   {
+    "text": "加入彩椒黄瓜丁，倒入酱油和醋调成的汁，大火翻炒 2 分钟，撒花生仁出锅。",
+    "durationMin": 4,
+    "heat": "大火"
+   }
+  ],
+  "tips": [
+   "干辣椒提前用温水泡一下更出香不糊",
+   "花生仁最后放保持酥脆"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂"
+  ],
+  "allergens": [
+   "花生"
+  ]
+ },
+ {
+  "id": "beef-pepper",
+  "title": "青椒牛柳",
+  "titleEn": "Stir-Fried Beef with Peppers",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "补铁补蛋白的牛肉小炒，青椒脆爽。",
+  "coverEmoji": "🥩",
+  "ingredients": [
+   {
+    "name": "牛肉",
+    "ref": "牛肉（里脊肉）[牛柳]",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "青椒",
+    "ref": "辣椒（青、尖）",
+    "amount": 120,
+    "unit": "g"
+   },
+   {
+    "name": "洋葱",
+    "ref": "洋葱（鲜）[葱头]",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 6,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛肉逆纹切条，加酱油腌 10 分钟；青椒、洋葱切条。",
+    "durationMin": 10
+   },
+   {
+    "text": "热锅热油，大火快炒牛肉至变色盛出。",
+    "durationMin": 2,
+    "heat": "大火"
+   },
+   {
+    "text": "补少许油炒香洋葱青椒，回锅牛肉，加盐调味翻匀。",
+    "durationMin": 3,
+    "heat": "中大火"
+   }
+  ],
+  "tips": [
+   "牛肉逆纹切更嫩",
+   "大火快炒是牛肉不老的秘诀"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "补铁"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "steamed-egg-custard",
+  "title": "鸡蛋羹",
+  "titleEn": "Steamed Egg Custard",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "入口即化的高蛋白早餐，低油易消化。",
+  "coverEmoji": "🥚",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "ref": "鸡蛋（代表值）",
+    "amount": 100,
+    "unit": "g",
+    "note": "约2个"
+   },
+   {
+    "name": "水",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 0.5,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡蛋加盐打散，加入 1.5 倍温水搅匀，过筛去泡。",
+    "durationMin": 5
+   },
+   {
+    "text": "盖保鲜膜扎孔，水开后中火蒸 10 分钟。",
+    "durationMin": 10,
+    "heat": "中火"
+   },
+   {
+    "text": "出锅撒葱花，淋少许生抽。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "蛋液与水的比例 1:1.5 最嫩",
+   "过筛和盖膜能避免蜂窝"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "增肌"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ]
+ },
+ {
+  "id": "mixed-grain-rice",
+  "title": "杂粮饭",
+  "titleEn": "Mixed Grain Rice",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 30,
+  "servings": 2,
+  "summary": "低 GI 主食，饱腹感强，适合减脂期代替白米饭。",
+  "coverEmoji": "🍚",
+  "ingredients": [
+   {
+    "name": "糙米",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "黑米",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "name": "燕麦",
+    "ref": "燕麦片",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "水",
+    "amount": 320,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "糙米、黑米提前浸泡 30 分钟。",
+    "durationMin": 30
+   },
+   {
+    "text": "加入燕麦片和适量水，按煮饭键煮熟。",
+    "durationMin": 25
+   }
+  ],
+  "tips": [
+   "杂粮提前浸泡口感更软",
+   "可一次多煮分装冷冻，吃前复热"
+  ],
+  "tags": [
+   "低碳水",
+   "低GI",
+   "减脂",
+   "增肌",
+   "快手"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "seaweed-egg-soup",
+  "title": "紫菜蛋花汤",
+  "titleEn": "Seaweed Egg Drop Soup",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "五分钟搞定的低卡汤品，补碘补蛋白。",
+  "coverEmoji": "🍲",
+  "ingredients": [
+   {
+    "name": "紫菜",
+    "ref": "紫菜（干）",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "name": "鸡蛋",
+    "ref": "鸡蛋（代表值）",
+    "amount": 50,
+    "unit": "g",
+    "note": "1个"
+   },
+   {
+    "name": "虾皮",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 0.5,
+    "unit": "g"
+   },
+   {
+    "name": "香油",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "水烧开，放入紫菜和虾皮。",
+    "durationMin": 3
+   },
+   {
+    "text": "淋入打散的蛋液，用筷子轻轻搅动成蛋花。",
+    "durationMin": 1,
+    "heat": "中火"
+   },
+   {
+    "text": "加盐调味，滴几滴香油出锅。",
+    "durationMin": 1
+   }
+  ],
+  "tips": [
+   "蛋液沿锅边淋入蛋花更漂亮",
+   "虾皮自带咸味，盐要少放"
+  ],
+  "tags": [
+   "低卡",
+   "高蛋白",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "虾"
+  ]
+ },
+ {
+  "id": "cold-chicken-salad",
+  "title": "凉拌鸡丝",
+  "titleEn": "Cold Shredded Chicken",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "清爽开胃的高蛋白凉菜，夏天减脂首选。",
+  "coverEmoji": "🥗",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "ref": "鸡胸脯肉",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "黄瓜",
+    "ref": "黄瓜（鲜）[胡瓜]",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "胡萝卜",
+    "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "米醋",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 6,
+    "unit": "g"
+   },
+   {
+    "name": "香油",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸煮熟放凉，撕成细丝。",
+    "durationMin": 12
+   },
+   {
+    "text": "黄瓜、胡萝卜切丝，蒜切末。",
+    "durationMin": 4
+   },
+   {
+    "text": "所有材料加醋、酱油、香油拌匀。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "鸡胸冷水下锅煮更嫩",
+   "可加少许辣椒油增香"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "快手"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "braised-beef",
+  "title": "卤牛肉",
+  "titleEn": "Braised Beef",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 120,
+  "servings": 4,
+  "summary": "备餐神器，切片即食，高蛋白低脂。",
+  "coverEmoji": "🥩",
+  "ingredients": [
+   {
+    "name": "牛腱子",
+    "ref": "牛肉（后腱）",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "料酒",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "name": "八角",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "name": "桂皮",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛腱冷水下锅焯水去浮沫。",
+    "durationMin": 8
+   },
+   {
+    "text": "放入所有调料，加水没过牛肉，大火烧开转小火卤 90 分钟。",
+    "durationMin": 90,
+    "heat": "小火"
+   },
+   {
+    "text": "关火浸泡 30 分钟入味，凉后切片。",
+    "durationMin": 30
+   }
+  ],
+  "tips": [
+   "卤好后在汤汁里浸泡更入味",
+   "分装冷冻，随吃随取"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "增肌",
+   "备餐"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "garlic-lettuce",
+  "title": "蒜蓉生菜",
+  "titleEn": "Garlic Lettuce",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 8,
+  "servings": 1,
+  "summary": "低卡蔬菜，蒜香浓郁，搭配任何主菜。",
+  "coverEmoji": "🥬",
+  "ingredients": [
+   {
+    "name": "生菜",
+    "ref": "生菜 [叶用莴苣]",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 4,
+    "unit": "g"
+   },
+   {
+    "name": "蚝油",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "生菜洗净，蒜切末。",
+    "durationMin": 2
+   },
+   {
+    "text": "热锅下油爆香蒜末，下生菜大火快炒 1 分钟。",
+    "durationMin": 2,
+    "heat": "大火"
+   },
+   {
+    "text": "加蚝油翻炒均匀立即出锅。",
+    "durationMin": 1,
+    "heat": "大火"
+   }
+  ],
+  "tips": [
+   "生菜大火快炒才脆",
+   "蚝油自带咸味，无需再加盐"
+  ],
+  "tags": [
+   "低卡",
+   "减脂",
+   "快手"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "mushroom-bokchoy",
+  "title": "香菇油菜",
+  "titleEn": "Mushroom Bok Choy",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "低卡高纤的经典素菜，香菇增鲜。",
+  "coverEmoji": "🍄",
+  "ingredients": [
+   {
+    "name": "油菜",
+    "ref": "油菜 [青菜]",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "name": "香菇",
+    "ref": "香菇（鲜）[香蕈，冬菇]",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 4,
+    "unit": "g"
+   },
+   {
+    "name": "蚝油",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "油菜洗净，香菇切片。",
+    "durationMin": 3
+   },
+   {
+    "text": "热锅下油爆香蒜片，下香菇炒软。",
+    "durationMin": 3,
+    "heat": "中火"
+   },
+   {
+    "text": "下油菜大火翻炒 2 分钟，加蚝油调味。",
+    "durationMin": 2,
+    "heat": "大火"
+   }
+  ],
+  "tips": [
+   "油菜梗和叶分开下锅，熟度均匀",
+   "香菇先煸出香味更鲜"
+  ],
+  "tags": [
+   "低卡",
+   "高纤",
+   "减脂",
+   "快手"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "chicken-soba",
+  "title": "鸡丝荞麦面",
+  "titleEn": "Chicken Soba Noodles",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "低 GI 主食 + 高蛋白的组合，清爽不油腻。",
+  "coverEmoji": "🍜",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "鸡胸肉",
+    "ref": "鸡胸脯肉",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "黄瓜",
+    "ref": "黄瓜（鲜）[胡瓜]",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "name": "胡萝卜",
+    "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "米醋",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "荞麦面煮熟过凉水；鸡胸煮熟撕丝。",
+    "durationMin": 8
+   },
+   {
+    "text": "黄瓜胡萝卜切丝，蒜切末。",
+    "durationMin": 4
+   },
+   {
+    "text": "面条装碗，码上鸡丝和蔬菜，淋上酱油醋蒜汁拌匀。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "过凉水面条更劲道",
+   "减脂期可把面量减到 60g 增加蔬菜"
+  ],
+  "tags": [
+   "高蛋白",
+   "低GI",
+   "减脂",
+   "增肌"
+  ],
+  "allergens": [
+   "小麦"
+  ]
+ },
+ {
+  "id": "melon-shrimp-soup",
+  "title": "冬瓜虾仁汤",
+  "titleEn": "Winter Melon Shrimp Soup",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "低卡高蛋白的清爽汤，冬瓜利尿消水肿。",
+  "coverEmoji": "🍵",
+  "ingredients": [
+   {
+    "name": "冬瓜",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "name": "虾仁",
+    "ref": "虾仁",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "冬瓜去皮切块，虾仁去虾线。",
+    "durationMin": 5
+   },
+   {
+    "text": "水开下姜片和冬瓜煮 5 分钟。",
+    "durationMin": 6,
+    "heat": "中火"
+   },
+   {
+    "text": "下虾仁煮 2 分钟至变色，加盐撒葱花。",
+    "durationMin": 3,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "虾仁最后放，口感更嫩",
+   "冬瓜煮到半透明即可"
+  ],
+  "tags": [
+   "低卡",
+   "高蛋白",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "虾"
+  ]
+ },
+ {
+  "id": "mapo-tofu",
+  "title": "轻辣麻婆豆腐",
+  "titleEn": "Mapo Tofu (Light)",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 2,
+  "summary": "植物蛋白为主的减脂下饭菜，低油版。",
+  "coverEmoji": "🌶️",
+  "ingredients": [
+   {
+    "name": "豆腐",
+    "ref": "豆腐（北豆腐）",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "name": "牛肉末",
+    "ref": "牛肉（代表值，瘦，fat 3g）",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "豆瓣酱",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 6,
+    "unit": "g"
+   },
+   {
+    "name": "花椒粉",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "豆腐切块焯水去豆腥。",
+    "durationMin": 4
+   },
+   {
+    "text": "热锅下油，炒香豆瓣酱和蒜末，下牛肉末炒散。",
+    "durationMin": 4,
+    "heat": "中小火"
+   },
+   {
+    "text": "加半碗水烧开，下豆腐煮 5 分钟，勾薄芡撒葱花花椒粉。",
+    "durationMin": 8,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "豆瓣酱少放控制钠",
+   "豆腐用北豆腐不易碎"
+  ],
+  "tags": [
+   "植物蛋白",
+   "低脂",
+   "减脂"
+  ],
+  "allergens": [
+   "大豆"
+  ]
+ },
+ {
+  "id": "steamed-pumpkin",
+  "title": "蒸南瓜",
+  "titleEn": "Steamed Pumpkin",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 15,
+  "servings": 1,
+  "summary": "天然甜味的粗粮主食替代，低卡饱腹。",
+  "coverEmoji": "🎃",
+  "ingredients": [
+   {
+    "name": "南瓜",
+    "ref": "南瓜（鲜）[倭瓜，番瓜]",
+    "amount": 300,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "南瓜去皮切块。",
+    "durationMin": 3
+   },
+   {
+    "text": "水开后上锅蒸 12 分钟至软糯。",
+    "durationMin": 12,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "南瓜本身够甜，无需加糖",
+   "连皮蒸更保留营养"
+  ],
+  "tags": [
+   "低碳水",
+   "低卡",
+   "减脂",
+   "快手"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "woodear-eggs",
+  "title": "木耳炒蛋",
+  "titleEn": "Scrambled Eggs with Wood Ear",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "高蛋白 + 膳食纤维的快手小炒。",
+  "coverEmoji": "🍳",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "ref": "鸡蛋（代表值）",
+    "amount": 100,
+    "unit": "g",
+    "note": "2个"
+   },
+   {
+    "name": "木耳",
+    "ref": "木耳（水发）[黑木耳，云耳]",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "黄瓜",
+    "ref": "黄瓜（鲜）[胡瓜]",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "木耳撕小朵，黄瓜切片，鸡蛋打散。",
+    "durationMin": 4
+   },
+   {
+    "text": "热锅下油，蛋液炒至凝固盛出。",
+    "durationMin": 2,
+    "heat": "中火"
+   },
+   {
+    "text": "下木耳黄瓜翻炒 2 分钟，回锅鸡蛋加盐调味。",
+    "durationMin": 3,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "干木耳需提前泡发，泡发后称重",
+   "木耳遇热会爆，注意防溅"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "快手"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ]
+ },
+ {
+  "id": "yam-rib-soup",
+  "title": "山药排骨汤",
+  "titleEn": "Yam and Pork Rib Soup",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 90,
+  "servings": 2,
+  "summary": "滋补汤品，去油后热量适中，营养全面。",
+  "coverEmoji": "🍲",
+  "ingredients": [
+   {
+    "name": "猪小排",
+    "ref": "猪小排",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "name": "山药",
+    "ref": "山药（鲜）[薯蓣，大薯]",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 10,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "排骨冷水下锅焯水，捞出洗净。",
+    "durationMin": 8
+   },
+   {
+    "text": "排骨加姜片和足量水，小火炖 60 分钟。",
+    "durationMin": 60,
+    "heat": "小火"
+   },
+   {
+    "text": "加入山药再炖 20 分钟，加盐撒葱花。",
+    "durationMin": 20,
+    "heat": "小火"
+   }
+  ],
+  "tips": [
+   "撇去浮油热量更低",
+   "山药去皮戴手套防痒"
+  ],
+  "tags": [
+   "高蛋白",
+   "滋补",
+   "增肌"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "redbean-porridge",
+  "title": "红豆薏米粥",
+  "titleEn": "Red Bean and Coix Porridge",
+  "cuisine": "中餐",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 60,
+  "servings": 2,
+  "summary": "经典祛湿杂粮粥，低 GI 早餐。",
+  "coverEmoji": "🥣",
+  "ingredients": [
+   {
+    "name": "红豆",
+    "ref": "赤小豆",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "薏米",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "水",
+    "amount": 800,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "红豆、薏米提前浸泡 2 小时。",
+    "durationMin": 120
+   },
+   {
+    "text": "加足量水，大火烧开转小火煮 50 分钟至软烂。",
+    "durationMin": 50,
+    "heat": "小火"
+   }
+  ],
+  "tips": [
+   "提前浸泡缩短煮制时间",
+   "喜欢甜味可加少许代糖"
+  ],
+  "tags": [
+   "低GI",
+   "减脂",
+   "植物蛋白"
+  ],
+  "allergens": []
+ }
+]

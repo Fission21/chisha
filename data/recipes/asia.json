@@ -1,0 +1,1011 @@
+[
+ {
+  "id": "teriyaki-chicken-rice",
+  "title": "日式照烧鸡腿饭",
+  "titleEn": "Teriyaki Chicken Rice Bowl",
+  "cuisine": "日式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "甜咸适口的日式经典，减糖版照烧汁。",
+  "coverEmoji": "🍱",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "ref": "鸡腿",
+    "amount": 150,
+    "unit": "g",
+    "note": "去骨"
+   },
+   {
+    "name": "米饭",
+    "ref": "稻米（代表值）",
+    "amount": 150,
+    "unit": "g",
+    "note": "熟饭"
+   },
+   {
+    "name": "西兰花",
+    "ref": "西兰花 [绿菜花]",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "料酒",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "蜂蜜",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡腿去骨，皮朝下煎至金黄出油。",
+    "durationMin": 8,
+    "heat": "中小火"
+   },
+   {
+    "text": "酱油、料酒、蜂蜜、姜调成照烧汁，倒入小火收汁。",
+    "durationMin": 8,
+    "heat": "小火"
+   },
+   {
+    "text": "鸡腿切条铺在米饭上，淋汁，配焯水西兰花。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "蜂蜜比白糖热量更低且上色亮",
+   "鸡皮可去掉进一步减脂"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "日式"
+  ],
+  "allergens": [
+   "小麦"
+  ]
+ },
+ {
+  "id": "bibimbap",
+  "title": "韩式拌饭",
+  "titleEn": "Bibimbap",
+  "cuisine": "韩式",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 30,
+  "servings": 1,
+  "summary": "蔬菜丰富、营养均衡的韩国家常饭。",
+  "coverEmoji": "🍚",
+  "ingredients": [
+   {
+    "name": "米饭",
+    "ref": "稻米（代表值）",
+    "amount": 150,
+    "unit": "g",
+    "note": "熟饭"
+   },
+   {
+    "name": "牛肉末",
+    "ref": "牛肉（代表值，瘦，fat 3g）",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "菠菜",
+    "ref": "菠菜（鲜）[赤根菜]",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "name": "胡萝卜",
+    "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "豆芽",
+    "ref": "绿豆芽",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "鸡蛋",
+    "ref": "鸡蛋（代表值）",
+    "amount": 50,
+    "unit": "g",
+    "note": "1个"
+   },
+   {
+    "name": "辣椒酱",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "香油",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "牛肉末炒熟；菠菜、豆芽分别焯水；胡萝卜切丝炒软。",
+    "durationMin": 12
+   },
+   {
+    "text": "煎一个太阳蛋。",
+    "durationMin": 3,
+    "heat": "中小火"
+   },
+   {
+    "text": "米饭装碗，四周码放配菜，中间放鸡蛋，加辣椒酱和香油拌匀。",
+    "durationMin": 4
+   }
+  ],
+  "tips": [
+   "配菜分开码放更有食欲",
+   "减脂期辣椒酱减半"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "韩式"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ]
+ },
+ {
+  "id": "fresh-spring-rolls",
+  "title": "越南鲜虾春卷",
+  "titleEn": "Vietnamese Fresh Spring Rolls",
+  "cuisine": "越南",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "清爽低卡的东南亚经典，蘸酱吃更美味。",
+  "coverEmoji": "🥗",
+  "ingredients": [
+   {
+    "name": "越南春卷皮",
+    "amount": 30,
+    "unit": "g",
+    "note": "2张"
+   },
+   {
+    "name": "虾仁",
+    "ref": "虾仁",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "生菜",
+    "ref": "生菜 [叶用莴苣]",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "name": "黄瓜",
+    "ref": "黄瓜（鲜）[胡瓜]",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "胡萝卜",
+    "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "name": "薄荷",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "米醋",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "鱼露",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "虾仁煮熟；蔬菜切丝。",
+    "durationMin": 6
+   },
+   {
+    "text": "春卷皮温水泡软，铺上生菜、蔬菜丝、虾仁和薄荷，卷紧。",
+    "durationMin": 8
+   },
+   {
+    "text": "米醋加鱼露和少许水调成蘸汁。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "春卷皮泡软即可，别泡太久",
+   "卷紧才不会散"
+  ],
+  "tags": [
+   "低卡",
+   "高蛋白",
+   "减脂",
+   "越南"
+  ],
+  "allergens": [
+   "虾"
+  ]
+ },
+ {
+  "id": "thai-lime-shrimp-salad",
+  "title": "泰式青柠虾沙拉",
+  "titleEn": "Thai Lime Shrimp Salad",
+  "cuisine": "泰式",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "酸辣开胃的泰式沙拉，零油高蛋白。",
+  "coverEmoji": "🦐",
+  "ingredients": [
+   {
+    "name": "虾仁",
+    "ref": "虾仁",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "青柠",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "黄瓜",
+    "ref": "黄瓜（鲜）[胡瓜]",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "洋葱",
+    "ref": "洋葱（鲜）[葱头]",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "香菜",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "小米椒",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "name": "鱼露",
+    "amount": 6,
+    "unit": "g"
+   },
+   {
+    "name": "白糖",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "虾仁焯熟过冰水，口感更弹。",
+    "durationMin": 4
+   },
+   {
+    "text": "黄瓜切片，洋葱切丝，香菜小米椒切碎。",
+    "durationMin": 4
+   },
+   {
+    "text": "青柠汁、鱼露、糖调成酱汁，与所有食材拌匀。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "虾仁过冰水是弹牙关键",
+   "小米椒按耐辣程度调整"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "泰式"
+  ],
+  "allergens": [
+   "虾"
+  ]
+ },
+ {
+  "id": "miso-tofu-soup",
+  "title": "日式味噌豆腐汤",
+  "titleEn": "Miso Tofu Soup",
+  "cuisine": "日式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "简单",
+  "cookTimeMin": 10,
+  "servings": 1,
+  "summary": "暖胃低卡的日式汤，几分钟就好。",
+  "coverEmoji": "🍜",
+  "ingredients": [
+   {
+    "name": "豆腐",
+    "ref": "豆腐（内酯）",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "海带",
+    "ref": "海带（鲜）[江白菜]",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "味噌",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "name": "葱",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "裙带菜",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "海带洗净切段，加水煮 5 分钟。",
+    "durationMin": 6,
+    "heat": "中火"
+   },
+   {
+    "text": "豆腐切块下锅煮 2 分钟。",
+    "durationMin": 2
+   },
+   {
+    "text": "关火，味噌用汤化开调入，撒葱花。",
+    "durationMin": 2
+   }
+  ],
+  "tips": [
+   "味噌关火后再放，避免香气挥发",
+   "减盐味噌更适合减脂期"
+  ],
+  "tags": [
+   "低卡",
+   "植物蛋白",
+   "减脂",
+   "日式",
+   "快手"
+  ],
+  "allergens": [
+   "大豆"
+  ]
+ },
+ {
+  "id": "chicken-burrito",
+  "title": "墨西哥鸡肉卷",
+  "titleEn": "Chicken Burrito",
+  "cuisine": "墨西哥",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "墨西哥风味的高蛋白卷饼，饱腹又满足。",
+  "coverEmoji": "🌯",
+  "ingredients": [
+   {
+    "name": "全麦卷饼",
+    "amount": 60,
+    "unit": "g",
+    "note": "1张"
+   },
+   {
+    "name": "鸡胸肉",
+    "ref": "鸡胸脯肉",
+    "amount": 120,
+    "unit": "g"
+   },
+   {
+    "name": "黑豆（熟）",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "彩椒",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "玉米粒",
+    "ref": "玉米（鲜）",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "name": "希腊酸奶（脱脂）",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "辣椒粉",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "name": "青柠",
+    "amount": 10,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡胸切条，用辣椒粉、盐腌 5 分钟，炒熟。",
+    "durationMin": 10,
+    "heat": "中大火"
+   },
+   {
+    "text": "彩椒炒软，与黑豆、玉米粒混合。",
+    "durationMin": 4,
+    "heat": "中火"
+   },
+   {
+    "text": "卷饼烘软，铺上所有馅料，淋酸奶挤青柠汁卷起。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "黑豆和玉米提供优质碳水",
+   "酸奶代替酸奶油更低脂"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "减脂",
+   "墨西哥"
+  ],
+  "allergens": [
+   "小麦",
+   "乳制品"
+  ]
+ },
+ {
+  "id": "salmon-poke-bowl",
+  "title": "三文鱼能量碗",
+  "titleEn": "Salmon Poke Bowl",
+  "cuisine": "日式",
+  "mealTypes": [
+   "lunch"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "夏威夷风日式盖饭，优质脂肪 + 蛋白。",
+  "coverEmoji": "🍣",
+  "ingredients": [
+   {
+    "name": "米饭",
+    "ref": "稻米（代表值）",
+    "amount": 130,
+    "unit": "g",
+    "note": "熟饭"
+   },
+   {
+    "name": "三文鱼",
+    "ref": "鲑鱼 [大马哈鱼、三文鱼]",
+    "amount": 120,
+    "unit": "g"
+   },
+   {
+    "name": "牛油果",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "黄瓜",
+    "ref": "黄瓜（鲜）[胡瓜]",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "海苔碎",
+    "amount": 2,
+    "unit": "g",
+    "ref": "海苔"
+   },
+   {
+    "name": "酱油",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "香油",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "name": "白芝麻",
+    "amount": 2,
+    "unit": "g",
+    "ref": "芝麻子（白）"
+   }
+  ],
+  "steps": [
+   {
+    "text": "三文鱼切丁，用酱油、香油腌 5 分钟。",
+    "durationMin": 6
+   },
+   {
+    "text": "黄瓜切片，牛油果切块。",
+    "durationMin": 3
+   },
+   {
+    "text": "米饭装碗，码上三文鱼、牛油果、黄瓜，撒海苔碎和白芝麻。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "三文鱼选刺身级更安全",
+   "减脂期米饭减到 100g"
+  ],
+  "tags": [
+   "高蛋白",
+   "优质脂肪",
+   "增肌",
+   "日式"
+  ],
+  "allergens": [
+   "鱼"
+  ]
+ },
+ {
+  "id": "coconut-curry-chicken",
+  "title": "椰香咖喱鸡",
+  "titleEn": "Coconut Curry Chicken",
+  "cuisine": "东南亚",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 30,
+  "servings": 2,
+  "summary": "香浓东南亚风味，用低脂椰奶控制热量。",
+  "coverEmoji": "🍛",
+  "ingredients": [
+   {
+    "name": "鸡腿肉",
+    "ref": "鸡腿",
+    "amount": 300,
+    "unit": "g",
+    "note": "去骨"
+   },
+   {
+    "name": "椰奶（无糖）",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "咖喱粉",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "洋葱",
+    "ref": "洋葱（鲜）[葱头]",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "彩椒",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡腿肉切块，用咖喱粉腌 10 分钟。",
+    "durationMin": 10
+   },
+   {
+    "text": "热锅下油炒香洋葱姜末，下鸡肉煎至变色。",
+    "durationMin": 6,
+    "heat": "中火"
+   },
+   {
+    "text": "加椰奶和少许水炖 10 分钟，最后放彩椒收汁。",
+    "durationMin": 12,
+    "heat": "中小火"
+   }
+  ],
+  "tips": [
+   "椰奶选无糖淡椰奶热量低",
+   "可加西兰花增加蔬菜量"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "东南亚"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "kimchi-tofu-stew",
+  "title": "韩式泡菜豆腐锅",
+  "titleEn": "Kimchi Tofu Stew",
+  "cuisine": "韩式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "暖身开胃的韩式小锅，植物蛋白为主。",
+  "coverEmoji": "🍲",
+  "ingredients": [
+   {
+    "name": "豆腐",
+    "ref": "豆腐（北豆腐）",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "name": "泡菜",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "金针菇",
+    "ref": "金针菇（鲜）[智力菇]",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "洋葱",
+    "ref": "洋葱（鲜）[葱头]",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "鸡蛋",
+    "ref": "鸡蛋（代表值）",
+    "amount": 50,
+    "unit": "g",
+    "note": "1个"
+   },
+   {
+    "name": "辣椒酱",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "香油",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "洋葱切丝炒软，下泡菜炒香。",
+    "durationMin": 5,
+    "heat": "中火"
+   },
+   {
+    "text": "加水、辣椒酱煮开，下豆腐和金针菇煮 5 分钟。",
+    "durationMin": 8,
+    "heat": "中火"
+   },
+   {
+    "text": "打入鸡蛋煮 2 分钟，淋香油出锅。",
+    "durationMin": 3
+   }
+  ],
+  "tips": [
+   "泡菜自带咸味，少放盐",
+   "鸡蛋最后放是溏心的"
+  ],
+  "tags": [
+   "植物蛋白",
+   "低脂",
+   "减脂",
+   "韩式"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ]
+ },
+ {
+  "id": "chana-masala",
+  "title": "印度咖喱鹰嘴豆",
+  "titleEn": "Chana Masala",
+  "cuisine": "印度",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 2,
+  "summary": "高纤高蛋白的素食咖喱，饱腹又满足。",
+  "coverEmoji": "🍛",
+  "ingredients": [
+   {
+    "name": "鹰嘴豆（熟）",
+    "amount": 240,
+    "unit": "g"
+   },
+   {
+    "name": "番茄",
+    "ref": "番茄 [西红柿]",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "name": "洋葱",
+    "ref": "洋葱（鲜）[葱头]",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "咖喱粉",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "蒜",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "橄榄油",
+    "amount": 6,
+    "unit": "g"
+   },
+   {
+    "name": "香菜",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "洋葱、姜蒜炒香，加入咖喱粉炒出香味。",
+    "durationMin": 6,
+    "heat": "中火"
+   },
+   {
+    "text": "加入番茄丁炒软出汁。",
+    "durationMin": 5,
+    "heat": "中火"
+   },
+   {
+    "text": "下鹰嘴豆和少量水炖 10 分钟，撒香菜。",
+    "durationMin": 10,
+    "heat": "中小火"
+   }
+  ],
+  "tips": [
+   "咖喱粉炒过更香",
+   "可配杂粮饭或全麦饼"
+  ],
+  "tags": [
+   "植物蛋白",
+   "高纤",
+   "减脂",
+   "印度"
+  ],
+  "allergens": []
+ },
+ {
+  "id": "chawanmushi",
+  "title": "日式茶碗蒸",
+  "titleEn": "Chawanmushi",
+  "cuisine": "日式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 20,
+  "servings": 1,
+  "summary": "嫩滑如布丁的日式蒸蛋，高蛋白低脂。",
+  "coverEmoji": "🥚",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "ref": "鸡蛋（代表值）",
+    "amount": 100,
+    "unit": "g",
+    "note": "2个"
+   },
+   {
+    "name": "高汤",
+    "ref": "海带（鲜）[江白菜]",
+    "amount": 150,
+    "unit": "g",
+    "note": "海带水"
+   },
+   {
+    "name": "虾仁",
+    "ref": "虾仁",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "香菇",
+    "ref": "香菇（鲜）[香蕈，冬菇]",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "盐",
+    "amount": 0.5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡蛋打散，加入温热高汤和盐，过筛。",
+    "durationMin": 5
+   },
+   {
+    "text": "碗底放虾仁和香菇片，倒入蛋液。",
+    "durationMin": 3
+   },
+   {
+    "text": "盖保鲜膜，中火蒸 12 分钟至凝固。",
+    "durationMin": 12,
+    "heat": "中火"
+   }
+  ],
+  "tips": [
+   "蛋液过筛去泡更嫩滑",
+   "火不能太大，否则成蜂窝"
+  ],
+  "tags": [
+   "高蛋白",
+   "低脂",
+   "减脂",
+   "日式"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "虾"
+  ]
+ },
+ {
+  "id": "yakitori-skewers",
+  "title": "照烧鸡肉串",
+  "titleEn": "Chicken Yakitori Skewers",
+  "cuisine": "日式",
+  "mealTypes": [
+   "dinner"
+  ],
+  "difficulty": "中等",
+  "cookTimeMin": 25,
+  "servings": 1,
+  "summary": "居酒屋风味在家做，高蛋白配菜小食。",
+  "coverEmoji": "🍢",
+  "ingredients": [
+   {
+    "name": "鸡腿肉",
+    "ref": "鸡腿",
+    "amount": 150,
+    "unit": "g",
+    "note": "去骨"
+   },
+   {
+    "name": "彩椒",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "name": "洋葱",
+    "ref": "洋葱（鲜）[葱头]",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "name": "酱油",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "料酒",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "蜂蜜",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "姜",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": "鸡腿切块，与彩椒洋葱间隔串成串。",
+    "durationMin": 8
+   },
+   {
+    "text": "酱油、料酒、蜂蜜、姜调照烧汁。",
+    "durationMin": 3
+   },
+   {
+    "text": "平底锅小火煎串，中途刷汁 2 次，至表面焦亮。",
+    "durationMin": 12,
+    "heat": "中小火"
+   }
+  ],
+  "tips": [
+   "竹签提前泡水防烤焦",
+   "刷汁勤一点更入味"
+  ],
+  "tags": [
+   "高蛋白",
+   "增肌",
+   "日式"
+  ],
+  "allergens": [
+   "小麦"
+  ]
+ }
+]

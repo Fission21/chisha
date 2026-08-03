@@ -1,0 +1,300 @@
+/* ============ 吃啥 · 市场价签设计系统 ============
+   视觉世界：菜市场招牌 / 黑板价签 / 手写采购单
+   规范：无 emoji 图标、无渐变、无灰色文字、无卡片套卡片、
+        展示字体用衬线（Noto Serif SC / 宋体）、留白宽松、一次性动效
+*/
+:root {
+  --paper: #ecd9b0;
+  --paper-2: #e0c694;
+  --paper-3: #d2b176;
+  --ink: #2b2118;
+  --ink-soft: #54422f;
+  --red: #c4472e;
+  --red-deep: #9c3421;
+  --green: #3f7a46;
+  --green-deep: #2f5f36;
+  --mustard: #9a640f;
+  --line: rgba(43, 33, 24, 0.24);
+  --line-strong: rgba(43, 33, 24, 0.46);
+  --shadow: 0 1px 0 rgba(43,33,24,.06), 0 10px 30px rgba(43,33,24,.10);
+  --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+::selection { background: rgba(196,71,46,.18); }
+
+.container { max-width: 1060px; margin: 0 auto; padding: 28px 22px 80px; }
+
+/* ---------- 顶部 ---------- */
+.masthead {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16px; padding: 8px 0 20px; border-bottom: 3px double var(--line-strong);
+  margin-bottom: 28px; flex-wrap: wrap;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-mark {
+  width: 46px; height: 46px; border-radius: 12px;
+  background: var(--red); color: #fff;
+  display: grid; place-items: center; flex-shrink: 0;
+  font-family: var(--serif); font-weight: 900; font-size: 24px;
+  box-shadow: 0 2px 0 rgba(43,33,24,.18);
+  border: 1px solid rgba(255,255,255,.25);
+}
+.brand-name {
+  font-family: var(--serif); font-weight: 900; font-size: 34px;
+  letter-spacing: -0.02em; line-height: 1.05;
+}
+.brand-sub { font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
+.masthead .nav { display: flex; gap: 8px; }
+
+/* ---------- 面板（表单 / 内容区） ---------- */
+.panel {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 28px;
+}
+.section { margin-bottom: 30px; }
+
+/* 档口标题：大衬线 + 红色横杠 */
+.stall-head { display: flex; align-items: baseline; gap: 14px; margin: 0 0 18px; }
+.stall-head h2 {
+  font-family: var(--serif); font-weight: 900; font-size: 24px;
+  letter-spacing: -0.02em; margin: 0; line-height: 1.2;
+}
+.stall-head .rule { flex: 1; height: 3px; background: var(--red); border-radius: 2px; }
+.stall-head .hint { font-size: 13px; color: var(--ink-soft); white-space: nowrap; }
+
+/* ---------- 步骤条 ---------- */
+.stepper { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
+.step-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-soft); }
+.step-item .dot {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 1.5px solid var(--line-strong);
+  display: grid; place-items: center; font-size: 12px; font-weight: 700;
+  background: var(--paper);
+}
+.step-item.on { color: var(--ink); font-weight: 700; }
+.step-item.on .dot { background: var(--red); border-color: var(--red); color: #fff; }
+.step-item.done .dot { background: var(--green); border-color: var(--green); color: #fff; }
+.stepper .link { flex: 1; height: 1px; background: var(--line-strong); }
+
+/* ---------- 表单 ---------- */
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+.field input, .field select {
+  width: 100%; padding: 11px 13px;
+  border: 1px solid var(--line-strong); border-radius: 10px;
+  background: var(--paper); color: var(--ink); font-size: 15px; font-family: inherit;
+  transition: border-color .15s, box-shadow .15s;
+}
+.field input:focus, .field select:focus {
+  outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(196,71,46,.16);
+}
+.field input::placeholder { color: rgba(43,33,24,.55); }
+.grid { display: grid; gap: 16px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 720px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+/* 选择块（目标 / 口味） */
+.option-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.option {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border: 1.5px solid var(--line-strong); border-radius: 999px;
+  background: var(--paper); font-size: 14px; font-weight: 600; cursor: pointer;
+  user-select: none; transition: all .15s;
+}
+.option:hover { border-color: var(--ink); }
+.option.on { background: var(--red); border-color: var(--red); color: #fff; }
+.option .chk { opacity: 0; transition: opacity .15s; }
+.option.on .chk { opacity: 1; }
+
+/* 按钮 */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  border: none; cursor: pointer;
+  background: var(--red); color: #fff;
+  font-family: var(--serif); font-weight: 800; font-size: 17px;
+  padding: 13px 26px; border-radius: 10px;
+  box-shadow: 0 2px 0 rgba(43,33,24,.25);
+  transition: background .15s, transform .05s;
+}
+.btn:hover { background: var(--red-deep); }
+.btn:active { transform: translateY(1px); box-shadow: 0 1px 0 rgba(43,33,24,.25); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid rgba(43,33,24,.55); box-shadow: none; font-family: var(--sans); font-weight: 700; font-size: 14px; }
+.btn.ghost:hover { border-color: var(--ink); background: rgba(43,33,24,.04); }
+.btn-row { display: flex; gap: 12px; margin-top: 20px; align-items: center; }
+
+/* ---------- 每日目标：秤台价目 ---------- */
+.board {
+  border-top: 3px double var(--line-strong);
+  border-bottom: 3px double var(--line-strong);
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  margin: 18px 0 6px;
+}
+@media (max-width: 720px) { .board { grid-template-columns: repeat(2, 1fr); } }
+.board .cell { padding: 18px 14px; border-right: 1px solid var(--line); }
+.board .cell:last-child { border-right: none; }
+.board .num {
+  font-family: var(--serif); font-weight: 900; font-size: 30px; line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.board .num small { font-size: 13px; font-weight: 700; color: var(--ink-soft); }
+.board .lbl { font-size: 12px; color: var(--ink-soft); margin-top: 4px; display: flex; align-items: center; gap: 5px; }
+.board .lbl svg { flex-shrink: 0; }
+
+/* ---------- 档口（每餐） ---------- */
+.stall { margin-bottom: 34px; }
+.stall-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.stall-name { display: flex; align-items: center; gap: 10px; }
+.stall-name .ic { color: var(--red); }
+.stall-name h3 { font-family: var(--serif); font-weight: 900; font-size: 21px; margin: 0; letter-spacing: -0.01em; }
+.stall-target { font-size: 13px; color: var(--ink-soft); }
+
+/* 菜单行（菜谱卡片） */
+.menu-row {
+  display: flex; gap: 18px; align-items: flex-start;
+  padding: 16px 6px; border-bottom: 1px dashed var(--line-strong);
+  transition: background .15s; border-radius: 8px;
+}
+.menu-row:hover { background: rgba(196,71,46,.06); }
+.menu-row:last-child { border-bottom: none; }
+.menu-icon {
+  width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
+  background: var(--paper-3); color: var(--red-deep);
+  display: grid; place-items: center; border: 1px solid var(--line);
+}
+.menu-body { flex: 1; min-width: 0; }
+.menu-title { font-family: var(--serif); font-weight: 800; font-size: 18px; letter-spacing: -0.01em; }
+.menu-title a:hover { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+.menu-meta { font-size: 12.5px; color: var(--ink-soft); margin: 3px 0 8px; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.menu-meta svg { vertical-align: -2px; }
+.menu-nutri { display: flex; flex-wrap: wrap; gap: 8px; }
+.price {
+  font-size: 12.5px; font-weight: 700; color: var(--ink);
+  border: 1px solid var(--line-strong); border-radius: 6px;
+  padding: 2px 8px; background: var(--paper);
+}
+.price b { font-family: var(--serif); font-size: 13.5px; }
+.price.kcal { color: var(--red-deep); border-color: rgba(196,71,46,.4); }
+.price.protein { color: var(--green-deep); border-color: rgba(63,122,70,.4); }
+.price.carb, .price.fat { color: var(--ink); }
+
+/* 盖章标签 */
+.stamp {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 800;
+  padding: 3px 9px; border-radius: 4px; letter-spacing: .02em;
+  border: 1.5px solid currentColor;
+}
+.stamp.red { color: var(--red); background: rgba(196,71,46,.05); }
+.stamp.green { color: var(--green); background: rgba(63,122,70,.06); }
+.stamp.mustard { color: var(--mustard); background: rgba(201,138,27,.07); }
+.stamp-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+
+/* ---------- 加载 / 错误 / 空 ---------- */
+.loading { padding: 40px 0; text-align: center; color: var(--ink-soft); font-size: 15px; }
+.skeleton { max-width: 560px; margin: 0 auto; }
+.skeleton .bar { height: 18px; border-radius: 6px; background: var(--paper-3); margin-bottom: 12px; }
+.error {
+  border: 1.5px solid rgba(196,71,46,.5); background: rgba(196,71,46,.06);
+  color: var(--red-deep); padding: 14px 18px; border-radius: 10px; font-size: 14px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.empty { color: var(--ink-soft); font-size: 15px; padding: 20px 0; }
+
+/* ---------- 菜谱详情 ---------- */
+.detail-hero { display: flex; gap: 22px; align-items: flex-start; margin-bottom: 26px; flex-wrap: wrap; }
+.detail-hero .dish {
+  width: 76px; height: 76px; border-radius: 18px; flex-shrink: 0;
+  background: var(--paper-3); color: var(--red-deep);
+  display: grid; place-items: center; border: 1px solid var(--line);
+}
+.detail-hero h1 { font-family: var(--serif); font-weight: 900; font-size: 34px; letter-spacing: -0.02em; margin: 0 0 4px; line-height: 1.15; }
+.detail-hero .en { color: var(--ink-soft); font-size: 14px; margin-bottom: 12px; }
+.meta-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; border: 1px solid var(--line-strong); border-radius: 999px;
+  padding: 5px 12px; background: var(--paper);
+}
+.pill svg { color: var(--red); }
+
+.summary { font-size: 15px; color: var(--ink-soft); max-width: 72ch; margin: 0 0 24px; }
+
+/* 营养表：标签表样式，细线分隔 */
+.nutri-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.nutri-table td { padding: 9px 4px; border-bottom: 1px solid var(--line); }
+.nutri-table tr:last-child td { border-bottom: none; }
+.nutri-table td:last-child { text-align: right; font-family: var(--serif); font-weight: 800; font-size: 15px; }
+
+/* 采购单 */
+.list-plain { list-style: none; margin: 0; padding: 0; }
+.list-plain li {
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 9px 2px; border-bottom: 1px dashed var(--line-strong); font-size: 14.5px;
+}
+.list-plain li:last-child { border-bottom: none; }
+.list-plain .amt { font-family: var(--serif); font-weight: 800; color: var(--red-deep); white-space: nowrap; }
+.list-plain .note { color: var(--ink-soft); font-size: 12.5px; }
+
+/* 做法步骤 */
+.steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+.steps li { display: flex; gap: 14px; padding: 12px 2px; border-bottom: 1px solid var(--line); }
+.steps li:last-child { border-bottom: none; }
+.step-no {
+  flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--red); color: #fff;
+  display: grid; place-items: center;
+  font-family: var(--serif); font-weight: 800; font-size: 14px;
+}
+.steps .meta { color: var(--ink-soft); font-size: 12.5px; margin-top: 2px; display: flex; gap: 8px; }
+
+/* 师傅说 */
+.tip-box {
+  background: var(--paper-2); border: 1px solid var(--line-strong); border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.tip-box .tip-title { display: flex; align-items: center; gap: 8px; font-family: var(--serif); font-weight: 800; font-size: 16px; margin-bottom: 8px; color: var(--green-deep); }
+.tip-box ul { margin: 0; padding-left: 18px; }
+.tip-box li { font-size: 14.5px; margin-bottom: 5px; }
+
+/* 双栏内容 */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
+@media (max-width: 860px) { .cols { grid-template-columns: 1fr; } }
+
+/* 返回链接 */
+.back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--ink-soft); margin-bottom: 18px; }
+.back-link:hover { color: var(--red); }
+.back-link svg { transform: rotate(180deg); }
+
+/* 动效：唯一的「开摊」时刻 */
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .38s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.rise-1 { animation-delay: .05s; }
+.rise-2 { animation-delay: .12s; }
+.rise-3 { animation-delay: .19s; }
+.rise-4 { animation-delay: .26s; }
+@media (prefers-reduced-motion: reduce) {
+  .rise, .rise-1, .rise-2, .rise-3, .rise-4 { animation: none; }
+}
+
+/* 键盘焦点 */
+:focus-visible { outline: 3px solid rgba(196,71,46,.55); outline-offset: 2px; border-radius: 4px; }
+
+.muted { color: var(--ink-soft); }
