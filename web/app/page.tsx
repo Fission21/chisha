@@ -9,6 +9,8 @@ import {
 import DishMark from "@/components/dish-mark";
 import { saveTarget } from "@/lib/diary";
 import { loadProfile, saveProfile } from "@/lib/profile";
+import { isLoggedIn, apiFetch } from "@/lib/auth";
+import AuthNav from "@/components/auth-nav";
 
 type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number; dietaryFiber: number; sodium: number };
 type RecipeSummary = {
@@ -65,11 +67,35 @@ export default function HomePage() {
   const [weeklyLoading, setWeeklyLoading] = useState(false);
 
   useEffect(() => {
-    const p = loadProfile();
-    if (p) {
+    const apply = (p: { sex: string; age: string; height: string; weight: string; bodyFat: string; activity: string; goal: string; allergies: string[]; cuisines: string[] }) => {
       setSex(p.sex); setAge(p.age); setHeight(p.height); setWeight(p.weight);
       setBodyFat(p.bodyFat); setActivity(p.activity); setGoal(p.goal);
       setAllergies(p.allergies); setCuisines(p.cuisines);
+    };
+    const local = loadProfile();
+    if (local) apply(local);
+    if (isLoggedIn()) {
+      (async () => {
+        try {
+          const res = await apiFetch("/api/auth/me");
+          if (res.ok) {
+            const data = await res.json();
+            if (data.profile) {
+              apply({
+                sex: data.profile.sex || "male",
+                age: data.profile.age != null ? String(data.profile.age) : "",
+                height: data.profile.height_cm != null ? String(data.profile.height_cm) : "",
+                weight: data.profile.weight_kg != null ? String(data.profile.weight_kg) : "",
+                bodyFat: data.profile.body_fat != null ? String(data.profile.body_fat) : "",
+                activity: data.profile.activity_level || "moderate",
+                goal: data.profile.goal || "maintain",
+                allergies: data.profile.allergies || [],
+                cuisines: data.profile.preferred_cuisines || [],
+              });
+            }
+          }
+        } catch { /* ignore */ }
+      })();
     }
   }, []);
 
@@ -95,6 +121,17 @@ export default function HomePage() {
       const data = await res.json();
       setPlan(data);
       saveProfile({ sex, age, height, weight, bodyFat, activity, goal, allergies, cuisines });
+      if (isLoggedIn()) {
+        apiFetch("/api/me/profile", {
+          method: "PUT",
+          body: JSON.stringify({
+            sex, age: Number(age), height_cm: Number(height), weight_kg: Number(weight),
+            body_fat: bodyFat ? Number(bodyFat) : null,
+            activity_level: activity, goal,
+            allergies, preferred_cuisines: cuisines,
+          }),
+        }).catch(() => {});
+      }
       saveTarget({
         kcal: data.daily.kcal, protein: data.daily.protein, fat: data.daily.fat,
         carb: data.daily.carb, fiber: data.daily.fiber,
@@ -154,6 +191,7 @@ export default function HomePage() {
           </div>
         </div>
         <nav className="nav">
+          <AuthNav />
           <a className="btn ghost" href="/diary">饮食记录</a>
           <a className="btn ghost" href="/recipes">菜谱库</a>
         </nav>

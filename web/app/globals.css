@@ -135,7 +135,7 @@ button { font-family: inherit; }
 }
 .btn:hover { background: var(--red-deep); }
 .btn:active { transform: translateY(1px); box-shadow: 0 1px 0 rgba(43,33,24,.25); }
-.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn:disabled { opacity: 1; background: var(--paper-3); color: var(--ink-soft); cursor: not-allowed; box-shadow: none; }
 .btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid rgba(43,33,24,.55); box-shadow: none; font-family: var(--sans); font-weight: 700; font-size: 14px; }
 .btn.ghost:hover { border-color: var(--ink); background: rgba(43,33,24,.04); }
 .btn-row { display: flex; gap: 12px; margin-top: 20px; align-items: center; }

@@ -1,6 +1,7 @@
-from pydantic import BaseModel, Field
-from typing import List, Optional
+﻿from pydantic import BaseModel, Field, EmailStr
+from typing import List, Optional, Dict
 
+# ---------- 计划 / 菜谱 ----------
 class UserInput(BaseModel):
     sex: str = Field(..., description="male/female")
     age: int = Field(..., ge=10, le=100)
@@ -87,3 +88,37 @@ class RecipeDetail(RecipeSummary):
     ingredients: List[IngredientOut]
     steps: List[StepOut]
     tips: List[str]
+
+# ---------- 认证 ----------
+class RegisterIn(BaseModel):
+    email: EmailStr
+    password: str = Field(..., min_length=6, max_length=64)
+
+class LoginIn(BaseModel):
+    email: EmailStr
+    password: str
+
+class TokenOut(BaseModel):
+    token: str
+    email: str
+
+class ProfileIn(BaseModel):
+    sex: str = "male"
+    age: Optional[int] = None
+    height_cm: Optional[float] = None
+    weight_kg: Optional[float] = None
+    body_fat: Optional[float] = None
+    activity_level: str = "moderate"
+    goal: str = "maintain"
+    allergies: List[str] = Field(default_factory=list)
+    preferred_cuisines: List[str] = Field(default_factory=list)
+
+class ProfileOut(ProfileIn):
+    pass
+
+class FavoritesIn(BaseModel):
+    ids: List[str] = Field(default_factory=list)
+
+class DiaryIn(BaseModel):
+    date: str
+    items: List[dict] = Field(default_factory=list)

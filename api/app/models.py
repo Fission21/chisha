@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, Text, ForeignKey
+﻿from sqlalchemy import Column, Integer, String, Float, Text, ForeignKey, DateTime, UniqueConstraint, func
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import relationship
 from app.db import Base
@@ -74,3 +74,48 @@ class RecipeStep(Base):
     duration_min = Column(Integer, nullable=True)
     heat = Column(String(32), nullable=True)
     recipe = relationship("Recipe", back_populates="steps")
+
+# ---------- 用户体系 ----------
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    email = Column(String(255), unique=True, index=True)
+    password_hash = Column(String(255))
+    salt = Column(String(64))
+    token = Column(String(64), index=True, nullable=True)
+    created_at = Column(DateTime, server_default=func.now())
+    profile = relationship("UserProfile", uselist=False, back_populates="user", cascade="all, delete-orphan")
+    favorites = relationship("UserFavorite", back_populates="user", cascade="all, delete-orphan")
+    diary = relationship("UserDiary", back_populates="user", cascade="all, delete-orphan")
+
+class UserProfile(Base):
+    __tablename__ = "user_profiles"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, ForeignKey("users.id"), unique=True)
+    sex = Column(String(16), default="")
+    age = Column(Integer, nullable=True)
+    height_cm = Column(Float, nullable=True)
+    weight_kg = Column(Float, nullable=True)
+    body_fat = Column(Float, nullable=True)
+    activity_level = Column(String(16), default="moderate")
+    goal = Column(String(16), default="maintain")
+    allergies = Column(JSONB, default=list)
+    preferred_cuisines = Column(JSONB, default=list)
+    user = relationship("User", back_populates="profile")
+
+class UserFavorite(Base):
+    __tablename__ = "user_favorites"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    recipe_id = Column(String(64))
+    __table_args__ = (UniqueConstraint("user_id", "recipe_id", name="uq_user_fav"),)
+    user = relationship("User", back_populates="favorites")
+
+class UserDiary(Base):
+    __tablename__ = "user_diary"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    date = Column(String(16))
+    items = Column(JSONB, default=list)
+    __table_args__ = (UniqueConstraint("user_id", "date", name="uq_user_diary"),)
+    user = relationship("User", back_populates="diary")

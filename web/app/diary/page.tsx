@@ -7,6 +7,7 @@ import {
   type DiaryItem, type DayEntry, type StoredTarget, type Totals,
 } from "@/lib/diary";
 import { IconBowl, IconFlame, IconProtein, IconCarbs, IconFat, IconLeaf, IconArrow, IconCheck, IconAlert } from "@/components/icons";
+import AuthNav from "@/components/auth-nav";
 
 type SearchResult = {
   id: string; title?: string; name?: string; cuisine?: string; difficulty?: string;
@@ -133,6 +134,7 @@ export default function DiaryPage() {
           </div>
         </div>
         <div className="nav">
+          <AuthNav />
           <span className="btn ghost" onClick={() => shiftDay(-1)} style={{ cursor: "pointer" }}>← 前一天</span>
           <span className="btn ghost" onClick={() => shiftDay(1)} style={{ cursor: "pointer" }}>后一天 →</span>
         </div>

@@ -4,7 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import { API_URL } from "@/lib/api";
 import { IconClock, IconArrow, IconFlame, IconProtein, IconCarbs, IconFat, IconStar } from "@/components/icons";
 import DishMark from "@/components/dish-mark";
-import { loadFavorites, toggleFavorite } from "@/lib/favorites";
+import { loadFavorites, toggleFavorite, syncFavoritesFromServer, pushFavoritesToServer } from "@/lib/favorites";
+import AuthNav from "@/components/auth-nav";
 
 type RecipeSummary = {
   id: string; title: string; titleEn: string; cuisine: string; difficulty: string;
@@ -28,7 +29,7 @@ export default function RecipesPage() {
   const [favs, setFavs] = useState<string[]>([]);
   const [onlyFav, setOnlyFav] = useState(false);
 
-  useEffect(() => { setFavs(loadFavorites()); }, []);
+  useEffect(() => { syncFavoritesFromServer().then(setFavs); }, []);
 
   useEffect(() => {
     (async () => {
@@ -62,6 +63,8 @@ export default function RecipesPage() {
           </div>
         </div>
       </header>
+
+      <div style={{ marginBottom: 16 }}><AuthNav /></div>
 
       <div className="panel section">
         <div className="option-row" style={{ marginBottom: 14 }}>
@@ -114,7 +117,7 @@ export default function RecipesPage() {
               <button
                 className="btn ghost"
                 style={{ padding: "8px 10px", fontSize: 13, flexShrink: 0 }}
-                onClick={() => setFavs(toggleFavorite(r.id))}
+                onClick={() => { const ids = toggleFavorite(r.id); setFavs(ids); pushFavoritesToServer(ids); }}
                 aria-pressed={fav}
               >
                 <IconStar size={15} filled={fav} />
