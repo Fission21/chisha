@@ -332,3 +332,10 @@ button { font-family: inherit; }
   margin-left: auto; font-family: var(--serif); font-weight: 800;
   color: var(--red-deep); white-space: nowrap;
 }
+
+/* ---------- 饮食记录 ---------- */
+.macro-row { margin-bottom: 14px; }
+.macro-row .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 13px; margin-bottom: 6px; }
+.macro-row .bar { height: 8px; border-radius: 999px; background: rgba(43,33,24,.12); overflow: hidden; }
+.macro-row .bar > div { height: 100%; border-radius: 999px; background: var(--red); }
+.result-list { margin-top: 8px; }

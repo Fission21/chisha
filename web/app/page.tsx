@@ -7,6 +7,7 @@ import {
   IconChef, IconBasket, IconScale, IconArrow, IconCheck, IconAlert, IconLeaf,
 } from "@/components/icons";
 import DishMark from "@/components/dish-mark";
+import { saveTarget } from "@/lib/diary";
 
 type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number; dietaryFiber: number; sodium: number };
 type RecipeSummary = {
@@ -81,7 +82,13 @@ export default function HomePage() {
         }),
       });
       if (!res.ok) throw new Error(`请求失败 (${res.status})`);
-      setPlan(await res.json());
+      const data = await res.json();
+      setPlan(data);
+      saveTarget({
+        kcal: data.daily.kcal, protein: data.daily.protein, fat: data.daily.fat,
+        carb: data.daily.carb, fiber: data.daily.fiber,
+        bmr: data.bmr, tdee: data.tdee, goal, savedAt: Date.now(),
+      });
     } catch {
       setError("连不上后厨了，请稍后再试。");
     } finally {
@@ -136,6 +143,7 @@ export default function HomePage() {
           </div>
         </div>
         <nav className="nav">
+          <a className="btn ghost" href="/diary">饮食记录</a>
           <a className="btn ghost" href="/recipes">菜谱库</a>
         </nav>
       </header>

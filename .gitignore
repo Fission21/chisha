@@ -1,4 +1,17 @@
-﻿# QA / 临时（根目录）
+﻿# dependencies
+node_modules/
+.next/
+.next-stale*/
+__pycache__/
+*.pyc
+.venv/
+# env
+.env
+.env.local
+# os
+.DS_Store
+Thumbs.db
+# QA / 临时（根目录）
 .qa-shots/
 .tmp-*/
 .tmp-npm/
