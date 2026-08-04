@@ -4,6 +4,12 @@
 
 **一句话定位**：输入身体信息和目标（增肌 / 减脂 / 维持），自动算出每日热量与三大营养素目标，推荐搭配的菜谱（中餐 + 全球做法），并给出专业、可执行、好吃的菜谱（食材克数、步骤、火候、营养、技巧）。
 
+## 线上演示 / 免费部署
+
+- 演示站（Render 免费版，非长期保障）：见 [render.yaml](render.yaml) 一键部署蓝图，在 [render.com](https://render.com) 用 GitHub 登录 → New → Blueprint，选择本仓库即可。
+- 免费版注意事项：容器磁盘是临时的，SQLite 数据会在休眠或重建后重置（每次启动自动重新导入数据，功能始终可用）；首次访问冷启动约 1 分钟。
+- 若需数据持久化：免费申请 [Neon](https://neon.tech) Postgres，在 Render 服务环境变量里设置 `DATABASE_URL` 即可（项目原生支持，无需改代码）。
+
 ## 快速开始（Docker，推荐）
 
 ```bash
@@ -22,9 +28,12 @@ python -m venv .venv
 # venv/bin/pip install -r api/requirements.txt       # macOS / Linux
 
 # 2. 初始化数据库（首次运行）
-.venv/Scripts/python -m app.seed --app-dir api       # 或先 cd api
+cd api
+../.venv/Scripts/python -m app.seed          # Windows
+# ../.venv/bin/python -m app.seed            # macOS / Linux
 
 # 3. 启动后端（API + 前端静态托管）
+cd ..
 .venv/Scripts/python -m uvicorn app.main:app --app-dir api --port 8000
 
 # 4. （可选）前端开发模式，热更新
@@ -52,9 +61,9 @@ NEXT_PUBLIC_API_URL=http://localhost:8000 npm run dev  # http://localhost:3000
 
 1. **身体档案**：身高 / 体重 / 年龄 / 性别 / 体脂率（选填）、活动量 / 目标
 2. **营养计算**：Mifflin-St Jeor → BMR → TDEE → 每日热量 + 蛋白 / 碳水 / 脂肪
-3. **吃什么**：按营养目标 + 过敏忌口 + 偏好菜系，分早餐 / 午餐 / 晚餐 / 加餐推荐，任选其一即可达标
-4. **怎么做**：专业菜谱——食材克数、步骤与火候、每份营养、过敏原、师傅小贴士
-5. **一周餐单 + 购物清单**：一键生成 7 天不重样的餐单，并自动汇总采购清单
+3. **吃什么**：按营养目标 + 过敏忌口 + 偏好菜系，分早餐 / 午餐 / 晚餐 / 加餐推荐，任选其一即可达标；不满意的菜可一键「换一道」
+4. **怎么做**：专业菜谱——食材克数、步骤与火候、每份营养、过敏原、师傅小贴士；详情页可一键记入当天饮食记录
+5. **一周餐单 + 购物清单**：一键生成 7 天不重样的餐单（每格可单独换菜），采购清单按肉蛋 / 蔬菜 / 主食 / 调料分组，可勾选家里已有的，刷新不丢
 6. **饮食记录**：按食材/菜谱记录每天吃了什么，实时对照热量与三大营养素目标
 7. **收藏**：把喜欢的菜谱收进收藏夹，菜谱库可一键筛选
 8. **记住档案**：身体信息自动保存，下次直接继续
@@ -73,7 +82,7 @@ python scripts/build_data.py   # 中国食物成分表 + 全球食材 → data/p
 ## 测试
 
 ```bash
-.venv/Scripts/python -m pytest api/tests -q   # 30 项，用 SQLite，无需 Docker
+.venv/Scripts/python -m pytest api/tests -q   # 36 项，用 SQLite，无需 Docker
 ```
 
 ## 数据来源与版权

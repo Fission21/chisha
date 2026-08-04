@@ -18,7 +18,8 @@ scripts/        数据构建脚本
 ```bash
 python -m venv .venv
 .venv/Scripts/pip install -r api/requirements.txt
-.venv/Scripts/python -m app.seed --app-dir api          # 首次初始化数据库
+cd api && ../.venv/Scripts/python -m app.seed     # 首次初始化数据库（Windows）
+# cd api && ../.venv/bin/python -m app.seed       # macOS / Linux
 .venv/Scripts/python -m uvicorn app.main:app --app-dir api --port 8000
 ```
 
@@ -31,7 +32,7 @@ python -m venv .venv
 3. 重新构建并重启：
    ```bash
    python scripts/build_data.py        # 生成 data/processed/*.json
-   .venv/Scripts/python -m app.seed --app-dir api
+   cd api && ../.venv/Scripts/python -m app.seed
    ```
 4. 跑测试确认没破坏：
    ```bash
@@ -39,10 +40,11 @@ python -m venv .venv
    ```
 
 > 营养匹配不到或引用失败时，`build_data.py` 会报错退出，方便你修。
+> 做法 / 器材 / 做法复杂度（简单 / 复杂）由构建脚本根据步骤自动生成，不需要在菜谱 JSON 里手工填写。
 
 ## 测试
 
-- 30 项测试覆盖：营养计算 / 推荐 / 菜谱 / 认证 / 一周餐单
+- 36 项测试覆盖：营养计算 / 推荐 / 菜谱 / 认证 / 一周餐单 / 换菜
 - 测试用 SQLite 临时库，**不需要 Docker 或 PostgreSQL**
 - 提交前请保证 `pytest -q` 全绿
 

@@ -1,0 +1,13 @@
+# Render 一键部署蓝图：https://render.com/docs/blueprint-spec
+# 免费版说明：容器文件系统是临时的，SQLite 数据会在服务休眠/重启后重置（每次启动自动 seed，功能始终可用）。
+# 需要持久化时可免费申请 Neon Postgres，在 Render 服务里设置 DATABASE_URL 环境变量即可切换（项目原生支持）。
+services:
+  - type: web
+    name: chisha-demo
+    runtime: docker
+    repo: https://github.com/Fission21/chisha
+    plan: free
+    region: singapore
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
