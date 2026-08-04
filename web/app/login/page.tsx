@@ -14,15 +14,26 @@ export default function LoginPage() {
 
   const submit = async () => {
     setLoading(true); setError("");
+    if (!/^\S+@\S+\.\S+$/.test(email.trim())) {
+      setError("邮箱格式不正确，请检查后重试。");
+      setLoading(false);
+      return;
+    }
     try {
       const res = await fetch(`${API_URL}/api/auth/${mode === "login" ? "login" : "register"}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email: email.trim(), password }),
       });
       if (!res.ok) {
         const d = await res.json().catch(() => ({}));
-        setError(d.detail || "操作失败，请重试");
+        const detail = d.detail;
+        const message = typeof detail === "string"
+          ? detail
+          : Array.isArray(detail)
+            ? detail.map((x: { msg?: string }) => x.msg || "输入有误").join("；")
+            : "操作失败，请重试";
+        setError(message);
         return;
       }
       const data = await res.json();
@@ -61,7 +72,7 @@ export default function LoginPage() {
           <label htmlFor="password">密码（至少 6 位）</label>
           <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete={mode === "login" ? "current-password" : "new-password"} />
         </div>
-        <button className="btn" onClick={submit} disabled={loading || !email || password.length < 6}>
+        <button className="btn" onClick={submit} disabled={loading || !email.trim() || password.length < 6}>
           {loading ? "请稍候…" : mode === "login" ? "登录" : "注册并登录"}
         </button>
         {error && (
