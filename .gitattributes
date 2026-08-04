@@ -1,0 +1,15 @@
+# 统一换行符：文本文件入库时用 LF
+* text=auto
+
+# 明确二进制类型
+*.db binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.gz binary
+*.zip binary
+*.woff binary
+*.woff2 binary

@@ -98,3 +98,11 @@ python scripts/build_data.py   # 中国食物成分表 + 全球食材 → data/p
 - [开源菜谱数据源调研](docs/recipe-sources-research.md)
 - `PRODUCT.md`：产品事实记录（impeccable）
 - `DESIGN.md`：视觉世界与设计系统（impeccable）
+## 参与贡献
+
+加菜谱、跑测试、代码规范见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+## 开源许可
+
+- 代码：MIT License（见 [LICENSE](LICENSE)）
+- 数据：来源见上文「数据来源与版权」，部分数据版权归原作者 / 出版社，仅供学习研究
