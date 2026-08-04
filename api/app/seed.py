@@ -1,15 +1,39 @@
 # 种子数据：将 processed JSON 导入数据库
 import json
+from sqlalchemy import inspect, text
 from app.db import Base, engine, SessionLocal
 from app import models
 from app.config import FOODS_FILE, RECIPES_FILE
 
+def ensure_recipe_metadata_columns():
+    columns = {column["name"] for column in inspect(engine).get_columns("recipes")}
+    missing = {"cooking_methods", "equipment", "complexity"} - columns
+    if not missing:
+        return
+    with engine.begin() as conn:
+        if "cooking_methods" in missing:
+            conn.execute(text("ALTER TABLE recipes ADD COLUMN cooking_methods JSON"))
+        if "equipment" in missing:
+            conn.execute(text("ALTER TABLE recipes ADD COLUMN equipment JSON"))
+        if "complexity" in missing:
+            conn.execute(text("ALTER TABLE recipes ADD COLUMN complexity VARCHAR(8) DEFAULT ''"))
+
 def seed():
     # 幂等：只建表，已有菜谱数据则跳过（不覆盖用户数据）
     Base.metadata.create_all(engine)
+    ensure_recipe_metadata_columns()
     db = SessionLocal()
     try:
+        recipes = json.loads(RECIPES_FILE.read_bytes().decode("utf-8-sig"))
         if db.query(models.Recipe).count() > 0:
+            metadata = {r["id"]: r for r in recipes}
+            for row in db.query(models.Recipe).all():
+                source = metadata.get(row.id)
+                if source:
+                    row.cooking_methods = source.get("cookingMethods", [])
+                    row.equipment = source.get("equipment", [])
+                    row.complexity = source.get("complexity", "")
+            db.commit()
             print("数据库已有数据，跳过种子导入")
             return
         foods = json.loads(FOODS_FILE.read_bytes().decode("utf-8-sig"))
@@ -26,13 +50,14 @@ def seed():
                 magnesium=f.get("Mg", 0), iron=f.get("Fe", 0), zinc=f.get("Zn", 0),
                 selenium=f.get("Se", 0),
             ))
-        recipes = json.loads(RECIPES_FILE.read_bytes().decode("utf-8-sig"))
         for r in recipes:
             n = r.get("nutrition", {})
             db.add(models.Recipe(
                 id=r["id"], title=r["title"], title_en=r.get("titleEn", ""),
                 cuisine=r.get("cuisine", ""), meal_types=r.get("mealTypes", []),
-                difficulty=r.get("difficulty", ""), cook_time_min=r.get("cookTimeMin", 0),
+                difficulty=r.get("difficulty", ""), complexity=r.get("complexity", ""),
+                cook_time_min=r.get("cookTimeMin", 0),
+                cooking_methods=r.get("cookingMethods", []), equipment=r.get("equipment", []),
                 servings=r.get("servings", 1), summary=r.get("summary", ""),
                 cover_emoji=r.get("coverEmoji", ""), tags=r.get("tags", []),
                 allergens=r.get("allergens", []), tips=r.get("tips", []),

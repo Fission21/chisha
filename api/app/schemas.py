@@ -28,6 +28,9 @@ class RecipeSummary(BaseModel):
     titleEn: str
     cuisine: str
     difficulty: str
+    complexity: str
+    cookingMethods: List[str]
+    equipment: List[str]
     cookTimeMin: int
     servings: int
     summary: str
@@ -36,6 +39,20 @@ class RecipeSummary(BaseModel):
     tags: List[str]
     allergens: List[str]
     nutrition: NutritionOut
+
+class RecipeFacets(BaseModel):
+    cuisines: List[str]
+    difficulties: List[str]
+    cookingMethods: List[str]
+    equipment: List[str]
+
+class RecipePage(BaseModel):
+    items: List[RecipeSummary]
+    total: int
+    page: int
+    pageSize: int
+    totalPages: int
+    facets: RecipeFacets
 
 class MealRecommendation(BaseModel):
     meal: str
@@ -51,26 +68,37 @@ class DailyTarget(BaseModel):
     carb: float
     fiber: float
 
-class PlanResponse(BaseModel):
-    bmr: float
-    tdee: float
-    daily: DailyTarget
-    meals: List[MealRecommendation]
-
-class WeekDay(BaseModel):
-    dayIndex: int
-    date: str
-    meals: List[MealRecommendation]
-
 class ShoppingItem(BaseModel):
     name: str
     amount: float
     unit: str
     note: str = ""
 
+class PlanResponse(BaseModel):
+    bmr: float
+    tdee: float
+    daily: DailyTarget
+    meals: List[MealRecommendation]
+    shoppingList: List[ShoppingItem] = Field(default_factory=list)
+
+class WeekDay(BaseModel):
+    dayIndex: int
+    date: str
+    meals: List[MealRecommendation]
+
 class WeeklyPlanResponse(BaseModel):
     days: List[WeekDay]
     shoppingList: List[ShoppingItem]
+
+class SwapIn(BaseModel):
+    meal: str
+    replaceId: str
+    keepIds: List[str] = Field(default_factory=list)
+    user: UserInput
+
+class SwapOut(BaseModel):
+    recipe: Optional[RecipeSummary] = None
+    shoppingList: List[ShoppingItem] = Field(default_factory=list)
 
 class IngredientOut(BaseModel):
     name: str

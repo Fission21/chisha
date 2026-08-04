@@ -5,12 +5,15 @@ import { IconBowl, IconClock, IconChef, IconScale, IconFlame, IconProtein,
   IconCarbs, IconFat, IconLeaf, IconAlert, IconArrow } from "@/components/icons";
 import DishMark from "@/components/dish-mark";
 import FavButton from "@/components/fav-button";
+import DiaryAddButton from "@/components/diary-add-button";
 
 type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number; dietaryFiber: number; sodium: number };
 type Ingredient = { name: string; unit: string; amount: number; note: string; food: { name: string; source: string } };
 type Step = { text: string; durationMin: number | null; heat: string | null };
 type RecipeDetail = {
   id: string; title: string; titleEn: string; cuisine: string; difficulty: string;
+  complexity: string;
+  cookingMethods: string[]; equipment: string[];
   cookTimeMin: number; servings: number; summary: string; coverEmoji: string;
   mealTypes: string[]; tags: string[]; allergens: string[]; nutrition: Nutrition;
   ingredients: Ingredient[]; steps: Step[]; tips: string[];
@@ -79,11 +82,23 @@ export default async function RecipePage({ params }: { params: Promise<{ id: str
           {r.titleEn && <div className="en">{r.titleEn}</div>}
           <div className="meta-pills">
             <FavButton recipeId={r.id} />
+            <DiaryAddButton recipeId={r.id} title={r.title} nutrition={r.nutrition} />
             <span className="pill">{r.cuisine}</span>
             <span className="pill">{r.difficulty}</span>
+            <span className="pill">{r.complexity}做法</span>
             <span className="pill"><IconClock size={14} /> {r.cookTimeMin} 分钟</span>
             <span className="pill"><IconChef size={14} /> {r.servings} 人份</span>
             <span className="pill"><IconBowl size={14} /> {r.mealTypes.map((m) => mealLabel[m] || m).join(" / ")}</span>
+          </div>
+          <div className="detail-tools">
+            <div className="detail-tool-line">
+              <span className="detail-tool-label">做法</span>
+              {r.cookingMethods.map((method) => <span className="stamp red" key={method}>{method}</span>)}
+            </div>
+            <div className="detail-tool-line">
+              <span className="detail-tool-label">器材</span>
+              {r.equipment.map((tool) => <span className="stamp mustard" key={tool}>{tool}</span>)}
+            </div>
           </div>
         </div>
       </div>

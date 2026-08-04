@@ -9,10 +9,19 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 1,
   "summary": "甜咸适口的日式经典，减糖版照烧汁。",
   "coverEmoji": "🍱",
+  "cookingMethods": [
+   "煎",
+   "煮"
+  ],
+  "equipment": [
+   "平底锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鸡腿",
@@ -158,10 +167,22 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 1,
   "summary": "蔬菜丰富、营养均衡的韩国家常饭。",
   "coverEmoji": "🍚",
+  "cookingMethods": [
+   "煎",
+   "炒",
+   "煮",
+   "拌"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "米饭",
@@ -317,10 +338,17 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 1,
   "summary": "清爽低卡的东南亚经典，蘸酱吃更美味。",
   "coverEmoji": "🥗",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "越南春卷皮",
@@ -476,10 +504,18 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "酸辣开胃的泰式沙拉，零油高蛋白。",
   "coverEmoji": "🦐",
+  "cookingMethods": [
+   "煮",
+   "拌"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "虾仁",
@@ -635,10 +671,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "暖胃低卡的日式汤，几分钟就好。",
   "coverEmoji": "🍜",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "豆腐",
@@ -760,10 +803,18 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 1,
   "summary": "墨西哥风味的高蛋白卷饼，饱腹又满足。",
   "coverEmoji": "🌯",
+  "cookingMethods": [
+   "炒",
+   "烤"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "全麦卷饼",
@@ -922,10 +973,17 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "夏威夷风日式盖饭，优质脂肪 + 蛋白。",
   "coverEmoji": "🍣",
+  "cookingMethods": [
+   "免火"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "米饭",
@@ -1081,10 +1139,21 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 2,
   "summary": "香浓东南亚风味，用低脂椰奶控制热量。",
   "coverEmoji": "🍛",
+  "cookingMethods": [
+   "煎",
+   "炒",
+   "炖"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鸡腿肉",
@@ -1227,10 +1296,19 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "暖身开胃的韩式小锅，植物蛋白为主。",
   "coverEmoji": "🍲",
+  "cookingMethods": [
+   "炒",
+   "煮"
+  ],
+  "equipment": [
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "豆腐",
@@ -1376,10 +1454,19 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 2,
   "summary": "高纤高蛋白的素食咖喱，饱腹又满足。",
   "coverEmoji": "🍛",
+  "cookingMethods": [
+   "炒",
+   "炖"
+  ],
+  "equipment": [
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鹰嘴豆（熟）",
@@ -1536,10 +1623,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "嫩滑如布丁的日式蒸蛋，高蛋白低脂。",
   "coverEmoji": "🥚",
+  "cookingMethods": [
+   "蒸"
+  ],
+  "equipment": [
+   "蒸锅"
+  ],
   "ingredients": [
    {
     "name": "鸡蛋",
@@ -1661,10 +1755,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 1,
   "summary": "居酒屋风味在家做，高蛋白配菜小食。",
   "coverEmoji": "🍢",
+  "cookingMethods": [
+   "煎"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "鸡腿肉",
@@ -1809,10 +1910,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 12,
   "servings": 1,
   "summary": "酸辣开胃的韩式经典，少油少盐版本。",
   "coverEmoji": "🍚",
+  "cookingMethods": [
+   "炒"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "米饭",
@@ -1946,10 +2054,18 @@
    "snack"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 2,
   "summary": "便携高蛋白饭团，野餐和加餐都合适。",
   "coverEmoji": "🍙",
+  "cookingMethods": [
+   "煎",
+   "拌"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "米饭",
@@ -2059,10 +2175,18 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "鸡肉滑蛋盖饭，日式居酒屋经典的低油版。",
   "coverEmoji": "🍛",
+  "cookingMethods": [
+   "煮",
+   "焖"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "米饭",
@@ -2209,10 +2333,22 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 2,
   "summary": "香浓微辣的泰式咖喱，椰奶香气十足。",
   "coverEmoji": "🍛",
+  "cookingMethods": [
+   "煎",
+   "炒",
+   "煮",
+   "炖"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鸡腿肉",
@@ -2355,10 +2491,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "酸辣鲜香的泰式名汤，低卡高蛋白。",
   "coverEmoji": "🍲",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "虾",
@@ -2504,10 +2647,17 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 1,
   "summary": "清爽的越南河粉，汤头清甜高蛋白。",
   "coverEmoji": "🍜",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "米粉（熟）",
@@ -2649,10 +2799,21 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 2,
   "summary": "印度国民菜的轻量版，酸奶让酱汁浓滑。",
   "coverEmoji": "🍛",
+  "cookingMethods": [
+   "煎",
+   "炒",
+   "炖"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鸡胸肉",
@@ -2810,10 +2971,19 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "一口一个的墨西哥风情，高蛋白低负担。",
   "coverEmoji": "🌮",
+  "cookingMethods": [
+   "炒",
+   "烤"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "玉米饼",
@@ -2956,10 +3126,18 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "酸甜微辣的泰式风味沙拉，花生碎增香。",
   "coverEmoji": "🥗",
+  "cookingMethods": [
+   "煮",
+   "拌"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鸡胸肉",
@@ -3115,10 +3293,19 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 1,
   "summary": "日式味噌风味烤鱼，配西兰花一锅出。",
   "coverEmoji": "🐟",
+  "cookingMethods": [
+   "煮",
+   "烤"
+  ],
+  "equipment": [
+   "烤箱",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "三文鱼",
@@ -3241,10 +3428,18 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "高蛋白低脂的入门健身餐，外焦里嫩，百搭主食和蔬菜。",
   "coverEmoji": "🍗",
+  "cookingMethods": [
+   "煎",
+   "焖"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "鸡胸肉",
@@ -3367,10 +3562,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "国民下饭菜的低脂改良版，蛋白与番茄的经典搭配。",
   "coverEmoji": "🍅",
+  "cookingMethods": [
+   "炒"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "鸡蛋",
@@ -3493,10 +3695,19 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "健身餐的黄金组合：优质蛋白 + 膳食纤维，口感清爽。",
   "coverEmoji": "🥦",
+  "cookingMethods": [
+   "炒",
+   "煮"
+  ],
+  "equipment": [
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鸡胸肉",
@@ -3630,10 +3841,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 2,
   "summary": "少油高蛋白的优质鱼类做法，鲜嫩无腥味。",
   "coverEmoji": "🐟",
+  "cookingMethods": [
+   "蒸"
+  ],
+  "equipment": [
+   "蒸锅"
+  ],
   "ingredients": [
    {
     "name": "鲈鱼",
@@ -3756,10 +3974,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 12,
   "servings": 1,
   "summary": "零油高蛋白的做法，最大程度保留虾的鲜甜。",
   "coverEmoji": "🦐",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "虾",
@@ -3869,10 +4094,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 2,
   "summary": "经典川菜的低油改良，甜辣下饭但热量可控。",
   "coverEmoji": "🌶️",
+  "cookingMethods": [
+   "炒"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "鸡胸肉",
@@ -4030,10 +4262,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "补铁补蛋白的牛肉小炒，青椒脆爽。",
   "coverEmoji": "🥩",
+  "cookingMethods": [
+   "炒"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "牛肉",
@@ -4165,10 +4404,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "入口即化的高蛋白早餐，低油易消化。",
   "coverEmoji": "🥚",
+  "cookingMethods": [
+   "蒸"
+  ],
+  "equipment": [
+   "蒸锅"
+  ],
   "ingredients": [
    {
     "name": "鸡蛋",
@@ -4278,10 +4524,18 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 2,
   "summary": "低 GI 主食，饱腹感强，适合减脂期代替白米饭。",
   "coverEmoji": "🍚",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅",
+   "电饭煲"
+  ],
   "ingredients": [
    {
     "name": "糙米",
@@ -4384,10 +4638,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "五分钟搞定的低卡汤品，补碘补蛋白。",
   "coverEmoji": "🍲",
+  "cookingMethods": [
+   "免火"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "紫菜",
@@ -4510,10 +4771,18 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "清爽开胃的高蛋白凉菜，夏天减脂首选。",
   "coverEmoji": "🥗",
+  "cookingMethods": [
+   "煮",
+   "拌"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鸡胸肉",
@@ -4656,10 +4925,18 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 120,
   "servings": 4,
   "summary": "备餐神器，切片即食，高蛋白低脂。",
   "coverEmoji": "🥩",
+  "cookingMethods": [
+   "煮",
+   "卤"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "牛腱子",
@@ -4803,10 +5080,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 8,
   "servings": 1,
   "summary": "低卡蔬菜，蒜香浓郁，搭配任何主菜。",
   "coverEmoji": "🥬",
+  "cookingMethods": [
+   "炒"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "生菜",
@@ -4914,10 +5198,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "低卡高纤的经典素菜，香菇增鲜。",
   "coverEmoji": "🍄",
+  "cookingMethods": [
+   "炒"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "油菜",
@@ -5037,10 +5328,18 @@
    "lunch"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "低 GI 主食 + 高蛋白的组合，清爽不油腻。",
   "coverEmoji": "🍜",
+  "cookingMethods": [
+   "煮",
+   "拌"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "荞麦面",
@@ -5184,10 +5483,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "低卡高蛋白的清爽汤，冬瓜利尿消水肿。",
   "coverEmoji": "🍵",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "冬瓜",
@@ -5310,10 +5616,19 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 2,
   "summary": "植物蛋白为主的减脂下饭菜，低油版。",
   "coverEmoji": "🌶️",
+  "cookingMethods": [
+   "炒",
+   "煮"
+  ],
+  "equipment": [
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "豆腐",
@@ -5459,10 +5774,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "天然甜味的粗粮主食替代，低卡饱腹。",
   "coverEmoji": "🎃",
+  "cookingMethods": [
+   "蒸"
+  ],
+  "equipment": [
+   "蒸锅"
+  ],
   "ingredients": [
    {
     "name": "南瓜",
@@ -5530,10 +5852,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "高蛋白 + 膳食纤维的快手小炒。",
   "coverEmoji": "🍳",
+  "cookingMethods": [
+   "炒"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "鸡蛋",
@@ -5655,10 +5984,18 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 90,
   "servings": 2,
   "summary": "滋补汤品，去油后热量适中，营养全面。",
   "coverEmoji": "🍲",
+  "cookingMethods": [
+   "煮",
+   "炖"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "猪小排",
@@ -5777,10 +6114,17 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "复杂",
   "cookTimeMin": 60,
   "servings": 2,
   "summary": "经典祛湿杂粮粥，低 GI 早餐。",
   "coverEmoji": "🥣",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "红豆",
@@ -5870,10 +6214,18 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 90,
   "servings": 2,
   "summary": "酸甜开胃的暖汤，牛肉软烂补铁。",
   "coverEmoji": "🍲",
+  "cookingMethods": [
+   "煮",
+   "炖"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "牛肉",
@@ -5992,10 +6344,17 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "复杂",
   "cookTimeMin": 40,
   "servings": 1,
   "summary": "暖胃高蛋白早餐，软烂好消化。",
   "coverEmoji": "🥣",
+  "cookingMethods": [
+   "免火"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "大米",
@@ -6128,10 +6487,18 @@
    "snack"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 8,
   "servings": 1,
   "summary": "三分钟搞定的爽口凉菜，配什么都好吃。",
   "coverEmoji": "🥒",
+  "cookingMethods": [
+   "免火",
+   "拌"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "黄瓜",
@@ -6249,10 +6616,17 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "不用油炸的健康茄子做法，软糯入味。",
   "coverEmoji": "🍆",
+  "cookingMethods": [
+   "蒸"
+  ],
+  "equipment": [
+   "蒸锅"
+  ],
   "ingredients": [
    {
     "name": "茄子",
@@ -6371,10 +6745,19 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "前一晚备好，早上开盖即食的省心高纤早餐。",
   "coverEmoji": "🥣",
+  "cookingMethods": [
+   "免火",
+   "拌",
+   "冷藏"
+  ],
+  "equipment": [
+   "冰箱"
+  ],
   "ingredients": [
    {
     "name": "燕麦片",
@@ -6506,10 +6889,17 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "无面粉的高蛋白松饼，香蕉自带甜味。",
   "coverEmoji": "🥞",
+  "cookingMethods": [
+   "煎"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "香蕉",
@@ -6633,10 +7023,17 @@
    "lunch"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 12,
   "servings": 1,
   "summary": "优质脂肪 + 蛋白质的元气早餐碗。",
   "coverEmoji": "🥗",
+  "cookingMethods": [
+   "煮"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "鸡蛋",
@@ -6769,10 +7166,18 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "地中海风情的清爽沙拉，菲达芝士提味。",
   "coverEmoji": "🥗",
+  "cookingMethods": [
+   "免火",
+   "拌"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "番茄",
@@ -6915,10 +7320,18 @@
    "lunch"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "地中海风快手卷饼，皮塔饼夹满鸡胸和蔬菜。",
   "coverEmoji": "🌯",
+  "cookingMethods": [
+   "煎",
+   "烤"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "全麦皮塔饼",
@@ -7065,10 +7478,20 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "意大利家常烘蛋，蔬菜多多蛋白质满满。",
   "coverEmoji": "🍳",
+  "cookingMethods": [
+   "煎",
+   "炒",
+   "焖"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "鸡蛋",
@@ -7216,10 +7639,17 @@
    "snack"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "植物蛋白为主的轻午餐，蘸着吃很满足。",
   "coverEmoji": "🥙",
+  "cookingMethods": [
+   "烤"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "鹰嘴豆泥",
@@ -7352,10 +7782,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 45,
   "servings": 2,
   "summary": "印度香料腌制的烤鸡，酸奶让肉质更嫩。",
   "coverEmoji": "🍗",
+  "cookingMethods": [
+   "烤"
+  ],
+  "equipment": [
+   "烤箱"
+  ],
   "ingredients": [
    {
     "name": "鸡腿肉",
@@ -7499,10 +7936,18 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "经典美式早餐，嫩滑炒蛋 + 全麦吐司。",
   "coverEmoji": "🍳",
+  "cookingMethods": [
+   "炒",
+   "烤"
+  ],
+  "equipment": [
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "鸡蛋",
@@ -7625,10 +8070,18 @@
    "snack"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 5,
   "servings": 1,
   "summary": "训练后 5 分钟搞定的高蛋白加餐，方便快捷。",
   "coverEmoji": "🥤",
+  "cookingMethods": [
+   "免火",
+   "搅拌"
+  ],
+  "equipment": [
+   "搅拌机"
+  ],
   "ingredients": [
    {
     "name": "乳清蛋白粉",
@@ -7736,10 +8189,17 @@
    "snack"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 3,
   "servings": 1,
   "summary": "高蛋白高纤的小加餐，饱腹不罪恶。",
   "coverEmoji": "🥣",
+  "cookingMethods": [
+   "免火"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "希腊酸奶（脱脂）",
@@ -7849,10 +8309,17 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 5,
   "servings": 1,
   "summary": "训练前能量小食，碳水 + 优质脂肪。",
   "coverEmoji": "🍌",
+  "cookingMethods": [
+   "烤"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "全麦面包",
@@ -7948,10 +8415,17 @@
    "snack"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 5,
   "servings": 1,
   "summary": "清爽低卡的下午加餐，换着水果吃不腻。",
   "coverEmoji": "🍓",
+  "cookingMethods": [
+   "免火"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "酸奶",
@@ -8058,10 +8532,18 @@
    "snack"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 4,
   "summary": "免烤高纤小零食，训练前补充能量。",
   "coverEmoji": "🍬",
+  "cookingMethods": [
+   "免火",
+   "冷藏"
+  ],
+  "equipment": [
+   "冰箱"
+  ],
   "ingredients": [
    {
     "name": "燕麦片",
@@ -8180,10 +8662,17 @@
    "snack"
   ],
   "difficulty": "简单",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 2,
   "summary": "酥脆的植物蛋白零食，替代薯片。",
   "coverEmoji": "🌰",
+  "cookingMethods": [
+   "烤"
+  ],
+  "equipment": [
+   "烤箱"
+  ],
   "ingredients": [
    {
     "name": "鹰嘴豆（熟）",
@@ -8303,10 +8792,18 @@
    "lunch"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "高蛋白快手三明治，通勤减脂人群的午餐救星。",
   "coverEmoji": "🥪",
+  "cookingMethods": [
+   "煎",
+   "烤"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "全麦面包",
@@ -8440,10 +8937,18 @@
    "lunch"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "Omega-3 与蛋白质兼得，五分钟完成。",
   "coverEmoji": "🥪",
+  "cookingMethods": [
+   "烤",
+   "拌"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "全麦面包",
@@ -8565,10 +9070,19 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "经典高蛋白早餐，鸡蛋加全麦面包的组合。",
   "coverEmoji": "🥚",
+  "cookingMethods": [
+   "煮",
+   "烤",
+   "拌"
+  ],
+  "equipment": [
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "全麦面包",
@@ -8690,10 +9204,20 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 1,
   "summary": "高蛋白高纤的能量沙拉，饱腹感极强。",
   "coverEmoji": "🥗",
+  "cookingMethods": [
+   "煎",
+   "煮",
+   "拌"
+  ],
+  "equipment": [
+   "平底锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "藜麦（熟）",
@@ -8848,10 +9372,18 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 15,
   "servings": 1,
   "summary": "用低脂酸奶酱代替传统蛋黄酱，热量大减。",
   "coverEmoji": "🥬",
+  "cookingMethods": [
+   "煎",
+   "烤"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "罗马生菜",
@@ -8996,10 +9528,17 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 5,
   "servings": 1,
   "summary": "免开火的 5 分钟早餐，蛋白质拉满。",
   "coverEmoji": "🥣",
+  "cookingMethods": [
+   "免火"
+  ],
+  "equipment": [
+   "无需加热"
+  ],
   "ingredients": [
    {
     "name": "希腊酸奶（脱脂）",
@@ -9121,10 +9660,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 1,
   "summary": "优质脂肪与蛋白质的完美组合，烤箱一锅出。",
   "coverEmoji": "🐟",
+  "cookingMethods": [
+   "烤"
+  ],
+  "equipment": [
+   "烤箱"
+  ],
   "ingredients": [
    {
     "name": "三文鱼",
@@ -9271,10 +9817,21 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 1,
   "summary": "经典意面的高蛋白版本，减脂期也能吃的碳水快乐。",
   "coverEmoji": "🍝",
+  "cookingMethods": [
+   "煎",
+   "炒",
+   "煮"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "意面（熟）",
@@ -9419,10 +9976,19 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "墨西哥风味的便携高蛋白卷饼。",
   "coverEmoji": "🌯",
+  "cookingMethods": [
+   "炒",
+   "烤"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "全麦卷饼",
@@ -9556,10 +10122,19 @@
    "breakfast"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 10,
   "servings": 1,
   "summary": "优质脂肪早餐，饱腹感强，可搭配任意蛋白质。",
   "coverEmoji": "🥑",
+  "cookingMethods": [
+   "煎",
+   "烤",
+   "拌"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "全麦面包",
@@ -9694,10 +10269,19 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 30,
   "servings": 1,
   "summary": "一碗装下所有营养素，色彩丰富颜值高。",
   "coverEmoji": "🍛",
+  "cookingMethods": [
+   "煎",
+   "煮"
+  ],
+  "equipment": [
+   "平底锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "藜麦（熟）",
@@ -9851,10 +10435,17 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 45,
   "servings": 2,
   "summary": "烤箱一锅出的省心晚餐，鸡腿肉嫩多汁。",
   "coverEmoji": "🍗",
+  "cookingMethods": [
+   "烤"
+  ],
+  "equipment": [
+   "烤箱"
+  ],
   "ingredients": [
    {
     "name": "鸡腿",
@@ -10009,10 +10600,18 @@
    "lunch"
   ],
   "difficulty": "中等",
+  "complexity": "复杂",
   "cookTimeMin": 25,
   "servings": 1,
   "summary": "健身也能吃的汉堡，用全麦胚和高蛋白牛肉饼。",
   "coverEmoji": "🍔",
+  "cookingMethods": [
+   "煎",
+   "烤"
+  ],
+  "equipment": [
+   "平底锅"
+  ],
   "ingredients": [
    {
     "name": "全麦汉堡胚",
@@ -10158,10 +10757,21 @@
    "dinner"
   ],
   "difficulty": "中等",
+  "complexity": "简单",
   "cookTimeMin": 20,
   "servings": 1,
   "summary": "意式经典，虾仁高蛋白低脂肪。",
   "coverEmoji": "🍤",
+  "cookingMethods": [
+   "煎",
+   "炒",
+   "煮"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅",
+   "汤锅"
+  ],
   "ingredients": [
    {
     "name": "意面（熟）",
@@ -10309,10 +10919,19 @@
    "dinner"
   ],
   "difficulty": "简单",
+  "complexity": "简单",
   "cookTimeMin": 12,
   "servings": 1,
   "summary": "欧美经典早餐，蔬菜鸡蛋一锅出。",
   "coverEmoji": "🍳",
+  "cookingMethods": [
+   "煎",
+   "炒"
+  ],
+  "equipment": [
+   "平底锅",
+   "炒锅"
+  ],
   "ingredients": [
    {
     "name": "鸡蛋",

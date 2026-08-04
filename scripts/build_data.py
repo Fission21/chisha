@@ -12,11 +12,61 @@ RECIPE_DIRS = [ROOT / "data" / "recipes"]
 OUT = ROOT / "data" / "processed"
 
 NUTRIENT_FIELDS = ["energyKCal", "protein", "fat", "CHO", "dietaryFiber",
-                  "cholesterol", "vitaminA", "vitaminC", "vitaminE", "Ca", "P", "K", "Na", "Mg", "Fe", "Zn", "Se"]
+                   "cholesterol", "vitaminA", "vitaminC", "vitaminE", "Ca", "P", "K", "Na", "Mg", "Fe", "Zn", "Se"]
 RAW_NUTRIENTS = {"energyKCal": "energyKCal", "energyKJ": "energyKJ", "protein": "protein", "fat": "fat",
                  "CHO": "CHO", "dietaryFiber": "dietaryFiber", "cholesterol": "cholesterol",
                  "vitaminA": "vitaminA", "vitaminC": "vitaminC", "vitaminE": "vitaminETotal",
-                 "Ca": "Ca", "P": "P", "K": "K", "Na": "Na", "Mg": "Mg", "Fe": "Fe", "Zn": "Zn", "Se": "Se"}
+                  "Ca": "Ca", "P": "P", "K": "K", "Na": "Na", "Mg": "Mg", "Fe": "Fe", "Zn": "Zn", "Se": "Se"}
+
+# 菜谱源数据主要记录步骤，构建时把步骤归一化成可筛选的做法和器材。
+COOKING_METHOD_RULES = [
+    ("煎", ("煎",)),
+    ("炒", ("炒", "煸", "爆香")),
+    ("蒸", ("蒸",)),
+    ("煮", ("煮", "焯", "水波")),
+    ("炖", ("炖",)),
+    ("焖", ("焖",)),
+    ("卤", ("卤",)),
+    ("烤", ("烤", "烘")),
+    ("拌", ("拌匀", "拌好", "拌入", "拌开", "拌制", "凉拌", "沙拉")),
+    ("搅拌", ("搅拌机", "搅打")),
+    ("冷藏", ("冷藏", "隔夜", "冰箱")),
+]
+HEAT_METHODS = {"煎", "炒", "蒸", "煮", "炖", "焖", "卤", "烤"}
+EQUIPMENT_RULES = [
+    ("烤箱", ("烤箱", "烤盘", "度烤", "°C")),
+    ("平底锅", ("平底锅", "不粘锅", "煎")),
+    ("炒锅", ("炒", "热锅", "爆香", "煸")),
+    ("蒸锅", ("蒸",)),
+    ("汤锅", ("煮", "焯", "炖", "卤", "水烧开")),
+    ("电饭煲", ("煮饭键",)),
+    ("搅拌机", ("搅拌机", "搅打")),
+    ("冰箱", ("冷藏", "隔夜", "冰箱")),
+]
+
+def recipe_metadata(recipe):
+    text = " ".join(str(step.get("text", "")) for step in recipe.get("steps", []))
+    methods = list(recipe.get("cookingMethods") or [])
+    if not methods:
+        methods = [label for label, keywords in COOKING_METHOD_RULES
+                   if any(keyword in text for keyword in keywords)]
+    if not any(method in HEAT_METHODS for method in methods):
+        methods.insert(0, "免火")
+
+    equipment = list(recipe.get("equipment") or [])
+    if not equipment:
+        equipment = [label for label, keywords in EQUIPMENT_RULES
+                     if any(keyword in text for keyword in keywords)]
+    if not equipment:
+        equipment = ["无需加热"]
+    return methods, equipment
+
+def recipe_complexity(recipe):
+    steps = len(recipe.get("steps") or [])
+    minutes = recipe.get("cookTimeMin") or 0
+    if minutes <= 20 and steps <= 4:
+        return "简单"
+    return "复杂"
 
 def to_num(v):
     if v is None: return 0.0
@@ -145,6 +195,8 @@ def main():
     for r, resolved in zip(recipes, all_resolved):
         total = {k: 0.0 for k in NUTRIENT_FIELDS}
         total["sodium"] = 0.0
+        cooking_methods, equipment = recipe_metadata(r)
+        complexity = recipe_complexity(r)
         items = []
         for ing, (res, how) in zip(r.get("ingredients", []), resolved):
             amount = to_num(ing.get("amount"))
@@ -166,8 +218,9 @@ def main():
         recipe_out = {
             "id": r["id"], "title": r["title"], "titleEn": r.get("titleEn", ""),
             "cuisine": r.get("cuisine", ""), "mealTypes": r.get("mealTypes", []),
-            "difficulty": r.get("difficulty", ""), "cookTimeMin": r.get("cookTimeMin", 0),
+            "difficulty": r.get("difficulty", ""), "complexity": complexity, "cookTimeMin": r.get("cookTimeMin", 0),
             "servings": servings, "summary": r.get("summary", ""), "coverEmoji": r.get("coverEmoji", ""),
+            "cookingMethods": cooking_methods, "equipment": equipment,
             "ingredients": items, "steps": r.get("steps", []), "tips": r.get("tips", []),
             "tags": r.get("tags", []), "allergens": r.get("allergens", []),
             "nutrition": per_serving,
