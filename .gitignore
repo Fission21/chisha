@@ -24,3 +24,6 @@ package.qa.json
 /package-lock.json
 # local skills (duplicate of .codex)
 .agents/
+
+# local design skill (impeccable)，见 https://github.com/pbakaus/impeccable
+.codex/

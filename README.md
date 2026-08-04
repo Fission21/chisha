@@ -86,7 +86,7 @@ python scripts/build_data.py   # 中国食物成分表 + 全球食材 → data/p
 
 - 前端：Next.js 15（App Router，静态导出）+ TypeScript + 自绘 SVG 图标 + 纯 CSS 设计系统（见 `DESIGN.md`）
 - 后端：FastAPI（SQLAlchemy + SQLite）
-- 设计规范：已安装 [impeccable](https://github.com/pbakaus/impeccable)（`.codex/skills/impeccable`），视觉世界「菜市场 · 价签」
+- 设计规范：已安装 [impeccable](https://github.com/pbakaus/impeccable)（本地开发工具，不入库），视觉世界「菜市场 · 价签」
 
 ## 文档
 
