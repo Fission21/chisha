@@ -55,35 +55,39 @@ export default function DiaryPage() {
   const items = useMemo(() => (date ? diary[date] || [] : []), [diary, date]);
   const totals = useMemo(() => computeTotals(items), [items]);
 
-  const search = async (text: string) => {
-    setQ(text);
-    if (!text.trim()) { setResults([]); return; }
-    try {
-      const url = mode === "recipe"
-        ? `${API_URL}/api/recipes?q=${encodeURIComponent(text)}&limit=8`
-        : `${API_URL}/api/foods?q=${encodeURIComponent(text)}&limit=8`;
-      const res = await fetch(url);
-      if (!res.ok) throw new Error();
-      const data = await res.json();
-      // /api/foods 营养字段在顶层，统一归一化到 nutrition
-      const norm = data.map((r: any) => ({
-        id: r.id,
-        title: r.title || r.name,
-        name: r.name,
-        cuisine: r.cuisine,
-        difficulty: r.difficulty,
-        cookTimeMin: r.cookTimeMin,
-        servings: r.servings,
-        nutrition: r.nutrition || {
-          energyKCal: r.energyKCal || 0, protein: r.protein || 0, fat: r.fat || 0,
-          CHO: r.CHO || 0, dietaryFiber: r.dietaryFiber || 0, sodium: r.sodium || 0,
-        },
-      }));
-      setResults(norm);
-    } catch {
-      setResults([]);
-    }
-  };
+  // 搜索防抖：停止输入 350ms 后才请求，避免每击键都打接口
+  useEffect(() => {
+    const text = q.trim();
+    if (!text) { setResults([]); return; }
+    const timer = setTimeout(async () => {
+      try {
+        const url = mode === "recipe"
+          ? `${API_URL}/api/recipes?q=${encodeURIComponent(text)}&limit=8`
+          : `${API_URL}/api/foods?q=${encodeURIComponent(text)}&limit=8`;
+        const res = await fetch(url);
+        if (!res.ok) throw new Error();
+        const data = await res.json();
+        // /api/foods 营养字段在顶层，统一归一化到 nutrition
+        const norm = data.map((r: any) => ({
+          id: r.id,
+          title: r.title || r.name,
+          name: r.name,
+          cuisine: r.cuisine,
+          difficulty: r.difficulty,
+          cookTimeMin: r.cookTimeMin,
+          servings: r.servings,
+          nutrition: r.nutrition || {
+            energyKCal: r.energyKCal || 0, protein: r.protein || 0, fat: r.fat || 0,
+            CHO: r.CHO || 0, dietaryFiber: r.dietaryFiber || 0, sodium: r.sodium || 0,
+          },
+        }));
+        setResults(norm);
+      } catch {
+        setResults([]);
+      }
+    }, 350);
+    return () => clearTimeout(timer);
+  }, [q, mode]);
 
   const add = () => {
     if (!picked) return;
@@ -175,7 +179,7 @@ export default function DiaryPage() {
             style={{ width: "100%", padding: "10px 12px", border: "1.5px solid var(--line-strong)", borderRadius: 10, background: "var(--paper)", fontSize: 15 }}
             placeholder={mode === "recipe" ? "搜索菜谱，如：鸡胸、三明治…" : "搜索食材，如：鸡蛋、燕麦…"}
             value={q}
-            onChange={(e) => search(e.target.value)}
+            onChange={(e) => setQ(e.target.value)}
           />
 
           {results.length > 0 && (

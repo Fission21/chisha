@@ -8,6 +8,15 @@ def test_bmr_mifflin_female():
     # 女 165cm / 55kg / 25岁: 10*55 + 6.25*165 - 5*25 - 161
     assert bmr_mifflin("female", 55, 165, 25) == 10 * 55 + 6.25 * 165 - 5 * 25 - 161
 
+def test_bmr_gender_difference():
+    # 同一身体数据下，女性 BMR 比男性低 166 kcal（-161 vs +5）
+    male = bmr_mifflin("male", 70, 175, 28)
+    female = bmr_mifflin("female", 70, 175, 28)
+    assert male - female == 166
+    targets_male = daily_targets("male", 70, 175, 28, "moderate", "cut")
+    targets_female = daily_targets("female", 70, 175, 28, "moderate", "cut")
+    assert targets_female["daily"]["kcal"] < targets_male["daily"]["kcal"]
+
 def test_daily_targets_sanity():
     t = daily_targets("male", 70, 175, 28, "moderate", "cut")
     bmr = bmr_mifflin("male", 70, 175, 28)

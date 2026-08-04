@@ -1,4 +1,6 @@
 # 推荐引擎：规则打分 + 单日推荐 + 一周餐单
+import random
+
 MEAL_SPLIT = [("breakfast", "早餐", 0.30), ("lunch", "午餐", 0.35),
               ("dinner", "晚餐", 0.25), ("snack", "加餐", 0.10)]
 
@@ -36,6 +38,8 @@ def recommend(recipes, daily_kcal: float, daily_protein: float, goal: str,
         meal_kcal = daily_kcal * split
         meal_protein = daily_protein * split
         candidates = [r for r in recipes if meal in r.get("mealTypes", [])]
+        if preferred_cuisines:
+            candidates = [r for r in candidates if r.get("cuisine", "") in preferred_cuisines]
         scored = []
         for r in candidates:
             if set(r.get("allergens", [])) & set(allergies):
@@ -71,6 +75,24 @@ def _pick_one(candidates, meal_kcal, meal_protein, goal, preferred_cuisines, cho
     scored.sort(key=lambda x: -x[0])
     return scored[0][1] if scored else None
 
+def pick_swap_recipe(recipes, meal, meal_kcal, meal_protein, goal,
+                     allergies, preferred_cuisines, exclude_ids):
+    """「换一道」：同餐次、同条件，从排除列表之外挑一道，在前几名里随机换口味。"""
+    candidates = [r for r in recipes
+                  if meal in r.get("mealTypes", [])
+                  and r["id"] not in exclude_ids
+                  and not (set(r.get("allergens", [])) & set(allergies))]
+    if preferred_cuisines:
+        candidates = [r for r in candidates if r.get("cuisine", "") in preferred_cuisines]
+    if not candidates:
+        return None
+    scored = []
+    for r in candidates:
+        s = score_recipe(r, meal_kcal, meal_protein, goal, preferred_cuisines, [], set())
+        scored.append((s, r))
+    scored.sort(key=lambda x: -x[0])
+    return random.choice(scored[:5])[1]
+
 def recommend_week(recipes, daily_kcal: float, daily_protein: float, goal: str,
                    allergies, preferred_cuisines, n_days: int = 7) -> dict:
     """生成一周餐单：每天每餐 1 道，整周尽量不重复；并汇总购物清单。"""
@@ -86,6 +108,8 @@ def recommend_week(recipes, daily_kcal: float, daily_protein: float, goal: str,
             meal_protein = daily_protein * split
             candidates = [r for r in recipes if meal in r.get("mealTypes", [])
                           and not (set(r.get("allergens", [])) & set(allergies))]
+            if preferred_cuisines:
+                candidates = [r for r in candidates if r.get("cuisine", "") in preferred_cuisines]
             pick = _pick_one(candidates, meal_kcal, meal_protein, goal, preferred_cuisines,
                              chosen_cuisines, used)
             if pick is None and candidates:

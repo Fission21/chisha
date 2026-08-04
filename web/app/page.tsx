@@ -7,7 +7,8 @@ import {
   IconChef, IconBasket, IconScale, IconArrow, IconCheck, IconAlert, IconLeaf,
 } from "@/components/icons";
 import DishMark from "@/components/dish-mark";
-import { saveTarget } from "@/lib/diary";
+import ShoppingList from "@/components/shopping-list";
+import { saveTarget, dateKey } from "@/lib/diary";
 import { loadProfile, saveProfile } from "@/lib/profile";
 import { isLoggedIn, apiFetch } from "@/lib/auth";
 import AuthNav from "@/components/auth-nav";
@@ -19,7 +20,7 @@ type RecipeSummary = {
   mealTypes: string[]; tags: string[]; allergens: string[]; nutrition: Nutrition;
 };
 type MealRec = { meal: string; mealLabel: string; targetKcal: number; targetProtein: number; recommendations: RecipeSummary[] };
-type Plan = { bmr: number; tdee: number; daily: { kcal: number; protein: number; fat: number; carb: number; fiber: number }; meals: MealRec[] };
+type Plan = { bmr: number; tdee: number; daily: { kcal: number; protein: number; fat: number; carb: number; fiber: number }; meals: MealRec[]; shoppingList: { name: string; amount: number; unit: string; note: string }[] };
 type WeeklyPlan = {
   days: { dayIndex: number; date: string; meals: MealRec[] }[];
   shoppingList: { name: string; amount: number; unit: string; note: string }[];
@@ -65,6 +66,8 @@ export default function HomePage() {
   const [plan, setPlan] = useState<Plan | null>(null);
   const [weekly, setWeekly] = useState<WeeklyPlan | null>(null);
   const [weeklyLoading, setWeeklyLoading] = useState(false);
+  const [swapLoading, setSwapLoading] = useState(false);
+  const [swapMsg, setSwapMsg] = useState("");
 
   useEffect(() => {
     const apply = (p: { sex: string; age: string; height: string; weight: string; bodyFat: string; activity: string; goal: string; allergies: string[]; cuisines: string[] }) => {
@@ -168,6 +171,82 @@ export default function HomePage() {
     }
   };
 
+  const swapRecipe = async (meal: string, replaceId: string) => {
+    if (!plan) return;
+    const keepIds = plan.meals.flatMap((m) => m.recommendations.map((r) => r.id));
+    setSwapLoading(true); setSwapMsg("");
+    try {
+      const res = await fetch(`${API_URL}/api/plan/swap`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ meal, replaceId, keepIds, user: planBody() }),
+      });
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      if (!data.recipe) {
+        flash("没有更多可换的菜了，试试放宽忌口或偏好。");
+        return;
+      }
+      flash(`已换成「${data.recipe.title}」`);
+      setPlan((prev) => {
+        if (!prev) return prev;
+        return {
+          ...prev,
+          meals: prev.meals.map((m) => (
+            m.meal !== meal ? m : { ...m, recommendations: m.recommendations.map((r) => (r.id === replaceId ? data.recipe : r)) }
+          )),
+          shoppingList: data.shoppingList,
+        };
+      });
+    } catch {
+      flash("换菜没成功，请稍后再试。");
+    } finally {
+      setSwapLoading(false);
+    }
+  };
+
+  const swapWeekly = async (dayIndex: number, meal: string, replaceId: string) => {
+    if (!weekly) return;
+    const keepIds = weekly.days.flatMap((d) => d.meals.map((m) => m.recommendations[0]?.id).filter(Boolean)) as string[];
+    setSwapLoading(true); setSwapMsg("");
+    try {
+      const res = await fetch(`${API_URL}/api/plan/swap`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ meal, replaceId, keepIds, user: planBody() }),
+      });
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      if (!data.recipe) {
+        flash("没有更多可换的菜了，试试放宽忌口或偏好。");
+        return;
+      }
+      flash(`已换成「${data.recipe.title}」`);
+      setWeekly((prev) => {
+        if (!prev) return prev;
+        return {
+          ...prev,
+          days: prev.days.map((d) => (
+            d.dayIndex !== dayIndex ? d : {
+              ...d,
+              meals: d.meals.map((m) => (m.meal !== meal ? m : { ...m, recommendations: [data.recipe] })),
+            }
+          )),
+          shoppingList: data.shoppingList,
+        };
+      });
+    } catch {
+      flash("换菜没成功，请稍后再试。");
+    } finally {
+      setSwapLoading(false);
+    }
+  };
+
+  const flash = (message: string) => {
+    setSwapMsg(message);
+    window.setTimeout(() => setSwapMsg(""), 3000);
+  };
+
   const macros = useMemo(() => {
     if (!plan) return [];
     const d = plan.daily;
@@ -241,9 +320,24 @@ export default function HomePage() {
               {m.recommendations.length > 0 && (
                 <div className="muted" style={{ fontSize: 12, margin: "-4px 0 8px 54px" }}>以下 {m.recommendations.length} 道任选其一，即可接近该餐目标</div>
               )}
-              {m.recommendations.map((r) => <MenuRow r={r} key={r.id} />)}
+              {m.recommendations.map((r) => (
+                <MenuRow r={r} key={r.id} onSwap={(id) => swapRecipe(m.meal, id)} swapDisabled={swapLoading} />
+              ))}
             </div>
           ))}
+
+          {swapMsg && <div className={`empty ${swapMsg.startsWith("已换成") ? "swap-ok" : ""}`} style={{ fontSize: 13 }}>{swapMsg}</div>}
+
+          {plan.shoppingList && plan.shoppingList.length > 0 && (
+            <div className="stall" style={{ marginTop: 26 }}>
+              <div className="stall-head">
+                <h2>今日购物清单</h2>
+                <span className="rule" />
+                <span className="hint">共 {plan.shoppingList.length} 项 · 点一下勾掉家里已有的</span>
+              </div>
+              <ShoppingList items={plan.shoppingList} storageKey={`day-${dateKey(new Date())}`} />
+            </div>
+          )}
 
           <div className="btn-row">
             <button className="btn" onClick={loadWeekly} disabled={weeklyLoading}>
@@ -274,6 +368,9 @@ export default function HomePage() {
                       <div className="meal-lbl">{m.mealLabel}</div>
                       <a href={`/recipes/${r.id}`}>{r.title}</a>
                       <div className="kcal">{Math.round(r.nutrition.energyKCal)} kcal · 蛋白 {Math.round(r.nutrition.protein)} g</div>
+                      <button type="button" className="week-swap" onClick={() => swapWeekly(day.dayIndex, m.meal, r.id)} disabled={swapLoading}>
+                        换一道
+                      </button>
                     </div>
                   );
                 })}
@@ -284,20 +381,9 @@ export default function HomePage() {
           <div className="stall-head" style={{ marginTop: 28 }}>
             <h2>一周购物清单</h2>
             <span className="rule" />
-            <span className="hint">共 {weekly.shoppingList.length} 项，按量采买</span>
+            <span className="hint">共 {weekly.shoppingList.length} 项 · 点一下勾掉家里已有的</span>
           </div>
-          <ul className="shop-list">
-            {weekly.shoppingList.map((item, i) => (
-              <li key={i}>
-                <span className="shop-box" />
-                <span>
-                  {item.name}
-                  {item.note ? <span className="muted">（{item.note}）</span> : null}
-                </span>
-                <span className="amt">{item.amount}{item.unit}</span>
-              </li>
-            ))}
-          </ul>
+          <ShoppingList items={weekly.shoppingList} storageKey={`week-${dateKey(new Date())}`} />
         </section>
       )}
 
@@ -328,6 +414,7 @@ export default function HomePage() {
                     <option value="male">男</option>
                     <option value="female">女</option>
                   </select>
+                  <div className="muted" style={{ fontSize: 12, marginTop: 4 }}>热量算法男女系数不同，请如实选择</div>
                 </div>
                 <div className="field">
                   <label htmlFor="age">年龄</label>
@@ -437,7 +524,7 @@ export default function HomePage() {
           <ul className="list-plain">
             <li><span>用 Mifflin-St Jeor 算出基础代谢与每日消耗</span><span className="amt"><IconScale size={16} /></span></li>
             <li><span>按增肌 / 减脂目标给出每日热量与三大营养素</span><span className="amt"><IconFlame size={16} /></span></li>
-            <li><span>从 48 道中餐 + 全球菜谱里按餐推荐（三明治 / 沙拉 / 意面 / 日韩东南亚）</span><span className="amt"><IconBasket size={16} /></span></li>
+            <li><span>从 77 道中餐 + 全球菜谱里按餐推荐（三明治 / 沙拉 / 意面 / 日韩东南亚）</span><span className="amt"><IconBasket size={16} /></span></li>
             <li><span>每道菜有食材克数、步骤、火候、每份营养</span><span className="amt"><IconChef size={16} /></span></li>
           </ul>
         </div>
@@ -454,7 +541,7 @@ function Price({ icon, value, unit, tone }: { icon: React.ReactNode; value: numb
   );
 }
 
-function MenuRow({ r }: { r: RecipeSummary }) {
+function MenuRow({ r, onSwap, swapDisabled }: { r: RecipeSummary; onSwap?: (id: string) => void; swapDisabled?: boolean }) {
   const n = r.nutrition;
   return (
     <div className="menu-row">
@@ -478,6 +565,11 @@ function MenuRow({ r }: { r: RecipeSummary }) {
         </div>
         <div className="stamp-row">
           {r.tags.slice(0, 4).map((t) => <span className="stamp green" key={t}>{t}</span>)}
+          {onSwap && (
+            <button type="button" className="btn ghost swap-btn" onClick={() => onSwap(r.id)} disabled={swapDisabled}>
+              换一道
+            </button>
+          )}
         </div>
       </div>
     </div>
