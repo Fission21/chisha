@@ -5,10 +5,13 @@ from app import models
 from app.config import FOODS_FILE, RECIPES_FILE
 
 def seed():
-    Base.metadata.drop_all(engine)
+    # 幂等：只建表，已有菜谱数据则跳过（不覆盖用户数据）
     Base.metadata.create_all(engine)
     db = SessionLocal()
     try:
+        if db.query(models.Recipe).count() > 0:
+            print("数据库已有数据，跳过种子导入")
+            return
         foods = json.loads(FOODS_FILE.read_bytes().decode("utf-8-sig"))
         for f in foods:
             db.add(models.Food(

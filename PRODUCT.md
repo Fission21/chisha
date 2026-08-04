@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Next.js (App Router) + FastAPI + PostgreSQL，Docker Compose 部署。现有代码库已定型。
+Next.js (App Router，静态导出) + FastAPI + SQLite，单服务（单容器）部署。
 
 ## Users
 

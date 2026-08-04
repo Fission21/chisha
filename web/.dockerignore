@@ -1,7 +1,0 @@
-﻿node_modules
-.next
-.next-stale*
-out
-npm-debug.log*
-.env*
-!.env.example

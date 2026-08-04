@@ -21,16 +21,18 @@ def summary(r: models.Recipe) -> RecipeSummary:
 def list_recipes(meal: str | None = None, cuisine: str | None = None, tag: str | None = None,
                  q: str | None = None, limit: int = 50, db: Session = Depends(get_db)):
     query = db.query(models.Recipe)
-    if meal:
-        query = query.filter(models.Recipe.meal_types.contains([meal]))
     if cuisine:
         query = query.filter(models.Recipe.cuisine == cuisine)
-    if tag:
-        query = query.filter(models.Recipe.tags.contains([tag]))
     if q:
         like = f"%{q}%"
         query = query.filter(or_(models.Recipe.title.like(like), models.Recipe.title_en.like(like)))
-    rows = query.limit(min(limit, 100)).all()
+    # JSON 数组字段（meal/tag）取回后在内存过滤，兼容 SQLite 与 PostgreSQL
+    rows = query.all()
+    if meal:
+        rows = [r for r in rows if meal in (r.meal_types or [])]
+    if tag:
+        rows = [r for r in rows if tag in (r.tags or [])]
+    rows = rows[: min(limit, 100)]
     return [summary(r) for r in rows]
 
 @router.get("/api/recipes/{recipe_id}", response_model=RecipeDetail)

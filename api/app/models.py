@@ -1,5 +1,5 @@
-﻿from sqlalchemy import Column, Integer, String, Float, Text, ForeignKey, DateTime, UniqueConstraint, func
-from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy import Column, Integer, String, Float, Text, ForeignKey, DateTime, UniqueConstraint, func
+from sqlalchemy import JSON
 from sqlalchemy.orm import relationship
 from app.db import Base
 
@@ -34,15 +34,15 @@ class Recipe(Base):
     title = Column(String(128))
     title_en = Column(String(128), default="")
     cuisine = Column(String(32), default="")
-    meal_types = Column(JSONB, default=list)
+    meal_types = Column(JSON, default=list)
     difficulty = Column(String(16), default="")
     cook_time_min = Column(Integer, default=0)
     servings = Column(Integer, default=1)
     summary = Column(Text, default="")
     cover_emoji = Column(String(16), default="")
-    tags = Column(JSONB, default=list)
-    allergens = Column(JSONB, default=list)
-    tips = Column(JSONB, default=list)
+    tags = Column(JSON, default=list)
+    allergens = Column(JSON, default=list)
+    tips = Column(JSON, default=list)
     energy_kcal = Column(Float, default=0.0)
     protein = Column(Float, default=0.0)
     fat = Column(Float, default=0.0)
@@ -99,8 +99,8 @@ class UserProfile(Base):
     body_fat = Column(Float, nullable=True)
     activity_level = Column(String(16), default="moderate")
     goal = Column(String(16), default="maintain")
-    allergies = Column(JSONB, default=list)
-    preferred_cuisines = Column(JSONB, default=list)
+    allergies = Column(JSON, default=list)
+    preferred_cuisines = Column(JSON, default=list)
     user = relationship("User", back_populates="profile")
 
 class UserFavorite(Base):
@@ -116,6 +116,6 @@ class UserDiary(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey("users.id"))
     date = Column(String(16))
-    items = Column(JSONB, default=list)
+    items = Column(JSON, default=list)
     __table_args__ = (UniqueConstraint("user_id", "date", name="uq_user_diary"),)
     user = relationship("User", back_populates="diary")

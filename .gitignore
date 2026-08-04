@@ -1,10 +1,14 @@
-﻿# dependencies
+# dependencies
 node_modules/
 .next/
 .next-stale*/
+out/
+web/out/
 __pycache__/
 *.pyc
 .venv/
+var/
+*.db
 # env
 .env
 .env.local
@@ -18,3 +22,5 @@ Thumbs.db
 package.qa.json
 /package.json
 /package-lock.json
+# local skills (duplicate of .codex)
+.agents/

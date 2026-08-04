@@ -1,5 +1,6 @@
-import { API_URL_INTERNAL } from "@/lib/api";
 import type { Metadata } from "next";
+import { promises as fs } from "fs";
+import path from "path";
 import { IconBowl, IconClock, IconChef, IconScale, IconFlame, IconProtein,
   IconCarbs, IconFat, IconLeaf, IconAlert, IconArrow } from "@/components/icons";
 import DishMark from "@/components/dish-mark";
@@ -15,14 +16,28 @@ type RecipeDetail = {
   ingredients: Ingredient[]; steps: Step[]; tips: string[];
 };
 
-async function getRecipe(id: string): Promise<RecipeDetail | null> {
+// 菜谱数据在构建时从 data/processed/recipes.json 读取，静态导出无需后端
+const RECIPES_FILE = path.join(process.cwd(), "..", "data", "processed", "recipes.json");
+
+async function loadRecipes(): Promise<RecipeDetail[]> {
   try {
-    const res = await fetch(`${API_URL_INTERNAL}/api/recipes/${id}`, { cache: "no-store" });
-    if (!res.ok) return null;
-    return await res.json();
+    const raw = await fs.readFile(RECIPES_FILE, "utf-8");
+    return JSON.parse(raw);
   } catch {
-    return null;
+    return [];
   }
+}
+
+async function getRecipe(id: string): Promise<RecipeDetail | null> {
+  const recipes = await loadRecipes();
+  return recipes.find((r) => r.id === id) ?? null;
+}
+
+export const dynamicParams = false;
+
+export async function generateStaticParams(): Promise<{ id: string }[]> {
+  const recipes = await loadRecipes();
+  return recipes.map((r) => ({ id: r.id }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
