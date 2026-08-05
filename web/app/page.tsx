@@ -272,6 +272,7 @@ export default function HomePage() {
         <nav className="nav">
           <AuthNav />
           <a className="btn ghost" href="/diary">饮食记录</a>
+          <a className="btn ghost" href="/calorie">热量查询</a>
           <a className="btn ghost" href="/recipes">菜谱库</a>
         </nav>
       </header>
@@ -524,7 +525,7 @@ export default function HomePage() {
           <ul className="list-plain">
             <li><span>用 Mifflin-St Jeor 算出基础代谢与每日消耗</span><span className="amt"><IconScale size={16} /></span></li>
             <li><span>按增肌 / 减脂目标给出每日热量与三大营养素</span><span className="amt"><IconFlame size={16} /></span></li>
-            <li><span>从 77 道中餐 + 全球菜谱里按餐推荐（三明治 / 沙拉 / 意面 / 日韩东南亚）</span><span className="amt"><IconBasket size={16} /></span></li>
+            <li><span>从中餐 + 全球菜谱里按餐推荐（三明治 / 沙拉 / 意面 / 日韩东南亚）</span><span className="amt"><IconBasket size={16} /></span></li>
             <li><span>每道菜有食材克数、步骤、火候、每份营养</span><span className="amt"><IconChef size={16} /></span></li>
           </ul>
         </div>

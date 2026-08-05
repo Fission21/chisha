@@ -95,13 +95,14 @@ button { font-family: inherit; }
 /* ---------- 表单 ---------- */
 .field { margin-bottom: 16px; }
 .field label { display: block; font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
-.field input, .field select {
+.field input, .field select, .field textarea {
   width: 100%; padding: 11px 13px;
   border: 1px solid var(--line-strong); border-radius: 10px;
   background: var(--paper); color: var(--ink); font-size: 15px; font-family: inherit;
   transition: border-color .15s, box-shadow .15s;
 }
-.field input:focus, .field select:focus {
+.field textarea { resize: vertical; min-height: 82px; line-height: 1.55; }
+.field input:focus, .field select:focus, .field textarea:focus {
   outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(196,71,46,.16);
 }
 .field input::placeholder { color: rgba(43,33,24,.55); }
@@ -280,6 +281,9 @@ button { font-family: inherit; }
 .diary-add-done svg { color: var(--green); }
 
 .summary { font-size: 15px; color: var(--ink-soft); max-width: 72ch; margin: 0 0 24px; }
+.recipe-source { margin: -12px 0 24px; font-size: 12.5px; }
+.recipe-source a { text-decoration: underline; text-underline-offset: 3px; }
+.recipe-source a:hover { color: var(--red); }
 
 /* 营养表：标签表样式，细线分隔 */
 .nutri-table { width: 100%; border-collapse: collapse; font-size: 14px; }
@@ -342,6 +346,24 @@ button { font-family: inherit; }
 :focus-visible { outline: 3px solid rgba(196,71,46,.55); outline-offset: 2px; border-radius: 4px; }
 
 .muted { color: var(--ink-soft); }
+
+/* ---------- 食材热量查询 ---------- */
+.calorie-intro { margin: -6px 0 16px; max-width: 68ch; font-size: 14px; }
+.calorie-examples { display: flex; flex-wrap: wrap; gap: 8px; }
+.calorie-examples .option { padding: 7px 12px; font-size: 13px; }
+.calorie-board { grid-template-columns: repeat(5, 1fr); }
+.calorie-notice { margin: 16px 0 0; font-size: 13px; }
+.estimate-list li { align-items: flex-start; }
+.estimate-note { margin-top: 3px; font-size: 12.5px; }
+.estimate-values { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; white-space: nowrap; color: var(--red-deep); }
+.estimate-values span { color: var(--ink-soft); font-size: 12.5px; }
+.calorie-unmatched { margin: 0 0 6px; }
+.calorie-unmatched:last-child { margin-bottom: 0; }
+@media (max-width: 720px) {
+  .calorie-board { grid-template-columns: repeat(2, 1fr); }
+  .estimate-list li { flex-direction: column; }
+  .estimate-values { align-items: flex-start; }
+}
 
 /* ---------- 一周餐单 ---------- */
 .week-day { margin-bottom: 20px; }

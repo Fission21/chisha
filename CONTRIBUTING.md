@@ -8,6 +8,7 @@
 api/            FastAPI 后端（app/ 源码、tests/ 测试）
 web/            Next.js 前端（output: export 纯静态导出 → web/out）
 data/recipes/   菜谱源数据（*.json，一行一道菜）
+data/food_portions.json  家庭份量估算规则及来源
 data/raw/       食材营养原始数据（中国食物成分表等）
 data/processed/ 构建产物（scripts/build_data.py 生成）
 scripts/        数据构建脚本
@@ -27,7 +28,7 @@ cd api && ../.venv/Scripts/python -m app.seed     # 首次初始化数据库（W
 
 ## 加一道菜谱（最常见贡献）
 
-1. 在 `data/recipes/*.json` 里按现有格式追加一道菜，字段：`id / title / titleEn / cuisine / mealTypes / difficulty / cookTimeMin / servings / summary / coverEmoji / ingredients[{name,ref,amount,unit,note}] / steps[{text,durationMin,heat}] / tips / tags / allergens`
+1. 在 `data/recipes/*.json` 里按现有格式追加一道菜，字段：`id / title / titleEn / cuisine / mealTypes / difficulty / cookTimeMin / servings / summary / coverEmoji / ingredients[{name,ref,amount,unit,note}] / steps[{text,durationMin,heat}] / tips / tags / allergens`；外部菜谱还必须带 `source{name,url,license,revision}`
 2. `ingredients[].ref` 必须是 `data/processed/foods.json` 里能匹配到的食材（按名称匹配），这样营养才会由「食材 × 克数」自动推导
 3. 重新构建并重启：
    ```bash
@@ -44,7 +45,7 @@ cd api && ../.venv/Scripts/python -m app.seed     # 首次初始化数据库（W
 
 ## 测试
 
-- 36 项测试覆盖：营养计算 / 推荐 / 菜谱 / 认证 / 一周餐单 / 换菜
+- 测试覆盖：营养计算 / 推荐 / 菜谱 / 认证 / 一周餐单 / 换菜 / 食材份量换算
 - 测试用 SQLite 临时库，**不需要 Docker 或 PostgreSQL**
 - 提交前请保证 `pytest -q` 全绿
 
@@ -58,4 +59,4 @@ cd api && ../.venv/Scripts/python -m app.seed     # 首次初始化数据库（W
 
 - 《中国食物成分表（第 6 版）》版权归出版社，商用需授权；本项目仅作学习/研究引用，来源见 `data/raw/china-food/`
 - 新加入的食材营养数据请注明来源（source 字段）
-- 菜谱文字建议原创或注明出处，不要直接搬运受版权保护的菜谱
+- 菜谱文字建议原创或注明出处，不要直接搬运受版权保护的菜谱；外部内容还要记录许可证、固定版本和原始 URL

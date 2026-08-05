@@ -9,14 +9,19 @@ def test_health():
     assert r.json()["status"] == "ok"
 
 def test_recipes_list():
-    r = client.get("/api/recipes", params={"limit": 200})
+    # 分页接口返回总数（菜谱库主入口）
+    r = client.get("/api/recipes", params={"page": 1, "page_size": 100})
     assert r.status_code == 200
-    data = r.json()
-    assert len(data) >= 70
+    body = r.json()
+    assert body["total"] >= 200
+    assert len(body["items"]) == 100
+    # 兼容旧数组模式有界返回
+    legacy = client.get("/api/recipes", params={"limit": 200})
+    assert legacy.status_code == 200
+    assert len(legacy.json()) <= 100
     # 覆盖全球菜系
-    cuisines = {x["cuisine"] for x in data}
-    for c in ["中餐", "西式", "日式", "泰式", "墨西哥", "印度"]:
-        assert c in cuisines, f"缺少菜系 {c}"
+    cuisines = {x["cuisine"] for x in body["items"]}
+    assert "中餐" in cuisines and "西式" in cuisines
 
 def test_recipes_filter_meal():
     r = client.get("/api/recipes", params={"meal": "breakfast", "limit": 200})
@@ -79,6 +84,86 @@ def test_foods_search():
     r = client.get("/api/foods", params={"q": "鸡", "limit": 10})
     assert r.status_code == 200
     assert len(r.json()) > 0
+
+def test_oil_energy_footnote_is_preserved():
+    r = client.get("/api/foods", params={"q": "橄榄油", "limit": 10})
+    assert r.status_code == 200
+    olive_oil = next(item for item in r.json() if item["name"] == "橄榄油")
+    assert olive_oil["energyKCal"] == 899.0
+
+def test_howtocook_recipe_has_pinned_source_provenance():
+    r = client.get("/api/recipes/howtocook-gyudon")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["source"] == {
+        "name": "Anduin2017/HowToCook",
+        "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/日式肥牛丼饭/日式肥牛丼饭.md",
+        "license": "Unlicense",
+        "revision": "c05758fa661ac4efa0361a987b700a351a22159b",
+    }
+    assert body["nutrition"]["energyKCal"] > 0
+
+def test_food_estimate_natural_language_portions():
+    r = client.post("/api/foods/estimate", json={
+        "query": "一个大苹果，一个中等长度的香蕉，一杯250毫升的牛奶",
+    })
+    assert r.status_code == 200
+    body = r.json()
+    assert not body["unmatched"]
+    assert [item["food"]["name"] for item in body["items"]] == [
+        "苹果（代表值）", "香蕉 [甘蕉]", "纯牛奶（代表值，全脂）",
+    ]
+    assert [item["amountG"] for item in body["items"]] == [223.0, 118.0, 250.0]
+    assert body["total"]["energyKCal"] == 390.4
+    assert "估算" in body["notice"]
+
+def test_food_estimate_daily_staples():
+    r = client.post("/api/foods/estimate", json={
+        "query": "一碗米饭，一个鸡蛋，一片全麦面包，一罐可乐",
+    })
+    assert r.status_code == 200
+    body = r.json()
+    assert not body["unmatched"]
+    assert [item["food"]["name"] for item in body["items"]] == [
+        "米饭（蒸，代表值）", "鸡蛋（代表值）", "全麦面包", "可乐（含糖）",
+    ]
+    # 一碗米饭 150g、一个鸡蛋 60g、一片全麦面包 35g、一罐可乐 330g
+    assert [item["amountG"] for item in body["items"]] == [150.0, 60.0, 35.0, 330.0]
+
+def test_food_estimate_veg_fruit_and_half():
+    r = client.post("/api/foods/estimate", json={
+        "query": "半个西瓜，一根黄瓜，两颗草莓，两勺白糖",
+    })
+    assert r.status_code == 200
+    body = r.json()
+    assert not body["unmatched"]
+    assert [item["food"]["name"] for item in body["items"]] == [
+        "西瓜（代表值）", "黄瓜（鲜）[胡瓜]", "草莓 [洋莓, 凤阳草莓]", "白糖",
+    ]
+    assert [item["amountG"] for item in body["items"]] == [1000.0, 250.0, 24.0, 24.0]
+
+def test_food_estimate_ml_density_and_noodle_note():
+    r = client.post("/api/foods/estimate", json={
+        "query": "一杯豆浆，一小把花生，一碗面条",
+    })
+    assert r.status_code == 200
+    body = r.json()
+    assert not body["unmatched"]
+    assert [item["food"]["name"] for item in body["items"]] == [
+        "豆浆", "花生仁（生）", "挂面（代表值）",
+    ]
+    assert [item["amountG"] for item in body["items"]] == [250.0, 15.0, 125.0]
+
+def test_food_estimate_reports_unmatched_items_without_guessing():
+    r = client.post("/api/foods/estimate", json={"query": "一碗火星果, 200g 苹果"})
+    assert r.status_code == 200
+    body = r.json()
+    assert len(body["items"]) == 1
+    assert body["items"][0]["amountG"] == 200.0
+    assert body["unmatched"] == [{
+        "input": "一碗火星果",
+        "reason": "没有找到对应食材；可尝试写明食材名称和克数，例如“200g 鸡胸肉”。",
+    }]
 
 def test_plan_male_cut():
     body = {

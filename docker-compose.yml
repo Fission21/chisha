@@ -5,6 +5,10 @@ services:
     build: .
     ports:
       - "8000:8000"
+    environment:
+      # 可选：把本机或 .env 中的演示账户配置传给容器；未设置时不会创建账户。
+      - DEFAULT_ACCOUNT_EMAIL
+      - DEFAULT_ACCOUNT_PASSWORD
     volumes:
       - chisha-data:/app/var   # SQLite 数据持久化
 volumes:

@@ -1,57 +1,48 @@
-# 开源菜谱数据源调研（2026-08-04）
+# 开源菜谱与营养数据源调研（2026-08-05）
 
-> 目的：把「吃啥」的菜谱库从 77 道扩充到规模化，同时保持"食材→营养库→按克数推导营养"的现有管道成立。
+目标是补齐日式、西式菜谱，同时保持“每份营养 = 已知食材 × 明确克数”的计算链路。评估标准依次是：许可证和权利链、食材/步骤可结构化程度、营养可验证性、维护性，以及是否适合静态构建期导入。
 
-## 一、国际菜谱（英语/全球）
+## 已采纳：HowToCook 作为做法来源
 
-### 1. TheMealDB —— 首选，已实测可用
-- 官网：https://www.themealdb.com （免费 REST API，key 用默认 1 即可）
-- 规模：669 道全球菜谱，14 个分类：Beef / Chicken / Dessert / Pasta / Seafood / Vegetarian / Breakfast / Lamb / Goat / Pork / Starter / Side / Miscellaneous / Vegan
-- 每道菜包含：菜名、地区（British / Chinese / Italian / Mexican...）、食材+用量、分步做法、封面图、分类标签
-- 实测：/api/json/v1/1/search.php?s=chicken 返回 200 OK（59KB）；分类拉取正常
-- 优点：免费、JSON 直接拿、字段结构与现有菜谱格式高度吻合、正好补"全球菜谱"空缺
-- 缺点：英文；中餐只有少量（宫保鸡丁等）；食材是英文明称，需要映射到营养库
+[Anduin2017/HowToCook](https://github.com/Anduin2017/HowToCook) 的根 [LICENSE](https://github.com/Anduin2017/HowToCook/blob/master/LICENSE) 为 Unlicense，允许复制、修改、商用和再分发。它是 Markdown 菜谱库，模板与实际菜谱有标题、工具、食材、计算和步骤，但没有统一、可验证的蛋白质/脂肪/碳水数据。
 
-### 2. hhursev/recipe-scrapers —— 抓取工具（GitHub 2208 星）
-- https://github.com/hhursev/recipe-scrapers
-- Python 包，支持解析 300+ 菜谱网站（AllRecipes / BBC Good Food / 下厨房等）
-- 不直接给数据，是"批量抓取器"：指定 URL/站点即可抓结构化菜谱
-- 用途：按需补充特定品类（健身友好：鸡胸、牛肉、虾仁、减脂餐）
+本项目采用以下受控方式，而不是全量自动抓取：
 
-### 3. openrecipes（fictive-kin）—— 下载源疑似失效
-- https://github.com/fictive-kin/openrecipes
-- 曾提供 10 万+ 菜谱 MongoDB dump
-- 实测官方 S3 链接只返回 20 字节，已失效；需找镜像
+- 固定到提交 `c05758fa661ac4efa0361a987b700a351a22159b`；每道菜保存原始 URL、许可证和版本。
+- 首批导入 4 道已人工映射到本地食材表的菜谱：日式肥牛丼饭、日式咖喱鸡肉饭、意式肉酱面、黄油香煎牛排配蔬菜。
+- 不复制图片；不把上游“预估卡路里”当作产品营养数据；统一以 `ingredients[].ref` 与 g/ml 重算。
+- 以后每批导入仍须检查可食部、生熟重量、范围值、可选食材和过敏原；不能因上游是 Unlicense 就跳过营养审校。
 
-### 4. Recipe1M —— 学术数据集（英文，100 万道）
-- 需注册申请，1.3GB，pickle / layer1.json 格式
-- 含步骤/食材/图片，但无营养数据，清洗成本高
+这让 HowToCook 成为中文做法的可追溯来源，但它不是西餐/日餐营养数据库的替代品。
 
-### 5. Kaggle 数据集
-- Food.com：18 万菜谱含营养信息 + 70 万条评分
-- Epicurious：2 万菜谱含营养
-- 均为 CSV，需 Kaggle 账号下载
+## 营养事实源
 
-## 二、中文菜谱（最贴合产品定位）
+| 来源 | 许可证/权利 | 适合用途 | 结论 |
+|---|---|---|---|
+| [USDA FoodData Central](https://fdc.nal.usda.gov/) | CC0 / 公共领域；建议标明来源 | 西式常见食材、家庭份量、每 100g 营养 | 推荐作为全球食材和份量规则的构建期参考，不在运行期依赖 API |
+| [日本食品标准成分表 / MEXT 食品成分数据库](https://fooddb.mext.go.jp/) | 官方明确可二次利用，须注明出典 | 日式食材、米饭、纳豆、豆腐、调味品 | 推荐作为下一批日餐食材补充；导入前保存版本和来源字段 |
+| 《中国食物成分表（第 6 版）》 | 出版社版权，商用需单独授权 | 当前中文食材主库 | 继续沿用现有学习/研究边界；商业化时优先替换或取得授权 |
 
-### 1. 下厨房语料库 —— 152 万条（含 3 万道菜）非 GitHub
-- OpenBayes：openbayes.com/console/hyperai-tutorials/datasets/FiI7ADwGuzB/1/overview
-- 含菜名/食材/步骤，学术用途；需要清洗 + 食材名映射营养库
-- 最大，但落地成本最高
+FoodData Central 的份量文档明确以“可食部分克数”配合每 100g 营养计算每份，正好对应本项目的计算方式。因此“大苹果”“中等香蕉”“一杯牛奶”被实现为带来源的估算词典，而不是把自然语言直接当成精确重量。
 
-### 2. 美食天下爬虫仓库 —— 大多只有代码没有数据
-- copyWith/meishiChina 等 5+ 个仓库都是静态站爬虫代码，无数据，不值得用
+## GitHub 候选与处理结论
 
-### 3. JoeanAmier/Kitchen_Helper —— 下厨房爬虫
-- https://github.com/JoeanAmier/Kitchen_Helper
-- 可自己跑，抓取下厨房菜谱入库（含食材、步骤、营养标签）
+| 候选 | 覆盖 | 许可证/数据质量 | 结论 |
+|---|---|---|---|
+| [Anduin2017/HowToCook](https://github.com/Anduin2017/HowToCook) | 中文家庭菜、部分日式/意式/西式 | Unlicense；步骤可用，营养不完整 | 已采用为做法来源，人工映射后导入 |
+| [mrslbt/tabedata-mcp](https://github.com/mrslbt/tabedata-mcp) | 日本连锁、便利店、日系快餐 | MIT；README 数据说明称约 10% 为估算/AI 编译 | 不作为核心营养真值；未来可人工复核后用于“品牌食品”补充 |
+| [openfoodfacts/openfoodfacts-server](https://github.com/openfoodfacts/openfoodfacts-server) | 全球包装食品、条码、过敏原 | 服务器 AGPL-3.0，数据库 ODbL | 不合并进本地食品库；若将来做条码即时查询，需先接受署名/ShareAlike 数据义务 |
+| [google-research-datasets/Nutrition5k](https://github.com/google-research-datasets/Nutrition5k) | 5,006 份餐食的营养聚合 | CC BY 4.0；没有可展示的完整菜谱，仓库已归档 | 仅可作聚合计算测试/研究数据，不导入产品菜谱 |
+| [josephrmartinez/recipe-dataset](https://github.com/josephrmartinez/recipe-dataset) | 英文菜谱样本 | 标注 CC BY-SA，但正文来自 Epicurious | 上游权利链不清，不导入 |
 
-## 三、营养数据策略（关键约束）
-- 现有营养库：1657 条中国食物成分表 + 84 条全球食材 = 1741 条
-- 新菜谱的食材尽量映射到现有营养库，按克数推导营养，推荐/热量计算依然成立
-- 映射不上的：按份估算并标注"参考值"，或跳过该道菜
+未采用“网页爬虫 + 大规模抓取菜谱”路线：即使脚本仓库是开源，抓到的菜谱正文、图片和品牌数据仍未自动获得再分发权。
 
-## 四、推荐落地路线
-1. 第一步（立刻做）：导入 TheMealDB 669 道，菜谱库 77 -> 700+，全球菜系全覆盖，英文菜名配中文译名+emoji
-2. 第二步（补充中文）：用 recipe-scrapers 从下厨房/美食天下抓"健身友好品类"（鸡胸/牛肉/虾/减脂餐），先小批量（几百道）
-3. 第三步（规模化）：下厨房 152 万语料库做清洗管线，长期扩充
+## 扩充流程
+
+1. 选择有明确许可证的单道菜谱，固定上游提交或发布版本。
+2. 在 `data/recipes/*.json` 写入 `source.name/url/license/revision`，并将所有食材改成可计算的 g/ml。
+3. 让每个 `ref` 匹配 `data/processed/foods.json`；不匹配时先补充带来源的食材数据，不用“适量”绕过构建。
+4. 运行 `python scripts/build_data.py`，检查营养和 `source` 是否进入 `data/processed/recipes.json`。
+5. 执行后端测试、前端构建和实际页面检查；详情页必须显示来源，热量查询必须显示“估算”。
+
+详见 [ADR-0005](../decisions/adr/2026-08/2026-08-05-0005-external-recipe-provenance-and-portion-estimation.md)。

@@ -9,6 +9,7 @@ DATA_DIR = Path(
 )
 FOODS_FILE = DATA_DIR / "foods.json"
 RECIPES_FILE = DATA_DIR / "recipes.json"
+FOOD_PORTIONS_FILE = DATA_DIR / "food_portions.json"
 
 # 数据库：默认 SQLite（零配置、单文件）；如需 PostgreSQL 用环境变量覆盖 DATABASE_URL
 DATABASE_URL = os.environ.get("DATABASE_URL", "sqlite:///./var/chisha.db")

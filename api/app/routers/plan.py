@@ -20,6 +20,8 @@ def recipe_dict(r: models.Recipe) -> dict:
         "cookingMethods": list(r.cooking_methods or []),
         "equipment": list(r.equipment or []), "cookTimeMin": r.cook_time_min, "servings": r.servings,
         "summary": r.summary, "coverEmoji": r.cover_emoji,
+        "source": {"name": r.source_name or "本项目整理", "url": r.source_url or "",
+                   "license": r.source_license or "", "revision": r.source_revision or ""},
         "mealTypes": list(r.meal_types or []), "tags": list(r.tags or []),
         "allergens": list(r.allergens or []),
         "ingredients": [

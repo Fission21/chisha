@@ -10,11 +10,13 @@ import DiaryAddButton from "@/components/diary-add-button";
 type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number; dietaryFiber: number; sodium: number };
 type Ingredient = { name: string; unit: string; amount: number; note: string; food: { name: string; source: string } };
 type Step = { text: string; durationMin: number | null; heat: string | null };
+type RecipeSource = { name: string; url: string; license: string; revision: string };
 type RecipeDetail = {
   id: string; title: string; titleEn: string; cuisine: string; difficulty: string;
   complexity: string;
   cookingMethods: string[]; equipment: string[];
   cookTimeMin: number; servings: number; summary: string; coverEmoji: string;
+  source: RecipeSource;
   mealTypes: string[]; tags: string[]; allergens: string[]; nutrition: Nutrition;
   ingredients: Ingredient[]; steps: Step[]; tips: string[];
 };
@@ -104,6 +106,15 @@ export default async function RecipePage({ params }: { params: Promise<{ id: str
       </div>
 
       <p className="summary">{r.summary}</p>
+
+      {r.source.url && (
+        <p className="muted recipe-source">
+          做法来源：<a href={r.source.url} target="_blank" rel="noreferrer">{r.source.name}</a>
+          {r.source.license ? ` · ${r.source.license}` : ""}
+          {r.source.revision ? ` · 版本 ${r.source.revision.slice(0, 12)}` : ""}
+          {"；营养按本项目食材和克数推算。"}
+        </p>
+      )}
 
       <div className="cols" style={{ marginBottom: 26 }}>
         <div className="panel">

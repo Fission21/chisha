@@ -1,0 +1,1479 @@
+[
+  {
+    "id": "htc-braised-shrimp",
+    "title": "油焖大虾",
+    "titleEn": "Braised Prawns",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "虾壳酥香、虾肉弹嫩，酱汁浓郁，连壳都入味。",
+    "coverEmoji": "🦐",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/aquatic/油焖大虾/油焖大虾.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "对虾",
+        "ref": "对虾",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄酱",
+        "ref": "番茄酱",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "对虾剪须开背挑虾线，姜切丝，葱切段。",
+        "durationMin": 8
+      },
+      {
+        "text": "热锅下油，虾煎至两面变红出虾油。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "下姜丝葱段，烹料酒，加酱油、白糖、番茄酱。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "加两勺水焖 3 分钟，大火收汁。",
+        "durationMin": 5,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "开背更入味，也方便吃。",
+      "虾油煎出来汤更香。"
+    ],
+    "tags": [
+      "中式",
+      "海鲜",
+      "虾",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-sweet-sour-carp",
+    "title": "糖醋鲤鱼",
+    "titleEn": "Sweet and Sour Carp",
+    "cuisine": "中式",
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "复杂",
+    "cookTimeMin": 50,
+    "servings": 3,
+    "summary": "经典宴客菜：鲤鱼炸至外酥里嫩，浇上糖醋汁，造型漂亮。",
+    "coverEmoji": "🐟",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/aquatic/糖醋鲤鱼/糖醋鲤鱼.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鲤鱼",
+        "ref": "鲤鱼[鲤拐子]",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "面粉",
+        "ref": "小麦粉（代表值）",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄酱",
+        "ref": "番茄酱",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鲤鱼处理干净，打十字花刀，用料酒姜丝腌 10 分钟。",
+        "durationMin": 12
+      },
+      {
+        "text": "面粉加淀粉和水调成糊，鱼身挂糊。",
+        "durationMin": 5
+      },
+      {
+        "text": "油温六成热，拎鱼头炸至定型，转小火炸透捞起，复炸至金黄。",
+        "durationMin": 18,
+        "heat": "中火"
+      },
+      {
+        "text": "留底油炒番茄酱，加白糖米醋酱油和水烧开勾芡，浇在鱼上。",
+        "durationMin": 8,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "花刀深浅均匀，炸出才好看。",
+      "糖醋汁酸甜比例按口味调。"
+    ],
+    "tags": [
+      "中式",
+      "糖醋",
+      "鲤鱼",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-braised-fish",
+    "title": "红烧鱼",
+    "titleEn": "Braised Fish",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 30,
+    "servings": 3,
+    "summary": "家常红烧鱼：煎香后焖烧，咸甜酱汁裹满鱼身。",
+    "coverEmoji": "🐟",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/aquatic/红烧鱼.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "草鱼",
+        "ref": "草鱼",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "草鱼处理干净，擦干水分，两面划刀。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，鱼煎至两面金黄。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "下姜蒜爆香，烹料酒和米醋，加酱油白糖和开水。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "小火焖 10 分钟，大火收汁撒葱花。",
+        "durationMin": 12,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "鱼身擦干再煎，皮不破。",
+      "加醋去腥提鲜。"
+    ],
+    "tags": [
+      "中式",
+      "红烧",
+      "鱼类",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-braised-carp",
+    "title": "红烧鲤鱼",
+    "titleEn": "Braised Carp",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 35,
+    "servings": 3,
+    "summary": "鲤鱼红烧，鱼肉鲜嫩，酱汁咸甜，经典家常味。",
+    "coverEmoji": "🐟",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/aquatic/红烧鲤鱼.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鲤鱼",
+        "ref": "鲤鱼[鲤拐子]",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鲤鱼处理干净划刀，擦干水分。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，鱼煎至两面金黄。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "下姜蒜葱爆香，烹料酒米醋，加酱油白糖和开水。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "小火焖 12 分钟，大火收汁。",
+        "durationMin": 14,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "鲤鱼土腥味重，料酒和姜要给足。",
+      "煎鱼时不要频繁翻动。"
+    ],
+    "tags": [
+      "中式",
+      "红烧",
+      "鲤鱼",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-steamed-mandarin-fish",
+    "title": "清蒸鳜鱼",
+    "titleEn": "Steamed Mandarin Fish",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 25,
+    "servings": 2,
+    "summary": "鳜鱼肉质细嫩，清蒸保留原汁原味，淋豉油鲜上加鲜。",
+    "coverEmoji": "🐟",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/清蒸鳜鱼/清蒸鳜鱼.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鳜鱼",
+        "ref": "鳜鱼 [桂鱼、花鲫鱼]",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鳜鱼处理干净，两面划刀，抹料酒塞姜片腌 10 分钟。",
+        "durationMin": 12
+      },
+      {
+        "text": "蒸锅水开，鱼上锅大火蒸 8 分钟。",
+        "durationMin": 10,
+        "heat": "蒸"
+      },
+      {
+        "text": "倒掉盘中蒸水，铺葱丝。",
+        "durationMin": 2
+      },
+      {
+        "text": "热油浇在葱丝上，淋酱油即可。",
+        "durationMin": 4,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "蒸鱼水一定要倒掉，去腥。",
+      "8 分钟刚好，蒸久肉老。"
+    ],
+    "tags": [
+      "中式",
+      "清蒸",
+      "鱼类",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-carp-cabbage-stew",
+    "title": "鲤鱼炖白菜",
+    "titleEn": "Carp with Cabbage Stew",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 40,
+    "servings": 3,
+    "summary": "东北炖法：鲤鱼与白菜同炖，汤汁鲜美，白菜吸满鱼味。",
+    "coverEmoji": "🐟",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/aquatic/鲤鱼炖白菜/鲤鱼炖白菜.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鲤鱼",
+        "ref": "鲤鱼[鲤拐子]",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白菜",
+        "ref": "大白菜（代表值）",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鲤鱼处理干净切段，白菜切大片。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，鱼段煎至微黄，下姜蒜烹料酒。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "加开水没过鱼，大火煮 10 分钟至汤白。",
+        "durationMin": 12,
+        "heat": "大火"
+      },
+      {
+        "text": "下白菜小火炖 12 分钟，加盐调味。",
+        "durationMin": 14,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "鱼先煎再炖，汤色奶白。",
+      "白菜后放，保留清甜。"
+    ],
+    "tags": [
+      "中式",
+      "炖菜",
+      "鱼类",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-garlic-steamed-shrimp",
+    "title": "蒜蓉虾",
+    "titleEn": "Garlic Steamed Shrimp",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 30,
+    "servings": 2,
+    "summary": "蒜蓉粉丝蒸虾：蒜香浓郁，虾肉弹嫩，粉丝吸满汤汁。",
+    "coverEmoji": "🦐",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/aquatic/蒜蓉虾/蒜蓉虾.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "基围虾",
+        "ref": "白米虾 [水虾米]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "粉丝",
+        "ref": "粉丝",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蚝油",
+        "ref": "蚝油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "粉丝泡软铺盘底；虾开背去虾线。",
+        "durationMin": 10
+      },
+      {
+        "text": "蒜末分两份，一半用热油泼成金蒜。",
+        "durationMin": 4,
+        "heat": "小火"
+      },
+      {
+        "text": "金蒜生蒜混合，加蚝油酱油白糖调成蒜蓉酱。",
+        "durationMin": 3
+      },
+      {
+        "text": "虾码在粉丝上铺蒜蓉酱，大火蒸 8 分钟，撒葱花浇热油。",
+        "durationMin": 12,
+        "heat": "蒸"
+      }
+    ],
+    "tips": [
+      "虾开背深一点，摆盘更漂亮。",
+      "蒸 8 分钟，虾肉刚好弹嫩。"
+    ],
+    "tags": [
+      "中式",
+      "海鲜",
+      "蒜蓉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-garlic-butter-shrimp",
+    "title": "蒜香黄油虾",
+    "titleEn": "Garlic Butter Shrimp",
+    "cuisine": "西式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "黄油蒜香煎虾，奶香浓郁，搭配柠檬清爽解腻。",
+    "coverEmoji": "🦐",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/aquatic/蒜香黄油虾/蒜香黄油虾.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "基围虾",
+        "ref": "白米虾 [水虾米]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黄油",
+        "ref": "黄油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黑胡椒",
+        "ref": "黑胡椒",
+        "amount": 1,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "柠檬",
+        "ref": "柠檬",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "虾去壳留尾，开背去虾线，擦干水分。",
+        "durationMin": 8
+      },
+      {
+        "text": "黄油入锅融化，下蒜末炒香。",
+        "durationMin": 3,
+        "heat": "小火"
+      },
+      {
+        "text": "下虾仁煎至两面变红。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "加盐和黑胡椒翻匀，挤柠檬汁出锅。",
+        "durationMin": 2,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "黄油小火化，避免焦苦。",
+      "柠檬汁最后挤，清香不酸涩。"
+    ],
+    "tags": [
+      "西式",
+      "海鲜",
+      "黄油",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-steamed-oysters",
+    "title": "清蒸生蚝",
+    "titleEn": "Steamed Oysters",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "生蚝蒜蓉蒸，鲜嫩多汁，蒜香扑鼻。",
+    "coverEmoji": "🦪",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/aquatic/清蒸生蚝.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "生蚝",
+        "ref": "生蚝",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小米椒",
+        "ref": "小米椒",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蚝油",
+        "ref": "蚝油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "生蚝刷洗干净，撬开留肉带壳。",
+        "durationMin": 10
+      },
+      {
+        "text": "蒜和小米椒切末，加酱油蚝油调成酱汁。",
+        "durationMin": 4
+      },
+      {
+        "text": "酱汁铺在生蚝上，水开蒸 6 分钟。",
+        "durationMin": 8,
+        "heat": "蒸"
+      },
+      {
+        "text": "撒葱花，浇少许热油。",
+        "durationMin": 3
+      }
+    ],
+    "tips": [
+      "生蚝蒸 6 分钟刚好，久蒸缩水。",
+      "撬蚝注意安全，戴厚手套。"
+    ],
+    "tags": [
+      "中式",
+      "海鲜",
+      "生蚝",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-spicy-chicken-feet-pot",
+    "title": "香辣鸡爪煲",
+    "titleEn": "Spicy Chicken Feet Pot",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 70,
+    "servings": 3,
+    "summary": "鸡爪软糯脱骨，土豆香菇吸饱香辣汤汁，越啃越香。",
+    "coverEmoji": "🍗",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/香辣鸡爪煲/香辣鸡爪煲.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡爪",
+        "ref": "鸡爪",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香菇（鲜）",
+        "ref": "香菇（鲜）[香蕈，冬菇]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡爪剪指甲焯水；土豆切块，香菇切片。",
+        "durationMin": 12,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒香豆瓣酱、姜蒜和干辣椒，下鸡爪翻炒。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "烹料酒，加酱油白糖和开水没过鸡爪，小火炖 40 分钟。",
+        "durationMin": 45,
+        "heat": "小火"
+      },
+      {
+        "text": "下土豆和香菇再炖 15 分钟，大火收汁。",
+        "durationMin": 18,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "鸡爪焯水后冷水冲洗，更Q弹。",
+      "炖到皮糯一抿即化最佳。"
+    ],
+    "tags": [
+      "中式",
+      "香辣",
+      "鸡爪",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-boiled-fish-sichuan",
+    "title": "水煮鱼",
+    "titleEn": "Sichuan Boiled Fish",
+    "cuisine": "中式",
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 45,
+    "servings": 3,
+    "summary": "鱼片滑嫩，麻辣红油，配豆芽娃娃菜，川味经典。",
+    "coverEmoji": "🐟",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "草鱼",
+        "ref": "草鱼",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆芽",
+        "ref": "绿豆芽",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "娃娃菜",
+        "ref": "娃娃菜",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "辣椒粉",
+        "ref": "辣椒粉",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "草鱼片成薄片，加料酒、淀粉和盐抓匀腌 15 分钟。",
+        "durationMin": 18
+      },
+      {
+        "text": "豆芽娃娃菜焯水垫入碗底。",
+        "durationMin": 4,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒香豆瓣酱、姜蒜，加开水煮开，下鱼片滑散煮 1 分钟。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "连汤倒入碗中，撒辣椒粉、花椒粉、蒜末，浇热油激香。",
+        "durationMin": 6,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "鱼片腌上淀粉，滑嫩不散。",
+      "鱼片下锅 30 秒变色即熟。"
+    ],
+    "tags": [
+      "中式",
+      "川菜",
+      "水煮",
+      "本项目整理"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-braised-hairtail",
+    "title": "红烧带鱼",
+    "titleEn": "Braised Hairtail",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 30,
+    "servings": 3,
+    "summary": "带鱼煎香后红烧，咸甜适口，下饭利器。",
+    "coverEmoji": "🐟",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "带鱼",
+        "ref": "带鱼 [白带鱼、刀鱼]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "面粉",
+        "ref": "小麦粉（代表值）",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "带鱼去头尾内脏，切段擦干，裹薄面粉。",
+        "durationMin": 8
+      },
+      {
+        "text": "热锅下油，带鱼煎至两面金黄。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "下姜蒜葱爆香，烹料酒米醋，加酱油白糖和开水。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "小火焖 8 分钟，大火收汁。",
+        "durationMin": 10,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "带鱼裹粉防破皮。",
+      "焖煮时间短，保持鱼肉嫩。"
+    ],
+    "tags": [
+      "中式",
+      "红烧",
+      "带鱼",
+      "本项目整理"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-tomato-fish-fillet-soup",
+    "title": "番茄鱼片汤",
+    "titleEn": "Tomato Fish Fillet Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 30,
+    "servings": 3,
+    "summary": "番茄酸甜汤底配滑嫩鱼片，高蛋白低脂暖胃汤。",
+    "coverEmoji": "🍅",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "草鱼",
+        "ref": "草鱼",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄",
+        "ref": "番茄 [西红柿]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "草鱼片成薄片，加料酒淀粉抓匀腌 10 分钟；番茄切块。",
+        "durationMin": 12
+      },
+      {
+        "text": "热锅下油，番茄炒出沙，加开水煮开。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "下鱼片滑散煮 2 分钟。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "加盐调味，撒葱花。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "鱼片下锅轻轻推散，别用力搅。",
+      "番茄炒出沙汤才浓郁。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "鱼类",
+      "本项目整理"
+    ],
+    "allergens": []
+  }
+]

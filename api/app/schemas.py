@@ -22,6 +22,37 @@ class NutritionOut(BaseModel):
     dietaryFiber: float
     sodium: float
 
+class RecipeSourceOut(BaseModel):
+    name: str
+    url: str = ""
+    license: str = ""
+    revision: str = ""
+
+class FoodEstimateIn(BaseModel):
+    query: str = Field(..., min_length=1, max_length=500)
+
+class FoodEstimateFood(BaseModel):
+    id: int
+    name: str
+    source: str
+
+class FoodEstimateItem(BaseModel):
+    input: str
+    food: FoodEstimateFood
+    amountG: float
+    amountNote: str
+    nutrition: NutritionOut
+
+class FoodEstimateUnmatched(BaseModel):
+    input: str
+    reason: str
+
+class FoodEstimateOut(BaseModel):
+    items: List[FoodEstimateItem] = Field(default_factory=list)
+    unmatched: List[FoodEstimateUnmatched] = Field(default_factory=list)
+    total: NutritionOut
+    notice: str
+
 class RecipeSummary(BaseModel):
     id: str
     title: str
@@ -35,6 +66,7 @@ class RecipeSummary(BaseModel):
     servings: int
     summary: str
     coverEmoji: str
+    source: RecipeSourceOut
     mealTypes: List[str]
     tags: List[str]
     allergens: List[str]

@@ -17,7 +17,19 @@ docker compose up -d --build
 # 打开 http://localhost:8000
 ```
 
-首次启动会自动导入数据（1741 条食材营养 + 77 道菜谱），之后数据保存在 `chisha-data` 卷里，重启不丢失。
+首次启动会自动导入数据（1741 条食材营养 + 205 道菜谱），之后数据保存在 `chisha-data` 卷里，重启不丢失。
+
+### 可选演示账户
+
+项目默认不创建用户。若要在本地或受控演示环境预置一个可登录账户，在首次启动前同时设置以下环境变量；例如在 PowerShell 中：
+
+```powershell
+$env:DEFAULT_ACCOUNT_EMAIL = "demo@chisha.local"
+$env:DEFAULT_ACCOUNT_PASSWORD = Read-Host "设置至少 6 位的演示账户密码"
+docker compose up -d --build
+```
+
+登录邮箱为 `DEFAULT_ACCOUNT_EMAIL` 的值，密码为你刚设置的 `DEFAULT_ACCOUNT_PASSWORD`。seed 只在账号不存在时创建一次，不会在后续启动时重置密码、登录状态或同步数据。请勿把密码写入仓库或公开部署的环境变量；此演示账户也不应用于真实个人健康数据。
 
 ## 本地开发（不用 Docker）
 
@@ -68,6 +80,7 @@ NEXT_PUBLIC_API_URL=http://localhost:8000 npm run dev  # http://localhost:3000
 7. **收藏**：把喜欢的菜谱收进收藏夹，菜谱库可一键筛选
 8. **记住档案**：身体信息自动保存，下次直接继续
 9. **账号同步**：注册 / 登录后，档案、收藏、饮食记录云端保存，换设备不丢
+10. **食材热量查询**：输入“一个大苹果”“一个中等长度的香蕉”“一杯 250 ml 牛奶”等，查看匹配食材、换算重量和热量合计；未知份量会提示补充信息
 
 ## 数据管道
 
@@ -76,20 +89,21 @@ python scripts/build_data.py   # 中国食物成分表 + 全球食材 → data/p
 ```
 
 - 数据源：`data/raw/china-food/`（中国食物成分表第 6 版 OCR，来源见下方）、`data/global_foods.json`（USDA 近似值）
-- 新菜谱放 `data/recipes/*.json`（格式见 `data/recipes/chinese.json`），重新 build + 重启即可
+- 家庭份量规则在 `data/food_portions.json`，构建后生成 `data/processed/food_portions.json`；仅用于“个 / 根 / 杯 / ml”的估算
+- 新菜谱放 `data/recipes/*.json`（格式见 `data/recipes/chinese.json`）；外部菜谱必须带 `source.name/url/license/revision`，重新 build + 重启即可
 - 菜谱营养由「食材 × 克数」推导，随食材库自动更新
 
 ## 测试
 
 ```bash
-.venv/Scripts/python -m pytest api/tests -q   # 36 项，用 SQLite，无需 Docker
+.venv/Scripts/python -m pytest api/tests -q   # 用 SQLite，无需 Docker
 ```
 
 ## 数据来源与版权
 
 - 《中国食物成分表（第 6 版）》1657 条（[Sanotsu/china-food-composition-data](https://github.com/Sanotsu/china-food-composition-data)，OCR 识别，版权归出版社，商用需授权）
-- 全球食材补充（USDA 近似值，`data/global_foods.json` 标注 source）
-- 菜谱（自建，营养由食材推导）
+- 全球食材与家庭份量补充参考 [USDA FoodData Central](https://fdc.nal.usda.gov/)（公共领域 / CC0；`data/global_foods.json`、`data/food_portions.json` 标注 source）
+- 菜谱（自建与 [HowToCook](https://github.com/Anduin2017/HowToCook) 固定版本整理；外部菜谱逐道保留来源、Unlicense 和版本，营养仍由食材推导）
 
 ## 技术栈
 

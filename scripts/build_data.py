@@ -8,6 +8,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw" / "china-food"
 GLOBAL = ROOT / "data" / "global_foods.json"
+PORTIONS = ROOT / "data" / "food_portions.json"
 RECIPE_DIRS = [ROOT / "data" / "recipes"]
 OUT = ROOT / "data" / "processed"
 
@@ -68,11 +69,24 @@ def recipe_complexity(recipe):
         return "简单"
     return "复杂"
 
+def recipe_source(recipe):
+    source = recipe.get("source") or {}
+    if not isinstance(source, dict):
+        source = {}
+    return {
+        "name": str(source.get("name") or "本项目整理"),
+        "url": str(source.get("url") or ""),
+        "license": str(source.get("license") or ""),
+        "revision": str(source.get("revision") or ""),
+    }
+
 def to_num(v):
     if v is None: return 0.0
     s = str(v).strip()
     if s in ("", "—", "-", "Tr", "tr", "微量"): return 0.0
-    s = s.replace("…", "")
+    # 中国食物成分表的部分数值附带 "*" 脚注（例如植物油 899* kcal），
+    # 它不是数值的一部分，保留会导致 float 解析失败并把能量错误地归零。
+    s = s.replace("…", "").replace("*", "")
     try: return float(s)
     except ValueError: return 0.0
 
@@ -118,6 +132,17 @@ def load_global():
         records.append(rec)
     return records
 
+def load_portion_profiles(food_records, global_records):
+    data = json.loads(PORTIONS.read_bytes().decode("utf-8-sig"))
+    profiles = data.get("profiles")
+    if not isinstance(profiles, list) or not profiles:
+        raise ValueError("food_portions.json 必须包含非空 profiles 数组")
+    known_names = {record["name"] for record in food_records + global_records}
+    missing = [profile.get("foodName", "") for profile in profiles if profile.get("foodName") not in known_names]
+    if missing:
+        raise ValueError(f"份量配置引用了不存在的食材: {missing}")
+    return data
+
 def build_indexes(foods, globals_):
     idx_food = {}
     idx_food_full = {}
@@ -135,8 +160,8 @@ def resolve(ing, idx_food, idx_food_full, idx_global, foods, globals_):
     ref = ing.get("ref")
     if ref:
         rn = norm(ref); rs = strip_brackets(ref)
-        if rs in idx_food: return idx_food[rs], "food"
         if rn in idx_food_full: return idx_food_full[rn], "food"
+        if rs in idx_food: return idx_food[rs], "food"
         if rn in idx_global: return idx_global[rn], "global"
         hits = [f for f in foods if len(rs) >= 2 and (rs in strip_brackets(f["name"]) or strip_brackets(f["name"]) in rs)]
         if hits:
@@ -149,6 +174,7 @@ def resolve(ing, idx_food, idx_food_full, idx_global, foods, globals_):
         return None, "unresolved"
     else:
         nn = norm(name); ns = strip_brackets(name)
+        if nn in idx_food_full: return idx_food_full[nn], "food"
         if ns in idx_food: return idx_food[ns], "food"
         if nn in idx_global: return idx_global[nn], "global"
         hits = [f for f in foods if len(ns) >= 2 and ns in strip_brackets(f["name"])]
@@ -165,6 +191,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     foods = load_foods()
     globals_ = load_global()
+    portion_profiles = load_portion_profiles(foods, globals_)
     idx_food, idx_food_full, idx_global = build_indexes(foods, globals_)
     print(f"foods(中): {len(foods)}, global: {len(globals_)}")
 
@@ -220,6 +247,7 @@ def main():
             "cuisine": r.get("cuisine", ""), "mealTypes": r.get("mealTypes", []),
             "difficulty": r.get("difficulty", ""), "complexity": complexity, "cookTimeMin": r.get("cookTimeMin", 0),
             "servings": servings, "summary": r.get("summary", ""), "coverEmoji": r.get("coverEmoji", ""),
+            "source": recipe_source(r),
             "cookingMethods": cooking_methods, "equipment": equipment,
             "ingredients": items, "steps": r.get("steps", []), "tips": r.get("tips", []),
             "tags": r.get("tags", []), "allergens": r.get("allergens", []),
@@ -233,7 +261,9 @@ def main():
         json.dump(all_foods, f, ensure_ascii=False, indent=1)
     with open(OUT / "recipes.json", "w", encoding="utf-8") as f:
         json.dump(out_recipes, f, ensure_ascii=False, indent=1)
-    print("written:", OUT / "foods.json", OUT / "recipes.json")
+    with open(OUT / "food_portions.json", "w", encoding="utf-8") as f:
+        json.dump(portion_profiles, f, ensure_ascii=False, indent=1)
+    print("written:", OUT / "foods.json", OUT / "recipes.json", OUT / "food_portions.json")
 
 if __name__ == "__main__":
     main()

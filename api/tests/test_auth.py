@@ -1,6 +1,11 @@
 ﻿from app.main import app
 from fastapi.testclient import TestClient
 import time
+from app.auth import verify_password
+from app.db import SessionLocal
+from app.default_account import ensure_configured_default_account
+from app.models import User
+from app.seed import seed
 
 client = TestClient(app)
 PASSWORD = "secret123"
@@ -77,3 +82,55 @@ def test_logout_invalidates_token():
     h = {"Authorization": f"Bearer {data['token']}"}
     client.post("/api/auth/logout", headers=h)
     assert client.get("/api/auth/me", headers=h).status_code == 401
+
+
+def test_default_account_is_disabled_without_configuration(monkeypatch):
+    monkeypatch.delenv("DEFAULT_ACCOUNT_EMAIL", raising=False)
+    monkeypatch.delenv("DEFAULT_ACCOUNT_PASSWORD", raising=False)
+    db = SessionLocal()
+    try:
+        assert ensure_configured_default_account(db) is False
+    finally:
+        db.close()
+
+
+def test_default_account_requires_both_environment_variables(monkeypatch):
+    monkeypatch.setenv("DEFAULT_ACCOUNT_EMAIL", "missing-password@example.com")
+    monkeypatch.delenv("DEFAULT_ACCOUNT_PASSWORD", raising=False)
+    db = SessionLocal()
+    try:
+        try:
+            ensure_configured_default_account(db)
+        except RuntimeError as error:
+            assert "must be configured together" in str(error)
+        else:
+            assert False, "partially configured default account should fail"
+    finally:
+        db.close()
+
+
+def test_seed_creates_configured_default_account_once(monkeypatch):
+    email = f"seeded-{int(time.time() * 1000)}@example.com"
+    password = "test-only-default-password"
+    monkeypatch.setenv("DEFAULT_ACCOUNT_EMAIL", email)
+    monkeypatch.setenv("DEFAULT_ACCOUNT_PASSWORD", password)
+
+    seed()
+    login = client.post("/api/auth/login", json={"email": email, "password": password})
+    assert login.status_code == 200
+    token = login.json()["token"]
+
+    monkeypatch.setenv("DEFAULT_ACCOUNT_PASSWORD", "a-different-test-password")
+    seed()
+    db = SessionLocal()
+    try:
+        user = db.query(User).filter(User.email == email).one()
+        assert user.token == token
+        assert user.password_hash != password
+        assert verify_password(password, user.salt, user.password_hash)
+    finally:
+        db.close()
+
+    assert client.post(
+        "/api/auth/login", json={"email": email, "password": "a-different-test-password"}
+    ).status_code == 401

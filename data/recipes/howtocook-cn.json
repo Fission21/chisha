@@ -1,0 +1,5698 @@
+[
+  {
+    "id": "htc-red-braised-pork",
+    "title": "简易红烧肉",
+    "titleEn": "Braised Pork Belly",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 90,
+    "servings": 4,
+    "summary": "猪肉焯水去腥后炒糖色焖煮，肥而不腻、咸甜适口；营养按可食五花肉与酱汁估算。",
+    "coverEmoji": "🍖",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/红烧肉/简易红烧肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "五花肉",
+        "ref": "猪肉（奶面）[硬五花]",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "桂皮",
+        "ref": "桂皮",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "五花肉切麻将块，冷水下锅加料酒焯水，撇沫后捞出沥干。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "锅中小火放少许油和白糖，炒至琥珀色糖色，下肉块翻炒上色。",
+        "durationMin": 8,
+        "heat": "小火"
+      },
+      {
+        "text": "加姜葱、八角、桂皮和酱油炒香，倒入开水没过肉块，大火烧开转小火焖 60 分钟。",
+        "durationMin": 65,
+        "heat": "小火"
+      },
+      {
+        "text": "开大火收汁至浓稠，盛出即可。",
+        "durationMin": 7,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "糖色炒到琥珀色即可，过头会发苦。",
+      "焖煮中途翻动几次，防止糊底；水一次加够。"
+    ],
+    "tags": [
+      "中式",
+      "红烧",
+      "下饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-sweet-sour-spareribs",
+    "title": "糖醋排骨",
+    "titleEn": "Sweet and Sour Spareribs",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 60,
+    "servings": 3,
+    "summary": "经典糖醋味型：先炸后烧，排骨外酥里嫩，酸甜开胃。",
+    "coverEmoji": "🍖",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/糖醋排骨/糖醋排骨.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "排骨",
+        "ref": "酱排骨",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 35,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "排骨剁小块，冷水下锅加料酒姜片焯水，捞出沥干；用少许淀粉抓匀。",
+        "durationMin": 12,
+        "heat": "大火"
+      },
+      {
+        "text": "锅中放宽油烧至六成热，排骨分批炸至表面微黄捞出。",
+        "durationMin": 10,
+        "heat": "中火"
+      },
+      {
+        "text": "留底油炒香姜葱，加酱油、米醋、白糖和开水调成糖醋汁，下排骨小火焖 25 分钟。",
+        "durationMin": 30,
+        "heat": "小火"
+      },
+      {
+        "text": "大火收汁，让排骨裹满酱汁即可。",
+        "durationMin": 8,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "糖醋比例可按口味微调，先酸后甜更解腻。",
+      "炸排骨油温不宜过高，避免外焦里生。"
+    ],
+    "tags": [
+      "中式",
+      "糖醋",
+      "排骨",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-twice-cooked-pork",
+    "title": "回锅肉",
+    "titleEn": "Twice Cooked Pork",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 45,
+    "servings": 3,
+    "summary": "川味经典：五花肉先煮后炒，配豆瓣酱和蒜苗，肥而不腻、咸辣下饭。",
+    "coverEmoji": "🥘",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/回锅肉/回锅肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "五花肉",
+        "ref": "猪肉（奶面）[硬五花]",
+        "amount": 350,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "青蒜",
+        "ref": "青蒜（青葱）",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "菜籽油",
+        "ref": "菜籽油 [青油]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "五花肉冷水下锅，加姜片料酒煮至筷子能扎透，捞出晾凉切薄片。",
+        "durationMin": 25,
+        "heat": "大火"
+      },
+      {
+        "text": "青蒜斜切段，蒜拍碎；豆瓣酱剁细备用。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅少油，下肉片煸炒至卷曲出油，拨到一边。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "用底油炒香豆瓣酱和蒜，与肉片翻匀，加酱油白糖，最后下青蒜段炒断生。",
+        "durationMin": 4,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "肉片切得薄一些，煸炒时才容易出灯盏窝。",
+      "青蒜下锅后快速翻炒，保持脆嫩。"
+    ],
+    "tags": [
+      "中式",
+      "川菜",
+      "下饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-yuxiang-shredded-pork",
+    "title": "鱼香肉丝",
+    "titleEn": "Yuxiang Shredded Pork",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 30,
+    "servings": 2,
+    "summary": "鱼香是酸甜咸辣复合味：肉丝滑嫩，木耳胡萝卜脆爽，配米饭一绝。",
+    "coverEmoji": "🥢",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/鱼香肉丝.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "木耳（水发）",
+        "ref": "木耳（水发）[黑木耳，云耳]",
+        "amount": 80,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "胡萝卜",
+        "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+        "amount": 80,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "青椒",
+        "ref": "辣椒（青、尖）",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "里脊切丝，加料酒、少许淀粉抓匀腌 10 分钟；木耳、胡萝卜、青椒切丝。",
+        "durationMin": 12
+      },
+      {
+        "text": "酱油、米醋、白糖、淀粉加两勺水调成鱼香汁。",
+        "durationMin": 3
+      },
+      {
+        "text": "热锅下油滑炒肉丝至变色盛出；底油炒香豆瓣酱、姜蒜。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "下木耳胡萝卜青椒炒断生，回入肉丝，倒入鱼香汁翻炒收汁。",
+        "durationMin": 5,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "鱼香汁提前调好，下锅后动作要快。",
+      "豆瓣酱有咸味，酱油酌情少放。"
+    ],
+    "tags": [
+      "中式",
+      "川菜",
+      "下饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-potato-sparerib-stew",
+    "title": "土豆炖排骨",
+    "titleEn": "Pork Ribs and Potato Stew",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 70,
+    "servings": 3,
+    "summary": "家常炖菜：排骨软烂、土豆绵糯，汤汁拌饭都香。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/土豆炖排骨/土豆炖排骨.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "排骨",
+        "ref": "酱排骨",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 350,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "排骨焯水去沫；土豆去皮切滚刀块泡水备用。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒香姜葱和八角，下排骨煸炒至微黄，烹料酒。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "加酱油白糖和开水没过排骨，小火炖 40 分钟。",
+        "durationMin": 45,
+        "heat": "小火"
+      },
+      {
+        "text": "下土豆再炖 15 分钟至软糯，大火收汁。",
+        "durationMin": 18,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "土豆后放，避免炖碎。",
+      "最后收汁时汤汁变浓即可，不必收干。"
+    ],
+    "tags": [
+      "中式",
+      "炖菜",
+      "排骨",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-stir-fried-beef",
+    "title": "小炒黄牛肉",
+    "titleEn": "Stir Fried Yellow Beef",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 25,
+    "servings": 2,
+    "summary": "湘式爆炒：牛肉滑嫩，小米辣提香，锅气十足。",
+    "coverEmoji": "🌶️",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/小炒黄牛肉/小炒黄牛肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "牛柳",
+        "ref": "牛肉（里脊肉）[牛柳]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小米椒",
+        "ref": "小米椒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香菜",
+        "ref": "香菜（鲜）[芫荽]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "牛柳逆纹切薄片，加料酒、酱油、淀粉抓匀腌 10 分钟。",
+        "durationMin": 12
+      },
+      {
+        "text": "小米椒切圈，姜蒜切片，香菜切段。",
+        "durationMin": 4
+      },
+      {
+        "text": "热锅下油，大火快速滑炒牛肉至变色，拨到一边。",
+        "durationMin": 3,
+        "heat": "大火"
+      },
+      {
+        "text": "下姜蒜小米椒爆香，与牛肉翻匀，撒香菜段出锅。",
+        "durationMin": 2,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "牛肉逆纹切，腌的时候加点油锁住水分。",
+      "全程大火快炒，牛肉才嫩。"
+    ],
+    "tags": [
+      "中式",
+      "湘菜",
+      "牛肉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-tomato-beef-stew",
+    "title": "西红柿土豆炖牛肉",
+    "titleEn": "Beef Stew with Tomato and Potato",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 90,
+    "servings": 4,
+    "summary": "酸甜浓郁的番茄汤底配上软烂牛肉与土豆，一锅满足。",
+    "coverEmoji": "🍅",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/西红柿土豆炖牛肉/西红柿土豆炖牛肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "牛腩",
+        "ref": "牛肉（腹部肉）[牛腩]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄",
+        "ref": "番茄 [西红柿]",
+        "amount": 350,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "洋葱",
+        "ref": "洋葱（鲜）[葱头]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄膏",
+        "ref": "番茄膏",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "牛腩切块焯水；番茄一半切丁一半切块，土豆切块。",
+        "durationMin": 12,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒香姜片，下番茄丁炒出沙，加番茄膏翻炒。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "下牛腩、料酒和开水，小火炖 60 分钟。",
+        "durationMin": 65,
+        "heat": "小火"
+      },
+      {
+        "text": "下土豆和番茄块再炖 15 分钟，加盐调味收汁。",
+        "durationMin": 18,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "番茄炒出沙汤底更浓郁。",
+      "牛肉炖到筷子可轻松插入再下土豆。"
+    ],
+    "tags": [
+      "中式",
+      "炖菜",
+      "牛肉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-tomato-brisket",
+    "title": "西红柿牛腩",
+    "titleEn": "Tomato Beef Brisket",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 100,
+    "servings": 4,
+    "summary": "汤菜两吃：牛腩软烂，番茄汤酸甜浓郁，可配米饭或拌面。",
+    "coverEmoji": "🥘",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/西红柿牛腩/西红柿牛腩.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "牛腩",
+        "ref": "牛肉（腹部肉）[牛腩]",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄",
+        "ref": "番茄 [西红柿]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "牛腩切块焯水去沫；番茄去皮切块。",
+        "durationMin": 12,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒香姜葱，下番茄炒出汁水。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "下牛腩、料酒和足量开水，小火炖 75 分钟。",
+        "durationMin": 80,
+        "heat": "小火"
+      },
+      {
+        "text": "加盐和白糖调味，再煮 5 分钟，撒葱花。",
+        "durationMin": 8,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "番茄去皮口感更好，划十字烫一下即可。",
+      "炖足时间，牛腩才软烂。"
+    ],
+    "tags": [
+      "中式",
+      "炖菜",
+      "牛肉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-mushroom-steamed-chicken",
+    "title": "香菇滑鸡",
+    "titleEn": "Steamed Chicken with Mushroom",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 40,
+    "servings": 3,
+    "summary": "蒸制做法锁住鸡腿鲜汁，香菇增香，汤汁拌饭一流。",
+    "coverEmoji": "🍗",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/香菇滑鸡/香菇滑鸡.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡腿",
+        "ref": "鸡腿",
+        "amount": 450,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香菇（鲜）",
+        "ref": "香菇（鲜）[香蕈，冬菇]",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蚝油",
+        "ref": "蚝油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡腿去骨切块，加酱油、料酒、蚝油、淀粉和姜丝腌 15 分钟。",
+        "durationMin": 18
+      },
+      {
+        "text": "香菇切片垫在盘底，铺上鸡块。",
+        "durationMin": 5
+      },
+      {
+        "text": "蒸锅水开后放入，大火蒸 20 分钟。",
+        "durationMin": 22,
+        "heat": "蒸"
+      },
+      {
+        "text": "出锅淋香油，撒葱花即可。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "鸡腿肉比鸡胸更滑嫩，蒸制不易柴。",
+      "腌料里的淀粉让鸡块更嫩滑。"
+    ],
+    "tags": [
+      "中式",
+      "蒸菜",
+      "鸡肉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-huangmen-chicken",
+    "title": "黄焖鸡",
+    "titleEn": "Braised Chicken Rice Bowl",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 50,
+    "servings": 3,
+    "summary": "黄焖酱汁浓郁，鸡肉入味，土豆绵软，配米饭停不下来。",
+    "coverEmoji": "🍗",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/黄焖鸡.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡腿",
+        "ref": "鸡腿",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香菇（鲜）",
+        "ref": "香菇（鲜）[香蕈，冬菇]",
+        "amount": 120,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "青椒",
+        "ref": "辣椒（青、尖）",
+        "amount": 80,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡腿剁块焯水；香菇切片，土豆切块，青椒切段。",
+        "durationMin": 12,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒香姜蒜和豆瓣酱，下鸡块翻炒上色，烹料酒。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "加酱油、白糖和开水没过鸡肉，小火焖 20 分钟。",
+        "durationMin": 25,
+        "heat": "小火"
+      },
+      {
+        "text": "下土豆再焖 12 分钟，下青椒翻匀收汁。",
+        "durationMin": 15,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "豆瓣酱炒出红油再下鸡块。",
+      "青椒最后放，保持清香味。"
+    ],
+    "tags": [
+      "中式",
+      "焖菜",
+      "鸡肉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-ginger-chicken",
+    "title": "姜炒鸡",
+    "titleEn": "Ginger Stir Fried Chicken",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 30,
+    "servings": 3,
+    "summary": "姜香浓郁的快手炒鸡，咸鲜下饭，做法简单。",
+    "coverEmoji": "🍗",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/姜炒鸡/姜炒鸡.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡腿",
+        "ref": "鸡腿",
+        "amount": 450,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡腿剁小块，加料酒和少许盐腌 10 分钟；姜切片，葱切段。",
+        "durationMin": 12
+      },
+      {
+        "text": "热锅下油，先下姜片煸至微焦出香。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "下鸡块大火翻炒至变色，烹料酒和酱油。",
+        "durationMin": 8,
+        "heat": "大火"
+      },
+      {
+        "text": "加白糖和少许开水，焖 5 分钟，下葱段翻匀出锅。",
+        "durationMin": 8,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "姜片煸透才香，不要怕多。",
+      "焖煮时间短，鸡肉保持嫩。"
+    ],
+    "tags": [
+      "中式",
+      "炒菜",
+      "鸡肉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-guizhou-spicy-chicken",
+    "title": "贵州辣子鸡",
+    "titleEn": "Guizhou Spicy Chicken",
+    "cuisine": "中式",
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 45,
+    "servings": 3,
+    "summary": "干辣椒和花椒的焦香裹着鸡块，香辣过瘾，川黔风味。",
+    "coverEmoji": "🌶️",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/贵州辣子鸡/贵州辣子鸡.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡腿",
+        "ref": "鸡腿",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡腿剁小块，加料酒、酱油、淀粉抓匀腌 15 分钟。",
+        "durationMin": 18
+      },
+      {
+        "text": "干辣椒剪段，姜蒜切末。",
+        "durationMin": 4
+      },
+      {
+        "text": "锅中放宽油，下鸡块炸至金黄捞出；升高油温复炸 30 秒。",
+        "durationMin": 12,
+        "heat": "中火"
+      },
+      {
+        "text": "留底油炒香干辣椒、花椒粉和姜蒜，下鸡块翻炒，加白糖翻匀。",
+        "durationMin": 4,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "复炸让鸡块更酥脆。",
+      "辣椒剪段去籽，辣度更可控。"
+    ],
+    "tags": [
+      "中式",
+      "川黔",
+      "辣子鸡",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-sichuan-boiled-chicken",
+    "title": "口水鸡",
+    "titleEn": "Sichuan Mouth Watering Chicken",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 50,
+    "servings": 3,
+    "summary": "白煮鸡腿浇上红油酱汁，麻辣鲜香，冷吃更爽。",
+    "coverEmoji": "🐔",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/口水鸡/口水鸡.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡腿",
+        "ref": "鸡腿",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "辣椒粉",
+        "ref": "辣椒粉",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生仁（炒）",
+        "ref": "花生仁（炒）",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "芝麻",
+        "ref": "芝麻子（白）",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡腿冷水下锅，加姜片料酒煮 15 分钟，关火焖 10 分钟，捞出过冰水。",
+        "durationMin": 35,
+        "heat": "中火"
+      },
+      {
+        "text": "鸡腿剁块装盘；花生仁压碎备用。",
+        "durationMin": 8
+      },
+      {
+        "text": "辣椒粉、花椒粉、芝麻放碗中，热油泼入搅匀成红油。",
+        "durationMin": 5,
+        "heat": "小火"
+      },
+      {
+        "text": "加酱油、米醋、白糖、蒜末、香油调成料汁，淋在鸡上撒花生碎和葱花。",
+        "durationMin": 5
+      }
+    ],
+    "tips": [
+      "煮好焖 10 分钟再冰镇，鸡腿更嫩。",
+      "红油料汁提前调好，淋汁前再拌匀。"
+    ],
+    "tags": [
+      "中式",
+      "凉菜",
+      "川菜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-dapan-chicken",
+    "title": "新疆大盘鸡",
+    "titleEn": "Xinjiang Dapan Chicken",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 60,
+    "servings": 4,
+    "summary": "新疆风味大盘菜：鸡肉土豆炖得浓郁，配皮带面吸满汤汁。",
+    "coverEmoji": "🍗",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/新疆大盘鸡/新疆大盘鸡.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡腿",
+        "ref": "鸡腿",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "青椒",
+        "ref": "辣椒（青、尖）",
+        "amount": 120,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "洋葱",
+        "ref": "洋葱（鲜）[葱头]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "面条（生）",
+        "ref": "面条（生，代表值）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡腿剁块焯水；土豆切块，青椒洋葱切块。",
+        "durationMin": 12,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒糖色，下鸡块翻炒上色，加豆瓣酱、姜蒜、八角炒香。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "烹料酒和酱油，加开水没过鸡块，小火炖 25 分钟。",
+        "durationMin": 30,
+        "heat": "小火"
+      },
+      {
+        "text": "下土豆再炖 15 分钟，下面条煮熟，最后下青椒洋葱翻匀。",
+        "durationMin": 18,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "面条后下，煮 3-5 分钟即可。",
+      "汤汁留多一些，拌面才香。"
+    ],
+    "tags": [
+      "中式",
+      "新疆",
+      "大盘鸡",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-lurou-fan",
+    "title": "台式卤肉饭",
+    "titleEn": "Taiwanese Braised Pork Rice",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 90,
+    "servings": 4,
+    "summary": "卤肉软糯入味，卤蛋油亮，浇在热米饭上就是台式经典。",
+    "coverEmoji": "🍛",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/台式卤肉饭/台式卤肉饭.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "五花肉",
+        "ref": "猪肉（奶面）[硬五花]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "洋葱",
+        "ref": "洋葱（鲜）[葱头]",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米饭",
+        "ref": "米饭（蒸，代表值）",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "五花肉切小丁；洋葱切丝，鸡蛋煮熟剥壳。",
+        "durationMin": 12
+      },
+      {
+        "text": "热锅下油，洋葱丝炸至金黄酥脆捞出（油葱酥）。",
+        "durationMin": 10,
+        "heat": "小火"
+      },
+      {
+        "text": "留底油煸炒肉丁出油，加姜蒜八角炒香，烹料酒和酱油。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "加白糖、开水、油葱酥和熟鸡蛋，小火卤 50 分钟，浇在米饭上。",
+        "durationMin": 55,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "油葱酥是卤肉饭的灵魂，小火慢炸。",
+      "卤汁收浓一点更下饭。"
+    ],
+    "tags": [
+      "中式",
+      "台式",
+      "卤肉饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-meicai-kourou",
+    "title": "梅菜扣肉",
+    "titleEn": "Mei Cai Kou Rou",
+    "cuisine": "中式",
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "复杂",
+    "cookTimeMin": 150,
+    "servings": 4,
+    "summary": "年节硬菜：五花肉炸后蒸透，梅菜吸满肉汁，入口即化。",
+    "coverEmoji": "🍖",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/梅菜扣肉/梅菜扣肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "五花肉",
+        "ref": "猪肉（奶面）[硬五花]",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "梅菜",
+        "ref": "芥菜（鲜）[雪里红，雪菜]",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "五花肉冷水下锅加料酒姜片煮 20 分钟，捞出趁热抹酱油。",
+        "durationMin": 25,
+        "heat": "中火"
+      },
+      {
+        "text": "锅中放油烧热，肉皮朝下炸至金黄，泡入冷水 20 分钟。",
+        "durationMin": 15,
+        "heat": "中火"
+      },
+      {
+        "text": "梅菜泡发切碎炒香，加酱油白糖调味。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "肉切大片码入碗底，铺梅菜压实，蒸 90 分钟，倒扣装盘。",
+        "durationMin": 95,
+        "heat": "蒸"
+      }
+    ],
+    "tips": [
+      "炸肉时盖锅盖防溅油。",
+      "蒸的时间长，油脂渗出才不腻。"
+    ],
+    "tags": [
+      "中式",
+      "梅菜扣肉",
+      "硬菜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-braised-pig-trotter",
+    "title": "红烧猪蹄",
+    "titleEn": "Braised Pig Trotters",
+    "cuisine": "中式",
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "复杂",
+    "cookTimeMin": 150,
+    "servings": 4,
+    "summary": "胶原蛋白满满的红烧猪蹄，软糯脱骨，咸甜浓郁。",
+    "coverEmoji": "🍖",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/红烧猪蹄/红烧猪蹄.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "猪蹄",
+        "ref": "猪蹄",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 35,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "桂皮",
+        "ref": "桂皮",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "猪蹄剁块，冷水下锅加料酒焯水，撇沫捞出。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒糖色，下猪蹄翻炒上色，加姜葱八角桂皮炒香。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "加酱油和开水没过猪蹄，小火焖 100 分钟。",
+        "durationMin": 110,
+        "heat": "小火"
+      },
+      {
+        "text": "开大火收汁至油亮浓稠。",
+        "durationMin": 10,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "猪蹄焯水要彻底，浮沫撇净。",
+      "焖足时间皮糯骨脱才好吃。"
+    ],
+    "tags": [
+      "中式",
+      "红烧",
+      "猪蹄",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-marinated-beef",
+    "title": "酱牛肉",
+    "titleEn": "Soy Marinated Beef Shank",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "复杂",
+    "cookTimeMin": 120,
+    "servings": 6,
+    "summary": "卤香浓郁的酱牛肉，冷切配蒜醋汁，健身高蛋白首选。",
+    "coverEmoji": "🥩",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/酱牛肉/酱牛肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "牛腱子",
+        "ref": "牛肉（小腿肉）[牛展、牛腱子]",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "桂皮",
+        "ref": "桂皮",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "牛腱子冷水浸泡 1 小时去血水，再冷水下锅焯水。",
+        "durationMin": 70,
+        "heat": "大火"
+      },
+      {
+        "text": "锅中加开水，放入酱油、豆瓣酱、料酒、白糖和全部香料，煮开。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "下牛腱子，小火卤 90 分钟，关火浸泡 2 小时入味。",
+        "durationMin": 95,
+        "heat": "小火"
+      },
+      {
+        "text": "捞出晾凉，切片装盘。",
+        "durationMin": 15
+      }
+    ],
+    "tips": [
+      "卤好浸泡比多煮更入味。",
+      "晾凉再切不易散。"
+    ],
+    "tags": [
+      "中式",
+      "卤菜",
+      "牛肉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-marinated-spareribs",
+    "title": "酱排骨",
+    "titleEn": "Soy Braised Spareribs",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 80,
+    "servings": 4,
+    "summary": "酱香浓郁的家常排骨，冷吃热吃皆宜，越嚼越香。",
+    "coverEmoji": "🍖",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/酱排骨/酱排骨.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "排骨",
+        "ref": "酱排骨",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "桂皮",
+        "ref": "桂皮",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "排骨剁段，冷水下锅加料酒焯水去沫。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒香姜葱八角桂皮，下排骨煸炒至微黄。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "加酱油、白糖和开水没过排骨，小火卤 50 分钟。",
+        "durationMin": 55,
+        "heat": "小火"
+      },
+      {
+        "text": "大火收汁至酱汁裹满排骨。",
+        "durationMin": 8,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "酱汁收浓时勤翻动，防止糊底。",
+      "喜欢吃软烂的可以多焖 20 分钟。"
+    ],
+    "tags": [
+      "中式",
+      "酱香",
+      "排骨",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-yuxiang-eggplant",
+    "title": "鱼香茄子",
+    "titleEn": "Yuxiang Eggplant",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 35,
+    "servings": 2,
+    "summary": "茄子软糯吸满鱼香汁，微辣酸甜，米饭杀手。",
+    "coverEmoji": "🍆",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/鱼香茄子/鱼香茄子.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "茄子",
+        "ref": "茄子（代表值）",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "茄子切条，加少许盐腌 10 分钟挤水，拍薄淀粉。",
+        "durationMin": 12
+      },
+      {
+        "text": "热锅下油，茄子煎软盛出；肉末炒散盛出。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "底油炒香豆瓣酱、姜蒜，调酱油、米醋、白糖、淀粉成汁。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "回入茄子和肉末，倒鱼香汁翻炒收汁。",
+        "durationMin": 4,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "茄子先腌去水分，吸油少不油腻。",
+      "鱼香汁提前调好，出锅快。"
+    ],
+    "tags": [
+      "中式",
+      "川菜",
+      "茄子",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-disanxian",
+    "title": "地三鲜",
+    "titleEn": "Three Fresh Vegetables",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 35,
+    "servings": 3,
+    "summary": "东北名菜：土豆茄子青椒过油后烧制，咸香软糯。",
+    "coverEmoji": "🥔",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/地三鲜/地三鲜.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "茄子",
+        "ref": "茄子（代表值）",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "彩椒",
+        "ref": "甜椒 [灯笼椒、柿子椒]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "土豆切滚刀块，茄子切块，彩椒切块。",
+        "durationMin": 8
+      },
+      {
+        "text": "锅中放宽油，分别炸土豆、茄子至金黄，捞出沥油。",
+        "durationMin": 12,
+        "heat": "中火"
+      },
+      {
+        "text": "留底油炒香蒜末，加酱油、白糖和少量水烧开。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "下土豆茄子彩椒翻炒，水淀粉勾芡收汁。",
+        "durationMin": 4,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "土豆茄子分开炸，火候更均匀。",
+      "勾芡薄薄一层即可。"
+    ],
+    "tags": [
+      "中式",
+      "东北菜",
+      "素菜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-drypot-cauliflower",
+    "title": "干锅花菜",
+    "titleEn": "Dry Pot Cauliflower",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 25,
+    "servings": 2,
+    "summary": "干锅风味：花菜焦香，五花肉增香，微辣下饭。",
+    "coverEmoji": "🥦",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/干锅花菜/干锅花菜.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "菜花",
+        "ref": "菜花（白色）[花椰菜]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "五花肉",
+        "ref": "猪肉（奶面）[硬五花]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "花菜掰小朵，淡盐水浸泡洗净沥干。",
+        "durationMin": 8
+      },
+      {
+        "text": "热锅下油，花菜煸至边缘焦黄盛出。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "下五花肉片煸出油，加姜蒜干辣椒和豆瓣酱炒香。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "回入花菜，加酱油白糖大火翻炒均匀。",
+        "durationMin": 4,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "花菜先干煸出焦香，口感更干香。",
+      "豆瓣酱咸，盐可以不放。"
+    ],
+    "tags": [
+      "中式",
+      "干锅",
+      "花菜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-hand-torn-cabbage",
+    "title": "手撕包菜",
+    "titleEn": "Hand Torn Cabbage",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 15,
+    "servings": 2,
+    "summary": "大火快炒的爽脆包菜，酸辣开胃，两分钟出锅。",
+    "coverEmoji": "🥬",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/手撕包菜/手撕包菜.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "卷心菜",
+        "ref": "圆白菜，卷心菜",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "包菜手撕成片，洗净沥干；蒜切片，干辣椒剪段。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油爆香蒜片和干辣椒。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "下包菜大火快炒至断生。",
+        "durationMin": 4,
+        "heat": "大火"
+      },
+      {
+        "text": "沿锅边烹入米醋，加酱油和白糖翻匀出锅。",
+        "durationMin": 2,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "手撕比刀切更易挂汁。",
+      "全程大火，包菜才脆。"
+    ],
+    "tags": [
+      "中式",
+      "素菜",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-hot-sour-potato",
+    "title": "酸辣土豆丝",
+    "titleEn": "Hot and Sour Potato Shreds",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 15,
+    "servings": 2,
+    "summary": "国民家常菜：土豆丝爽脆，酸辣开胃，十分钟搞定。",
+    "coverEmoji": "🥔",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/酸辣土豆丝.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 1,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "土豆切细丝，泡水洗去淀粉，沥干。",
+        "durationMin": 8
+      },
+      {
+        "text": "热锅下油爆香干辣椒和蒜片。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "下土豆丝大火快炒至断生。",
+        "durationMin": 4,
+        "heat": "大火"
+      },
+      {
+        "text": "沿锅边烹醋，加盐和花椒粉翻匀出锅。",
+        "durationMin": 2,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "土豆丝泡水去淀粉才爽脆。",
+      "醋沿锅边烹，酸香更足。"
+    ],
+    "tags": [
+      "中式",
+      "素菜",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-tiger-skin-pepper",
+    "title": "虎皮青椒",
+    "titleEn": "Tiger Skin Green Peppers",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "青椒煎出虎皮，淋上酸甜酱汁，开胃下饭。",
+    "coverEmoji": "🫑",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/虎皮青椒/虎皮青椒.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "青椒",
+        "ref": "辣椒（青、尖）",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "青椒洗净擦干，去蒂，用刀背拍一下。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅少油，青椒平铺煎至两面起虎皮，盛出。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "底油炒香蒜末，加酱油、米醋、白糖和两勺水烧开。",
+        "durationMin": 3,
+        "heat": "小火"
+      },
+      {
+        "text": "回入青椒翻匀，小火收汁入味。",
+        "durationMin": 4,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "青椒要擦干水分，防溅油。",
+      "酱汁收得浓一点更入味。"
+    ],
+    "tags": [
+      "中式",
+      "素菜",
+      "下饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-sugar-tomato",
+    "title": "糖拌西红柿",
+    "titleEn": "Sugar Tossed Tomatoes",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 10,
+    "servings": 2,
+    "summary": "儿时记忆里的家常凉菜，清爽解腻，三分钟完成。",
+    "coverEmoji": "🍅",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/糖拌西红柿/糖拌西红柿.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "番茄",
+        "ref": "番茄 [西红柿]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "番茄洗净，去蒂切瓣或厚片。",
+        "durationMin": 4
+      },
+      {
+        "text": "撒白糖拌匀，静置 5 分钟出汁即可。",
+        "durationMin": 6
+      }
+    ],
+    "tips": [
+      "冷藏片刻更好吃。",
+      "喜欢冰镇的可以提前冰一下番茄。"
+    ],
+    "tags": [
+      "中式",
+      "凉菜",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-cold-woodear",
+    "title": "凉拌木耳",
+    "titleEn": "Cold Black Fungus Salad",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "木耳脆嫩，酸辣爽口的快手凉菜。",
+    "coverEmoji": "🍄",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/凉拌木耳/凉拌木耳.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "木耳（水发）",
+        "ref": "木耳（水发）[黑木耳，云耳]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小米椒",
+        "ref": "小米椒",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香菜",
+        "ref": "香菜（鲜）[芫荽]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "木耳洗净撕小朵，沸水焯 2 分钟，过凉水沥干。",
+        "durationMin": 8,
+        "heat": "大火"
+      },
+      {
+        "text": "蒜切末，小米椒切圈，香菜切段。",
+        "durationMin": 4
+      },
+      {
+        "text": "酱油、米醋、香油、白糖、蒜末、小米椒调成料汁。",
+        "durationMin": 3
+      },
+      {
+        "text": "料汁倒入木耳拌匀，撒香菜即可。",
+        "durationMin": 3
+      }
+    ],
+    "tips": [
+      "木耳焯水后过凉水更脆。",
+      "现拌现吃，久放会出水。"
+    ],
+    "tags": [
+      "中式",
+      "凉菜",
+      "木耳",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-cold-enoki",
+    "title": "凉拌金针菇",
+    "titleEn": "Cold Enoki Mushroom Salad",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 15,
+    "servings": 2,
+    "summary": "金针菇焯水后凉拌，酸辣开胃，低卡高纤。",
+    "coverEmoji": "🍄",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/凉拌金针菇.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "金针菇",
+        "ref": "金针菇（鲜）[智力菇]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小米椒",
+        "ref": "小米椒",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香菜",
+        "ref": "香菜（鲜）[芫荽]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "金针菇去根洗净，沸水焯 2 分钟，捞出沥干。",
+        "durationMin": 6,
+        "heat": "大火"
+      },
+      {
+        "text": "蒜和小米椒切末，香菜切段。",
+        "durationMin": 4
+      },
+      {
+        "text": "酱油、米醋、香油、白糖、蒜末辣椒末调成料汁。",
+        "durationMin": 3
+      },
+      {
+        "text": "料汁与金针菇拌匀，撒香菜。",
+        "durationMin": 3
+      }
+    ],
+    "tips": [
+      "金针菇焯熟后要挤干水分。",
+      "喜欢辣的多放小米椒。"
+    ],
+    "tags": [
+      "中式",
+      "凉菜",
+      "金针菇",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-oyster-mushroom-trio",
+    "title": "蚝油三鲜菇",
+    "titleEn": "Oyster Sauce Mushroom Trio",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 15,
+    "servings": 2,
+    "summary": "香菇平菇杏鲍菇一锅炒，蚝油提鲜，简单下饭。",
+    "coverEmoji": "🍄",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/蚝油三鲜菇/蚝油三鲜菇.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "香菇（鲜）",
+        "ref": "香菇（鲜）[香蕈，冬菇]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "平菇",
+        "ref": "平菇[糙皮侧耳，青蘑]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "杏鲍菇",
+        "ref": "杏鲍菇",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蚝油",
+        "ref": "蚝油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "三种菇洗净切片，香菇去蒂。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油爆香蒜片。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "下菇片大火翻炒至变软出水。",
+        "durationMin": 5,
+        "heat": "大火"
+      },
+      {
+        "text": "加蚝油、酱油和白糖翻匀收汁。",
+        "durationMin": 3,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "蘑菇炒出水再收汁，鲜味更浓。",
+      "蚝油咸鲜，不用再加盐。"
+    ],
+    "tags": [
+      "中式",
+      "菌菇",
+      "素菜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-garlic-water-spinach",
+    "title": "蒜蓉空心菜",
+    "titleEn": "Garlic Water Spinach",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 10,
+    "servings": 2,
+    "summary": "大火快炒的空心菜脆嫩，蒜香扑鼻。",
+    "coverEmoji": "🥬",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/蒜蓉空心菜/蒜蓉空心菜.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "空心菜",
+        "ref": "萹菜 [空心菜、藤藤菜]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "空心菜摘段洗净沥干；蒜切末。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅下油，一半蒜末爆香。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "下空心菜大火快炒至断生。",
+        "durationMin": 3,
+        "heat": "大火"
+      },
+      {
+        "text": "加盐和剩余蒜末翻匀出锅。",
+        "durationMin": 1,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "空心菜要大火快炒，出水就老了。",
+      "蒜末分两次放，蒜香更足。"
+    ],
+    "tags": [
+      "中式",
+      "素菜",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-garlic-celery",
+    "title": "蒜蓉炒芹菜",
+    "titleEn": "Garlic Celery",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 10,
+    "servings": 2,
+    "summary": "芹菜清香脆嫩，蒜香点缀，低卡清爽。",
+    "coverEmoji": "🥬",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/蒜蓉炒芹菜/蒜蓉炒芹菜.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "芹菜",
+        "ref": "芹菜（茎）[旱芹，药芹]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "芹菜去叶切段，粗梗可顺长剖开；蒜切片。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅下油爆香蒜片。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "下芹菜大火翻炒 3 分钟。",
+        "durationMin": 4,
+        "heat": "大火"
+      },
+      {
+        "text": "加盐翻匀出锅。",
+        "durationMin": 1,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "芹菜叶子摘掉，梗更脆。",
+      "喜欢软口的可以先焯水再炒。"
+    ],
+    "tags": [
+      "中式",
+      "素菜",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-spinach-egg",
+    "title": "菠菜炒鸡蛋",
+    "titleEn": "Spinach with Scrambled Eggs",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 12,
+    "servings": 2,
+    "summary": "菠菜与鸡蛋的经典组合，营养快手。",
+    "coverEmoji": "🥬",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/菠菜炒鸡蛋/菠菜炒鸡蛋.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "菠菜",
+        "ref": "菠菜（鲜）[赤根菜]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "菠菜洗净切段，沸水焯 30 秒去草酸，捞出沥干。",
+        "durationMin": 5,
+        "heat": "大火"
+      },
+      {
+        "text": "鸡蛋打散，热锅下油炒至凝固盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "底油爆香蒜片，下菠菜翻炒。",
+        "durationMin": 2,
+        "heat": "大火"
+      },
+      {
+        "text": "回入鸡蛋，加盐翻匀出锅。",
+        "durationMin": 1,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "菠菜焯水去草酸，也减少涩味。",
+      "鸡蛋先炒盛出，更嫩。"
+    ],
+    "tags": [
+      "中式",
+      "菠菜",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-onion-egg",
+    "title": "洋葱炒鸡蛋",
+    "titleEn": "Onion with Scrambled Eggs",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 12,
+    "servings": 2,
+    "summary": "洋葱微甜，鸡蛋嫩滑，成本低又下饭。",
+    "coverEmoji": "🧅",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/洋葱炒鸡蛋/洋葱炒鸡蛋.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "洋葱",
+        "ref": "洋葱（鲜）[葱头]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "洋葱切丝，鸡蛋打散加少许盐。",
+        "durationMin": 4
+      },
+      {
+        "text": "热锅下油，蛋液炒至凝固盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "底油下洋葱丝炒软至微透明。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "回入鸡蛋，加酱油和盐翻匀。",
+        "durationMin": 2,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "洋葱炒到微焦出甜味更好吃。",
+      "鸡蛋不要炒太老。"
+    ],
+    "tags": [
+      "中式",
+      "快手",
+      "鸡蛋",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-zucchini-egg",
+    "title": "西葫芦炒鸡蛋",
+    "titleEn": "Zucchini with Eggs",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 12,
+    "servings": 2,
+    "summary": "西葫芦清甜多汁，配鸡蛋清淡爽口。",
+    "coverEmoji": "🥒",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/西葫芦炒鸡蛋/西葫芦炒鸡蛋.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "西葫芦",
+        "ref": "西葫芦",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "西葫芦切薄片，鸡蛋打散。",
+        "durationMin": 4
+      },
+      {
+        "text": "热锅下油，蛋液炒至凝固盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "底油爆香蒜片，下西葫芦炒软。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "回入鸡蛋，加盐翻匀。",
+        "durationMin": 2,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "西葫芦容易出水，大火快炒。",
+      "鸡蛋炒嫩一点更搭。"
+    ],
+    "tags": [
+      "中式",
+      "快手",
+      "西葫芦",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-chive-egg",
+    "title": "韭菜炒蛋",
+    "titleEn": "Chives with Scrambled Eggs",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 10,
+    "servings": 2,
+    "summary": "韭菜辛香，鸡蛋金黄，三分钟快手家常菜。",
+    "coverEmoji": "🥬",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/韭菜炒蛋/韭菜炒蛋.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "韭菜",
+        "ref": "韭菜",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "韭菜洗净切段，鸡蛋打散。",
+        "durationMin": 4
+      },
+      {
+        "text": "热锅下油，蛋液炒至半凝固。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "下韭菜大火快炒至变软。",
+        "durationMin": 3,
+        "heat": "大火"
+      },
+      {
+        "text": "加盐翻匀出锅。",
+        "durationMin": 1,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "韭菜下锅就熟，不能久炒。",
+      "盐最后放，避免韭菜出水。"
+    ],
+    "tags": [
+      "中式",
+      "快手",
+      "韭菜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-soup-vegetable-baby-cabbage",
+    "title": "上汤娃娃菜",
+    "titleEn": "Baby Cabbage in Superior Broth",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "皮蛋咸蛋吊出的上汤，娃娃菜清甜软嫩，汤鲜味美。",
+    "coverEmoji": "🥬",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/上汤娃娃菜/上汤娃娃菜.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "娃娃菜",
+        "ref": "娃娃菜",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "皮蛋",
+        "ref": "松花蛋（鸭蛋）[皮蛋]",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "咸鸭蛋",
+        "ref": "鸭蛋（咸鸭蛋，煮）",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "火腿肠",
+        "ref": "火腿肠",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "娃娃菜对半切开洗净；皮蛋咸蛋切丁，火腿肠切丁。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，蒜瓣炸至金黄，下皮蛋咸蛋炒出香。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "加两碗开水，下娃娃菜煮 5 分钟。",
+        "durationMin": 7,
+        "heat": "中火"
+      },
+      {
+        "text": "下火腿丁再煮 2 分钟，尝味加盐。",
+        "durationMin": 3,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "皮蛋咸蛋自带咸味，盐要少放。",
+      "蒜瓣炸黄汤底更香。"
+    ],
+    "tags": [
+      "中式",
+      "上汤",
+      "娃娃菜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-blanched-choy-sum",
+    "title": "白灼菜心",
+    "titleEn": "Blanched Choy Sum",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 10,
+    "servings": 2,
+    "summary": "粤式白灼：菜心脆嫩，豉油汁咸鲜，清爽解腻。",
+    "coverEmoji": "🥬",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/白灼菜心/白灼菜心.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "菜心",
+        "ref": "白菜薹[菜薹，菜心]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "菜心洗净，粗梗对半剖开。",
+        "durationMin": 4
+      },
+      {
+        "text": "沸水加少许油和盐，下菜心焯 2 分钟，捞出码盘。",
+        "durationMin": 4,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油爆香蒜末，加酱油、白糖和两勺水煮开。",
+        "durationMin": 3,
+        "heat": "小火"
+      },
+      {
+        "text": "豉油汁淋在菜心上即可。",
+        "durationMin": 1
+      }
+    ],
+    "tips": [
+      "焯水加盐和油，菜心更翠绿。",
+      "豉油汁趁热淋。"
+    ],
+    "tags": [
+      "中式",
+      "粤菜",
+      "白灼",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-braised-winter-melon",
+    "title": "红烧冬瓜",
+    "titleEn": "Braised Winter Melon",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "冬瓜烧得软糯入味，吸满酱汁，低卡饱腹。",
+    "coverEmoji": "🥒",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/红烧冬瓜/红烧冬瓜.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "冬瓜",
+        "ref": "冬瓜",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蚝油",
+        "ref": "蚝油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "冬瓜去皮去瓤，切厚块，表面打浅花刀。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油爆香蒜片，下冬瓜两面煎至微黄。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "加酱油、蚝油、白糖和半碗水，加盖焖 8 分钟。",
+        "durationMin": 10,
+        "heat": "小火"
+      },
+      {
+        "text": "大火收汁，撒葱花。",
+        "durationMin": 3,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "冬瓜打花刀更易入味。",
+      "焖煮时水不要太多。"
+    ],
+    "tags": [
+      "中式",
+      "红烧",
+      "冬瓜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-grilled-eggplant",
+    "title": "烤茄子",
+    "titleEn": "Baked Garlic Eggplant",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 35,
+    "servings": 2,
+    "summary": "烤箱版烤茄子：蒜蓉酱汁浓郁，茄子软糯拉丝。",
+    "coverEmoji": "🍆",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/烤茄子/烤茄子.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "茄子",
+        "ref": "茄子（代表值）",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小米椒",
+        "ref": "小米椒",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蚝油",
+        "ref": "蚝油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "孜然粉",
+        "ref": "孜然粉",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "茄子洗净擦干，整根放进烤箱 200 度烤 20 分钟至软。",
+        "durationMin": 22,
+        "heat": "烤"
+      },
+      {
+        "text": "蒜和小米椒切末，加酱油、蚝油、白糖、孜然粉调成蒜蓉酱。",
+        "durationMin": 5
+      },
+      {
+        "text": "茄子剖开摊平，铺上蒜蓉酱。",
+        "durationMin": 3
+      },
+      {
+        "text": "再烤 5 分钟，淋香油撒葱花。",
+        "durationMin": 6,
+        "heat": "烤"
+      }
+    ],
+    "tips": [
+      "茄子先擦干再烤，避免滴水。",
+      "烤软后划开铺酱，更入味。"
+    ],
+    "tags": [
+      "中式",
+      "烤箱",
+      "茄子",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-eggplant-potato-stew",
+    "title": "茄子炖土豆",
+    "titleEn": "Eggplant and Potato Stew",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 30,
+    "servings": 3,
+    "summary": "东北家常炖菜：茄子土豆炖得软烂，汤汁拌饭一绝。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/茄子炖土豆.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "茄子",
+        "ref": "茄子（代表值）",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "茄子撕块，土豆切滚刀块。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅下油爆香蒜末，下土豆翻炒 2 分钟。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "下茄子翻炒变软，加豆瓣酱和酱油。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "加开水没过食材，小火炖 15 分钟收汁。",
+        "durationMin": 18,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "茄子撕块比切块更入味。",
+      "炖到土豆一戳就碎即可。"
+    ],
+    "tags": [
+      "中式",
+      "炖菜",
+      "家常",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-boiled-beef",
+    "title": "水煮牛肉",
+    "titleEn": "Sichuan Boiled Beef",
+    "cuisine": "中式",
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 40,
+    "servings": 3,
+    "summary": "川味名菜：牛肉滑嫩，麻辣汤底配豆芽娃娃菜，过瘾。",
+    "coverEmoji": "🌶️",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/水煮牛肉/水煮牛肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "牛柳",
+        "ref": "牛肉（里脊肉）[牛柳]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆芽",
+        "ref": "绿豆芽",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "娃娃菜",
+        "ref": "娃娃菜",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "辣椒粉",
+        "ref": "辣椒粉",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "牛柳逆纹切片，加料酒、淀粉抓匀腌 15 分钟。",
+        "durationMin": 18
+      },
+      {
+        "text": "豆芽娃娃菜焯水垫入碗底。",
+        "durationMin": 4,
+        "heat": "大火"
+      },
+      {
+        "text": "热锅下油炒香豆瓣酱、姜蒜，加开水煮成汤底。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "牛肉片下锅滑散煮熟，连汤倒入碗中。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "表面撒辣椒粉、花椒粉和蒜末，浇热油激香。",
+        "durationMin": 4,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "牛肉片薄一点，下锅 30 秒即熟。",
+      "最后的热油是关键，麻辣香气靠它。"
+    ],
+    "tags": [
+      "中式",
+      "川菜",
+      "水煮",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-small-stir-fried-pork",
+    "title": "小炒肉",
+    "titleEn": "Hunan Pepper Pork",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 25,
+    "servings": 2,
+    "summary": "湘式小炒肉：五花肉煸香，青椒微焦，咸辣下饭。",
+    "coverEmoji": "🌶️",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/小炒肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "五花肉",
+        "ref": "猪肉（奶面）[硬五花]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "青椒",
+        "ref": "辣椒（青、尖）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "五花肉切薄片，青椒斜切段，姜蒜切片。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅少油，下五花肉煸炒出油至微卷。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "下姜蒜和豆瓣酱炒香，烹料酒。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "下青椒大火翻炒至断生，加酱油翻匀。",
+        "durationMin": 4,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "五花肉煸透出油，菜才香。",
+      "青椒炒到虎皮状最入味。"
+    ],
+    "tags": [
+      "中式",
+      "湘菜",
+      "小炒",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-dried-tofu-celery-pork",
+    "title": "香干芹菜炒肉",
+    "titleEn": "Dried Tofu Celery with Pork",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "香干芹菜配肉丝，咸香下饭，家常快手。",
+    "coverEmoji": "🥢",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/香干芹菜炒肉/香干芹菜炒肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "豆腐干",
+        "ref": "豆腐干（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "芹菜",
+        "ref": "芹菜（茎）[旱芹，药芹]",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "豆腐干切条，芹菜切段，里脊切丝腌 5 分钟。",
+        "durationMin": 7
+      },
+      {
+        "text": "热锅下油滑炒肉丝至变色盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "底油爆香蒜片，下豆腐干煸炒微黄。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "下芹菜翻炒，回入肉丝，加酱油料酒翻匀。",
+        "durationMin": 4,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "豆腐干先煸香再炒更好吃。",
+      "芹菜快炒保持脆爽。"
+    ],
+    "tags": [
+      "中式",
+      "快手",
+      "下饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-garlic-scape-pork",
+    "title": "蒜苔炒肉末",
+    "titleEn": "Garlic Scape with Minced Pork",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "蒜苔脆嫩，肉末咸香，配米饭很合适。",
+    "coverEmoji": "🥢",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/蒜苔炒肉末.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "蒜薹",
+        "ref": "蒜薹（圆）",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "蒜薹切段，里脊剁成肉末。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，肉末炒散至变色，烹料酒。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "下蒜薹翻炒 3 分钟至表皮微皱。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "加酱油、白糖翻匀，加少许水焖 2 分钟。",
+        "durationMin": 4,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "蒜薹炒到微皱才入味。",
+      "肉末炒散炒香再下蒜薹。"
+    ],
+    "tags": [
+      "中式",
+      "快手",
+      "下饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-water-bamboo-pork",
+    "title": "茭白炒肉",
+    "titleEn": "Water Bamboo with Pork",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "茭白清甜爽脆，配肉丝炒制，时令家常味。",
+    "coverEmoji": "🥢",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/茭白炒肉/茭白炒肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "茭白",
+        "ref": "茭白（鲜）[茭笋，茭粑]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "茭白去壳切片，里脊切丝腌 5 分钟。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油滑炒肉丝至变色盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "底油爆香蒜片，下茭白翻炒至软。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "回入肉丝，加酱油料酒翻匀。",
+        "durationMin": 3,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "茭白切薄片更易熟。",
+      "茭白吸味，酱油少量多次。"
+    ],
+    "tags": [
+      "中式",
+      "时令",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-onion-pork",
+    "title": "洋葱炒猪肉",
+    "titleEn": "Onion with Pork",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "洋葱甜软，猪肉咸香，十分钟出锅的家常菜。",
+    "coverEmoji": "🧅",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/洋葱炒猪肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "洋葱",
+        "ref": "洋葱（鲜）[葱头]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "洋葱切丝，里脊切片腌 5 分钟，姜切丝。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油滑炒肉片至变色盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "底油下姜丝和洋葱丝炒至软甜。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "回入肉片，加酱油、料酒和白糖翻匀。",
+        "durationMin": 3,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "洋葱炒到微透明出甜味。",
+      "肉片切薄，滑炒时间短才嫩。"
+    ],
+    "tags": [
+      "中式",
+      "快手",
+      "洋葱",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-farmhouse-stir-fry",
+    "title": "农家一碗香",
+    "titleEn": "Farmhouse Stir Fry",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "鸡蛋、猪肉、青椒同炒的湖南农家菜，锅气十足。",
+    "coverEmoji": "🍳",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/农家一碗香/农家一碗香.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "青椒",
+        "ref": "辣椒（青、尖）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡蛋煎成荷包蛋切块，里脊切片，青椒切段。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，肉片滑炒至变色。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "下蒜和青椒翻炒至断生。",
+        "durationMin": 3,
+        "heat": "大火"
+      },
+      {
+        "text": "回入荷包蛋，加酱油料酒大火翻匀。",
+        "durationMin": 2,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "荷包蛋煎焦一点更香。",
+      "一锅炒到底，锅气足。"
+    ],
+    "tags": [
+      "中式",
+      "湘菜",
+      "下饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-pepper-potato-pork",
+    "title": "青椒土豆炒肉",
+    "titleEn": "Green Pepper Potato with Pork",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 25,
+    "servings": 3,
+    "summary": "土豆片软糯、青椒脆爽、肉片咸香，实惠下饭。",
+    "coverEmoji": "🥔",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/青椒土豆炒肉/青椒土豆炒肉.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "青椒",
+        "ref": "辣椒（青、尖）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "土豆切片泡水，青椒切块，里脊切片。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油滑炒肉片至变色盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "底油下土豆片煎至边缘微焦，下蒜和青椒。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "回入肉片，加酱油和少许水焖 2 分钟翻匀。",
+        "durationMin": 4,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "土豆片泡水去淀粉，煎时不易粘锅。",
+      "焖一下让土豆入味。"
+    ],
+    "tags": [
+      "中式",
+      "家常",
+      "下饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-dry-fried-chicken",
+    "title": "干煸仔鸡",
+    "titleEn": "Dry Fried Chicken",
+    "cuisine": "中式",
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 40,
+    "servings": 3,
+    "summary": "鸡块炸香后与干辣椒花椒同煸，干香麻辣。",
+    "coverEmoji": "🌶️",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/干煸仔鸡/干煸仔鸡.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡腿",
+        "ref": "鸡腿",
+        "amount": 450,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡腿剁小块，加料酒、酱油、淀粉腌 15 分钟。",
+        "durationMin": 18
+      },
+      {
+        "text": "干辣椒剪段，姜蒜切片。",
+        "durationMin": 4
+      },
+      {
+        "text": "锅中放宽油，鸡块炸至金黄酥脆捞出。",
+        "durationMin": 10,
+        "heat": "中火"
+      },
+      {
+        "text": "留底油炒香干辣椒、花椒粉、姜蒜，回入鸡块加白糖翻炒。",
+        "durationMin": 5,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "鸡块炸透，干香不油腻。",
+      "辣椒炒到微焦出香即可，别炒糊。"
+    ],
+    "tags": [
+      "中式",
+      "川菜",
+      "干煸",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-stir-fried-lotus",
+    "title": "小炒藕丁",
+    "titleEn": "Stir Fried Lotus Root",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "藕丁脆甜，配青椒清炒，爽口下饭。",
+    "coverEmoji": "🪷",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/小炒藕丁/小炒藕丁.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "藕",
+        "ref": "藕[莲藕]",
+        "amount": 350,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "青椒",
+        "ref": "辣椒（青、尖）",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "藕去皮切丁，泡醋水防变色；青椒切丁。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油爆香蒜片，下藕丁翻炒。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "加少许水焖 3 分钟至熟。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "下青椒丁，加盐、白糖，沿锅边烹醋翻匀。",
+        "durationMin": 3,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "藕丁泡醋水更脆更白。",
+      "藕不要炒太久，保持脆度。"
+    ],
+    "tags": [
+      "中式",
+      "素菜",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-dry-fried-green-beans",
+    "title": "干煸四季豆",
+    "titleEn": "Dry Fried Green Beans",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 25,
+    "servings": 3,
+    "summary": "四季豆煸至虎皮微焦，配肉末干香下饭。",
+    "coverEmoji": "🫛",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "四季豆",
+        "ref": "四季豆 [菜豆、芸豆]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 1,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "四季豆撕筋掰段，洗净沥干；肉末备好。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，四季豆中小火煸至表皮起皱焦黄，盛出。",
+        "durationMin": 10,
+        "heat": "中小火"
+      },
+      {
+        "text": "底油炒散肉末，加干辣椒、蒜末和花椒粉炒香。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "回入四季豆，加盐大火翻匀。",
+        "durationMin": 3,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "四季豆必须煸熟，防止皂素中毒。",
+      "干煸比油炸更省油，口感更干香。"
+    ],
+    "tags": [
+      "中式",
+      "素菜",
+      "干煸",
+      "本项目整理"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-sweet-sour-cabbage",
+    "title": "醋溜白菜",
+    "titleEn": "Vinegar Cabbage",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 12,
+    "servings": 2,
+    "summary": "醋香开胃的经典家常菜，白菜爽脆，两分钟出锅。",
+    "coverEmoji": "🥬",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "白菜",
+        "ref": "大白菜（代表值）",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "干辣椒",
+        "ref": "辣椒（红，尖，干）",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "白菜斜刀片成片，梗叶分开；蒜切片。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅下油爆香干辣椒和蒜片。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "先下菜梗炒 1 分钟，再下菜叶大火快炒。",
+        "durationMin": 3,
+        "heat": "大火"
+      },
+      {
+        "text": "沿锅边烹醋，加白糖和盐翻匀出锅。",
+        "durationMin": 2,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "梗和叶分开下锅，成熟度一致。",
+      "醋沿锅边烹入，酸香更足。"
+    ],
+    "tags": [
+      "中式",
+      "素菜",
+      "快手",
+      "本项目整理"
+    ],
+    "allergens": []
+  }
+]

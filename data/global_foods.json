@@ -922,5 +922,126 @@
   "dietaryFiber": 1.2,
   "sodium": 6,
   "source": "usda-approx"
+ },
+ {
+  "name": "可乐（含糖）",
+  "en": "cola",
+  "energyKCal": 42,
+  "protein": 0.0,
+  "fat": 0.0,
+  "CHO": 10.6,
+  "dietaryFiber": 0.0,
+  "sodium": 4,
+  "source": "usda-approx"
+ },
+ {
+  "name": "无糖可乐",
+  "en": "diet cola",
+  "energyKCal": 0.4,
+  "protein": 0.0,
+  "fat": 0.0,
+  "CHO": 0.0,
+  "dietaryFiber": 0.0,
+  "sodium": 4,
+  "source": "usda-approx"
+ },
+ {
+  "name": "啤酒",
+  "en": "beer",
+  "energyKCal": 43,
+  "protein": 0.5,
+  "fat": 0.0,
+  "CHO": 3.6,
+  "dietaryFiber": 0.0,
+  "sodium": 4,
+  "source": "usda-approx"
+ },
+ {
+  "name": "黑咖啡（无糖）",
+  "en": "black coffee",
+  "energyKCal": 1,
+  "protein": 0.1,
+  "fat": 0.0,
+  "CHO": 0.0,
+  "dietaryFiber": 0.0,
+  "sodium": 2,
+  "source": "usda-approx"
+ },
+ {
+  "name": "拿铁咖啡",
+  "en": "latte",
+  "energyKCal": 41,
+  "protein": 2.3,
+  "fat": 1.7,
+  "CHO": 3.9,
+  "dietaryFiber": 0.0,
+  "sodium": 33,
+  "source": "usda-approx"
+ },
+ {
+  "name": "薯条（炸）",
+  "en": "french fries",
+  "energyKCal": 312,
+  "protein": 3.4,
+  "fat": 15.0,
+  "CHO": 41.0,
+  "dietaryFiber": 3.8,
+  "sodium": 210,
+  "source": "usda-approx"
+ },
+ {
+  "name": "香草冰淇淋",
+  "en": "vanilla ice cream",
+  "energyKCal": 207,
+  "protein": 3.5,
+  "fat": 11.0,
+  "CHO": 23.6,
+  "dietaryFiber": 0.7,
+  "sodium": 80,
+  "source": "usda-approx"
+ },
+ {
+  "name": "牛奶巧克力",
+  "en": "milk chocolate",
+  "energyKCal": 535,
+  "protein": 7.6,
+  "fat": 29.7,
+  "CHO": 59.4,
+  "dietaryFiber": 3.4,
+  "sodium": 79,
+  "source": "usda-approx"
+ },
+ {
+  "name": "披萨（芝士）",
+  "en": "cheese pizza",
+  "energyKCal": 266,
+  "protein": 11.0,
+  "fat": 9.8,
+  "CHO": 33.2,
+  "dietaryFiber": 2.3,
+  "sodium": 598,
+  "source": "usda-approx"
+ },
+ {
+  "name": "甜甜圈",
+  "en": "doughnut",
+  "energyKCal": 421,
+  "protein": 5.4,
+  "fat": 22.2,
+  "CHO": 50.5,
+  "dietaryFiber": 2.1,
+  "sodium": 257,
+  "source": "usda-approx"
+ },
+ {
+  "name": "苏打饼干",
+  "en": "saltine crackers",
+  "energyKCal": 424,
+  "protein": 7.8,
+  "fat": 9.5,
+  "CHO": 75.2,
+  "dietaryFiber": 1.8,
+  "sodium": 580,
+  "source": "usda-approx"
  }
 ]

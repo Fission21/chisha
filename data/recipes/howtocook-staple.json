@@ -1,0 +1,3041 @@
+[
+  {
+    "id": "htc-egg-fried-rice",
+    "title": "蛋炒饭",
+    "titleEn": "Egg Fried Rice",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "粒粒分明的黄金蛋炒饭，隔夜饭最佳，配火腿蔬菜。",
+    "coverEmoji": "🍚",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/蛋炒饭.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "米饭",
+        "ref": "米饭（蒸，代表值）",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "火腿肠",
+        "ref": "火腿肠",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黄瓜",
+        "ref": "黄瓜（鲜）[胡瓜]",
+        "amount": 80,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "胡萝卜",
+        "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "冷饭提前打散；火腿肠、黄瓜、胡萝卜切丁，小葱切葱花。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，蛋液炒至半凝固盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "下火腿丁胡萝卜丁翻炒 1 分钟，倒入米饭大火炒散。",
+        "durationMin": 5,
+        "heat": "大火"
+      },
+      {
+        "text": "回入鸡蛋，加盐和酱油炒匀，撒葱花出锅。",
+        "durationMin": 4,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "隔夜冷饭水分少，才能粒粒分明。",
+      "米饭炒散后再调味。"
+    ],
+    "tags": [
+      "中式",
+      "主食",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-yangzhou-fried-rice",
+    "title": "扬州炒饭",
+    "titleEn": "Yangzhou Fried Rice",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 25,
+    "servings": 2,
+    "summary": "料多丰富的经典炒饭：虾仁火腿豌豆玉米蛋花，色香味全。",
+    "coverEmoji": "🍚",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/扬州炒饭/扬州炒饭.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "米饭",
+        "ref": "米饭（蒸，代表值）",
+        "amount": 500,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "虾仁",
+        "ref": "虾仁",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "火腿肠",
+        "ref": "火腿肠",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豌豆",
+        "ref": "豌豆（煮）",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米",
+        "ref": "玉米（鲜）",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "冷饭打散；虾仁、火腿切丁，鸡蛋打散，葱切花。",
+        "durationMin": 7
+      },
+      {
+        "text": "热锅下油，蛋液炒至凝固盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "下虾仁丁炒至变色，加火腿丁、豌豆、玉米翻炒。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "倒入米饭大火炒散，回入鸡蛋，加盐炒匀撒葱花。",
+        "durationMin": 6,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "配料先炒香再下米饭。",
+      "虾仁最后放久了会老。"
+    ],
+    "tags": [
+      "中式",
+      "主食",
+      "扬州",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-tomato-egg-noodles",
+    "title": "西红柿鸡蛋挂面",
+    "titleEn": "Tomato Egg Noodles",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "一碗热汤面：番茄酸甜开胃，荷包蛋补充蛋白。",
+    "coverEmoji": "🍜",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/西红柿鸡蛋挂面/西红柿鸡蛋挂面.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "挂面",
+        "ref": "挂面（代表值）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄",
+        "ref": "番茄 [西红柿]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "番茄切块，鸡蛋打散，小葱切花。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅下油，蛋液炒至凝固盛出。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "下番茄炒出沙，加开水煮开，下挂面煮 4 分钟。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "回入鸡蛋，加盐和酱油调味，撒葱花。",
+        "durationMin": 3,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "番茄炒出沙，汤底才浓郁。",
+      "挂面煮到筷子能夹断即可。"
+    ],
+    "tags": [
+      "中式",
+      "面食",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-zhajiang-noodles",
+    "title": "炸酱面",
+    "titleEn": "Beijing Noodles with Soybean Paste",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 35,
+    "servings": 2,
+    "summary": "老北京炸酱面：肉末炸酱配菜码，酱香浓郁。",
+    "coverEmoji": "🍜",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/炸酱面.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "面条（生）",
+        "ref": "面条（生，代表值）",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆瓣酱",
+        "ref": "豆瓣酱",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黄瓜",
+        "ref": "黄瓜（鲜）[胡瓜]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "里脊切丁，葱姜切末，黄瓜切丝。",
+        "durationMin": 6
+      },
+      {
+        "text": "热锅下油，肉丁煸炒出香，加葱姜末。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "下豆瓣酱小火炒出酱香，加料酒、白糖和半碗水煮至浓稠。",
+        "durationMin": 10,
+        "heat": "小火"
+      },
+      {
+        "text": "面条煮熟过凉水沥干，拌上炸酱和黄瓜丝。",
+        "durationMin": 8,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "炸酱要小火慢炒，酱香才出来。",
+      "面条过凉水更筋道。"
+    ],
+    "tags": [
+      "中式",
+      "面食",
+      "北京",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-oil-splash-noodles",
+    "title": "陕西油泼面",
+    "titleEn": "Shaanxi Oil Splash Noodles",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 45,
+    "servings": 2,
+    "summary": "宽面筋道，热油泼在辣椒面上滋滋作响，香辣过瘾。",
+    "coverEmoji": "🍜",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/陕西油泼面/陕西油泼面.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "面粉",
+        "ref": "小麦粉（代表值）",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "油菜",
+        "ref": "油菜",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "辣椒粉",
+        "ref": "辣椒粉",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "菜籽油",
+        "ref": "菜籽油 [青油]",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "面粉加水盐揉成光滑面团，醒 20 分钟，擀开切宽条。",
+        "durationMin": 25
+      },
+      {
+        "text": "宽条拉长下沸水煮熟，油菜烫熟垫底。",
+        "durationMin": 8,
+        "heat": "大火"
+      },
+      {
+        "text": "面条装碗，放蒜末、葱花、辣椒粉、花椒粉。",
+        "durationMin": 3
+      },
+      {
+        "text": "菜籽油烧热泼在调料上，加酱油米醋拌匀。",
+        "durationMin": 5,
+        "heat": "大火"
+      }
+    ],
+    "tips": [
+      "面团醒够时间才拉得开。",
+      "油温要足，辣椒才香不糊。"
+    ],
+    "tags": [
+      "中式",
+      "面食",
+      "陕西",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-sauce-buckwheat-noodles",
+    "title": "酱拌荞麦面",
+    "titleEn": "Buckwheat Noodles with Sauce",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "荞麦面低脂饱腹，酱汁酸甜微辣，配爽脆菜码。",
+    "coverEmoji": "🍜",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/酱拌荞麦面/酱拌荞麦面.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "荞麦面",
+        "ref": "荞麦面",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黄瓜",
+        "ref": "黄瓜（鲜）[胡瓜]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "胡萝卜",
+        "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "米醋",
+        "ref": "米醋",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蚝油",
+        "ref": "蚝油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "芝麻",
+        "ref": "芝麻子（白）",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "荞麦面煮熟，过凉水沥干。",
+        "durationMin": 8,
+        "heat": "大火"
+      },
+      {
+        "text": "黄瓜、胡萝卜切丝，蒜切末。",
+        "durationMin": 5
+      },
+      {
+        "text": "酱油、米醋、蚝油、香油、白糖、蒜末调成酱汁。",
+        "durationMin": 3
+      },
+      {
+        "text": "面条装碗，码上菜丝，淋酱汁撒芝麻拌匀。",
+        "durationMin": 4
+      }
+    ],
+    "tips": [
+      "面条过凉水更爽滑。",
+      "酱汁按口味加减米醋。"
+    ],
+    "tags": [
+      "中式",
+      "面食",
+      "低脂",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-henan-steamed-noodles",
+    "title": "河南蒸面条",
+    "titleEn": "Henan Steamed Noodles",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 50,
+    "servings": 3,
+    "summary": "面条先蒸后拌再蒸，肉菜香浸入面条，河南家常味。",
+    "coverEmoji": "🍜",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/河南蒸面条/河南蒸面条.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "面条（生）",
+        "ref": "面条（生，代表值）",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "五花肉",
+        "ref": "猪肉（奶面）[硬五花]",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆角",
+        "ref": "豆角",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黄豆芽",
+        "ref": "黄豆芽",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "面条拌少许油，上锅蒸 15 分钟。",
+        "durationMin": 17,
+        "heat": "蒸"
+      },
+      {
+        "text": "五花肉切片煸炒出油，加姜蒜、豆角、黄豆芽翻炒。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "加酱油料酒和一碗水烧开，成拌面卤。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "蒸好的面条与卤汁拌匀，再蒸 10 分钟。",
+        "durationMin": 12,
+        "heat": "蒸"
+      }
+    ],
+    "tips": [
+      "面条先蒸一次定型，再拌卤蒸透。",
+      "卤汁水量要够，面才滋润。"
+    ],
+    "tags": [
+      "中式",
+      "面食",
+      "河南",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-bean-noodle-braised",
+    "title": "豆角焖面",
+    "titleEn": "Braised Noodles with Beans",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 40,
+    "servings": 3,
+    "summary": "一锅焖出的豆角焖面，面条吸满肉汁，咸香浓郁。",
+    "coverEmoji": "🍜",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/豆角焖面/豆角焖面.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "面条（生）",
+        "ref": "面条（生，代表值）",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "五花肉",
+        "ref": "猪肉（奶面）[硬五花]",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆角",
+        "ref": "豆角",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蒜",
+        "ref": "大蒜（白皮，鲜）[蒜头]",
+        "amount": 12,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "五花肉切片，豆角掰段。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅下油煸炒肉片出油，加姜蒜和豆角翻炒。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "加酱油料酒和开水没过豆角，煮 5 分钟盛出一碗汤汁。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "铺上面条，淋回汤汁，小火焖 12 分钟，拌匀出锅。",
+        "durationMin": 15,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "汤汁留一半后面淋，面不干。",
+      "焖到汤汁收干面条油亮。"
+    ],
+    "tags": [
+      "中式",
+      "面食",
+      "焖面",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-omurice",
+    "title": "蛋包饭",
+    "titleEn": "Omurice",
+    "cuisine": "日式",
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 25,
+    "servings": 2,
+    "summary": "金黄蛋皮裹着番茄炒饭，挤上番茄酱，大人小孩都爱。",
+    "coverEmoji": "🍳",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/蛋包饭.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "米饭",
+        "ref": "米饭（蒸，代表值）",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "火腿肠",
+        "ref": "火腿肠",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "洋葱",
+        "ref": "洋葱（鲜）[葱头]",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "胡萝卜",
+        "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄酱",
+        "ref": "番茄酱",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "火腿肠、洋葱、胡萝卜切丁。",
+        "durationMin": 5
+      },
+      {
+        "text": "热锅下油，下配料丁炒香，倒米饭炒散。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "加番茄酱和盐炒匀盛出，压成饭团状。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "蛋液摊成蛋皮，盖在炒饭上，淋番茄酱。",
+        "durationMin": 6,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "蛋皮要小火慢摊，厚薄均匀。",
+      "炒饭别太湿，蛋皮才包得住。"
+    ],
+    "tags": [
+      "日式",
+      "主食",
+      "蛋包饭",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-millet-porridge",
+    "title": "小米粥",
+    "titleEn": "Millet Porridge",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 35,
+    "servings": 3,
+    "summary": "养胃小米粥，绵滑暖胃，早餐首选。",
+    "coverEmoji": "🥣",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/小米粥.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "小米",
+        "ref": "小米（黄）",
+        "amount": 120,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "水",
+        "ref": "水",
+        "amount": 1500,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "小米淘洗两遍，不要用力搓。",
+        "durationMin": 3
+      },
+      {
+        "text": "水烧开后下小米，大火煮开转小火。",
+        "durationMin": 8,
+        "heat": "大火"
+      },
+      {
+        "text": "小火熬 25 分钟至米粒开花、粥面出油。",
+        "durationMin": 27,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "水开再下米，粥更稠滑。",
+      "熬出米油更香。"
+    ],
+    "tags": [
+      "中式",
+      "粥",
+      "早餐",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-laba-porridge",
+    "title": "腊八粥",
+    "titleEn": "Laba Porridge",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 90,
+    "servings": 4,
+    "summary": "五谷杂粮一锅熬，香甜软糯，营养丰富。",
+    "coverEmoji": "🥣",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/腊八粥.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "大米（生）",
+        "ref": "粳米（标一）",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "糯米",
+        "ref": "糯米 [江米]",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "红豆",
+        "ref": "赤小豆（干）[小豆,红小豆]",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "绿豆",
+        "ref": "绿豆（干）",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生仁（生）",
+        "ref": "花生仁（生）",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "红枣",
+        "ref": "枣（干）",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "莲子（干）",
+        "ref": "莲子（干）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "桂圆",
+        "ref": "桂圆（干）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "红豆、绿豆、莲子提前浸泡 2 小时。",
+        "durationMin": 120
+      },
+      {
+        "text": "所有米豆洗净，加足量水大火煮开。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "转小火熬 60 分钟，中途搅拌防糊底。",
+        "durationMin": 62,
+        "heat": "小火"
+      },
+      {
+        "text": "加红枣、桂圆再煮 10 分钟，按口味加白糖。",
+        "durationMin": 12,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "豆类提前泡发，缩短熬煮时间。",
+      "勤搅拌，防止糊底。"
+    ],
+    "tags": [
+      "中式",
+      "粥",
+      "腊八",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-silver-ear-lotus-porridge",
+    "title": "银耳莲子粥",
+    "titleEn": "Silver Ear Lotus Porridge",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 80,
+    "servings": 3,
+    "summary": "银耳出胶、莲子绵软，清润养颜的甜粥。",
+    "coverEmoji": "🥣",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/银耳莲子粥/银耳莲子粥.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "银耳",
+        "ref": "银耳（干）[白木耳]",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "莲子（干）",
+        "ref": "莲子（干）",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "红枣",
+        "ref": "枣（干）",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大米（生）",
+        "ref": "粳米（标一）",
+        "amount": 80,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "银耳泡发撕小朵，莲子泡 30 分钟。",
+        "durationMin": 35
+      },
+      {
+        "text": "银耳加足量水大火煮开，转小火煮 40 分钟出胶。",
+        "durationMin": 45,
+        "heat": "小火"
+      },
+      {
+        "text": "下大米和莲子煮 20 分钟。",
+        "durationMin": 22,
+        "heat": "小火"
+      },
+      {
+        "text": "下红枣再煮 5 分钟，加白糖调味。",
+        "durationMin": 7,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "银耳撕得越小越易出胶。",
+      "红枣后放，甜味更清新。"
+    ],
+    "tags": [
+      "中式",
+      "粥",
+      "甜粥",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-century-egg-porridge",
+    "title": "皮蛋瘦肉粥",
+    "titleEn": "Century Egg Pork Porridge",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 50,
+    "servings": 3,
+    "summary": "经典广式粥：米粒开花、皮蛋咸香、瘦肉滑嫩。",
+    "coverEmoji": "🥣",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/皮蛋瘦肉粥.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "大米（生）",
+        "ref": "粳米（标一）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "皮蛋",
+        "ref": "松花蛋（鸭蛋）[皮蛋]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "猪里脊",
+        "ref": "猪肉（里脊）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "大米浸泡 20 分钟；里脊切丝加料酒盐腌 10 分钟。",
+        "durationMin": 25
+      },
+      {
+        "text": "水开下米，大火煮开转小火熬 30 分钟。",
+        "durationMin": 33,
+        "heat": "小火"
+      },
+      {
+        "text": "下皮蛋丁和姜丝煮 5 分钟。",
+        "durationMin": 7,
+        "heat": "小火"
+      },
+      {
+        "text": "下肉丝划散煮 3 分钟，加盐调味，淋香油撒葱花。",
+        "durationMin": 5,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "米泡一下更容易开花。",
+      "肉丝最后下锅，嫩而不柴。"
+    ],
+    "tags": [
+      "中式",
+      "粥",
+      "广式",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-corn-sparerib-soup",
+    "title": "玉米排骨汤",
+    "titleEn": "Corn and Rib Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 80,
+    "servings": 4,
+    "summary": "清甜玉米配排骨，汤鲜味美，营养均衡。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/玉米排骨汤/玉米排骨汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "排骨",
+        "ref": "酱排骨",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米",
+        "ref": "玉米（鲜）",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "胡萝卜",
+        "ref": "胡萝卜（红）[金笋,丁香萝卜]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "排骨焯水去沫；玉米切段，胡萝卜切块。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "排骨、玉米、姜片、料酒放入锅中，加足量开水。",
+        "durationMin": 5,
+        "heat": "大火"
+      },
+      {
+        "text": "大火煮开转小火炖 60 分钟。",
+        "durationMin": 62,
+        "heat": "小火"
+      },
+      {
+        "text": "下胡萝卜再煮 10 分钟，加盐调味。",
+        "durationMin": 12,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "排骨焯水后汤更清。",
+      "水一次加足，中途不添水。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "排骨",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-rib-yam-corn-soup",
+    "title": "排骨山药玉米汤",
+    "titleEn": "Rib Yam Corn Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 80,
+    "servings": 4,
+    "summary": "山药绵糯、玉米清甜，排骨汤温润滋补。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/排骨山药玉米汤/排骨山药玉米汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "排骨",
+        "ref": "酱排骨",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "山药",
+        "ref": "山药（鲜）[薯蓣，大薯]",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米",
+        "ref": "玉米（鲜）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "排骨焯水；山药去皮切段，玉米切段。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "排骨、玉米、姜片加开水，大火煮开转小火炖 50 分钟。",
+        "durationMin": 55,
+        "heat": "小火"
+      },
+      {
+        "text": "下山药再炖 15 分钟。",
+        "durationMin": 18,
+        "heat": "小火"
+      },
+      {
+        "text": "加盐调味即可。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "山药去皮戴手套防过敏。",
+      "山药后放，保持口感。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "山药",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-rib-bitter-melon-soup",
+    "title": "排骨苦瓜汤",
+    "titleEn": "Rib and Bitter Melon Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 80,
+    "servings": 4,
+    "summary": "苦瓜清火，排骨汤清润，夏天消暑汤品。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/排骨苦瓜汤/排骨苦瓜汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "排骨",
+        "ref": "酱排骨",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "苦瓜",
+        "ref": "苦瓜（鲜）[凉瓜，癞瓜]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "排骨焯水；苦瓜去瓤切块，可加盐腌去苦。",
+        "durationMin": 10,
+        "heat": "大火"
+      },
+      {
+        "text": "排骨、姜片、料酒加开水，小火炖 55 分钟。",
+        "durationMin": 58,
+        "heat": "小火"
+      },
+      {
+        "text": "下苦瓜再煮 10 分钟。",
+        "durationMin": 12,
+        "heat": "小火"
+      },
+      {
+        "text": "加盐调味，捞出浮油。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "苦瓜去瓤刮净白膜，苦味大减。",
+      "汤面浮油撇掉更清爽。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "苦瓜",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-borscht",
+    "title": "罗宋汤",
+    "titleEn": "Russian Borscht Soup",
+    "cuisine": "西式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 90,
+    "servings": 4,
+    "summary": "浓郁酸甜的番茄牛肉浓汤，配面包就是一顿饭。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/罗宋汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "牛腩",
+        "ref": "牛肉（腹部肉）[牛腩]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄",
+        "ref": "番茄 [西红柿]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "土豆",
+        "ref": "马铃薯[土豆、洋芋]",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "洋葱",
+        "ref": "洋葱（鲜）[葱头]",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "卷心菜",
+        "ref": "圆白菜，卷心菜",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "番茄酱",
+        "ref": "番茄酱",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黑胡椒",
+        "ref": "黑胡椒",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "牛腩切块焯水，小火炖 40 分钟成牛肉汤底。",
+        "durationMin": 45,
+        "heat": "小火"
+      },
+      {
+        "text": "热锅下油炒香洋葱，下番茄和番茄酱炒出沙。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "倒入牛肉汤，下土豆和卷心菜煮 20 分钟。",
+        "durationMin": 22,
+        "heat": "中火"
+      },
+      {
+        "text": "加盐和黑胡椒调味。",
+        "durationMin": 3
+      }
+    ],
+    "tips": [
+      "番茄炒出沙，汤色红亮。",
+      "卷心菜煮软但不烂最佳。"
+    ],
+    "tags": [
+      "西式",
+      "汤",
+      "番茄",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-tomato-tofu-soup",
+    "title": "西红柿豆腐汤羹",
+    "titleEn": "Tomato Tofu Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 15,
+    "servings": 2,
+    "summary": "番茄豆腐蛋花汤羹，酸甜嫩滑，暖胃开胃。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/西红柿豆腐汤羹/西红柿豆腐汤羹.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "番茄",
+        "ref": "番茄 [西红柿]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆腐",
+        "ref": "豆腐（代表值）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "番茄切丁，豆腐切小方块，鸡蛋打散。",
+        "durationMin": 5
+      },
+      {
+        "text": "锅中少油炒番茄丁出沙，加两碗水煮开。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "下豆腐煮 2 分钟，淋入蛋液成蛋花。",
+        "durationMin": 4,
+        "heat": "中火"
+      },
+      {
+        "text": "淀粉加水勾薄芡，加盐调味淋香油撒葱花。",
+        "durationMin": 3,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "蛋液转圈淋入，蛋花更漂亮。",
+      "勾芡让汤羹口感更顺滑。"
+    ],
+    "tags": [
+      "中式",
+      "汤羹",
+      "番茄",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-tomato-egg-soup",
+    "title": "西红柿鸡蛋汤",
+    "titleEn": "Tomato Egg Drop Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 12,
+    "servings": 2,
+    "summary": "国民汤品：番茄酸香配蛋花，几分钟搞定。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/西红柿鸡蛋汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "番茄",
+        "ref": "番茄 [西红柿]",
+        "amount": 250,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 6,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "番茄切片，鸡蛋打散。",
+        "durationMin": 4
+      },
+      {
+        "text": "锅中少油炒番茄出汁，加三碗水煮开。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "淋入蛋液成蛋花。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "勾薄芡，加盐淋香油撒葱花。",
+        "durationMin": 2,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "番茄炒一下汤色更好。",
+      "蛋液边倒边搅出蛋花。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-cream-mushroom-soup",
+    "title": "奶油蘑菇汤",
+    "titleEn": "Cream of Mushroom Soup",
+    "cuisine": "西式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 30,
+    "servings": 2,
+    "summary": "奶香浓郁的法式浓汤，蘑菇鲜味十足。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/奶油蘑菇汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "口蘑",
+        "ref": "口蘑（白蘑）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "洋葱",
+        "ref": "洋葱（鲜）[葱头]",
+        "amount": 50,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "全脂牛奶",
+        "ref": "纯牛奶（代表值，全脂）",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "面粉",
+        "ref": "小麦粉（代表值）",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黄油",
+        "ref": "黄油",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黑胡椒",
+        "ref": "黑胡椒",
+        "amount": 1,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "口蘑切片，洋葱切丁。",
+        "durationMin": 5
+      },
+      {
+        "text": "黄油融化，炒香洋葱，下蘑菇片炒软。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "撒面粉翻炒 1 分钟，倒入牛奶搅匀煮开。",
+        "durationMin": 6,
+        "heat": "小火"
+      },
+      {
+        "text": "小火煮 8 分钟至浓稠，加盐和黑胡椒调味。",
+        "durationMin": 10,
+        "heat": "小火"
+      }
+    ],
+    "tips": [
+      "面粉小火炒透，汤才顺滑。",
+      "可留几片蘑菇做装饰。"
+    ],
+    "tags": [
+      "西式",
+      "汤",
+      "蘑菇",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-thickened-mushroom-soup",
+    "title": "勾芡香菇汤",
+    "titleEn": "Thickened Mushroom Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 15,
+    "servings": 2,
+    "summary": "香菇蛋花勾芡汤，鲜香顺滑，清淡暖胃。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/勾芡香菇汤/勾芡香菇汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "香菇（鲜）",
+        "ref": "香菇（鲜）[香蕈，冬菇]",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "玉米淀粉",
+        "ref": "玉米淀粉",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "香菇去蒂切片，鸡蛋打散。",
+        "durationMin": 4
+      },
+      {
+        "text": "水开下香菇煮 3 分钟。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "淋入蛋液成蛋花，勾芡。",
+        "durationMin": 3,
+        "heat": "中火"
+      },
+      {
+        "text": "加盐调味，淋香油撒葱花。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "香菇先煮出鲜味再勾芡。",
+      "芡汁薄厚按喜好调整。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "香菇",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-enoki-soup",
+    "title": "金针菇汤",
+    "titleEn": "Enoki Mushroom Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 12,
+    "servings": 2,
+    "summary": "金针菇蛋花汤，清淡鲜甜，低卡快手。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/金针菇汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "金针菇",
+        "ref": "金针菇（鲜）[智力菇]",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "金针菇去根洗净撕开，鸡蛋打散。",
+        "durationMin": 4
+      },
+      {
+        "text": "水开下金针菇煮 3 分钟。",
+        "durationMin": 5,
+        "heat": "中火"
+      },
+      {
+        "text": "淋入蛋液成蛋花。",
+        "durationMin": 2,
+        "heat": "中火"
+      },
+      {
+        "text": "加盐调味，淋香油撒葱花。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "金针菇撕开更好入口。",
+      "汤要清，蛋液缓缓淋入。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "快手",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-mutton-soup",
+    "title": "羊肉汤",
+    "titleEn": "Mutton Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 100,
+    "servings": 4,
+    "summary": "羊肉萝卜清炖，汤白味鲜，暖身暖胃。",
+    "coverEmoji": "🍲",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/soup/羊肉汤/羊肉汤.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "羊肉",
+        "ref": "羊肉（代表值，fat 7g）",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白萝卜",
+        "ref": "白萝卜（鲜）[莱菔]",
+        "amount": 300,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 25,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "羊肉切块冷水浸泡 30 分钟，再焯水去沫。",
+        "durationMin": 40,
+        "heat": "大火"
+      },
+      {
+        "text": "羊肉加姜片料酒和开水，大火煮开转小火炖 70 分钟。",
+        "durationMin": 75,
+        "heat": "小火"
+      },
+      {
+        "text": "下白萝卜块再炖 20 分钟。",
+        "durationMin": 22,
+        "heat": "小火"
+      },
+      {
+        "text": "加盐调味，撒葱花，可蘸椒盐吃。",
+        "durationMin": 3
+      }
+    ],
+    "tips": [
+      "羊肉先泡后焯，腥味大减。",
+      "汤色奶白靠小火慢炖。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "羊肉",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-crucian-tofu-soup",
+    "title": "鲫鱼豆腐汤",
+    "titleEn": "Crucian Carp Tofu Soup",
+    "cuisine": "中式",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 40,
+    "servings": 3,
+    "summary": "奶白鲜美的鲫鱼豆腐汤，高蛋白低脂肪。",
+    "coverEmoji": "🐟",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "鲫鱼",
+        "ref": "鲫鱼 [喜头鱼、海附鱼]",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "豆腐",
+        "ref": "豆腐（代表值）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 15,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香菜",
+        "ref": "香菜（鲜）[芫荽]",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鲫鱼去鳞去内脏洗净，擦干水分；豆腐切块。",
+        "durationMin": 8
+      },
+      {
+        "text": "热锅少油，鱼两面煎至金黄。",
+        "durationMin": 6,
+        "heat": "中火"
+      },
+      {
+        "text": "烹料酒，加姜片和开水，大火煮 10 分钟至汤白。",
+        "durationMin": 13,
+        "heat": "大火"
+      },
+      {
+        "text": "下豆腐煮 8 分钟，加盐调味撒葱花香菜。",
+        "durationMin": 10,
+        "heat": "中火"
+      }
+    ],
+    "tips": [
+      "鱼煎透再加水，汤才能煮白。",
+      "加开水是汤白的关键。"
+    ],
+    "tags": [
+      "中式",
+      "汤",
+      "鱼类",
+      "本项目整理"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-mung-bean-porridge",
+    "title": "绿豆粥",
+    "titleEn": "Mung Bean Porridge",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 50,
+    "servings": 4,
+    "summary": "清热解暑的绿豆粥，加糖或不加糖都好吃。",
+    "coverEmoji": "🥣",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "绿豆",
+        "ref": "绿豆（干）",
+        "amount": 100,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大米（生）",
+        "ref": "粳米（标一）",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "绿豆提前浸泡 1 小时。",
+        "durationMin": 65
+      },
+      {
+        "text": "绿豆加足量水大火煮开，转小火煮 20 分钟。",
+        "durationMin": 25,
+        "heat": "小火"
+      },
+      {
+        "text": "下大米继续煮 20 分钟至粥绵。",
+        "durationMin": 22,
+        "heat": "小火"
+      },
+      {
+        "text": "按口味加白糖搅匀。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "绿豆泡发后更容易煮开花。",
+      "喜欢沙沙口感可多煮一会。"
+    ],
+    "tags": [
+      "中式",
+      "粥",
+      "绿豆",
+      "本项目整理"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-scallion-oil-noodles",
+    "title": "葱油拌面",
+    "titleEn": "Scallion Oil Noodles",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 20,
+    "servings": 2,
+    "summary": "葱油熬香拌面，酱香浓郁，十分钟搞定的一碗面。",
+    "coverEmoji": "🍜",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "挂面",
+        "ref": "挂面（代表值）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "大葱",
+        "ref": "大葱（红皮）",
+        "amount": 60,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 8,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "大葱切段，热油小火熬至焦黄，捞出葱段留葱油。",
+        "durationMin": 10,
+        "heat": "小火"
+      },
+      {
+        "text": "葱油加酱油和白糖小火熬开，成葱油酱汁。",
+        "durationMin": 4,
+        "heat": "小火"
+      },
+      {
+        "text": "挂面煮熟捞出，趁热淋葱油酱汁拌匀。",
+        "durationMin": 6,
+        "heat": "大火"
+      },
+      {
+        "text": "摆上炸葱段即可。",
+        "durationMin": 1
+      }
+    ],
+    "tips": [
+      "葱段熬到焦黄但不要糊。",
+      "面条趁热拌，酱汁更挂面。"
+    ],
+    "tags": [
+      "中式",
+      "面食",
+      "快手",
+      "本项目整理"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-baked-flatbread",
+    "title": "烙饼",
+    "titleEn": "Baked Flatbread",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 40,
+    "servings": 4,
+    "summary": "家常烙饼，外酥里软，卷菜配粥都合适。",
+    "coverEmoji": "🫓",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/烙饼/烙饼.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "面粉",
+        "ref": "小麦粉（代表值）",
+        "amount": 400,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花生油",
+        "ref": "花生油",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "面粉加盐，温水揉成软面团，醒 20 分钟。",
+        "durationMin": 25
+      },
+      {
+        "text": "面团擀成大薄片，抹油卷起，再擀成饼坯。",
+        "durationMin": 8
+      },
+      {
+        "text": "平底锅中小火，烙至两面金黄鼓起。",
+        "durationMin": 10,
+        "heat": "中小火"
+      },
+      {
+        "text": "出锅趁热撕开或切块。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "面团要软，烙饼才不硬。",
+      "小火慢烙，勤翻面。"
+    ],
+    "tags": [
+      "中式",
+      "主食",
+      "面食",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "htc-scrambled-eggs",
+    "title": "炒滑蛋",
+    "titleEn": "Soft Scrambled Eggs",
+    "cuisine": "西式",
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "简单",
+    "cookTimeMin": 10,
+    "servings": 2,
+    "summary": "加牛奶和黄油的嫩滑炒蛋，早餐标配。",
+    "coverEmoji": "🍳",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/vegetable_dish/炒滑蛋/炒滑蛋.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "全脂牛奶",
+        "ref": "纯牛奶（代表值，全脂）",
+        "amount": 30,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黄油",
+        "ref": "黄油",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "黑胡椒",
+        "ref": "黑胡椒",
+        "amount": 1,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡蛋加牛奶和盐打散。",
+        "durationMin": 3
+      },
+      {
+        "text": "平底锅小火融化黄油。",
+        "durationMin": 2,
+        "heat": "小火"
+      },
+      {
+        "text": "倒入蛋液，用铲子不断推拌至半凝固。",
+        "durationMin": 4,
+        "heat": "小火"
+      },
+      {
+        "text": "趁余温继续翻拌至嫩滑，磨黑胡椒。",
+        "durationMin": 2
+      }
+    ],
+    "tips": [
+      "全程小火，蛋才嫩。",
+      "半凝固就关火，余温会继续加热。"
+    ],
+    "tags": [
+      "西式",
+      "早餐",
+      "鸡蛋",
+      "HowToCook"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-five-spice-eggs",
+    "title": "五香卤蛋",
+    "titleEn": "Five Spice Marinated Eggs",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 60,
+    "servings": 6,
+    "summary": "卤香入味的五香卤蛋，早餐加餐两相宜。",
+    "coverEmoji": "🥚",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "鸡蛋",
+        "ref": "鸡蛋（代表值）",
+        "amount": 600,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "酱油",
+        "ref": "酱油",
+        "amount": 40,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 20,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "白糖",
+        "ref": "白糖",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "八角",
+        "ref": "八角",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "桂皮",
+        "ref": "桂皮",
+        "amount": 3,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "花椒粉",
+        "ref": "花椒粉",
+        "amount": 2,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "鸡蛋冷水下锅煮 10 分钟，捞出过凉水敲裂壳。",
+        "durationMin": 15,
+        "heat": "中火"
+      },
+      {
+        "text": "锅中加水、酱油、料酒、白糖和香料煮开成卤汁。",
+        "durationMin": 8,
+        "heat": "大火"
+      },
+      {
+        "text": "下鸡蛋小火卤 30 分钟。",
+        "durationMin": 32,
+        "heat": "小火"
+      },
+      {
+        "text": "关火浸泡 1 小时入味，剥壳食用。",
+        "durationMin": 65
+      }
+    ],
+    "tips": [
+      "敲裂蛋壳，卤汁更易入味。",
+      "浸泡时间越久越入味。"
+    ],
+    "tags": [
+      "中式",
+      "卤味",
+      "鸡蛋",
+      "本项目整理"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "own-seafood-porridge",
+    "title": "海鲜粥",
+    "titleEn": "Seafood Congee",
+    "cuisine": "中式",
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "中等",
+    "cookTimeMin": 60,
+    "servings": 3,
+    "summary": "虾仁蛤蜊熬粥，鲜甜绵滑，料足暖心。",
+    "coverEmoji": "🥣",
+    "source": {},
+    "ingredients": [
+      {
+        "name": "大米（生）",
+        "ref": "粳米（标一）",
+        "amount": 150,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "虾仁",
+        "ref": "虾仁",
+        "amount": 80,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "蛤蜊",
+        "ref": "蛤蜊（代表值）",
+        "amount": 200,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "姜",
+        "ref": "姜（鲜）[黄姜]",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "小葱",
+        "ref": "葱（小葱，鲜）",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "盐",
+        "ref": "盐",
+        "amount": 4,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "料酒",
+        "ref": "料酒",
+        "amount": 10,
+        "unit": "g",
+        "note": ""
+      },
+      {
+        "name": "香油",
+        "ref": "香油",
+        "amount": 5,
+        "unit": "g",
+        "note": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "大米浸泡 20 分钟；蛤蜊吐沙洗净，虾仁挑线。",
+        "durationMin": 25
+      },
+      {
+        "text": "水开下米，大火煮开转小火熬 35 分钟。",
+        "durationMin": 38,
+        "heat": "小火"
+      },
+      {
+        "text": "下蛤蜊和姜丝煮至开口，下虾仁煮 3 分钟。",
+        "durationMin": 8,
+        "heat": "中火"
+      },
+      {
+        "text": "加盐调味，淋香油撒葱花。",
+        "durationMin": 3
+      }
+    ],
+    "tips": [
+      "蛤蜊开口即熟，煮久会老。",
+      "虾仁最后放，保持弹嫩。"
+    ],
+    "tags": [
+      "中式",
+      "粥",
+      "海鲜",
+      "本项目整理"
+    ],
+    "allergens": []
+  }
+]

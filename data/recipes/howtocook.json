@@ -1,0 +1,148 @@
+[
+  {
+    "id": "howtocook-gyudon",
+    "title": "日式肥牛丼饭",
+    "titleEn": "Japanese Beef Bowl",
+    "cuisine": "日式",
+    "mealTypes": ["lunch", "dinner"],
+    "difficulty": "中等",
+    "cookTimeMin": 30,
+    "servings": 2,
+    "summary": "根据 HowToCook 固定版本整理的家常牛肉盖饭；营养按本地食材和克数重新推算。",
+    "coverEmoji": "🍚",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/日式肥牛丼饭/日式肥牛丼饭.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {"name": "米饭", "ref": "米饭（蒸，代表值）", "amount": 300, "unit": "g"},
+      {"name": "肥牛片", "ref": "牛肉（代表值，fat 9g）", "amount": 250, "unit": "g"},
+      {"name": "白洋葱", "ref": "洋葱（鲜）[葱头]", "amount": 150, "unit": "g"},
+      {"name": "葱花", "ref": "葱（小葱，鲜）", "amount": 20, "unit": "g"},
+      {"name": "白芝麻", "ref": "芝麻子（白）", "amount": 5, "unit": "g"},
+      {"name": "料酒", "ref": "料酒", "amount": 30, "unit": "g", "note": "替代味淋用于营养估算"},
+      {"name": "酱油", "ref": "酱油", "amount": 30, "unit": "g"},
+      {"name": "蚝油", "ref": "蚝油", "amount": 20, "unit": "g"},
+      {"name": "白糖", "ref": "白糖", "amount": 5, "unit": "g"}
+    ],
+    "steps": [
+      {"text": "洋葱切月牙状，小葱切段；白芝麻在干锅中小火炒至略金黄。", "durationMin": 6, "heat": "小火"},
+      {"text": "料酒、酱油、蚝油、白糖调匀成酱汁；肥牛快速焯水后沥干。", "durationMin": 3},
+      {"text": "锅中少油炒软洋葱，加水和酱汁煮 3 分钟，再加入肥牛翻煮至熟。", "durationMin": 13, "heat": "中火"},
+      {"text": "把牛肉和汤汁铺在米饭上，撒葱花和白芝麻。", "durationMin": 2}
+    ],
+    "tips": ["上游做法使用味淋；此处用料酒作营养映射，实际可按口味替换。", "米饭与牛肉分开保存，复热时加少量水口感更好。"],
+    "tags": ["日式", "高蛋白", "盖饭", "HowToCook"],
+    "allergens": ["大豆", "芝麻"]
+  },
+  {
+    "id": "howtocook-japanese-curry-rice",
+    "title": "日式咖喱鸡肉饭",
+    "titleEn": "Japanese Chicken Curry Rice",
+    "cuisine": "日式",
+    "mealTypes": ["lunch", "dinner"],
+    "difficulty": "中等",
+    "cookTimeMin": 55,
+    "servings": 4,
+    "summary": "根据 HowToCook 的日式咖喱饭流程整理，使用可映射食材按克数重算每份营养。",
+    "coverEmoji": "🍛",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/日式咖喱饭/日式咖喱饭.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {"name": "米饭", "ref": "米饭（蒸，代表值）", "amount": 800, "unit": "g"},
+      {"name": "鸡腿肉", "ref": "鸡腿", "amount": 500, "unit": "g"},
+      {"name": "土豆", "ref": "马铃薯[土豆、洋芋]", "amount": 400, "unit": "g"},
+      {"name": "胡萝卜", "ref": "胡萝卜", "amount": 200, "unit": "g"},
+      {"name": "洋葱", "ref": "洋葱（鲜）[葱头]", "amount": 300, "unit": "g"},
+      {"name": "咖喱粉", "ref": "咖喱粉", "amount": 30, "unit": "g", "note": "按可计算食材换算；不同咖喱块标签差异较大"},
+      {"name": "葵花籽油", "ref": "葵花籽油", "amount": 15, "unit": "g"},
+      {"name": "大蒜", "ref": "大蒜（白皮，鲜）[蒜头]", "amount": 12, "unit": "g"}
+    ],
+    "steps": [
+      {"text": "洋葱、土豆、胡萝卜切块；鸡腿肉切成易熟的小块；咖喱粉备用。", "durationMin": 12},
+      {"text": "热锅下油，先炒香大蒜和鸡肉，再依次加入胡萝卜、洋葱、土豆翻炒。", "durationMin": 10, "heat": "中火"},
+      {"text": "加水没过食材，煮至土豆变软；关火调入咖喱粉，搅匀后小火再煮至浓稠。", "durationMin": 28, "heat": "小火"},
+      {"text": "咖喱浇在热米饭上即可。", "durationMin": 2}
+    ],
+    "tips": ["不同品牌咖喱块的脂肪和钠差异较大，本页只按所列咖喱粉估算。", "咖喱酱和米饭可分装冷藏，复热时酱汁加少量水。"],
+    "tags": ["日式", "一锅出", "咖喱", "HowToCook"],
+    "allergens": []
+  },
+  {
+    "id": "howtocook-bolognese-pasta",
+    "title": "意式肉酱面",
+    "titleEn": "Bolognese Pasta",
+    "cuisine": "意式",
+    "mealTypes": ["lunch", "dinner"],
+    "difficulty": "简单",
+    "cookTimeMin": 25,
+    "servings": 4,
+    "summary": "根据 HowToCook 的快手肉酱面整理，食材重量统一为可食部分后计算。",
+    "coverEmoji": "🍝",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/staple/意式肉酱面/意式肉酱面.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {"name": "意面", "ref": "意面（熟）", "amount": 600, "unit": "g", "note": "熟面重量"},
+      {"name": "瘦猪肉末", "ref": "猪肉（瘦）", "amount": 240, "unit": "g"},
+      {"name": "白洋葱", "ref": "洋葱（鲜）[葱头]", "amount": 300, "unit": "g"},
+      {"name": "番茄酱", "ref": "番茄酱", "amount": 600, "unit": "g", "note": "成品意面酱请以包装标签为准"},
+      {"name": "葵花籽油", "ref": "葵花籽油", "amount": 20, "unit": "g"}
+    ],
+    "steps": [
+      {"text": "按包装时间煮意面，留少量煮面水后沥干。", "durationMin": 10},
+      {"text": "洋葱切丁，锅中下油中火炒至半透明。", "durationMin": 5, "heat": "中火"},
+      {"text": "加入猪肉末炒散至变色，再倒入番茄酱煮开。", "durationMin": 7, "heat": "中火"},
+      {"text": "意面与肉酱翻匀；太干时加少量煮面水。", "durationMin": 3}
+    ],
+    "tips": ["上游“意大利面酱”是成品调味酱，不等同于番茄沙司；替换品牌时请按包装标签复核热量。", "这里以熟意面重量计，干面与熟面重量不能直接互换。"],
+    "tags": ["意式", "快手", "肉酱", "HowToCook"],
+    "allergens": ["小麦"]
+  },
+  {
+    "id": "howtocook-pan-seared-steak",
+    "title": "黄油香煎牛排配蔬菜",
+    "titleEn": "Pan-Seared Steak with Vegetables",
+    "cuisine": "西式",
+    "mealTypes": ["lunch", "dinner"],
+    "difficulty": "中等",
+    "cookTimeMin": 30,
+    "servings": 2,
+    "summary": "根据 HowToCook 的煎牛排流程整理；营养按本地牛肉、油脂和配菜的克数计算。",
+    "coverEmoji": "🥩",
+    "source": {
+      "name": "Anduin2017/HowToCook",
+      "url": "https://github.com/Anduin2017/HowToCook/blob/c05758fa661ac4efa0361a987b700a351a22159b/dishes/meat_dish/牛排/牛排.md",
+      "license": "Unlicense",
+      "revision": "c05758fa661ac4efa0361a987b700a351a22159b"
+    },
+    "ingredients": [
+      {"name": "牛排", "ref": "牛肉（里脊肉）[牛柳]", "amount": 500, "unit": "g"},
+      {"name": "橄榄油", "ref": "橄榄油", "amount": 15, "unit": "g"},
+      {"name": "黄油", "ref": "黄油", "amount": 25, "unit": "g"},
+      {"name": "大蒜", "ref": "大蒜（白皮，鲜）[蒜头]", "amount": 10, "unit": "g"},
+      {"name": "蘑菇", "ref": "双孢蘑菇[洋蘑菇]", "amount": 200, "unit": "g"},
+      {"name": "小土豆", "ref": "马铃薯[土豆、洋芋]", "amount": 300, "unit": "g"},
+      {"name": "小番茄", "ref": "樱桃番茄 [小西红柿]", "amount": 150, "unit": "g"},
+      {"name": "黑胡椒", "ref": "黑胡椒", "amount": 2, "unit": "g"}
+    ],
+    "steps": [
+      {"text": "牛排解冻后吸干表面水分；小土豆、蘑菇和番茄洗净切块。", "durationMin": 8},
+      {"text": "高火热锅下橄榄油，牛排每面煎约 1 分半；厚度和熟度不同需调整时间。", "durationMin": 5, "heat": "大火"},
+      {"text": "转中火，加入黄油和压扁的大蒜，快速将融化黄油淋在牛排表面。", "durationMin": 2, "heat": "中火"},
+      {"text": "牛排静置 5 至 10 分钟；配菜在同锅中煎至熟透后装盘。", "durationMin": 12, "heat": "中火"}
+    ],
+    "tips": ["本做法针对约 2 至 3 cm 厚牛排；熟度应以实际中心温度和个人偏好判断。", "黄油和油脂显著影响热量，减脂时可减少用量并在计算器中按实际克数查询。"],
+    "tags": ["西式", "高蛋白", "煎制", "HowToCook"],
+    "allergens": ["乳制品"]
+  }
+]
