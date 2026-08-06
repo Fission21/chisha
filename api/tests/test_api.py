@@ -41,6 +41,46 @@ def test_recipes_pagination_and_kitchen_filters():
     assert all("烤" in item["cookingMethods"] for item in body["items"])
     assert all("烤箱" in item["equipment"] for item in body["items"])
     assert "简单" in body["facets"]["difficulties"]
+    assert "healthLabels" in body["facets"]
+    assert "严格控油控盐" in body["facets"]["healthLabels"]
+
+def test_recipe_filters_equipment_health_and_nutrition():
+    air = client.get("/api/recipes", params={
+        "page": 1, "page_size": 20, "equipment": "空气炸锅",
+    })
+    assert air.status_code == 200
+    air_body = air.json()
+    assert air_body["total"] > 0
+    assert all("空气炸锅" in item["equipment"] for item in air_body["items"])
+
+    strict = client.get("/api/recipes", params={
+        "page": 1, "page_size": 100, "health_profile": "strict",
+        "max_sodium": 700, "max_added_oil": 10,
+    })
+    assert strict.status_code == 200
+    strict_body = strict.json()
+    assert strict_body["total"] > 0
+    assert all(item["health"]["strictEligible"] for item in strict_body["items"])
+    assert all(item["nutrition"]["sodium"] <= 700 for item in strict_body["items"])
+    assert all(item["health"]["addedOilG"] <= 10 for item in strict_body["items"])
+
+    no_egg = client.get("/api/recipes", params={
+        "page": 1, "page_size": 100, "exclude_allergens": "鸡蛋",
+    })
+    assert no_egg.status_code == 200
+    assert all("鸡蛋" not in item["allergens"] for item in no_egg.json()["items"])
+
+def test_recipe_available_equipment_mode():
+    r = client.get("/api/recipes", params={
+        "page": 1, "page_size": 100,
+        "equipment": "平底锅,炒锅,汤锅,蒸锅,烤箱,空气炸锅,微波炉,电饭煲,搅拌机,无需加热",
+        "equipment_mode": "available",
+    })
+    assert r.status_code == 200
+    body = r.json()
+    selected = {"平底锅", "炒锅", "汤锅", "蒸锅", "烤箱", "空气炸锅", "微波炉", "电饭煲", "搅拌机", "无需加热"}
+    for item in body["items"]:
+        assert set(item["equipment"]) - {"无需加热"} <= selected
 
 def test_recipes_complexity_and_oven_filters():
     simple = client.get("/api/recipes", params={"page": 1, "page_size": 50, "complexity": "简单"})
@@ -164,6 +204,56 @@ def test_food_estimate_reports_unmatched_items_without_guessing():
         "input": "一碗火星果",
         "reason": "没有找到对应食材；可尝试写明食材名称和克数，例如“200g 鸡胸肉”。",
     }]
+
+def test_calorie_plan_generates_day_meals():
+    r = client.post("/api/calorie-plan", json={"targetKcal": 2000})
+    assert r.status_code == 200
+    p = r.json()
+    assert p["targetKcal"] == 2000
+    assert len(p["meals"]) == 4
+    for m in p["meals"]:
+        assert m["mealLabel"]
+        assert m["targetKcal"] > 0
+        assert len(m["recommendations"]) == 3
+        for rec in m["recommendations"]:
+            assert rec["nutrition"]["energyKCal"] > 0
+    # 首选合计应接近目标（±35% 容差，餐次拆分后单菜热量波动大）
+    assert 0.65 * 2000 < p["actualKcal"] < 1.35 * 2000
+    assert p["shoppingList"], "热量菜谱应返回购物清单"
+
+def test_calorie_plan_meal_subset_and_filters():
+    r = client.post("/api/calorie-plan", json={
+        "targetKcal": 1500,
+        "meals": ["breakfast", "lunch"],
+        "allergies": ["鸡蛋"],
+        "preferred_cuisines": ["中式"],
+    })
+    assert r.status_code == 200
+    p = r.json()
+    assert {m["meal"] for m in p["meals"]} == {"breakfast", "lunch"}
+    for m in p["meals"]:
+        for rec in m["recommendations"]:
+            assert "鸡蛋" not in rec["allergens"]
+            assert rec["cuisine"] == "中式"
+
+def test_calorie_plan_strict_health_and_equipment():
+    r = client.post("/api/calorie-plan", json={
+        "targetKcal": 1800,
+        "health_profile": "strict",
+        "equipment": ["平底锅", "炒锅", "汤锅", "蒸锅", "无需加热"],
+        "equipment_mode": "available",
+    })
+    assert r.status_code == 200
+    p = r.json()
+    assert any(m["recommendations"] for m in p["meals"])
+    for m in p["meals"]:
+        for rec in m["recommendations"]:
+            assert rec["health"]["strictEligible"]
+            assert set(rec["equipment"]) - {"无需加热"} <= {"平底锅", "炒锅", "汤锅", "蒸锅", "无需加热"}
+
+def test_calorie_plan_rejects_out_of_range():
+    r = client.post("/api/calorie-plan", json={"targetKcal": 100})
+    assert r.status_code == 422
 
 def test_plan_male_cut():
     body = {

@@ -15,6 +15,10 @@ RECIPE_METADATA_COLUMNS = {
     "source_url": "VARCHAR(512) DEFAULT ''",
     "source_license": "VARCHAR(64) DEFAULT ''",
     "source_revision": "VARCHAR(128) DEFAULT ''",
+    "health_profile": "JSON",
+}
+USER_PROFILE_COLUMNS = {
+    "health_profile": "VARCHAR(16) DEFAULT 'balanced'",
 }
 
 
@@ -26,6 +30,16 @@ def ensure_recipe_metadata_columns():
     with engine.begin() as conn:
         for name in sorted(missing):
             conn.execute(text(f"ALTER TABLE recipes ADD COLUMN {name} {RECIPE_METADATA_COLUMNS[name]}"))
+
+
+def ensure_user_profile_columns():
+    columns = {column["name"] for column in inspect(engine).get_columns("user_profiles")}
+    missing = set(USER_PROFILE_COLUMNS) - columns
+    if not missing:
+        return
+    with engine.begin() as conn:
+        for name in sorted(missing):
+            conn.execute(text(f"ALTER TABLE user_profiles ADD COLUMN {name} {USER_PROFILE_COLUMNS[name]}"))
 
 
 def food_values(record):
@@ -55,6 +69,7 @@ def recipe_values(record):
         "servings": record.get("servings", 1), "summary": record.get("summary", ""),
         "cover_emoji": record.get("coverEmoji", ""), "tags": record.get("tags", []),
         "allergens": record.get("allergens", []), "tips": record.get("tips", []),
+        "health_profile": record.get("health", {}),
         "energy_kcal": nutrition.get("energyKCal", 0), "protein": nutrition.get("protein", 0),
         "fat": nutrition.get("fat", 0), "carbohydrate": nutrition.get("CHO", 0),
         "dietary_fiber": nutrition.get("dietaryFiber", 0), "sodium": nutrition.get("sodium", 0),
@@ -91,6 +106,7 @@ def sync_recipe(db, record, row=None):
 def seed():
     Base.metadata.create_all(engine)
     ensure_recipe_metadata_columns()
+    ensure_user_profile_columns()
     db = SessionLocal()
     try:
         foods = json.loads(FOODS_FILE.read_bytes().decode("utf-8-sig"))

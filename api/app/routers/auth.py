@@ -48,5 +48,6 @@ def me(user: User = Depends(get_current_user), db: Session = Depends(get_db)):
             activity_level=profile.activity_level, goal=profile.goal,
             allergies=list(profile.allergies or []),
             preferred_cuisines=list(profile.preferred_cuisines or []),
+            health_profile=profile.health_profile or "balanced",
         ).model_dump()
     return {"email": user.email, "profile": p}

@@ -22,6 +22,7 @@ def save_profile(body: ProfileIn, user: User = Depends(get_current_user), db: Se
     profile.goal = body.goal
     profile.allergies = list(body.allergies)
     profile.preferred_cuisines = list(body.preferred_cuisines)
+    profile.health_profile = body.health_profile
     db.commit()
     return body
 

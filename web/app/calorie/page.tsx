@@ -78,6 +78,7 @@ export default function CaloriePage() {
           </div>
         </div>
         <nav className="nav">
+          <a className="btn ghost" href="/calorie-recipe">热量菜谱</a>
           <a className="btn ghost" href="/recipes">菜谱库</a>
           <a className="btn ghost" href="/diary">饮食记录</a>
         </nav>

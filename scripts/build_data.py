@@ -35,6 +35,8 @@ COOKING_METHOD_RULES = [
 ]
 HEAT_METHODS = {"煎", "炒", "蒸", "煮", "炖", "焖", "卤", "烤"}
 EQUIPMENT_RULES = [
+    ("空气炸锅", ("空气炸锅", "气炸锅", "air fryer")),
+    ("微波炉", ("微波炉", "微波")),
     ("烤箱", ("烤箱", "烤盘", "度烤", "°C")),
     ("平底锅", ("平底锅", "不粘锅", "煎")),
     ("炒锅", ("炒", "热锅", "爆香", "煸")),
@@ -55,9 +57,11 @@ def recipe_metadata(recipe):
         methods.insert(0, "免火")
 
     equipment = list(recipe.get("equipment") or [])
-    if not equipment:
-        equipment = [label for label, keywords in EQUIPMENT_RULES
-                     if any(keyword in text for keyword in keywords)]
+    inferred_equipment = [label for label, keywords in EQUIPMENT_RULES
+                          if any(keyword.lower() in text.lower() for keyword in keywords)]
+    for label in inferred_equipment:
+        if label not in equipment:
+            equipment.append(label)
     if not equipment:
         equipment = ["无需加热"]
     return methods, equipment
@@ -172,6 +176,7 @@ def resolve(ing, idx_food, idx_food_full, idx_global, foods, globals_):
             hits.sort(key=lambda g: len(g["name"]))
             return hits[0], "global-fuzzy"
         return None, "unresolved"
+
     else:
         nn = norm(name); ns = strip_brackets(name)
         if nn in idx_food_full: return idx_food_full[nn], "food"
@@ -187,6 +192,93 @@ def resolve(ing, idx_food, idx_food_full, idx_global, foods, globals_):
             return hits[0], "global-fuzzy"
         return None, "unresolved"
 
+
+ALLERGEN_RULES = {
+    "鸡蛋": ("鸡蛋", "鸭蛋", "皮蛋", "蛋清", "蛋黄", "鹌鹑蛋"),
+    "乳制品": ("牛奶", "酸奶", "奶酪", "芝士", "黄油", "奶油", "奶粉", "乳清"),
+    "小麦": ("小麦", "面粉", "面包", "面条", "挂面", "意面", "卷饼", "披萨"),
+    "花生": ("花生",),
+    "大豆": ("豆腐", "豆浆", "大豆", "黄豆", "豆瓣酱", "酱油", "味噌", "豆干", "腐竹", "毛豆"),
+    "芝麻": ("芝麻", "香油", "芝麻油"),
+    "鱼": ("鱼", "鲈", "鲤", "草鱼", "鳜", "三文鱼", "鲑", "鳕", "带鱼", "金枪鱼"),
+    "虾": ("虾",),
+    "贝类": ("蛤蜊", "扇贝", "生蚝", "牡蛎", "鱿鱼", "蛏", "海参"),
+}
+
+OIL_NAMES = {"花生油", "菜籽油", "葵花籽油", "玉米油", "橄榄油", "芝麻油", "香油", "椰子油", "猪油", "黄油"}
+SUGAR_NAMES = {"白糖", "红糖", "冰糖", "蜂蜜", "枫糖浆", "糖浆", "蔗糖"}
+PROCESSED_MEAT_NAMES = {"培根", "火腿肠", "香肠", "腊肠", "午餐肉", "火腿", "腊肉", "三明治火腿"}
+
+
+def infer_allergens(recipe, items):
+    """把声明过敏原与食材名推导出的标准标签合并，避免空数组被误解为绝对安全。"""
+    labels = set(recipe.get("allergens") or [])
+    text = " ".join(f"{item.get('name', '')} {item.get('food', {}).get('name', '')}" for item in items)
+    for label, keywords in ALLERGEN_RULES.items():
+        if any(keyword in text for keyword in keywords):
+            labels.add(label)
+    return sorted(labels)
+
+
+def health_profile(recipe, items, nutrition):
+    servings = max(1, int(recipe.get("servings", 1)))
+    oil_g = sum(float(item.get("amount", 0)) for item in items
+                if item.get("name") in OIL_NAMES or item.get("food", {}).get("name") in OIL_NAMES) / servings
+    sugar_g = sum(float(item.get("amount", 0)) for item in items
+                  if item.get("name") in SUGAR_NAMES or item.get("food", {}).get("name") in SUGAR_NAMES) / servings
+    ingredient_text = " ".join(f"{item.get('name', '')} {item.get('food', {}).get('name', '')}" for item in items)
+    step_text = " ".join(str(step.get("text", "")) for step in recipe.get("steps", []))
+    deep_fried = any(keyword in step_text for keyword in ("油炸", "炸至", "复炸", "宽油", "过油")) or "炸物" in recipe.get("tags", [])
+    processed_meat = any(name in ingredient_text for name in PROCESSED_MEAT_NAMES)
+    kcal = float(nutrition.get("energyKCal", 0) or 0)
+    protein = float(nutrition.get("protein", 0) or 0)
+    fat = float(nutrition.get("fat", 0) or 0)
+    fiber = float(nutrition.get("dietaryFiber", 0) or 0)
+    sodium = float(nutrition.get("sodium", 0) or 0)
+    protein_density = protein * 100 / max(kcal, 1)
+    strict_eligible = (
+        not deep_fried
+        and not processed_meat
+        and oil_g <= 10
+        and sugar_g <= 12
+        and fat <= 20
+        and sodium <= 700
+        and protein >= 10
+    )
+    score = 100.0
+    score -= max(0.0, oil_g - 5) * 2
+    score -= max(0.0, sodium - 400) / 40
+    score -= max(0.0, sugar_g - 5) * 1.5
+    score -= 15 if deep_fried else 0
+    score -= 12 if processed_meat else 0
+    score += min(12.0, protein_density)
+    score += min(8.0, fiber * 1.5)
+    labels = []
+    if strict_eligible:
+        labels.append("严格控油控盐")
+    if protein_density >= 8:
+        labels.append("高蛋白")
+    if oil_g <= 10:
+        labels.append("低油")
+    if sodium <= 700:
+        labels.append("低钠")
+    if fat <= 15:
+        labels.append("低脂")
+    if sugar_g <= 10:
+        labels.append("控糖")
+    if fiber >= 4:
+        labels.append("高纤维")
+    return {
+        "score": round(max(0.0, min(100.0, score)), 1),
+        "strictEligible": strict_eligible,
+        "labels": labels,
+        "addedOilG": round(oil_g, 1),
+        "addedSugarG": round(sugar_g, 1),
+        "proteinDensity": round(protein_density, 1),
+        "deepFried": deep_fried,
+        "processedMeat": processed_meat,
+        "confidence": "estimated",
+    }
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     foods = load_foods()
@@ -242,6 +334,7 @@ def main():
         servings = max(1, int(r.get("servings", 1)))
         per_serving = {k: round(total[k] / servings, 1) for k in NUTRIENT_FIELDS}
         per_serving["sodium"] = round(total["sodium"] / servings, 1)
+        allergens = infer_allergens(r, items)
         recipe_out = {
             "id": r["id"], "title": r["title"], "titleEn": r.get("titleEn", ""),
             "cuisine": r.get("cuisine", ""), "mealTypes": r.get("mealTypes", []),
@@ -250,7 +343,8 @@ def main():
             "source": recipe_source(r),
             "cookingMethods": cooking_methods, "equipment": equipment,
             "ingredients": items, "steps": r.get("steps", []), "tips": r.get("tips", []),
-            "tags": r.get("tags", []), "allergens": r.get("allergens", []),
+            "tags": r.get("tags", []), "allergens": allergens,
+            "health": health_profile(r, items, per_serving),
             "nutrition": per_serving,
         }
         out_recipes.append(recipe_out)

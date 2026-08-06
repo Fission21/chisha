@@ -49,6 +49,7 @@ class Recipe(Base):
     source_revision = Column(String(128), default="")
     tags = Column(JSON, default=list)
     allergens = Column(JSON, default=list)
+    health_profile = Column(JSON, default=dict)
     tips = Column(JSON, default=list)
     energy_kcal = Column(Float, default=0.0)
     protein = Column(Float, default=0.0)
@@ -108,6 +109,7 @@ class UserProfile(Base):
     goal = Column(String(16), default="maintain")
     allergies = Column(JSON, default=list)
     preferred_cuisines = Column(JSON, default=list)
+    health_profile = Column(String(16), default="balanced")
     user = relationship("User", back_populates="profile")
 
 class UserFavorite(Base):

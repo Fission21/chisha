@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import or_
 from app.db import get_db
 from app import models
+from app.recommend import allergens_overlap
 from app.schemas import (
     RecipeSummary, RecipeDetail, RecipePage, RecipeFacets,
     NutritionOut, IngredientOut, StepOut,
@@ -21,16 +22,22 @@ def summary(r: models.Recipe) -> RecipeSummary:
         mealTypes=list(r.meal_types or []),
         cookingMethods=list(r.cooking_methods or []), equipment=list(r.equipment or []),
         tags=list(r.tags or []), allergens=list(r.allergens or []),
+        health=dict(r.health_profile or {}),
         nutrition=NutritionOut(energyKCal=r.energy_kcal, protein=r.protein, fat=r.fat,
                                CHO=r.carbohydrate, dietaryFiber=r.dietary_fiber, sodium=r.sodium),
     )
 
 DIFFICULTY_ORDER = ["简单", "中等", "困难"]
 COOKING_METHOD_ORDER = ["免火", "煎", "炒", "蒸", "煮", "炖", "焖", "卤", "烤", "拌", "搅拌", "冷藏"]
-EQUIPMENT_ORDER = ["无需加热", "平底锅", "炒锅", "蒸锅", "汤锅", "烤箱", "电饭煲", "搅拌机", "冰箱"]
+EQUIPMENT_ORDER = ["无需加热", "平底锅", "炒锅", "蒸锅", "汤锅", "烤箱", "空气炸锅", "微波炉", "电饭煲", "搅拌机", "冰箱"]
+HEALTH_LABEL_ORDER = ["严格控油控盐", "高蛋白", "低油", "低钠", "低脂", "控糖", "高纤维"]
 
 def ordered_values(values: set[str], preferred: list[str]) -> list[str]:
     return [value for value in preferred if value in values] + sorted(values - set(preferred))
+
+
+def csv_values(value: str | None) -> set[str]:
+    return {part.strip() for part in (value or "").split(",") if part.strip()}
 
 def recipe_facets(db: Session) -> RecipeFacets:
     rows = db.query(models.Recipe).all()
@@ -43,14 +50,31 @@ def recipe_facets(db: Session) -> RecipeFacets:
         equipment=ordered_values(
             {item for r in rows for item in (r.equipment or [])}, EQUIPMENT_ORDER,
         ),
+        mealTypes=sorted({meal for r in rows for meal in (r.meal_types or [])}),
+        tags=sorted({tag for r in rows for tag in (r.tags or []) if tag}),
+        allergens=sorted({allergen for r in rows for allergen in (r.allergens or []) if allergen}),
+        healthLabels=ordered_values(
+            {label for r in rows for label in ((r.health_profile or {}).get("labels", []))},
+            HEALTH_LABEL_ORDER,
+        ),
     )
 
 @router.get("/api/recipes", response_model=RecipePage | list[RecipeSummary])
 def list_recipes(meal: str | None = None, cuisine: str | None = None, tag: str | None = None,
                  q: str | None = None, difficulty: str | None = None, complexity: str | None = None,
-                 cooking_method: str | None = None, equipment: str | None = None, oven: bool | None = None,
+                 cooking_method: str | None = None, equipment: str | None = None,
+                 equipment_mode: str = "any", health_profile: str = "balanced",
+                 health_label: str | None = None, exclude_allergens: str | None = None,
+                 max_kcal: float | None = Query(None, ge=0), min_protein: float | None = Query(None, ge=0),
+                 max_fat: float | None = Query(None, ge=0), max_sodium: float | None = Query(None, ge=0),
+                 min_fiber: float | None = Query(None, ge=0), max_added_oil: float | None = Query(None, ge=0),
+                 oven: bool | None = None,
                  page: int | None = Query(None, ge=1), page_size: int = Query(12, ge=1, le=100),
                  limit: int = 50, db: Session = Depends(get_db)):
+    if equipment_mode not in {"any", "all", "available"}:
+        raise HTTPException(status_code=422, detail="equipment_mode 必须是 any、all 或 available")
+    if health_profile not in {"balanced", "strict"}:
+        raise HTTPException(status_code=422, detail="health_profile 必须是 balanced 或 strict")
     query = db.query(models.Recipe).order_by(models.Recipe.title.asc(), models.Recipe.id.asc())
     if cuisine:
         query = query.filter(models.Recipe.cuisine == cuisine)
@@ -69,8 +93,36 @@ def list_recipes(meal: str | None = None, cuisine: str | None = None, tag: str |
         rows = [r for r in rows if r.complexity == complexity]
     if cooking_method:
         rows = [r for r in rows if cooking_method in (r.cooking_methods or [])]
-    if equipment:
-        rows = [r for r in rows if equipment in (r.equipment or [])]
+    equipment_values = csv_values(equipment)
+    if equipment_values:
+        def equipment_matches(recipe):
+            recipe_equipment = set(recipe.equipment or [])
+            if equipment_mode == "all":
+                return equipment_values.issubset(recipe_equipment)
+            if equipment_mode == "available":
+                required = recipe_equipment - {"无需加热"}
+                return required.issubset(equipment_values)
+            return bool(recipe_equipment & equipment_values)
+        rows = [r for r in rows if equipment_matches(r)]
+    if health_profile == "strict":
+        rows = [r for r in rows if (r.health_profile or {}).get("strictEligible", False)]
+    if health_label:
+        rows = [r for r in rows if health_label in ((r.health_profile or {}).get("labels", []))]
+    excluded = csv_values(exclude_allergens)
+    if excluded:
+        rows = [r for r in rows if not allergens_overlap(r.allergens or [], excluded)]
+    if max_kcal is not None:
+        rows = [r for r in rows if (r.energy_kcal or 0) <= max_kcal]
+    if min_protein is not None:
+        rows = [r for r in rows if (r.protein or 0) >= min_protein]
+    if max_fat is not None:
+        rows = [r for r in rows if (r.fat or 0) <= max_fat]
+    if max_sodium is not None:
+        rows = [r for r in rows if (r.sodium or 0) <= max_sodium]
+    if min_fiber is not None:
+        rows = [r for r in rows if (r.dietary_fiber or 0) >= min_fiber]
+    if max_added_oil is not None:
+        rows = [r for r in rows if ((r.health_profile or {}).get("addedOilG", 0) or 0) <= max_added_oil]
     if oven is not None:
         rows = [r for r in rows if ("烤箱" in (r.equipment or [])) == oven]
 

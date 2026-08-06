@@ -4,11 +4,11 @@ from sqlalchemy.orm import Session
 from app.db import get_db
 from app import models
 from app.nutrition import daily_targets
-from app.recommend import recommend, recommend_week, pick_swap_recipe, MEAL_SPLIT
+from app.recommend import recommend, recommend_week, pick_swap_recipe, recommend_for_calories, MEAL_SPLIT
 from app.schemas import (
     PlanResponse, UserInput, RecipeSummary, NutritionOut, DailyTarget,
     MealRecommendation, WeekDay, WeeklyPlanResponse, ShoppingItem,
-    SwapIn, SwapOut,
+    SwapIn, SwapOut, CaloriePlanIn, CaloriePlanOut,
 )
 
 router = APIRouter()
@@ -24,6 +24,7 @@ def recipe_dict(r: models.Recipe) -> dict:
                    "license": r.source_license or "", "revision": r.source_revision or ""},
         "mealTypes": list(r.meal_types or []), "tags": list(r.tags or []),
         "allergens": list(r.allergens or []),
+        "health": dict(r.health_profile or {}),
         "ingredients": [
             {"name": i.name, "unit": i.unit, "amount": i.amount, "note": i.note,
              "food": {"name": i.food_name, "source": i.food_source, "code": i.food_code}}
@@ -60,7 +61,7 @@ def create_plan(body: UserInput, db: Session = Depends(get_db)):
                             body.activity_level, body.goal)
     recipes = [recipe_dict(r) for r in db.query(models.Recipe).all()]
     meals = recommend(recipes, targets["daily"]["kcal"], targets["daily"]["protein"],
-                      body.goal, body.allergies, body.preferred_cuisines)
+                      body.goal, body.allergies, body.preferred_cuisines, body.health_profile)
     meal_out = []
     for m in meals:
         meal_out.append(MealRecommendation(
@@ -78,7 +79,8 @@ def create_weekly_plan(body: UserInput, db: Session = Depends(get_db)):
                             body.activity_level, body.goal)
     recipes = [recipe_dict(r) for r in db.query(models.Recipe).all()]
     result = recommend_week(recipes, targets["daily"]["kcal"], targets["daily"]["protein"],
-                            body.goal, body.allergies, body.preferred_cuisines)
+                            body.goal, body.allergies, body.preferred_cuisines,
+                            health_profile=body.health_profile)
     today = date.today()
     days = []
     for idx, meals in enumerate(result["days"]):
@@ -90,6 +92,34 @@ def create_weekly_plan(body: UserInput, db: Session = Depends(get_db)):
         ))
     return WeeklyPlanResponse(
         days=days,
+        shoppingList=[ShoppingItem(**x) for x in result["shoppingList"]],
+    )
+
+@router.post("/api/calorie-plan", response_model=CaloriePlanOut)
+def create_calorie_plan(body: CaloriePlanIn, db: Session = Depends(get_db)):
+    """热量菜谱：只输入目标热量（可选忌口/偏好），生成全天各餐的菜谱选项。"""
+    if body.health_profile not in {"balanced", "strict"}:
+        raise HTTPException(status_code=422, detail="health_profile 必须是 balanced 或 strict")
+    if body.equipment_mode not in {"available", "any", "all"}:
+        raise HTTPException(status_code=422, detail="equipment_mode 必须是 available、any 或 all")
+    recipes = [recipe_dict(r) for r in db.query(models.Recipe).all()]
+    result = recommend_for_calories(recipes, float(body.targetKcal), body.goal,
+                                    body.allergies, body.preferred_cuisines, body.meals,
+                                    health_profile=body.health_profile,
+                                    equipment=body.equipment,
+                                    equipment_mode=body.equipment_mode)
+    meal_out = []
+    for m in result["meals"]:
+        meal_out.append(MealRecommendation(
+            meal=m["meal"], mealLabel=m["mealLabel"],
+            targetKcal=m["targetKcal"], targetProtein=m["targetProtein"],
+            recommendations=[RecipeSummary(**r) for r in m["recommendations"]],
+        ))
+    return CaloriePlanOut(
+        targetKcal=body.targetKcal,
+        actualKcal=result["actualKcal"],
+        actualProtein=result["actualProtein"],
+        meals=meal_out,
         shoppingList=[ShoppingItem(**x) for x in result["shoppingList"]],
     )
 
@@ -105,7 +135,8 @@ def swap_recipe(body: SwapIn, db: Session = Depends(get_db)):
     exclude = set(body.keepIds) | {body.replaceId}
     picked = pick_swap_recipe(recipes, body.meal, meal_kcal, meal_protein,
                               body.user.goal, body.user.allergies,
-                              body.user.preferred_cuisines, exclude)
+                              body.user.preferred_cuisines, exclude,
+                              body.user.health_profile)
     if picked is None:
         return SwapOut(recipe=None,
                        shoppingList=[ShoppingItem(**x) for x in aggregate_shopping([])])

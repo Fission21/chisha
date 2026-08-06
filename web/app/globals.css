@@ -135,6 +135,13 @@ button { font-family: inherit; }
 .filter-row .option-row { flex: 1; }
 .filter-actions { border-top: 1px dashed var(--line-strong); padding-top: 12px; margin-top: 15px !important; }
 .filter-clear { padding: 8px 14px; font-size: 13px; }
+.nutrition-filter-grid { flex: 1; display: grid; grid-template-columns: repeat(3, minmax(145px, 1fr)); gap: 8px; }
+.nutrition-filter { display: flex; align-items: center; gap: 5px; color: var(--ink-soft); font-size: 12px; }
+.nutrition-filter input { width: 78px; padding: 7px 8px; border: 1px solid var(--line-strong); border-radius: 7px; background: var(--paper); color: var(--ink); }
+.nutrition-filter input:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(196,71,46,.16); }
+.nutrition-filter small { color: var(--muted); }
+.health-explain { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 14px; padding: 10px 12px; border: 1px dashed var(--line-strong); border-radius: 8px; color: var(--ink-soft); font-size: 12px; }
+.health-explain strong { color: var(--ink); width: 100%; font-family: var(--serif); font-size: 14px; }
 
 /* 按钮 */
 .btn {
@@ -423,6 +430,7 @@ button { font-family: inherit; }
 @media (max-width: 720px) {
   .filter-row { display: block; }
   .filter-label { display: block; padding-top: 0; margin-bottom: 6px; }
+  .nutrition-filter-grid { grid-template-columns: repeat(2, minmax(130px, 1fr)); }
   .filter-actions { display: block; }
   .pagination-total { flex-basis: 100%; text-align: center; margin: 2px 0 0; }
 }

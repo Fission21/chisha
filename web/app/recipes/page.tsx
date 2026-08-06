@@ -7,16 +7,22 @@ import DishMark from "@/components/dish-mark";
 import { toggleFavorite, syncFavoritesFromServer, pushFavoritesToServer } from "@/lib/favorites";
 import AuthNav from "@/components/auth-nav";
 
-type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number };
+type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number; dietaryFiber: number; sodium: number };
+type Health = {
+  score: number; strictEligible: boolean; labels: string[]; addedOilG: number;
+  addedSugarG: number; proteinDensity: number; deepFried: boolean; processedMeat: boolean;
+  confidence: string;
+};
 type RecipeSummary = {
   id: string; title: string; titleEn: string; cuisine: string; difficulty: string;
   complexity: string;
   cookingMethods: string[]; equipment: string[];
   cookTimeMin: number; servings: number; summary: string; coverEmoji: string;
-  mealTypes: string[]; tags: string[]; allergens: string[]; nutrition: Nutrition;
+  mealTypes: string[]; tags: string[]; allergens: string[]; health: Health; nutrition: Nutrition;
 };
 type RecipeFacets = {
   cuisines: string[]; difficulties: string[]; cookingMethods: string[]; equipment: string[];
+  mealTypes: string[]; tags: string[]; allergens: string[]; healthLabels: string[];
 };
 type RecipePage = {
   items: RecipeSummary[]; total: number; page: number; pageSize: number; totalPages: number;
@@ -25,7 +31,7 @@ type RecipePage = {
 type FilterOption = { value: string; label: string };
 
 const PAGE_SIZE = 12;
-const EMPTY_FACETS: RecipeFacets = { cuisines: [], difficulties: [], cookingMethods: [], equipment: [] };
+const EMPTY_FACETS: RecipeFacets = { cuisines: [], difficulties: [], cookingMethods: [], equipment: [], mealTypes: [], tags: [], allergens: [], healthLabels: [] };
 const MEALS: FilterOption[] = [
   { value: "", label: "全部" },
   { value: "breakfast", label: "早餐" },
@@ -53,8 +59,18 @@ export default function RecipesPage() {
   const [difficulty, setDifficulty] = useState("");
   const [complexity, setComplexity] = useState("");
   const [cookingMethod, setCookingMethod] = useState("");
-  const [equipment, setEquipment] = useState("");
+  const [equipment, setEquipment] = useState<string[]>([]);
+  const [equipmentMode, setEquipmentMode] = useState("available");
   const [oven, setOven] = useState("");
+  const [healthProfile, setHealthProfile] = useState("");
+  const [healthLabel, setHealthLabel] = useState("");
+  const [excludeAllergens, setExcludeAllergens] = useState<string[]>([]);
+  const [maxKcal, setMaxKcal] = useState("");
+  const [minProtein, setMinProtein] = useState("");
+  const [maxFat, setMaxFat] = useState("");
+  const [maxSodium, setMaxSodium] = useState("");
+  const [minFiber, setMinFiber] = useState("");
+  const [maxAddedOil, setMaxAddedOil] = useState("");
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
@@ -84,7 +100,19 @@ export default function RecipesPage() {
         if (difficulty) params.set("difficulty", difficulty);
         if (complexity) params.set("complexity", complexity);
         if (cookingMethod) params.set("cooking_method", cookingMethod);
-        if (equipment) params.set("equipment", equipment);
+        if (equipment.length > 0) {
+          params.set("equipment", equipment.join(","));
+          params.set("equipment_mode", equipmentMode);
+        }
+        if (healthProfile) params.set("health_profile", healthProfile);
+        if (healthLabel) params.set("health_label", healthLabel);
+        if (excludeAllergens.length > 0) params.set("exclude_allergens", excludeAllergens.join(","));
+        if (maxKcal) params.set("max_kcal", maxKcal);
+        if (minProtein) params.set("min_protein", minProtein);
+        if (maxFat) params.set("max_fat", maxFat);
+        if (maxSodium) params.set("max_sodium", maxSodium);
+        if (minFiber) params.set("min_fiber", minFiber);
+        if (maxAddedOil) params.set("max_added_oil", maxAddedOil);
         if (oven) params.set("oven", oven === "yes" ? "true" : "false");
 
         const res = await fetch(`${API_URL}/api/recipes?${params}`, { signal: controller.signal });
@@ -114,7 +142,8 @@ export default function RecipesPage() {
       }
     })();
     return () => controller.abort();
-  }, [meal, cuisine, difficulty, complexity, cookingMethod, equipment, oven, page, onlyFav, favoriteKey]);
+  }, [meal, cuisine, difficulty, complexity, cookingMethod, equipment, equipmentMode, healthProfile, healthLabel,
+    excludeAllergens, maxKcal, minProtein, maxFat, maxSodium, minFiber, maxAddedOil, oven, page, onlyFav, favoriteKey]);
 
   const difficultyOptions: FilterOption[] = [
     { value: "", label: "全部难度" },
@@ -132,15 +161,33 @@ export default function RecipesPage() {
     { value: "", label: "全部器材" },
     ...facets.equipment.map((value) => ({ value, label: value })),
   ];
+  const healthOptions: FilterOption[] = [
+    { value: "", label: "全部菜谱" },
+    { value: "strict", label: "严格控油控盐" },
+  ];
+  const healthLabelOptions: FilterOption[] = [
+    { value: "", label: "全部特征" },
+    ...facets.healthLabels.filter((value) => value !== "严格控油控盐").map((value) => ({ value, label: value })),
+  ];
+  const allergenOptions = facets.allergens.map((value) => ({ value, label: value }));
 
   const choose = (setter: (value: string) => void, value: string) => {
     setter(value);
     setPage(1);
   };
-  const clearFilters = () => {
-    setMeal(""); setCuisine(""); setDifficulty(""); setComplexity(""); setCookingMethod(""); setEquipment("");
-    setOven(""); setOnlyFav(false); setPage(1);
+  const toggleSelection = (values: string[], setter: (next: string[]) => void, value: string) => {
+    setter(values.includes(value) ? values.filter((item) => item !== value) : [...values, value]);
+    setPage(1);
   };
+  const clearFilters = () => {
+    setMeal(""); setCuisine(""); setDifficulty(""); setComplexity(""); setCookingMethod(""); setEquipment([]);
+    setEquipmentMode("available"); setOven(""); setHealthProfile(""); setHealthLabel(""); setExcludeAllergens([]);
+    setMaxKcal(""); setMinProtein(""); setMaxFat(""); setMaxSodium(""); setMinFiber(""); setMaxAddedOil("");
+    setOnlyFav(false); setPage(1);
+  };
+
+  const hasAdvancedFilters = Boolean(healthProfile || healthLabel || excludeAllergens.length || maxKcal || minProtein || maxFat || maxSodium || minFiber || maxAddedOil);
+  const hasFilters = Boolean(meal || cuisine || difficulty || complexity || cookingMethod || equipment.length || oven || onlyFav || hasAdvancedFilters);
 
   return (
     <div className="container">
@@ -163,15 +210,32 @@ export default function RecipesPage() {
         <FilterGroup label="难度" options={difficultyOptions} value={difficulty} onChange={(value) => choose(setDifficulty, value)} />
         <FilterGroup label="做法" options={COMPLEXITY_OPTIONS} value={complexity} onChange={(value) => choose(setComplexity, value)} />
         <FilterGroup label="烹饪方式" options={methodOptions} value={cookingMethod} onChange={(value) => choose(setCookingMethod, value)} />
-        <FilterGroup label="器材" options={equipmentOptions} value={equipment} onChange={(value) => choose(setEquipment, value)} />
+        <FilterGroupMulti label="我有的厨具" options={equipmentOptions.filter((option) => option.value)} values={equipment} onChange={(value) => toggleSelection(equipment, setEquipment, value)} />
+        {equipment.length > 0 && (
+          <FilterGroup label="厨具逻辑" options={[
+            { value: "available", label: "我有这些即可" },
+            { value: "any", label: "包含任一" },
+            { value: "all", label: "包含全部" },
+          ]} value={equipmentMode} onChange={(value) => choose(setEquipmentMode, value)} />
+        )}
         <FilterGroup label="工具" options={OVEN_OPTIONS} value={oven} onChange={(value) => choose(setOven, value)} />
+        <FilterGroup label="健康模式" options={healthOptions} value={healthProfile} onChange={(value) => choose(setHealthProfile, value)} />
+        <FilterGroup label="健康特征" options={healthLabelOptions} value={healthLabel} onChange={(value) => choose(setHealthLabel, value)} />
+        {allergenOptions.length > 0 && (
+          <FilterGroupMulti label="排除过敏原" options={allergenOptions} values={excludeAllergens} onChange={(value) => toggleSelection(excludeAllergens, setExcludeAllergens, value)} />
+        )}
+        <NutritionFilters
+          values={{ maxKcal, minProtein, maxFat, maxSodium, minFiber, maxAddedOil }}
+          setters={{ setMaxKcal, setMinProtein, setMaxFat, setMaxSodium, setMinFiber, setMaxAddedOil }}
+          onChange={() => setPage(1)}
+        />
         <div className="filter-row filter-actions">
           <span className="filter-label">收藏</span>
           <div className="option-row">
             <button type="button" className={`option ${onlyFav ? "on" : ""}`} onClick={() => { setOnlyFav(!onlyFav); setPage(1); }} aria-pressed={onlyFav}>
               <IconStar size={15} filled={onlyFav} /> 只看收藏 {favs.length > 0 ? `(${favs.length})` : ""}
             </button>
-            {(meal || cuisine || difficulty || complexity || cookingMethod || equipment || oven || onlyFav) && (
+            {hasFilters && (
               <button type="button" className="btn ghost filter-clear" onClick={clearFilters}>清空筛选</button>
             )}
           </div>
@@ -202,7 +266,7 @@ export default function RecipesPage() {
                 <div className="menu-row" key={r.id}>
                   <DishMark title={r.title} size={44} />
                   <div className="menu-body">
-                    <div className="menu-title"><a href={`/recipes/${r.id}`}>{r.title}</a></div>
+                    <div className="menu-title"><a href={`/recipes/${r.id}`} target="_blank" rel="noopener noreferrer">{r.title}</a></div>
                     <div className="menu-meta">
                       <span>{r.cuisine}</span><span>·</span><span>{r.difficulty}</span><span>·</span>
                       <span>{r.complexity}做法</span><span>·</span>
@@ -215,6 +279,9 @@ export default function RecipesPage() {
                       <span className="price fat"><IconFat size={13} style={{ verticalAlign: -1 }} /> <b>{Math.round(r.nutrition.fat)}</b> g 脂肪</span>
                     </div>
                     <div className="stamp-row">
+                      {r.health.strictEligible && <span className="stamp green">严格控油控盐</span>}
+                      <span className="stamp mustard">钠 {Math.round(r.nutrition.sodium)}mg</span>
+                      <span className="stamp mustard">油 {r.health.addedOilG}g</span>
                       {r.tags.slice(0, 3).map((t) => <span className="stamp green" key={`tag-${t}`}>{t}</span>)}
                       {r.cookingMethods.slice(0, 2).map((method) => <span className="stamp red" key={`method-${method}`}>{method}</span>)}
                       {r.equipment.slice(0, 2).map((tool) => <span className="stamp mustard" key={`equipment-${tool}`}>{tool}</span>)}
@@ -250,6 +317,63 @@ function FilterGroup({ label, options, value, onChange }: { label: string; optio
           <button type="button" key={option.value} className={`option ${value === option.value ? "on" : ""}`} onClick={() => onChange(option.value)} aria-pressed={value === option.value}>
             {option.label}
           </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function FilterGroupMulti({ label, options, values, onChange }: { label: string; options: FilterOption[]; values: string[]; onChange: (value: string) => void }) {
+  return (
+    <div className="filter-row">
+      <span className="filter-label">{label}</span>
+      <div className="option-row">
+        {options.map((option) => (
+          <button type="button" key={option.value} className={`option ${values.includes(option.value) ? "on" : ""}`} onClick={() => onChange(option.value)} aria-pressed={values.includes(option.value)}>
+            {option.label}
+          </button>
+        ))}
+        {values.length > 0 && <span className="muted" style={{ fontSize: 12 }}>已选 {values.length} 项</span>}
+      </div>
+    </div>
+  );
+}
+
+function NutritionFilters({
+  values,
+  setters,
+  onChange,
+}: {
+  values: Record<string, string>;
+  setters: Record<string, (value: string) => void>;
+  onChange: () => void;
+}) {
+  const fields = [
+    ["maxKcal", "最高热量", "kcal"],
+    ["minProtein", "最低蛋白", "g"],
+    ["maxFat", "最高脂肪", "g"],
+    ["maxSodium", "最高钠", "mg"],
+    ["minFiber", "最低纤维", "g"],
+    ["maxAddedOil", "最高添加油", "g"],
+  ];
+  return (
+    <div className="filter-row">
+      <span className="filter-label">营养条件</span>
+      <div className="nutrition-filter-grid">
+        {fields.map(([key, label, unit]) => (
+          <label className="nutrition-filter" key={key}>
+            <span>{label}</span>
+            <input
+              type="number"
+              min={0}
+              step={unit === "mg" || unit === "kcal" ? 10 : 1}
+              placeholder="不限"
+              value={values[key]}
+              onChange={(event) => { setters[key](event.target.value); onChange(); }}
+              aria-label={label}
+            />
+            <small>{unit}</small>
+          </label>
         ))}
       </div>
     </div>

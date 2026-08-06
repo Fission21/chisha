@@ -11,13 +11,18 @@ type Nutrition = { energyKCal: number; protein: number; fat: number; CHO: number
 type Ingredient = { name: string; unit: string; amount: number; note: string; food: { name: string; source: string } };
 type Step = { text: string; durationMin: number | null; heat: string | null };
 type RecipeSource = { name: string; url: string; license: string; revision: string };
+type Health = {
+  score: number; strictEligible: boolean; labels: string[]; addedOilG: number;
+  addedSugarG: number; proteinDensity: number; deepFried: boolean; processedMeat: boolean;
+  confidence: string;
+};
 type RecipeDetail = {
   id: string; title: string; titleEn: string; cuisine: string; difficulty: string;
   complexity: string;
   cookingMethods: string[]; equipment: string[];
   cookTimeMin: number; servings: number; summary: string; coverEmoji: string;
   source: RecipeSource;
-  mealTypes: string[]; tags: string[]; allergens: string[]; nutrition: Nutrition;
+  mealTypes: string[]; tags: string[]; allergens: string[]; health: Health; nutrition: Nutrition;
   ingredients: Ingredient[]; steps: Step[]; tips: string[];
 };
 
@@ -131,7 +136,18 @@ export default async function RecipePage({ params }: { params: Promise<{ id: str
           </table>
           <div className="stamp-row" style={{ marginTop: 14 }}>
             {r.tags.map((t) => <span className="stamp green" key={t}>{t}</span>)}
+            {r.health.strictEligible && <span className="stamp mustard">严格控油控盐</span>}
           </div>
+          <div className="health-explain">
+            <strong>健身质量画像</strong>
+            <span>健康评分 {Math.round(r.health.score)}</span>
+            <span>添加油 {r.health.addedOilG}g</span>
+            <span>添加糖 {r.health.addedSugarG}g</span>
+            <span>蛋白密度 {r.health.proteinDensity}g/100kcal</span>
+          </div>
+          <p className="muted" style={{ marginTop: 10, fontSize: 12 }}>
+            健康画像按食材、每份营养和做法估算；严格模式用于筛选参考，不替代医疗或个体化营养建议。
+          </p>
           {r.allergens.length > 0 && (
             <p className="muted" style={{ marginTop: 12, fontSize: 13 }}>
               含过敏原：{r.allergens.join("、")}

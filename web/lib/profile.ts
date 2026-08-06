@@ -9,6 +9,7 @@ export type SavedProfile = {
   bodyFat: string;
   activity: string;
   goal: string;
+  healthProfile: string;
   allergies: string[];
   cuisines: string[];
 };

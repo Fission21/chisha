@@ -40,6 +40,10 @@ const GOAL_OPTIONS = [
 ];
 const ALLERGY_OPTIONS = ["鸡蛋", "牛奶", "乳制品", "小麦", "花生", "虾", "鱼", "大豆"];
 const CUISINE_OPTIONS = ["中餐", "西式", "日式", "韩式", "越南", "泰式", "墨西哥", "东南亚", "印度"];
+const HEALTH_PROFILE_OPTIONS = [
+  ["balanced", "均衡健身", "按热量、蛋白和饮食质量平衡推荐"],
+  ["strict", "严格控油控盐", "过滤深炸、加工肉，并控制油、钠、脂肪"],
+];
 
 const MEAL_ICON: Record<string, React.ReactNode> = {
   breakfast: <IconBowl size={20} />,
@@ -58,6 +62,7 @@ export default function HomePage() {
   const [bodyFat, setBodyFat] = useState("");
   const [activity, setActivity] = useState("moderate");
   const [goal, setGoal] = useState("cut");
+  const [healthProfile, setHealthProfile] = useState("balanced");
   const [allergies, setAllergies] = useState<string[]>([]);
   const [cuisines, setCuisines] = useState<string[]>([]);
 
@@ -70,9 +75,9 @@ export default function HomePage() {
   const [swapMsg, setSwapMsg] = useState("");
 
   useEffect(() => {
-    const apply = (p: { sex: string; age: string; height: string; weight: string; bodyFat: string; activity: string; goal: string; allergies: string[]; cuisines: string[] }) => {
+    const apply = (p: { sex: string; age: string; height: string; weight: string; bodyFat: string; activity: string; goal: string; healthProfile?: string; allergies: string[]; cuisines: string[] }) => {
       setSex(p.sex); setAge(p.age); setHeight(p.height); setWeight(p.weight);
-      setBodyFat(p.bodyFat); setActivity(p.activity); setGoal(p.goal);
+      setBodyFat(p.bodyFat); setActivity(p.activity); setGoal(p.goal); setHealthProfile(p.healthProfile || "balanced");
       setAllergies(p.allergies); setCuisines(p.cuisines);
     };
     const local = loadProfile();
@@ -92,6 +97,7 @@ export default function HomePage() {
                 bodyFat: data.profile.body_fat != null ? String(data.profile.body_fat) : "",
                 activity: data.profile.activity_level || "moderate",
                 goal: data.profile.goal || "maintain",
+                healthProfile: data.profile.health_profile || "balanced",
                 allergies: data.profile.allergies || [],
                 cuisines: data.profile.preferred_cuisines || [],
               });
@@ -116,21 +122,21 @@ export default function HomePage() {
         body: JSON.stringify({
           sex, age: Number(age), height_cm: Number(height), weight_kg: Number(weight),
           body_fat: bodyFat ? Number(bodyFat) : null,
-          activity_level: activity, goal,
+          activity_level: activity, goal, health_profile: healthProfile,
           allergies, preferences: [], preferred_cuisines: cuisines,
         }),
       });
       if (!res.ok) throw new Error(`请求失败 (${res.status})`);
       const data = await res.json();
       setPlan(data);
-      saveProfile({ sex, age, height, weight, bodyFat, activity, goal, allergies, cuisines });
+      saveProfile({ sex, age, height, weight, bodyFat, activity, goal, healthProfile, allergies, cuisines });
       if (isLoggedIn()) {
         apiFetch("/api/me/profile", {
           method: "PUT",
           body: JSON.stringify({
             sex, age: Number(age), height_cm: Number(height), weight_kg: Number(weight),
             body_fat: bodyFat ? Number(bodyFat) : null,
-            activity_level: activity, goal,
+            activity_level: activity, goal, health_profile: healthProfile,
             allergies, preferred_cuisines: cuisines,
           }),
         }).catch(() => {});
@@ -150,7 +156,7 @@ export default function HomePage() {
   const planBody = () => ({
     sex, age: Number(age), height_cm: Number(height), weight_kg: Number(weight),
     body_fat: bodyFat ? Number(bodyFat) : null,
-    activity_level: activity, goal,
+    activity_level: activity, goal, health_profile: healthProfile,
     allergies, preferences: [], preferred_cuisines: cuisines,
   });
 
@@ -273,6 +279,7 @@ export default function HomePage() {
           <AuthNav />
           <a className="btn ghost" href="/diary">饮食记录</a>
           <a className="btn ghost" href="/calorie">热量查询</a>
+          <a className="btn ghost" href="/calorie-recipe">热量菜谱</a>
           <a className="btn ghost" href="/recipes">菜谱库</a>
         </nav>
       </header>
@@ -367,7 +374,7 @@ export default function HomePage() {
                   return (
                     <div className="week-cell" key={m.meal}>
                       <div className="meal-lbl">{m.mealLabel}</div>
-                      <a href={`/recipes/${r.id}`}>{r.title}</a>
+                      <a href={`/recipes/${r.id}`} target="_blank" rel="noopener noreferrer">{r.title}</a>
                       <div className="kcal">{Math.round(r.nutrition.energyKCal)} kcal · 蛋白 {Math.round(r.nutrition.protein)} g</div>
                       <button type="button" className="week-swap" onClick={() => swapWeekly(day.dayIndex, m.meal, r.id)} disabled={swapLoading}>
                         换一道
@@ -466,6 +473,20 @@ export default function HomePage() {
               </div>
 
               <div className="stall-head" style={{ marginTop: 28 }}>
+                <h2>饮食模式</h2>
+                <span className="rule" />
+              </div>
+              <div className="option-row">
+                {HEALTH_PROFILE_OPTIONS.map(([v, l, d]) => (
+                  <span key={v} className={`option ${healthProfile === v ? "on" : ""}`} onClick={() => setHealthProfile(v)} role="button" tabIndex={0}
+                    onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setHealthProfile(v); } }}>
+                    {healthProfile === v ? <IconCheck size={15} /> : null}
+                    {l}<span style={{ fontSize: 12, opacity: 0.85 }}>{d}</span>
+                  </span>
+                ))}
+              </div>
+
+              <div className="stall-head" style={{ marginTop: 28 }}>
                 <h2>过敏 / 忌口</h2>
                 <span className="rule" />
               </div>
@@ -548,7 +569,7 @@ function MenuRow({ r, onSwap, swapDisabled }: { r: RecipeSummary; onSwap?: (id: 
     <div className="menu-row">
       <DishMark title={r.title} size={44} />
       <div className="menu-body">
-        <div className="menu-title"><a href={`/recipes/${r.id}`}>{r.title}</a></div>
+        <div className="menu-title"><a href={`/recipes/${r.id}`} target="_blank" rel="noopener noreferrer">{r.title}</a></div>
         <div className="menu-meta">
           <span>{r.cuisine}</span>
           <span>·</span>

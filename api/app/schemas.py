@@ -13,6 +13,7 @@ class UserInput(BaseModel):
     allergies: List[str] = Field(default_factory=list)
     preferences: List[str] = Field(default_factory=list)
     preferred_cuisines: List[str] = Field(default_factory=list)
+    health_profile: str = Field("balanced", description="balanced/strict")
 
 class NutritionOut(BaseModel):
     energyKCal: float
@@ -53,6 +54,17 @@ class FoodEstimateOut(BaseModel):
     total: NutritionOut
     notice: str
 
+class RecipeHealthOut(BaseModel):
+    score: float = 0.0
+    strictEligible: bool = False
+    labels: List[str] = Field(default_factory=list)
+    addedOilG: float = 0.0
+    addedSugarG: float = 0.0
+    proteinDensity: float = 0.0
+    deepFried: bool = False
+    processedMeat: bool = False
+    confidence: str = "estimated"
+
 class RecipeSummary(BaseModel):
     id: str
     title: str
@@ -70,13 +82,18 @@ class RecipeSummary(BaseModel):
     mealTypes: List[str]
     tags: List[str]
     allergens: List[str]
+    health: RecipeHealthOut = Field(default_factory=RecipeHealthOut)
     nutrition: NutritionOut
 
 class RecipeFacets(BaseModel):
-    cuisines: List[str]
-    difficulties: List[str]
-    cookingMethods: List[str]
-    equipment: List[str]
+    cuisines: List[str] = Field(default_factory=list)
+    difficulties: List[str] = Field(default_factory=list)
+    cookingMethods: List[str] = Field(default_factory=list)
+    equipment: List[str] = Field(default_factory=list)
+    mealTypes: List[str] = Field(default_factory=list)
+    tags: List[str] = Field(default_factory=list)
+    allergens: List[str] = Field(default_factory=list)
+    healthLabels: List[str] = Field(default_factory=list)
 
 class RecipePage(BaseModel):
     items: List[RecipeSummary]
@@ -132,6 +149,23 @@ class SwapOut(BaseModel):
     recipe: Optional[RecipeSummary] = None
     shoppingList: List[ShoppingItem] = Field(default_factory=list)
 
+class CaloriePlanIn(BaseModel):
+    targetKcal: int = Field(..., ge=800, le=6000, description="目标每日热量")
+    goal: str = Field("maintain", description="cut/bulk/maintain，影响标签权重")
+    allergies: List[str] = Field(default_factory=list)
+    preferred_cuisines: List[str] = Field(default_factory=list)
+    meals: Optional[List[str]] = Field(default=None, description="餐次子集，如 ['breakfast','lunch','dinner','snack']；缺省全部")
+    health_profile: str = Field("balanced", description="balanced/strict")
+    equipment: List[str] = Field(default_factory=list)
+    equipment_mode: str = Field("available", description="available/any/all")
+
+class CaloriePlanOut(BaseModel):
+    targetKcal: int
+    actualKcal: float
+    actualProtein: float
+    meals: List[MealRecommendation]
+    shoppingList: List[ShoppingItem] = Field(default_factory=list)
+
 class IngredientOut(BaseModel):
     name: str
     unit: str
@@ -172,6 +206,7 @@ class ProfileIn(BaseModel):
     goal: str = "maintain"
     allergies: List[str] = Field(default_factory=list)
     preferred_cuisines: List[str] = Field(default_factory=list)
+    health_profile: str = "balanced"
 
 class ProfileOut(ProfileIn):
     pass

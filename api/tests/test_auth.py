@@ -54,12 +54,14 @@ def test_profile_save_and_read():
     profile = {
         "sex": "female", "age": 27, "height_cm": 165, "weight_kg": 55,
         "body_fat": 22, "activity_level": "moderate", "goal": "cut",
+        "health_profile": "strict",
         "allergies": ["花生"], "preferred_cuisines": ["西式", "日式"],
     }
     r = client.put("/api/me/profile", json=profile, headers=h)
     assert r.status_code == 200
     me = client.get("/api/auth/me", headers=h).json()
     assert me["profile"]["goal"] == "cut"
+    assert me["profile"]["health_profile"] == "strict"
     assert me["profile"]["allergies"] == ["花生"]
 
 def test_favorites_sync():
