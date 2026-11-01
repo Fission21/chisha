@@ -47,6 +47,7 @@ cd api
 # 3. 启动后端（API + 前端静态托管）
 cd ..
 .venv/Scripts/python -m uvicorn app.main:app --app-dir api --port 8000
+# .venv/bin/python -m uvicorn app.main:app --app-dir api --port 8000
 
 # 4. （可选）前端开发模式，热更新
 cd web
